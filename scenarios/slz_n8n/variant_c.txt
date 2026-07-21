@@ -1,0 +1,6 @@
+name=SLZ Seguranca Inteligente para Lojas de Roupas e Calcados de Sao Luis - Protecao de Vitrine e Estoque
+description=Sistema de seguranca inteligente franquia EMIVE para lojas de roupas, calcados, acessorios e boutiques em Sao Luis, MA. Monitoramento 24h com central inviolavel e redundancia em 4 canais (Wi-Fi, ethernet, GPRS, linha telefonica). Sensores de vibracao nas vitrines e portas de aco, cameras com visao noturna colorida no caixa e provador, sirene de inhibicao e atendimento humano via WhatsApp/ligacao. Foco na dor: lojista deixa estoque valioso fechado a noite, vitrine e vitrine, e trabalha com parcelamentos que atrasam o caixa. Visita tecnica gratuita de 15-20 minutos para avaliar layout da loja e montar proposta personalizada. Nao vendemos pelo WhatsApp sem visita. Valor simbolico R$ 1 pela visita. Conversao = agendamento da visita. Diferenciais: protecao de vitrine e estoque, cameras com IA que detectam movimento suspeito, consultor local Reginato.
+price_usd=0.20
+channel=word_of_mouth
+target_market=Donos de lojas de roupas, calcados, acessorios e boutiques em Sao Luis, MA, em areas comerciais como Centro, Joao Paulo, Cohab/Anil, Shopping da Ilha e galerias, que trabalham com estoque de valor na vitrine
+num_agents=30

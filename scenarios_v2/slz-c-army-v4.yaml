@@ -1,0 +1,206 @@
+# Simulation Army v4 - Cenario SLZ-C
+# Ensemble 22 modelos: 10 gocat (HTTP) + 10 kilocode free (subprocess) + 2 devin (subprocess).
+# 9+ vendors distintos, 3 fontes de infraestrutura, captura de tokens/latencia/custo.
+# Testado 2026-07-20: 10/10 kilocode free + 2/2 devin retornam DecisaoPersona valida, custo $0.
+# Antigravity (agy) excluido: system prompt de agente de codigo ignora instrucao de JSON puro.
+
+scenario:
+  code: SLZ-C-ARMY-V4
+  name: "SLZ Seguranca Inteligente - Exercito de 20 IAs (gocat + kilocode free)"
+  project: slz_n8n
+  product_name: "Sistema de Seguranca Inteligente EMIVE"
+  description: >
+    Sistema de seguranca inteligente franquia EMIVE para lojas de roupas, calcados,
+    acessorios e boutiques em Sao Luis, MA. Monitoramento 24h com central inviolavel
+    e redundancia em 4 canais (Wi-Fi, ethernet, GPRS, linha telefonica). Sensores de
+    vibracao nas vitrines e portas de aco, cameras com visao noturna colorida no caixa
+    e provador, sirene de inibicao e atendimento humano via WhatsApp/ligacao.
+    Foco na dor: lojista deixa estoque valioso fechado a noite, vitrine exposta.
+    Visita tecnica gratuita de 15-20 minutos para avaliar layout da loja e montar
+    proposta personalizada. Nao vendemos pelo WhatsApp sem visita.
+    Conversao = agendamento da visita.
+    Diferenciais: protecao de vitrine e estoque, cameras com IA, consultor local Reginato.
+  price_brl: 1.00
+  price_model: visit
+  target_segment: loja_roupas
+  channel: word_of_mouth
+  value_proposition: "Protecao do estoque de vestuario contra arrombamentos noturnos nas portas de aco"
+  pain_focus: "Estoque valioso fechado a noite, vitrine exposta, arrombamento"
+  num_agents: 30
+
+# Ensemble v4: 20 modelos de 2 fontes (gocat HTTP + kilocode subprocess).
+# source=gocat -> POST /v1/chat/completions via httpx
+# source=kilocode -> `kilocode run -m <model> --format json` via subprocess
+ensemble:
+  models:
+    # === FONTE 1: GOCAT (10 modelos, 7 vendors, HTTP) ===
+    # Cohere (2 modelos)
+    - model: command-r-plus-08-2024
+      provider: cohere
+      source: gocat
+      role: conservador
+      role_description: "Foca em risco tecnico, complexidade, confiabilidade"
+    - model: command-a-03-2025
+      provider: cohere
+      source: gocat
+      role: estrategico
+      role_description: "Foca em longo prazo, escalabilidade, parceria"
+    # Groq (2 modelos)
+    - model: llama-3.3-70b-versatile
+      provider: groq
+      source: gocat
+      role: conversacional
+      role_description: "Foca em aspectos praticos, prova social, relacionamento"
+    - model: qwen/qwen3.6-27b
+      provider: groq
+      source: gocat
+      role: tecnico
+      role_description: "Foca em especificacoes, detalhes de implementacao"
+    # Gemini (1 modelo)
+    - model: gemini-2.5-flash
+      provider: gemini
+      source: gocat
+      role: analitico
+      role_description: "Foca em dados, metricas, comparativos objetivos"
+    # Nvidia (1 modelo)
+    - model: deepseek-ai/deepseek-v4-flash
+      provider: nvidia
+      source: gocat
+      role: pragmatico
+      role_description: "Foca em viabilidade financeira, orcamento, ROI"
+    # SambaNova (1 modelo)
+    - model: Meta-Llama-3.3-70B-Instruct
+      provider: sambanova
+      source: gocat
+      role: cetico
+      role_description: "Foca em objecoes, riscos ocultos, armadilhas"
+    # Kilo via gocat (2 modelos)
+    - model: tencent/hy3:free
+      provider: kilo
+      source: gocat
+      role: financeiro
+      role_description: "Foca em custos, TCO, retorno sobre investimento"
+    - model: kilo-auto/free
+      provider: kilo
+      source: gocat
+      role: otimista
+      role_description: "Foca em oportunidades, crescimento, beneficios"
+    # SiliconFlow (1 modelo)
+    - model: deepseek-ai/DeepSeek-V3
+      provider: siliconflow
+      source: gocat
+      role: realista
+      role_description: "Foco em cenario mais provavel, nem otimista nem pessimista"
+
+    # === FONTE 2: KILOCODE CLI (10 modelos free, subprocess, custo $0) ===
+    # Testados 2026-07-20: 10/10 retornam DecisaoPersona valida.
+    # Cohere north-mini (1 modelo)
+    - model: kilo/cohere/north-mini-code:free
+      provider: kilo
+      source: kilocode
+      role: auditor
+      role_description: "Foca em codigo/tecnologia, visao tecnica critica"
+    # Kilo-auto free (1 modelo, roteamento automatico)
+    - model: kilo/kilo-auto/free
+      provider: kilo
+      source: kilocode
+      role: generalista
+      role_description: "Modelo roteado automaticamente, perspectiva neutra"
+    # Kwaipilot (1 modelo)
+    - model: kilo/kwaipilot/kat-coder-pro-v2.5:free
+      provider: kilo
+      source: kilocode
+      role: engenheiro
+      role_description: "Foca em implementacao, viabilidade tecnica"
+    # Nvidia nemotron (2 modelos)
+    - model: kilo/nvidia/nemotron-3-super-120b-a12b:free
+      provider: kilo
+      source: kilocode
+      role: pesquisador
+      role_description: "Foca em evidencias, dados, literatura"
+    - model: kilo/nvidia/nemotron-3-ultra-550b-a55b:free
+      provider: kilo
+      source: kilocode
+      role: cientista
+      role_description: "Foca em analise rigorosa, metodologia"
+    # Openrouter free (1 modelo)
+    - model: kilo/openrouter/free
+      provider: kilo
+      source: kilocode
+      role: mediador
+      role_description: "Foca em equilibrio entre partes, consenso"
+    # Poolside (2 modelos)
+    - model: kilo/poolside/laguna-m.1:free
+      provider: kilo
+      source: kilocode
+      role: mentor
+      role_description: "Foca em longo prazo, aprendizado, maturidade"
+    - model: kilo/poolside/laguna-xs-2.1:free
+      provider: kilo
+      source: kilocode
+      role: startup
+      role_description: "Foca em agilidade, inovacao, disrupcao"
+    # Stepfun (1 modelo)
+    - model: kilo/stepfun/step-3.7-flash:free
+      provider: kilo
+      source: kilocode
+      role: operacional
+      role_description: "Foca em execucao, processo, eficiencia"
+    # Tencent (1 modelo via kilocode, distinto do gocat)
+    - model: kilo/tencent/hy3:free
+      provider: kilo
+      source: kilocode
+      role: oriental
+      role_description: "Perspectiva cultural diferente, mercado asiatico"
+
+    # === FONTE 3: DEVIN CLI (2 modelos free, subprocess, custo $0) ===
+    # Testados 2026-07-20: glm-5-2 e swe-1-7 retornam DecisaoPersona valida.
+    # GLM (1 modelo)
+    - model: glm-5-2
+      provider: devin
+      source: devin
+      role: arquiteto
+      role_description: "Foca em design de solução, visão sistêmica, trade-offs"
+    # SWE (1 modelo)
+    - model: swe-1-7
+      provider: devin
+      source: devin
+      role: revisor
+      role_description: "Foca em qualidade, testes, edge cases, riscos ocultos"
+
+# Sintetizador de consenso: command-a-03-2025 (Cohere frontier, via gocat).
+synthesizer:
+  model: command-a-03-2025
+  provider: cohere
+
+# Benchmark de calibracao (evidencia nivel B, web_search 2026-07-19).
+benchmark:
+  conversao_geral_min: 0.02
+  conversao_geral_max: 0.08
+  agendamento_min: 0.01
+  agendamento_max: 0.08
+  whatsapp_reply_min: 0.10
+  whatsapp_reply_max: 0.20
+  fontes:
+    - "Sirius CRM Anuario 2026: conversao lead->cliente Brasil media 8%, saudavel 2-5%"
+    - "PowerGO 2026: exemplo B2B 6.5% conversao geral"
+    - "Touchstone BPO 2026: contact-to-meeting 4-10% (SaaS/B2B tech)"
+    - "StealthAgents 2026: cold call->appointment 1-3% unoptimized, 4-8% optimized"
+    - "eesier 2026: WhatsApp positive reply 10-20%, meeting rate 1-3%"
+    - "ORRJO 2026: meeting booked per outreach 0.5-1.2% average, 1.5-2.5% good"
+
+# Gocat gateway (usado apenas para source=gocat e sintetizador).
+gocat:
+  base_url: "http://127.0.0.1:8080"
+  api_key_env: GOCAT_API_KEY
+  api_key_default: local-dev-key-change-me
+  timeout_seconds: 60
+  max_retries: 2
+
+# Parametros de execucao.
+# delay_between_models_seconds: baixo para gocat (HTTP), alto para kilocode (subprocess).
+# O ensemble respeita o delay entre cada chamada sequencial.
+execution:
+  seeds: [42]
+  delay_between_personas_seconds: 1.0
+  delay_between_models_seconds: 0.5

@@ -1,0 +1,135 @@
+{
+  "n_personas": 8,
+  "n_sinteses_ok": 8,
+  "taxa_conversao": 0.0,
+  "agendaram": 0,
+  "divergence_score_medio": 0.35337500000000005,
+  "dist_sintetizador": {
+    "clicou": 4,
+    "visualizou": 4
+  },
+  "dist_modelos": {
+    "agendou": 5,
+    "clicou": 17,
+    "ignorou": 4,
+    "visualizou": 19
+  },
+  "objecoes_consolidadas": {
+    "area_externa": 7,
+    "contract_fear": 6,
+    "existing_solution": 6,
+    "concorrencia_local": 4,
+    "skepticism": 4,
+    "complexity": 3,
+    "need_lack": 3,
+    "timing": 2
+  },
+  "source_stats": {
+    "cline": {
+      "ok": 6,
+      "fail": 2,
+      "avg_latency_ms": 25905.833333333332,
+      "avg_tokens": 0
+    },
+    "gocat": {
+      "ok": 24,
+      "fail": 0,
+      "avg_latency_ms": 11555.5,
+      "avg_tokens": 1888.6666666666667
+    },
+    "ollama": {
+      "ok": 15,
+      "fail": 1,
+      "avg_latency_ms": 22165.0,
+      "avg_tokens": 2605.6666666666665
+    }
+  },
+  "bairro_stats": {
+    "Renascenca": {
+      "total": 2,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 1,
+      "ignorou": 0
+    },
+    "Centro": {
+      "total": 1,
+      "agendou": 0,
+      "clicou": 0,
+      "visualizou": 1,
+      "ignorou": 0
+    },
+    "Turu": {
+      "total": 2,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 1,
+      "ignorou": 0
+    },
+    "Joao Paulo": {
+      "total": 1,
+      "agendou": 0,
+      "clicou": 0,
+      "visualizou": 1,
+      "ignorou": 0
+    },
+    "Vila Embratel": {
+      "total": 1,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 0,
+      "ignorou": 0
+    },
+    "Calhau": {
+      "total": 1,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 0,
+      "ignorou": 0
+    }
+  },
+  "nicho_stats": {
+    "estudio_tatuagem": {
+      "total": 3,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 2,
+      "ignorou": 0
+    },
+    "estacionamento": {
+      "total": 1,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 0,
+      "ignorou": 0
+    },
+    "autopecas": {
+      "total": 1,
+      "agendou": 0,
+      "clicou": 0,
+      "visualizou": 1,
+      "ignorou": 0
+    },
+    "barbearia": {
+      "total": 1,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 0,
+      "ignorou": 0
+    },
+    "oficina": {
+      "total": 1,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 0,
+      "ignorou": 0
+    },
+    "academia": {
+      "total": 1,
+      "agendou": 0,
+      "clicou": 0,
+      "visualizou": 1,
+      "ignorou": 0
+    }
+  }
+}

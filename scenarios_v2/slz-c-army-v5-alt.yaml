@@ -1,0 +1,88 @@
+# Simulation Army V5 Alt - Cenario SLZ-C com personas V5
+# Versao alternativa: 6 modelos de 5 providers que estao UP (Groq, GitHub, Cohere, Gemini, NVIDIA)
+# Ollama cloud e SambaNova estao em outage, usando providers alternativos via gocat
+
+scenario:
+  code: SLZ-C-ARMY-V5-ALT
+  name: "SLZ Seguranca Inteligente - Ensemble V5 Alt (5 providers UP, personas V5)"
+  project: slz_n8n
+  persona_version: v5
+  product_name: "Sistema de Seguranca Inteligente EMIVE"
+  description: >
+    Sistema de seguranca inteligente franquia EMIVE para comercios em Sao Luis, MA.
+    Monitoramento 24h com central inviolavel e redundancia em 4 canais.
+    Sensores de vibracao, cameras com visao noturna, sirene de inibicao.
+    Limitacao: cobertura apenas area interna.
+    Mensalidade R$ 294-450 por porte. Contrato 36 meses com multa proporcional.
+    Conversao = agendamento da visita tecnica gratuita.
+  price_brl: 1.00
+  price_model: visit
+  target_segment: all
+  channel: word_of_mouth
+  value_proposition: "Protecao do patrimonio contra arrombamento e furto"
+  pain_focus: "Estoque valioso, vitrine exposta, risco de arrombamento"
+  num_agents: 128
+
+# Ensemble V5 Alt: 5 modelos de 3 providers UP (Groq, Cohere, NVIDIA).
+# Gemini e gpt-4o (GitHub) estao em outage, removidos.
+ensemble:
+  models:
+    # === GROQ (2 modelos, rapido) ===
+    - model: llama-3.3-70b-versatile
+      provider: groq
+      source: gocat
+      role: pragmatico
+      role_description: "Foca em viabilidade financeira, orcamento, ROI"
+    - model: openai/gpt-oss-120b
+      provider: groq
+      source: gocat
+      role: analitico
+      role_description: "Foca em dados, metricas, comparativos objetivos"
+
+    # === COHERE (1 modelo) ===
+    - model: command-r-08-2024
+      provider: cohere
+      source: gocat
+      role: conservador
+      role_description: "Foca em risco tecnico, complexidade, confiabilidade"
+
+    # === NVIDIA (2 modelos) ===
+    - model: deepseek-ai/deepseek-v4-flash
+      provider: nvidia
+      source: gocat
+      role: estrategico
+      role_description: "Foca em longo prazo, escalabilidade, parceria"
+    - model: deepseek-ai/deepseek-v4-pro
+      provider: nvidia
+      source: gocat
+      role: realista
+      role_description: "Foco em cenario mais provavel, nem otimista nem pessimista"
+
+# Sintetizador: command-r-08-2024 via Cohere (estavel, bom em JSON).
+# gpt-4o (GitHub) e llama-3.3-70b (Groq) falharam como sintetizador.
+synthesizer:
+  model: command-r-08-2024
+  provider: cohere
+
+benchmark:
+  conversao_geral_min: 0.10
+  conversao_geral_max: 0.20
+  agendamento_min: 0.05
+  agendamento_max: 0.15
+  whatsapp_reply_min: 0.10
+  whatsapp_reply_max: 0.20
+  fontes:
+    - "FASE 0: 19/142 = 13.4% conversao real (dataset EMIVE)"
+
+gocat:
+  base_url: "http://127.0.0.1:8080"
+  api_key_env: GOCAT_API_KEY
+  api_key_default: local-dev-key-change-me
+  timeout_seconds: 60
+  max_retries: 2
+
+execution:
+  seeds: [42]
+  mes: 7
+  delay_between_personas_seconds: 0.5
+  delay_between_models_seconds: 0.3

@@ -1,0 +1,358 @@
+{
+  "modelo": "command-r-plus-08-2024",
+  "n": 30,
+  "seed": 42,
+  "cenario": "SLZ-C-ARMY-B",
+  "taxa_conversao": 0.06666666666666667,
+  "agendaram": 2,
+  "falhas": 0,
+  "sucessos": 30,
+  "decisoes": [
+    {
+      "decisao": "visualizou",
+      "wtp": 712.49,
+      "sentimento": 0.1,
+      "objecoes": [
+        "budget",
+        "skepticism"
+      ],
+      "confianca": 0.2,
+      "raciocinio": "João está curioso com a proposta, mas o orçamento é um problema, e ele está cético quanto à eficácia do sistema, já que não tem uma solução atual.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 686.43,
+      "sentimento": 0.1,
+      "objecoes": [
+        "budget",
+        "existing_solution"
+      ],
+      "confianca": 0.5,
+      "raciocinio": "Eduardo está satisfeito com seu sistema atual, mas o preço do novo sistema de segurança parece alto em comparação com seu orçamento disponível.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 791.27,
+      "sentimento": 0.2,
+      "objecoes": [
+        "need_lack",
+        "skepticism"
+      ],
+      "confianca": 0.1,
+      "raciocinio": "Renata está cética sobre a necessidade de um sistema de segurança caro, pois não teve problemas recentes e prefere esperar por um motivo mais convincente para investir.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 913.46,
+      "sentimento": 0.2,
+      "objecoes": [
+        "skepticism",
+        "complexity",
+        "need_lack"
+      ],
+      "confianca": 0.1,
+      "raciocinio": "Bruno está cético quanto à eficácia do sistema, pois já possui câmeras DIY que considera suficientes. Ele não vê a necessidade de um sistema sofisticado e caro, e acha que o processo de instalação pode ser muito complexo para o seu nível de conhecimento tecnológico.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 645.46,
+      "sentimento": 0.1,
+      "objecoes": [
+        "budget",
+        "skepticism",
+        "complexity"
+      ],
+      "confianca": 0.2,
+      "raciocinio": "Beatriz está preocupada com a segurança, mas o sistema parece caro e complexo. Ela prefere soluções simples e já tem câmeras, então não agendou a visita.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 378.09,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution",
+        "timing"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Daniel está satisfeito com seu sistema de segurança atual, mas o final do mês e a proximidade do feriado o deixam ocupado e sem tempo para uma visita. Ele confia na qualidade do sistema atual, então não vê urgência em mudar.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 942.95,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.6,
+      "raciocinio": "Marcelo já possui um sistema de câmeras DIY que considera suficiente, mas pode considerar uma atualização no futuro devido à satisfação moderada com o sistema atual.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 962.79,
+      "sentimento": 0.1,
+      "objecoes": [
+        "budget",
+        "skepticism",
+        "need_lack"
+      ],
+      "confianca": 0.2,
+      "raciocinio": "Juliana está cética sobre a necessidade de um sistema de segurança caro, pois não teve problemas recentes e prefere manter seu orçamento limitado para outras prioridades.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 536.66,
+      "sentimento": -0.3,
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "confianca": 0.1,
+      "raciocinio": "Gabriela já tem um sistema de câmeras DIY e não está convencida de que o novo sistema valha a pena. Ela desconfia da eficácia da tecnologia e do custo-benefício, especialmente com a satisfação moderada que tem com seu sistema atual.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 865.25,
+      "sentimento": 0.2,
+      "objecoes": [
+        "need_lack",
+        "skepticism"
+      ],
+      "confianca": 0.1,
+      "raciocinio": "Renata está cética sobre a necessidade de um sistema de segurança, pois não teve nenhum evento recente e acredita que seu estoque está seguro. Ela tem um orçamento limitado e prefere esperar por uma oferta mais convincente.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 398.13,
+      "sentimento": 0.2,
+      "objecoes": [
+        "budget",
+        "complexity"
+      ],
+      "confianca": 0.6,
+      "raciocinio": "Ana está preocupada com o orçamento e a complexidade do sistema, mas a mensagem despertou seu interesse. Ela acha que o preço pode ser alto, mas quer saber mais sobre a proteção do estoque.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 449.62,
+      "sentimento": 0.2,
+      "objecoes": [
+        "need_lack",
+        "complexity"
+      ],
+      "confianca": 0.6,
+      "raciocinio": "Gabriela está satisfeita com a segurança básica da loja, mas a proposta de um sistema inteligente a intrigou. No entanto, ela está ocupada com a recente reforma e não vê a necessidade imediata de investir em um sistema caro.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 705.43,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "confianca": 0.1,
+      "raciocinio": "Antonio já possui um sistema de segurança que considera satisfatório, então não está convencido de que precisa de uma atualização. Ele tem uma certa desconfiança em relação a novas tecnologias e prefere manter o que já conhece.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 327.82,
+      "sentimento": -0.2,
+      "objecoes": [
+        "budget",
+        "skepticism"
+      ],
+      "confianca": 0.4,
+      "raciocinio": "Felipe está cético em relação à eficácia do sistema, pois já possui câmeras DIY, mas não está totalmente satisfeito com a segurança atual. O preço é um obstáculo, pois excede seu orçamento disponível.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 997.27,
+      "sentimento": 0.6,
+      "objecoes": [],
+      "confianca": 0.7,
+      "raciocinio": "Lucas está preocupado com a segurança após o roubo recente e quer proteger seu estoque valioso. Ele confia na tecnologia e no consultor local, então agendou a visita para uma solução personalizada.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 957.25,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.7,
+      "raciocinio": "Andre está satisfeito com seu sistema de câmeras DIY e não vê necessidade de uma atualização. Ele prefere manter o que já conhece e confia.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 330.86,
+      "sentimento": 0.1,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Gabriela já possui um sistema de câmeras DIY que ela considera satisfatório, então não vê necessidade de agendar uma visita para um novo sistema de segurança. No entanto, ela está curiosa sobre as funcionalidades de IA e a proteção de vitrine.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 403.67,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.7,
+      "raciocinio": "Debora já está satisfeita com seu sistema de segurança atual, então não vê necessidade de uma visita. O preço baixo da visita a deixou curiosa, mas não o suficiente para agendar.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 983.34,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.6,
+      "raciocinio": "Maria tem um sistema de alarme monitorado, mas não está totalmente satisfeita. Ela pode considerar uma atualização, mas já tem um orçamento limitado e uma solução existente, então é improvável que agende uma visita sem mais informações.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 874.38,
+      "sentimento": 0.1,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.6,
+      "raciocinio": "Aline está satisfeita com seu sistema de câmeras DIY, mas a mensagem despertou seu interesse. Ela acha que o sistema pode ser melhorado, mas não está convencida de que precisa de uma solução profissional.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 973.77,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "confianca": 0.1,
+      "raciocinio": "Beatriz já tem um sistema de alarme, mas não está totalmente satisfeita. Ela está um pouco cética em relação à eficácia do novo sistema, especialmente porque já investiu em uma solução de segurança. O preço baixo da visita a deixa curiosa, mas não é suficiente para convencê-la a agendar sem mais informações.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 348.98,
+      "sentimento": 0.2,
+      "objecoes": [
+        "budget",
+        "skepticism"
+      ],
+      "confianca": 0.1,
+      "raciocinio": "Maria está preocupada com o orçamento e não tem certeza se o sistema vale o investimento. Ela prefere esperar e ver se há outras opções mais baratas.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 883.61,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.4,
+      "raciocinio": "Renata já possui um sistema de segurança que considera satisfatório, então não vê necessidade de agendar uma visita. No entanto, ela está curiosa sobre as funcionalidades de IA e a proteção de vitrine.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 534.63,
+      "sentimento": 0.1,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.6,
+      "raciocinio": "Gabriela já possui um sistema de segurança que considera satisfatório, então não está interessada em investir em uma solução nova no momento.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 403.3,
+      "sentimento": 0.1,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.6,
+      "raciocinio": "Camila já está satisfeita com seu sistema de segurança atual e não vê necessidade de mudar. O preço também é um fator que pode influenciar sua decisão, pois está acima do que ela está disposta a pagar.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 728.86,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Antonio já tem um sistema de segurança que considera aceitável, então não está muito interessado em mudanças. Ele confia na indicação de um conhecido, mas o preço pode ser um problema.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 464.15,
+      "sentimento": 0.1,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Daniel já possui um sistema de alarme monitorado, mas não está totalmente satisfeito. Ele considera a proposta interessante, mas como está no meio de uma reforma, prefere adiar a decisão.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 566.27,
+      "sentimento": 0.6,
+      "objecoes": [],
+      "confianca": 0.8,
+      "raciocinio": "A Leticia teve um roubo recente e está preocupada com a segurança da loja. O sistema parece uma boa solução, e ela confia na indicação de um conhecido.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 673.89,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "confianca": 0.1,
+      "raciocinio": "Francisco já possui um sistema de câmeras DIY que ele considera satisfatório, então está hesitante em investir em um novo sistema. Ele tem dúvidas sobre o valor adicional que o sistema EMIVE pode trazer, especialmente considerando o preço e a complexidade da instalação.",
+      "modelo": "command-r-plus-08-2024"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 629.21,
+      "sentimento": 0.2,
+      "objecoes": [
+        "budget",
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Bruno está satisfeito com seu sistema de câmeras DIY e o preço do novo sistema parece alto, mas ele confia na indicação do amigo e quer saber mais.",
+      "modelo": "command-r-plus-08-2024"
+    }
+  ]
+}

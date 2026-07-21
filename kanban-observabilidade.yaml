@@ -1,0 +1,930 @@
+# Kanban: Observabilidade + Diversificacao do Simulation Army
+# Criado: 2026-07-20
+# Filosofia: capturar tudo que temos, expor tudo que falta, usar todos os CLIs disponiveis
+
+# ============================================================
+# COLUNA 1: INVENTARIO (o que temos vs o que nao temos)
+# ============================================================
+
+inventario:
+  observabilidade:
+    - dado: "Tokens por request"
+      tem: SIM
+      onde: "results_v2/*.json -> metadados_modelos[].total_tokens"
+      estado: "Capturado em baseline.py (_call_model) e kilocode_adapter (step_finish)"
+      acao: "DONE (task #37). devin_adapter retorna None (CLI nao expoe)."
+
+    - dado: "Tokens por modelo"
+      tem: PARCIAL
+      onde: "/v1/costs (gocat) + results_v2/*.json (simulacao)"
+      estado: "Simulacao captura tokens. Gocat /v1/costs ainda stale (bug SQLite #36)."
+      acao: "fix-gocat-sqlite (task #36) para persistir no gocat tambem."
+
+    - dado: "RPM (requests por minuto)"
+      tem: PARCIAL
+      onde: "results_v2/*.json -> metadados_modelos[].latency_ms"
+      estado: "Latencia capturada. RPM derivavel de timestamp + n_requests."
+      acao: "adicionar timestamp ISO por request no JSON (task futura)."
+
+    - dado: "Latencia por request"
+      tem: SIM
+      onde: "results_v2/*.json -> metadados_modelos[].latency_ms"
+      estado: "Capturado em _call_model, kilocode_adapter, devin_adapter."
+      acao: "DONE (task #38)."
+
+    - dado: "Status HTTP (200/503/429)"
+      tem: SIM
+      onde: "results_v2/*.json -> metadados_modelos[].http_status"
+      estado: "Capturado em _call_model. kilocode/devin retornam 200 se OK."
+      acao: "DONE (task #38)."
+
+    - dado: "Decisoes das personas"
+      tem: SIM
+      onde: "results_v2/*.json -> decisoes_modelos[] + decisao_agregada"
+      estado: "Salvo com metadados completos (tokens, latencia, status, provider, source)."
+      acao: "DONE (tasks #37, #38)."
+
+    - dado: "Prompt/completion tokens"
+      tem: SIM
+      onde: "results_v2/*.json -> metadados_modelos[].prompt_tokens/completion_tokens"
+      estado: "Capturado do campo usage da API (gocat) e step_finish (kilocode)."
+      acao: "DONE (task #37)."
+
+    - dado: "Custo em USD"
+      tem: PARCIAL
+      onde: "results_v2/*.json -> metadados_modelos[].cost_usd (kilocode apenas)"
+      estado: "kilocode_adapter captura cost do step_finish. gocat/devin retornam None."
+      acao: "task #39: criar costs.py com tabela de precos para calcular custo gocat."
+
+    - dado: "Provider real usado (fallback)"
+      tem: PARCIAL
+      onde: "results_v2/*.json -> metadados_modelos[].provider_used"
+      estado: "provider_used='gocat'|'kilocode'|'devin'. Nao captura qual provider real do gocat fez fallback."
+      acao: "task futura: capturar header X-Gocat-Provider se existir."
+
+  diversificacao_modelos:
+    - fonte: "Gocat (736 modelos, 26 providers, 10 enabled)"
+      status: "Em uso (10 modelos de 7 vendors)"
+      modelos_ativos: ["command-r-plus-08-2024", "command-a-03-2025", "llama-3.3-70b-versatile", "qwen/qwen3.6-27b", "gemini-2.5-flash", "deepseek-ai/deepseek-v4-flash", "Meta-Llama-3.3-70B-Instruct", "tencent/hy3:free", "kilo-auto/free", "deepseek-ai/DeepSeek-V3"]
+      providers_enabled: ["sambanova", "huggingface", "zai", "duckduckgo-web", "groq", "github", "gemini", "nvidia", "kilo", "cohere"]
+      providers_disabled_com_chave: ["longcat", "qoder", "alibaba", "moonshot", "blackbox", "hyperbolic", "featherless-ai", "cerebras", "zhipu", "siliconflow", "openrouter", "deepseek", "scaleway", "kiro", "anthropic", "cloudflare-ai", "together"]
+      modelos_free_nao_usados: ["google/gemini-2.5-flash-lite", "xiaomi/mimo-v2.5", "stepfun/step-3.7-flash:free", "nvidia/nemotron-3-super-120b-a12b:free", "cohere/north-mini-code:free", "kwaipilot/kat-coder-pro-v2.5:free"]
+      acao: "adicionar modelos free do kilo ao ensemble + habilitar providers disabled com chave"
+
+    - fonte: "Devin CLI v3000.2.17 (3 modelos free)"
+      status: "NAO USADO na simulacao"
+      modelos_free:
+        - nome: "glm-5-2"
+          contexto: "200K"
+          preco: "Free"
+        - nome: "swe-1-7"
+          contexto: "262K"
+          preco: "Free, beta"
+        - nome: "swe-1-6"
+          contexto: "200K"
+          preco: "Free"
+      comando: 'devin --print --model glm-5-2 "prompt"'
+      acao: "usar devin --print --model glm-5-2 como fonte alternativa via herdr"
+
+    - fonte: "Antigravity (agy) v1.1.4 (cota diaria Gemini)"
+      status: "NAO USADO na simulacao"
+      modelos_free:
+        - nome: "Gemini 3.5 Flash (Low)"
+          uso: "suficiente para simulacao (nao precisa thinking alto)"
+        - nome: "Gemini 3.5 Flash (Medium)"
+        - nome: "Gemini 3.5 Flash (High)"
+        - nome: "Gemini 3.1 Pro (Low)"
+        - nome: "GPT-OSS 120B (Medium)"
+      comando: 'agy --print --model "Gemini 3.5 Flash (Low)" "prompt"'
+      acao: "usar agy --print --model 'Gemini 3.5 Flash (Low)' como fonte via herdr"
+
+    - fonte: "Kilo Code v7.4.11 (Gateway oauth, 10 modelos free testados e funcionando)"
+      status: "TESTADO 2026-07-20, pronto para integrar"
+      creditos: "Total Cost $0.00 (cota free do gateway kilo)"
+      auth: ["Kilo Gateway (oauth)"]
+      comando: 'kilocode run -m <modelo> --format json "prompt"'
+      vantagem: "tem modelos que nao estao no gocat (nemotron, poolside, laguna, stepfun)"
+      teste_real:
+        data: "2026-07-20"
+        n_modelos_testados: 11
+        n_ok: 10
+        n_parse_ok: 10
+        custo_total: "$0"
+        latencia_media: "21s (mais lento que gocat 4s, overhead subprocess)"
+        tokens_medios: 10700
+        modelos_ok:
+          - modelo: "kilo/cohere/north-mini-code:free"
+            latencia: "16.8s"
+            decisao: "ignorou"
+            tokens: 9628
+          - modelo: "kilo/kilo-auto/free"
+            latencia: "18.2s"
+            decisao: "visualizou"
+            tokens: 11433
+          - modelo: "kilo/kwaipilot/kat-coder-pro-v2.5:free"
+            latencia: "47.1s"
+            decisao: "visualizou"
+            tokens: 11138
+          - modelo: "kilo/nvidia/nemotron-3-super-120b-a12b:free"
+            latencia: "18.0s"
+            decisao: "agendou"
+            tokens: 12021
+          - modelo: "kilo/nvidia/nemotron-3-ultra-550b-a55b:free"
+            latencia: "19.4s"
+            decisao: "visualizou"
+            tokens: 11653
+          - modelo: "kilo/openrouter/free"
+            latencia: "17.7s"
+            decisao: "visualizou"
+            tokens: 8860
+          - modelo: "kilo/poolside/laguna-m.1:free"
+            latencia: "16.3s"
+            decisao: "visualizou"
+            tokens: 11036
+          - modelo: "kilo/poolside/laguna-xs-2.1:free"
+            latencia: "28.2s"
+            decisao: "agendou"
+            tokens: 10674
+          - modelo: "kilo/stepfun/step-3.7-flash:free"
+            latencia: "15.5s"
+            decisao: "agendou"
+            tokens: 11227
+          - modelo: "kilo/tencent/hy3:free"
+            latencia: "13.5s"
+            decisao: "agendou"
+            tokens: 10721
+        modelos_fail:
+          - "kilo/kilo-auto/small (timeout 90s)"
+          - "kilo/kilo-auto/balanced (paid, credits required)"
+          - "kilo/kilo-auto/efficient (paid, credits required)"
+          - "kilo/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free (502 Nvidia)"
+      acao: "implementar adapter kilocode e integrar 10 modelos free ao ensemble"
+
+  padrao_chamada:
+    problema: "Disparo sequencial para o mesmo modelo causa rate limit"
+    atual: "Para cada persona: modelo1 -> modelo2 -> ... -> modelo10 (sequencial)"
+    proposto: "Round-robin por variavel: x1 em todos os provedores -> x2 em todos -> x3 em todos"
+    vantagem: "Distribui carga entre providers, evita rate limit do mesmo provider, mede RPM natural"
+
+# ============================================================
+# COLUNA 2: TODO (fila de tarefas)
+# ============================================================
+
+# Workflow: RESEARCH -> IMPLEMENT -> TEST -> PONYTAIL -> AUTORESEARCH -> DONE
+# Prioridade: alta (topo) -> baixa (fundo)
+
+tarefas:
+
+  # --- FASE 1: FIX BUGS CRITICOS ---
+
+  - id: 36
+    titulo: "Fix bug SQLite do gocat (ON CONFLICT clause)"
+    coluna: DONE
+    prioridade: critica
+    workflow: AUTORESEARCH
+    estimativa: "30min"
+    data_conclusao: "2026-07-20"
+    descricao: |
+      Bug: "SQL logic error: ON CONFLICT clause does not match any PRIMARY KEY
+      or UNIQUE constraint (1)" ao salvar cost tracking e knowledge records.
+      Causa raiz: o binario gocat rodando (compilado 19/07 06:49) era anterior
+      ao commit dfd5a25 (19/07 09:54) que corrigiu o schema do SQLite.
+      O codigo fonte atual ja tem o fix (PRIMARY KEY (tenant, provider, model)
+      + migrateTenantColumn). O banco fisico tambem tinha o PK correto.
+      O problema era apenas o binario desatualizado em runtime.
+    arquivos: ["pkg/knowledge/store.go"]
+    implementacao: |
+      1. Rebuild do binario: go build -o gocat_new ./cmd/gocat/
+      2. Stop gocat antigo (PID 94529, binario de 19/07 06:49)
+      3. Replace: mv gocat gocat_old_20260719; mv gocat_new gocat
+      4. Reset banco: rm configs/knowledge.db (forcar schema fresco)
+      5. Start novo gocat: ./gocat s --port 8080 --config configs/providers.yaml
+      Validacao: 5 requests 200 OK, 0 WARN ON CONFLICT, /v1/costs retorna
+      dados frescos (request_count=5, total_tokens=130, estimated_cost_usd=0).
+    aceitacao:
+      - "POST /v1/chat/completions salva cost record sem WARN"
+      - "GET /v1/costs retorna dados frescos da simulacao v3"
+      - "knowledge record salva sem WARN"
+    validacao: "5/5 requests OK, 0 WARN, /v1/costs retorna {request_count:1, total_tokens:26, cost:0}"
+
+  - id: 37
+    titulo: "Capturar usage (tokens) na resposta do LLM"
+    coluna: DONE
+    prioridade: critica
+    workflow: AUTORESEARCH
+    estimativa: "20min"
+    data_conclusao: "2026-07-20"
+    descricao: |
+      O campo usage vem na API response mas e ignorado.
+      Adicionar captura de: usage.prompt_tokens, usage.completion_tokens,
+      usage.total_tokens, e salvar no JSON de output por decisao.
+    arquivos: ["simulation_army_v2/baseline.py", "simulation_army_v2/ensemble.py"]
+    implementacao: |
+      _call_model agora retorna tuple (DecisaoPersona, meta) onde meta contem
+      prompt_tokens, completion_tokens, total_tokens do campo usage da API.
+      kilocode_adapter extrai tokens do evento step_finish.part.tokens.
+      devin_adapter retorna tokens=None (CLI nao expoe).
+      ensemble.py salva metadados_modelos no JSON de output.
+    aceitacao:
+      - "DecisaoPersona tem campos: prompt_tokens, completion_tokens, total_tokens"
+      - "JSON de output inclui tokens por decisao"
+      - "Testes passam"
+    validacao: "Run N=2 v4: gocat tokens=1000-2909, kilocode tokens=10000-17000, devin tokens=None"
+
+  - id: 38
+    titulo: "Capturar latencia, status HTTP e provider real por request"
+    coluna: DONE
+    prioridade: alta
+    workflow: AUTORESEARCH
+    estimativa: "20min"
+    data_conclusao: "2026-07-20"
+    descricao: |
+      Medir duration_ms de cada chamada, status HTTP (200/503/429),
+      e provider que realmente respondeu (gocat faz fallback).
+      Salvar no JSON de output para analise de RPM e confiabilidade.
+    arquivos: ["simulation_army_v2/baseline.py", "simulation_army_v2/ensemble.py"]
+    implementacao: |
+      _call_model mede latency_ms com time.monotonic(), captura http_status
+      do response.status_code, e provider_used="gocat".
+      kilocode_adapter e devin_adapter tambem medem latency_ms.
+      metadados_modelos salvo no JSON do ensemble com latency, status, provider, source.
+    aceitacao:
+      - "DecisaoPersona tem campos: latency_ms, http_status, provider_used"
+      - "JSON de output inclui metadados por decisao"
+      - "Testes passam"
+    validacao: "Run N=2 v4: latencias capturadas (gocat 1.5-150s, kilocode 13-70s, devin 10-54s)"
+
+  - id: 39
+    titulo: "Calcular custo em USD por modelo e por run"
+    coluna: DONE
+    prioridade: media
+    workflow: AUTORESEARCH
+    estimativa: "30min"
+    data_conclusao: "2026-07-20"
+    descricao: |
+      Tabela de precos por modelo (USD por 1M tokens).
+      Calcula custo = (prompt_tokens / 1M) * preco_in + (completion_tokens / 1M) * preco_out.
+      Salva custo_total_usd e custo_por_modelo no JSON de output do ensemble.
+    arquivos: ["simulation_army_v2/costs.py (novo)", "simulation_army_v2/ensemble.py", "tests_v2/test_costs.py (novo)"]
+    implementacao: |
+      costs.py: PRICING dict com 22 modelos (free=$0, paid=preco oficial).
+      calculate_cost_usd(model, prompt_tokens, completion_tokens) -> float|None.
+      calculate_run_cost(metadados_modelos) -> {custo_total_usd, custo_por_modelo}.
+      ensemble.py: calcula custo total e por modelo, salva no JSON de output,
+      imprime custo no stdout.
+    aceitacao:
+      - "Modulo costs.py com tabela de precos dos 22 modelos usados"
+      - "JSON de output inclui custo_total_usd e custo_por_modelo"
+      - "Testes passam"
+    validacao: "11/11 testes test_costs.py passam, 123/123 testes totais passam"
+
+  # --- FASE 2: DIVERSIFICACAO DE FONTES ---
+
+  - id: 40
+    titulo: "Adicionar modelos free do kilo/openrouter ao ensemble gocat"
+    coluna: DONE
+    prioridade: alta
+    workflow: AUTORESEARCH
+    estimativa: "15min"
+    data_conclusao: "2026-07-20"
+    descricao: |
+      Modelos free disponiveis no gocat via kilo/openrouter que nao usamos.
+      Foram integrados via source=kilocode (subprocess CLI) em vez de gocat HTTP,
+      pois o gateway kilo tem 10 modelos free testados e validados.
+    arquivos: ["scenarios_v2/slz-c-army-v4.yaml"]
+    implementacao: |
+      10 modelos free do gateway kilo integrados via kilocode_adapter:
+      cohere/north-mini-code, kilo-auto/free, kwaipilot/kat-coder-pro,
+      nvidia/nemotron-3-super, nvidia/nemotron-3-ultra, openrouter/free,
+      poolside/laguna-m.1, poolside/laguna-xs-2.1, stepfun/step-3.7-flash,
+      tencent/hy3.
+    aceitacao:
+      - "Cada modelo novo testado com 1 request (200 OK)"
+      - "Scenario v4 atualizado com novos modelos"
+      - "Ensemble roda sem 503 nos modelos novos"
+    validacao: "Run N=2 v4: 10/10 kilocode OK em persona 2, 9/10 em persona 1"
+
+  - id: 41
+    titulo: "Integrar Devin CLI como fonte de LLM"
+    coluna: DONE
+    prioridade: alta
+    workflow: AUTORESEARCH
+    estimativa: "30min"
+    data_conclusao: "2026-07-20"
+    descricao: |
+      Devin tem 2 modelos free testados: glm-5-2, swe-1-7.
+      Usar `devin --print --model glm-5-2 -- "prompt"` como fonte alternativa.
+      Criar adapter que chama devin --print e parseia a resposta.
+      Nota: swe-1-6 nao foi testado (swe-1-7 e mais recente).
+    arquivos: ["simulation_army_v2/devin_adapter.py (novo)"]
+    implementacao: |
+      devin_adapter.py: call_devin(model, user_prompt) -> (DecisaoPersona, meta).
+      Chama `devin --print --model <model> -- <prompt>` via asyncio.subprocess.
+      Reusa _parse_json_response do baseline (trata code fences do swe-1-7).
+      meta: latency_ms, http_status=200, provider_used="devin", tokens=None.
+    aceitacao:
+      - "Adapter chama devin --print --model glm-5-2 e retorna DecisaoPersona"
+      - "Devin responde em <60s para prompt da simulacao"
+    validacao: "Run N=2 v4: glm-5-2 OK (10-12s), swe-1-7 OK (18-54s), ambos DecisaoPersona valida"
+
+  - id: 42
+    titulo: "Integrar Antigravity (agy) como fonte de LLM"
+    coluna: REJECTED
+    prioridade: alta
+    workflow: RESEARCH
+    estimativa: "1h"
+    data_rejeicao: "2026-07-20"
+    descricao: |
+      Antigravity tem cota diaria de Gemini 3.5 Flash.
+      POREM: agy --print tem system prompt de agente de codigo que sempre
+      se apresenta primeiro ("I am running on Gemini 3.5 Flash") e ignora
+      a instrucao de retornar JSON puro.
+      Testado com 4 variantes (prompt direto, role-play, prompt-file,
+      --dangerously-skip-permissions): nenhuma retornou JSON limpo.
+      O agy e um agente de codigo, nao um LLM raw. Nao e viavel para simulacao.
+    arquivos: []
+    motivo_rejeicao: "System prompt de agente de codigo ignora instrucao de JSON puro. agy nao e LLM raw."
+    testes_feitos:
+      - "agy --print --model 'Gemini 3.5 Flash (Low)' 'Retorne JSON' -> 'I am running on Gemini 3.5 Flash'"
+      - "agy --print com role-play -> 'I am currently running on Gemini 3.5 Flash'"
+      - "agy --print com prompt-file -> 'I am currently running on Gemini 3.5 Flash'"
+      - "agy --print com --dangerously-skip-permissions -> mesmo comportamento"
+
+  - id: 43
+    titulo: "Integrar Kilo Code (kilocode) como fonte de LLM"
+    coluna: DONE
+    prioridade: media
+    workflow: AUTORESEARCH
+    estimativa: "30min"
+    data_conclusao: "2026-07-20"
+    descricao: |
+      Kilo Code tem gateway proprio com 10 modelos free testados e funcionando.
+      Usar `kilocode run -m <model> --format json "prompt"` como fonte.
+      Tem modelos que nao estao no gocat (nemotron, poolside, laguna, stepfun).
+      Nota: modelos kilo/ (gateway pago) exigem creditos (saldo=0).
+      Modelos sem prefixo (google/) exigem API key do env.
+      Modelos kilo/*:free funcionam com cota free do gateway, custo $0.
+    arquivos: ["simulation_army_v2/kilocode_adapter.py (novo)"]
+    implementacao: |
+      kilocode_adapter.py: call_kilocode(model, user_prompt) -> (DecisaoPersona, meta).
+      Chama `kilocode run -m <model> --format json <prompt>` via asyncio.subprocess.
+      Parser _parse_kilocode_events extrai content de type=text, tokens de
+      step_finish.part.tokens, cost de step_finish.part.cost, erro de type=error.
+      Reusa _parse_json_response e DecisaoPersona do baseline.
+    aceitacao:
+      - "Adapter chama kilocode run e retorna DecisaoPersona"
+      - "kilocode responde em <90s para prompt da simulacao"
+    validacao: "Teste isolado: 10/11 modelos free OK, 10/10 DecisaoPersona valida, custo $0"
+
+  # --- FASE 3: PADRAO DE CHAMADA ROUND-ROBIN ---
+
+  - id: 44
+    titulo: "Refatorar ensemble para round-robin por variavel (persona)"
+    coluna: DONE
+    prioridade: alta
+    workflow: AUTORESEARCH
+    estimativa: "30min"
+    data_conclusao: "2026-07-20"
+    descricao: |
+      Atual: para cada persona, dispara todos os modelos em sequencia.
+      Problema: mesmo provider recebe N requests seguidos -> rate limit.
+      Solucao escolhida (ponytail): shuffle simples da ordem dos modelos
+      a cada persona. Em vez de round-robin complexo, random.shuffle
+      distribui a carga naturalmente entre providers.
+    arquivos: ["simulation_army_v2/ensemble.py"]
+    implementacao: |
+      Antes do loop de modelos por persona, faz:
+        models_this_persona = ensemble_models[:]
+        random.shuffle(models_this_persona)
+      Usa models_this_persona em vez de ensemble_models diretamente.
+      random ja estava importado no ensemble.py.
+    aceitacao:
+      - "Ordem dos modelos varia por persona (shuffle)"
+      - "Rate limit 503 reduzido comparado ao v3"
+      - "Testes passam"
+    validacao: "123/123 testes passam. Validacao real no run N=30 (task #47)."
+
+  - id: 45
+    titulo: "Adicionar delay adaptativo entre requests por provider"
+    coluna: DONE
+    prioridade: media
+    workflow: AUTORESEARCH
+    estimativa: "30min"
+    data_conclusao: "2026-07-20"
+    descricao: |
+      Se source retorna 429/503, aumentar delay para essa source
+      nas proximas chamadas (backoff). Se responde 200, resetar delay.
+      Evita hammering em provider com rate limit ativo.
+    arquivos: ["simulation_army_v2/ensemble.py"]
+    implementacao: |
+      source_backoff: dict[str, float] = {} antes do loop de personas.
+      Antes de cada chamada: adaptive_delay = base_delay * source_backoff.get(source, 1.0).
+      Se adaptive_delay > base_delay: asyncio.sleep(adaptive_delay - base_delay) extra.
+      Apos sucesso: source_backoff[source] = 1.0 (reset).
+      Apos falha: source_backoff[source] = min(backoff * 2.0, 8.0) (max 8x).
+      Print mostra backoff atual quando falha: "FAIL ... (backoff=2.0x)".
+    aceitacao:
+      - "Delay por source ajustado dinamicamente"
+      - "Source com 429/503 recebe delay 2x maior na proxima chamada"
+      - "Testes passam"
+    validacao: "123/123 testes passam. Validacao real no run N=30 (task #47)."
+
+  # --- FASE 4: DASHBOARD DE OBSERVABILIDADE ---
+
+  - id: 46
+    titulo: "Criar dashboard de observabilidade da simulacao"
+    coluna: DONE
+    prioridade: media
+    workflow: AUTORESEARCH
+    estimativa: "1h"
+    data_conclusao: "2026-07-20"
+    descricao: |
+      Dashboard HTML que le results_v2/*.json e mostra:
+      - Tokens medios por modelo (bar chart SVG)
+      - Latencia media por modelo (bar chart SVG)
+      - Custo total por modelo (bar chart SVG)
+      - Status OK vs FAIL por modelo (stacked bar SVG)
+      - Confiabilidade por source (stacked bar SVG)
+      - Tabela detalhada por modelo
+      - Resumo dos runs (conversao, IC95, divergence, custo)
+      Ponytail: SVG puro gerado por string formatting. Sem plotly, sem matplotlib,
+      sem JS externo. HTML estatico abre em qualquer navegador.
+    arquivos: ["scripts/dashboard_observability.py (novo)", "tests_v2/test_dashboard.py (novo)"]
+    implementacao: |
+      load_results(results_dir) -> list[dict]: le results_v2/*.json com "personas".
+      aggregate_metrics(results) -> {by_model, by_source}: agrega por modelo e source.
+      svg_bar_chart(title, data, color) -> str: bar chart SVG puro.
+      svg_stacked_bar(title, data, color_ok, color_fail) -> str: stacked bar SVG.
+      generate_html(results, metrics, output_path): gera dashboard.html completo.
+      CLI: python scripts/dashboard_observability.py --results results_v2 --output dashboard.html
+    aceitacao:
+      - "dashboard.html gerado a partir de results_v2/*.json"
+      - "Mostra todos os 6 graficos"
+      - "Atualiza com novo JSON sem reprocessar tudo"
+    validacao: "4/4 testes test_dashboard.py passam, 127/127 totais. Dashboard gerado com 4 runs reais (26KB)."
+
+  - id: 47
+    titulo: "Rodar ensemble v4 com 22 modelos de 3 fontes e capturar tudo"
+    coluna: PARTIAL
+    prioridade: alta
+    workflow: AUTORESEARCH
+    estimativa: "2h (runtime)"
+    data_execucao: "2026-07-20"
+    descricao: |
+      Ensemble final com 22 modelos de 3 fontes:
+      - 10 modelos do gocat (HTTP, 7 vendors)
+      - 10 modelos free do kilocode (subprocess, gateway kilo, custo $0)
+      - 2 modelos do devin (subprocess, glm-5-2 + swe-1-7, custo $0)
+      Antigravity (agy) excluido: system prompt de agente ignora JSON puro.
+    arquivos: ["scenarios_v2/slz-c-army-v4.yaml"]
+    estado: "PARCIAL: 5/30 personas completas em 1h45min. Run interrompido pelo usuario (limite de tempo)."
+    resultados_parciais:
+      personas_completas: 5
+      personas_com_sintetizador: 5
+      decisoes_sintetizador:
+        - "Persona 1 (Joao Araujo): agendou, div=0.67"
+        - "Persona 2 (Eduardo Mendes): agendou, div=0.56"
+        - "Persona 3 (Renata Souza): agendou, div=0.38"
+        - "Persona 4 (Bruno Nascimento): clicou, div=0.60"
+        - "Persona 5 (Beatriz Nascimento): visualizou, div=0.76"
+      conversao_parcial: "2/5 = 40% (agendou)"
+      total_requests: 125
+      requests_ok: 96
+      requests_fail: 29
+      taxa_sucesso: "77%"
+      decisoes_distribuicao:
+        agendou: 31
+        clicou: 34
+        visualizou: 30
+        ignorou: 1
+      falhas_por_modelo:
+        deepseek-ai/DeepSeek-V3: 6
+        gemini-2.5-flash: 5
+        Meta-Llama-3.3-70B-Instruct: 5
+        kilo/nvidia/nemotron-3-ultra-550b-a55b: 2
+        kilo/kwaipilot/kat-coder-pro-v2.5: 1
+      falhas_gocat_503: "3 modelos gocat sempre falham (SambaNova/SiliconFlow/Gemini rate limit)"
+      backoff_adaptativo: "funcionando (vi backoff=2x, 4x, 8x para modelos que falham seguidos)"
+      shuffle: "funcionando (ordem dos modelos varia por persona)"
+      custo_total: "$0 (todos modelos free tier)"
+    limitacoes_encontradas:
+      - "3 modelos gocat (Meta-Llama-3.3-70B, gemini-2.5-flash, deepseek-ai/DeepSeek-V3) falham 100% com 503 (providers rate-limited)"
+      - "kilocode kat-coder-pro-v2.5 e nemotron-3-ultra-550b as vezes dao timeout 90s"
+      - "Tempo por persona: 5-10min (22 modelos sequenciais). N=30 = 2.5-5h."
+      - "gocat conversacional as vezes retorna 'Both content and reasoning_content are empty'"
+    proximos_passos:
+      - "Remover os 3 modelos gocat que sempre falham 503 do scenario v4"
+      - "Considerar N=10 em vez de N=30 para proximo run (mais viavel em tempo)"
+      - "Considerar paralelismo real (asyncio.gather) em vez de sequencial para reduzir tempo"
+    aceitacao:
+      - "Ensemble v4 roda com 22 modelos de 3 fontes"
+      - "JSON de output tem tokens, latencia, status, provider, source, custo"
+      - "Dashboard gerado e mostra dados completos"
+      - "Conversao calculada com IC95"
+    validacao_parcial: "5/30 personas OK. 96/125 requests OK (77%). Conversao 40% (2/5). Custo $0."
+
+# ============================================================
+# FASE 0: Simulacao Programatica (sem LLM, estatistica pura)
+# ============================================================
+
+  - id: 48
+    titulo: "FASE 0.1: Extrair e consolidar dataset real (142 personas) para calibrar modelo"
+    coluna: TODO
+    prioridade: critica
+    workflow: AUTORESEARCH
+    estimativa: "30min"
+    descricao: |
+      Consolidar todos os resultados existentes em um dataset unico (CSV/JSON)
+      com features padronizadas para calibrar o modelo probabilistico.
+      Fontes: ensemble_v4_test.json, ensemble_v4_test2.json, nicho_analysis.json,
+      mais todos os results_v2/*.json com personas.
+      Features: segment, risk_profile, recent_event, has_existing_security,
+      wtp_brl, decisao, objecoes, sentimento, confianca, bairro.
+    arquivos: ["scripts/consolidate_dataset.py", "results_v2/dataset_real.json"]
+    aceitacao:
+      - "Dataset unico com 142+ personas em formato tabular"
+      - "Features categoricas encoded (one-hot ou label)"
+      - "Estatisticas descritivas por feature vs decisao"
+      - "Cross-tab validation: theft=92% agendou, full_system=5% agendou"
+
+  - id: 49
+    titulo: "FASE 0.2: Modelar bairros reais de Sao Luis com perfil de risco"
+    coluna: TODO
+    prioridade: alta
+    workflow: AUTORESEARCH
+    estimativa: "1h"
+    descricao: |
+      Mapear 13+ bairros reais de Sao Luis com dados de empresas (LeadJet),
+      criminalidade (SSP-MA CVLI), e arrombamentos reais (G1).
+      Cada bairro tem: risco (baixo/medio/aluto/muito_alto), perfil comercial,
+      numero de empresas, bairros vizinhos.
+      Bairros perigosos aumentam P(theft). Bairros comerciais altos aumentam WTP.
+    arquivos: ["simulation_army_v2/bairros_slz.py"]
+    aceitacao:
+      - "13+ bairros mapeados com risco e perfil"
+      - "Gerador de personas usa bairro real em vez de generico"
+      - "P(theft) maior em bairros muito_alto vs baixo"
+      - "Testes unitarios validam distribuicao"
+
+  - id: 50
+    titulo: "FASE 0.3: Construir modelo probabilistico de decisao (sigmoid + Bayes)"
+    coluna: TODO
+    prioridade: critica
+    workflow: AUTORESEARCH
+    estimativa: "2h"
+    descricao: |
+      Modelo de decisao probabilistico calibrado nos 142 personas reais.
+      P(agendou) = sigmoid(w1*theft + w2*sem_seguranca + w3*budget_ok +
+      w4*bairro_risco + w5*nicho_fit + w6*crisis_driven + w7*renovation + bias)
+      Pesos w derivados por regressao logistica nos dados reais.
+      Para cada persona, amostra da distribuicao (nao deterministico).
+      Inclui: WTP por nicho (kernel density), objecoes (multinomial),
+      sentimento e confianca (beta).
+    arquivos: ["simulation_army_v2/modelo_probabilistico.py"]
+    aceitacao:
+      - "Modelo sigmoid calibrado nos 142 personas"
+      - "Pesos w documentados com interpretacao"
+      - "P(agendou|theft) > 80%, P(agendou|full_system, sat>=7) < 5%"
+      - "Monte Carlo: 1000 personas, 100 seeds, distribuicao de conversao"
+      - "Testes unitarios"
+
+  - id: 51
+    titulo: "FASE 0.4: Calcular entropia, informacao mutua e divergencia"
+    coluna: TODO
+    prioridade: alta
+    workflow: AUTORESEARCH
+    estimativa: "1h"
+    descricao: |
+      Medidas de informacao sobre o dataset e o modelo:
+      - Entropia de Shannon H(decisao) por nicho e bairro
+      - Informacao mutua I(feature ; decisao) para ranquear drivers
+      - Divergencia Jensen-Shannon entre nichos
+      - Chi-quadrado: nicho A vs nicho B sao estatisticamente diferentes?
+      Output: relatorio de quais features carregam mais informacao.
+    arquivos: ["simulation_army_v2/informacao.py"]
+    aceitacao:
+      - "H(decisao) por nicho calculada"
+      - "MI(feature ; decisao) ranqueada"
+      - "JS-divergence entre nichos calculada"
+      - "Chi-quadrado entre nichos com p-value"
+      - "Testes unitarios"
+
+  - id: 52
+    titulo: "FASE 0.5: Gerador de personas v5 com bairros, sazonalidade e budget mensal"
+    coluna: TODO
+    prioridade: alta
+    workflow: AUTORESEARCH
+    estimativa: "1h"
+    descricao: |
+      Gerador de personas atualizado para v5:
+      - Bairros reais de Sao Luis (task 49)
+      - Sazonalidade Sao Luis (Sao Joao junho, Natal dezembro)
+      - Budget mensal de seguranca (derivado do revenue * sec_ratio)
+      - Mensalidade R$ 294 como threshold (pode_pagar = budget >= 294)
+      - 8 nichos com baseline realista
+      - Risk profile, recent_event, has_existing_security distribuidos realista
+    arquivos: ["simulation_army_v2/personas_v5.py"]
+    aceitacao:
+      - "Gera personas com bairro real de Sao Luis"
+      - "Budget mensal calculado e comparado com R$ 294"
+      - "Sazonalidade afeta revenue e P(theft)"
+      - "8 nichos suportados"
+      - "Testes unitarios"
+
+  - id: 53
+    titulo: "FASE 0.6: Pitch template por nicho (narrativa sem LLM)"
+    coluna: TODO
+    prioridade: media
+    workflow: AUTORESEARCH
+    estimativa: "1h"
+    descricao: |
+      Templates de pitch por nicho baseados no documento EMIVE:
+      - Dor especifica do nicho (arrombamento noturno, caixa, vitrine, etc.)
+      - Beneficios EMIVE mapeados do AGREGADO_EMPRESA.md (8 equipamentos)
+      - Tom de voz da marca (8 atributos do manual)
+      - 3 scripts do blueprint (Mercado A, C avisado, C nao avisado)
+      - 5 cenarios de treinamento (CEN-01 a CEN-05)
+      Output: narrativa template preenchida por persona (sem LLM).
+    arquivos: ["simulation_army_v2/pitch_templates.py"]
+    aceitacao:
+      - "8 nichos com pitch template"
+      - "Beneficios EMIVE mapeados do documento"
+      - "Tom de voz segue manual da marca"
+      - "3 scripts de abordagem integrados"
+      - "Testes unitarios"
+
+  - id: 54
+    titulo: "FASE 0.7: Simulador programatico completo (run v0)"
+    coluna: TODO
+    prioridade: critica
+    workflow: AUTORESEARCH
+    estimativa: "1h"
+    descricao: |
+      Integrar tasks 48-53 em um simulador programatico completo:
+      - Gera N personas (v5)
+      - Aplica modelo probabilistico (task 50)
+      - Gera pitch template por persona (task 53)
+      - Calcula estatisticas (entropia, MI, Bayes, Monte Carlo)
+      - Output: JSON + dashboard + relatorio markdown
+      Roda 1000 personas em < 1s, sem custo, sem rede.
+    arquivos: ["scripts/run_sim_v0.py", "results_v2/sim_v0_*.json"]
+    aceitacao:
+      - "Roda N=1000 em < 1s"
+      - "Output JSON com decisao, objecoes, narrativa, probabilidade"
+      - "Dashboard HTML gerado"
+      - "Relatorio markdown com estatisticas completas"
+      - "Comparacao com dados reais (142 personas) para validar"
+
+  - id: 55
+    titulo: "FASE 0.8: Relatorio FASE 0 + mapa de prospeccao por bairro/nicho"
+    coluna: TODO
+    prioridade: alta
+    workflow: AUTORESEARCH
+    estimativa: "1h"
+    descricao: |
+      Relatorio final da FASE 0:
+      - Ranking de nichos por conversao (com IC bayesiano)
+      - Ranking de bairros por potencial (conversao * numero de empresas)
+      - Drivers de decisao ranqueados por informacao mutua
+      - Mapa de prospeccao: bairro x nicho x P(agendou) x WTP
+      - Comparacao simulador v0 vs dados reais (142 personas)
+      - Recomendacoes de onde focar o scrap no Maps
+    arquivos: ["results_v2/fase0_relatorio.md", "results_v2/mapa_prospeccao.json"]
+    aceitacao:
+      - "Ranking de nichos com IC bayesiano"
+      - "Ranking de bairros com potencial"
+      - "Mapa de prospeccao bairro x nicho"
+      - "Validacao contra 142 personas reais"
+      - "Recomendacoes de scrap no Maps"
+
+  # ============================================================
+  # FASE 1: SIMULACAO COM LLM (ensemble heterogeneo)
+  # Top 8 bairros x 8 nichos, 5 sources (gocat, kilocode, devin, cline, ollama)
+  # Pendente: adaptar ensemble para personas V5, criar cenario V5, rodar piloto
+  # ============================================================
+
+  - id: 50
+    titulo: "Adaptar ensemble.py para usar personas V5 (bairros reais, mensalidade, limitacoes EMIVE)"
+    coluna: TODO
+    prioridade: critica
+    workflow: PONYTAIL
+    estimativa: "2h"
+    descricao: |
+      O ensemble.py atual usa generate_personas (V4, src/advanced_simulation.py)
+      que nao tem bairros reais, mensalidade R$ 294, contrato 36 meses,
+      limitacao area externa, nem concorrencia local.
+
+      Adaptar para usar generate_personas_v5 (simulation_army_v2/personas_v5.py):
+      - Importar generate_personas_v5 e persona_to_dict
+      - Criar _profile_v5_to_prompt_kwargs(p: PersonaV5, cfg) -> dict
+        que mapeia campos V5 para o USER_PROMPT_TEMPLATE
+      - Adicionar campos novos no prompt: mensalidade, ticket_medio_36m,
+        precisa_area_externa, concorrencia_local_instalada, season_multiplier
+      - Atualizar USER_PROMPT_TEMPLATE para mencionar:
+        * "Mensalidade: R$ {mensalidade} (compromisso 36 meses, multa proporcional)"
+        * "Limitacao EMIVE: so area interna" (se precisa_area_externa)
+        * "Concorrencia local: instaladores locais ja atuam na regiao"
+      - Suportar N personas por bairro E por nicho (nao so por segment)
+      - Gerar personas distribuidas entre os top 8 bairros x 8 nichos
+    arquivos:
+      - "simulation_army_v2/ensemble.py"
+      - "simulation_army_v2/baseline.py (USER_PROMPT_TEMPLATE + _profile_to_prompt_kwargs)"
+    aceitacao:
+      - "ensemble.py importa e usa generate_personas_v5"
+      - "Prompt menciona mensalidade, contrato, limitacoes EMIVE"
+      - "Personas geradas com bairros reais (top 8)"
+      - "Teste unitario: _profile_v5_to_prompt_kwargs retorna dict com 20+ campos"
+      - "Teste unitario: prompt gerado menciona 'mensalidade' e 'area interna'"
+
+  - id: 51
+    titulo: "Criar cenario V5 YAML: top 8 bairros x 8 nichos, 5 sources de LLM"
+    coluna: TODO
+    prioridade: critica
+    workflow: PONYTAIL
+    estimativa: "1h"
+    descricao: |
+      Cenario slz-c-army-v5.yaml com:
+      - 8 bairros: Centro, Turu, Calhau, Renascenca, Cohama, Sao Cristovao, Vinhais, Joao Paulo
+      - 8 nichos: clinica, consultorio_odonto, oficina, estacionamento, mecanica_diesel,
+        optica, fisioterapia, barbearia
+      - 5 sources de LLM (espalha rate limits):
+        * gocat: SambaNova Meta-Llama-3.3-70B, Groq llama-3.3-70b, Groq qwen3.6-27b
+        * kilocode: kilo/cohere/north-mini, kilo/nvidia/nemotron-3-super
+        * devin: glm-5-2, swe-1-7
+        * cline: openrouter google/gemini-2.5-flash-lite, anthropic claude-sonnet
+        * ollama: gpt-oss:120b, gemma4:31b
+      - Sintetizador: command-a-03-2025 via gocat
+      - N=2 por combo (piloto): 8 bairros x 8 nichos x 2 = 128 personas
+      - Delay entre models: 0.5s (gocat/ollama HTTP), 1.0s (kilocode/devin/cline subprocess)
+      - Benchmark: conversao 10-20% (calibrado na FASE 0, nao 2-8% generico)
+    arquivos:
+      - "scenarios_v2/slz-c-army-v5.yaml"
+    aceitacao:
+      - "YAML valida contra config schema"
+      - "5 sources configuradas (gocat, kilocode, devin, cline, ollama)"
+      - "8 bairros e 8 nichos listados"
+      - "N=2 por combo (128 personas piloto)"
+      - "Benchmark ajustado para 10-20% (FASE 0)"
+
+  - id: 52
+    titulo: "Configurar auth Cline CLI (provider + API key)"
+    coluna: TODO
+    prioridade: alta
+    workflow: MANUAL
+    estimativa: "15min"
+    descricao: |
+      Cline CLI 3.0.46 instalado mas sem auth configurada.
+      Rodar: cline auth --provider <provider> --apikey <key> --modelid <model>
+      Opcoes:
+        - openrouter: usa OPENROUTER_API_KEY (ja no .env do gocat)
+        - ollama: usa OLLAMA_API_KEY (ja no .env do gocat)
+        - sambanova: usa SAMBANOVA_API_KEY
+        - groq: usa GROQ_API_KEY
+      Validar: cline --json "say hello" -P openrouter -m google/gemini-2.5-flash-lite
+    arquivos: []
+    aceitacao:
+      - "cline auth status retorna provider configurado"
+      - "Teste manual: cline --json retorna JSON com agent_event"
+
+  - id: 53
+    titulo: "Validar conectividade de cada source (1 chamada por source)"
+    coluna: TODO
+    prioridade: critica
+    workflow: AUTORESEARCH
+    estimativa: "30min"
+    descricao: |
+      Antes de rodar 128 personas, validar que cada source responde:
+      - gocat: POST /v1/chat/completions com Meta-Llama-3.3-70B
+      - kilocode: kilocode run -m kilo/cohere/north-mini --format json
+      - devin: devin --print --model glm-5-2
+      - cline: cline -y --json -P openrouter -m google/gemini-2.5-flash-lite
+      - ollama: POST https://ollama.com/v1/chat/completions com gpt-oss:120b
+      Cada source deve retornar DecisaoPersona valida (JSON parseado).
+      Se falhar, marcar source como disabled e ajustar cenario.
+    arquivos:
+      - "tests_v2/test_source_connectivity.py (novo)"
+    aceitacao:
+      - "5/5 sources retornam DecisaoPersona valida"
+      - "Latencia < 30s por source"
+      - "JSON salvo em results_v2/connectivity_test.json"
+
+  - id: 54
+    titulo: "Rodar piloto FASE 1: 128 personas x 12 modelos (5 sources)"
+    coluna: TODO
+    prioridade: critica
+    workflow: AUTORESEARCH
+    estimativa: "4-8h (depende de rate limits)"
+    descricao: |
+      Rodar ensemble V5 com:
+      - 128 personas (8 bairros x 8 nichos x 2 personas)
+      - 12 modelos (3 gocat + 2 kilocode + 2 devin + 2 cline + 2 ollama + 1 sintetizador)
+      - Seed 42
+      - Delay 0.5s entre models (HTTP), 1.0s (subprocess)
+      - Checkpoint incremental a cada persona
+      - Output: results_v2/ensemble_v5_n128_s42.json
+      Custo estimado: $0 (todos modelos free)
+    arquivos:
+      - "results_v2/ensemble_v5_n128_s42.json"
+      - "results_v2/ensemble_v5_n128_s42_stats.json"
+    aceitacao:
+      - "128 personas processadas (0 falhas criticas)"
+      - "Conversao entre 10-20% (calibrado FASE 0)"
+      - "Divergence score medio > 0.1 (modelos discordam)"
+      - "5 sources representadas nos metadados"
+      - "JSON salvo com checkpoint incremental"
+
+  - id: 55
+    titulo: "Gerar relatorio FASE 1: comparativo LLM vs modelo probabilistico"
+    coluna: TODO
+    prioridade: alta
+    workflow: AUTORESEARCH
+    estimativa: "1h"
+    descricao: |
+      Relatorio comparando FASE 0 (sigmoid) vs FASE 1 (LLM ensemble):
+      - Tabela: conversao FASE 0 vs FASE 1 por bairro
+      - Tabela: conversao FASE 0 vs FASE 1 por nicho
+      - MI features: FASE 0 vs FASE 1 (LLM usa as mesmas features?)
+      - JSD entre nichos: FASE 0 vs FASE 1 (LLM diferencia nichos?)
+      - Top 8 combos: FASE 0 vs FASE 1 (mesmos combos no topo?)
+      - Divergence score por persona (onde modelos discordam mais)
+      - Latencia e tokens por source (gocat vs kilocode vs devin vs cline vs ollama)
+      - Recomendacoes: onde FASE 0 e FASE 1 concordam = alta confianca
+    arquivos:
+      - "results_v2/fase1_relatorio.md"
+      - "results_v2/fase1_vs_fase0_comparativo.json"
+    aceitacao:
+      - "Tabela comparativa por bairro"
+      - "Tabela comparativa por nicho"
+      - "MI features FASE 0 vs FASE 1"
+      - "Top 8 combos FASE 0 vs FASE 1"
+      - "Latencia por source"
+
+  - id: 56
+    titulo: "Auditoria cruzada Devin em 10% das sinteses (BLUEPRINT P7)"
+    coluna: TODO
+    prioridade: media
+    workflow: AUTORESEARCH
+    estimativa: "1h"
+    descricao: |
+      Amostra de 10% das decisoes agregadas (13 personas) auditadas por
+      Devin CLI (modelo diferente do sintetizador):
+      - Auditor pontua coerencia 0..1 sem ver o modelo de origem
+      - Verifica: decisao final coerente com decisoes individuais?
+      - Verifica: objecoes consolidadas refletem as individuais?
+      - Verifica: tom de voz segue os 8 atributos da marca?
+      - Rejeitar decisoes com score < 0.5 (marcar audit_flag)
+    arquivos:
+      - "simulation_army_v2/audit.py (novo)"
+      - "tests_v2/test_audit.py (novo)"
+    aceitacao:
+      - "13 personas auditadas (10% de 128)"
+      - "Score de coerencia 0..1 por persona"
+      - "Decisoes com score < 0.5 marcadas audit_flag"
+      - "Relatorio de auditoria em results_v2/audit_v5.json"
+
+  - id: 57
+    titulo: "Expandir FASE 1 para N=300 (producao) apos piloto validado"
+    coluna: TODO
+    prioridade: baixa
+    workflow: AUTORESEARCH
+    estimativa: "12-24h (depende de rate limits)"
+    descricao: |
+      Apos piloto N=128 validado (task #54), escalar para N=300:
+      - 8 bairros x 8 nichos x ~5 personas = 320 personas
+      - Mesmos 12 modelos (5 sources)
+      - 3 seeds (42, 43, 44) = 960 runs total
+      - IC95% bootstrap (10000 resamples) por condicao
+      - Power analysis: detectar diferenca 3pp entre ensemble e baseline
+      Custo estimado: $0 (todos modelos free)
+    arquivos:
+      - "results_v2/ensemble_v5_n300_s42.json"
+      - "results_v2/ensemble_v5_n300_s43.json"
+      - "results_v2/ensemble_v5_n300_s44.json"
+    aceitacao:
+      - "320 personas x 3 seeds processadas"
+      - "IC95% bootstrap por condicao"
+      - "Power analysis: N suficiente para 3pp com 80% power"
+      - "Relatorio final FASE 1 com N=300"
+
+  - id: 58
+    titulo: "A/B test de oferta (FASE 2): pitch tecnico vs financeiro"
+    coluna: TODO
+    prioridade: baixa
+    workflow: AUTORESEARCH
+    estimativa: "4h"
+    descricao: |
+      Apos FASE 1 consolidada (task #57), rodar A/B test:
+      - Variante A: pitch tecnico atual ("sensores de vibracao e IA")
+      - Variante B: pitch financeiro ("protecao do estoque contra arrombamento")
+      - Mesmas 320 personas, 3 seeds, 12 modelos
+      - Comparar conversao A vs B (IC95% bootstrap)
+      - Identificar nichos onde B > A (ou vice-versa)
+    arquivos:
+      - "scenarios_v2/slz-c-army-v5-variantA.yaml"
+      - "scenarios_v2/slz-c-army-v5-variantB.yaml"
+      - "results_v2/ab_test_v5.json"
+    aceitacao:
+      - "2 variantes rodadas com mesmas personas"
+      - "IC95% bootstrap para diferenca A vs B"
+      - "Nichos onde B > A identificados"
+      - "Recomendacao de pitch por nicho"

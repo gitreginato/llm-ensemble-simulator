@@ -1,0 +1,322 @@
+{
+  "modelo": "gpt-4o-mini",
+  "n": 30,
+  "seed": 42,
+  "cenario": "SLZ-C-ARMY",
+  "taxa_conversao": 0.43333333333333335,
+  "agendaram": 13,
+  "decisoes": [
+    {
+      "decisao": "agendou",
+      "wtp": 712.49,
+      "sentimento": 0.7,
+      "objecoes": [],
+      "confianca": 0.5,
+      "raciocinio": "A loja não tem segurança, e o João está preocupado com o estoque valioso à noite. A visita técnica gratuita parece uma boa oportunidade para entender melhor a proteção que o sistema pode oferecer.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 686.43,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.6,
+      "raciocinio": "Visualizou a oferta mas não se sentiu motivado a agendar. A satisfação com a segurança atual é baixa, mas ele ainda não vê necessidade urgente para mudança. Pode considerar no futuro, mas por agora, está confortável com o que tem.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 791.27,
+      "sentimento": 0.6,
+      "objecoes": [],
+      "confianca": 0.5,
+      "raciocinio": "A falta de segurança existente é preocupante, especialmente com o estoque valioso. A visita técnica é uma boa oportunidade para entender melhor a proposta. O preço é acessível e pode trazer tranquilidade para o negócio.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 913.46,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "confianca": 0.4,
+      "raciocinio": "Bruno visualizou a oferta, mas está satisfeito com a solução de câmeras que já possui. Ele tem um nível de confiança moderado em fornecedores locais, o que o faz hesitar em agendar uma visita.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 645.46,
+      "sentimento": 0.4,
+      "objecoes": [],
+      "confianca": 0.5,
+      "raciocinio": "Recentemente, a Beatriz ficou preocupada com a nova concorrência e a segurança da sua loja. Ela não estava satisfeita com as câmeras DIY que possui e viu a proposta como uma oportunidade de melhorar a proteção do seu estoque valioso. A visita técnica gratuita a deixou mais confiante para tomar a decisão.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 378.09,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution",
+        "timing"
+      ],
+      "confianca": 0.9,
+      "raciocinio": "Já tenho um sistema de segurança que funciona bem, então não vejo necessidade de mudar agora. Além disso, o final do mês é um momento complicado para considerar novos investimentos.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 942.95,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution",
+        "timing"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Vi a mensagem sobre o sistema de segurança, mas estou satisfeito com minhas câmeras atuais. Além disso, o mês está lento e preciso controlar os gastos.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 962.79,
+      "sentimento": -0.3,
+      "objecoes": [
+        "existing_solution",
+        "budget"
+      ],
+      "confianca": 0.5,
+      "raciocinio": "Juliana viu a oferta, mas está insatisfeita com a solução de segurança atual e acha o preço elevado. Ela prefere explorar outras opções antes de tomar uma decisão.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 536.66,
+      "sentimento": 0.6,
+      "objecoes": [],
+      "confianca": 0.5,
+      "raciocinio": "Gabriela está preocupada com a segurança do estoque valioso da loja, especialmente após um mês lento. A proposta de monitoramento 24 horas e a visita técnica gratuita a atraíram. Ela acredita que a solução pode ajudar a proteger seu investimento.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 865.25,
+      "sentimento": 0.6,
+      "objecoes": [],
+      "confianca": 0.5,
+      "raciocinio": "Estou preocupada com a segurança da minha loja, especialmente porque não tenho nenhuma proteção atualmente. A oferta parece interessante e a visita técnica é gratuita, então decidi agendar para entender melhor como funcionaria.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 398.13,
+      "sentimento": 0.7,
+      "objecoes": [],
+      "confianca": 0.8,
+      "raciocinio": "Estou preocupada com a segurança do meu estoque valioso. A proposta parece confiável e o consultor é local, o que me dá mais segurança. A visita técnica gratuita é uma boa oportunidade para entender melhor a solução.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 449.62,
+      "sentimento": 0.6,
+      "objecoes": [],
+      "confianca": 0.7,
+      "raciocinio": "Gabriela não tem segurança existente e está insatisfeita com a falta de proteção. O sistema inteligente parece atender suas necessidades de segurança, especialmente com seu estoque valioso. A confiança nos provedores locais a ajuda a decidir agendar a visita.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 705.43,
+      "sentimento": 0.1,
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "confianca": 0.2,
+      "raciocinio": "Antonio está satisfeito com seu sistema de segurança atual, mas ainda tem dúvidas sobre a eficácia. Ele prefere garantir que a solução oferecida seja realmente confiável antes de tomar uma decisão.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 327.82,
+      "sentimento": 0.1,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Acredito que a segurança da loja é importante, mas já tenho câmeras e não estou satisfeito com elas. Não vejo necessidade de mudar agora.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 997.27,
+      "sentimento": 0.8,
+      "objecoes": [],
+      "confianca": 0.9,
+      "raciocinio": "Recentemente tive um furto na loja, e minha segurança atual não está me deixando tranquilo. A proposta do sistema de segurança inteligente parece interessante e pode proteger melhor meu estoque valioso.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 957.25,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.9,
+      "raciocinio": "Andre já possui câmeras de segurança DIY, mas está insatisfeito com a solução atual. Ele não vê necessidade de mudar neste momento, mesmo tendo confiança nos provedores locais.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 330.86,
+      "sentimento": 0.7,
+      "objecoes": [],
+      "confianca": 1.0,
+      "raciocinio": "Gabriela está preocupada com a segurança do seu estoque valioso, especialmente após a recente reforma. Ela confia em provedores locais e a proposta parece muito interessante, então decidiu agendar uma visita para discutir mais detalhes.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 403.67,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Debora visualizou a mensagem, mas já está satisfeita com a segurança atual da loja. Ela confia em provedores locais, mas não vê necessidade de trocar o sistema existente que considera eficaz.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 983.34,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 1.0,
+      "raciocinio": "Maria tem uma solução de segurança existente, mas não está completamente satisfeita. Como a satisfação é média, ela pode considerar outras opções, mas neste momento não se sente compelida a agendar uma visita.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "clicou",
+      "wtp": 874.38,
+      "sentimento": 0.2,
+      "objecoes": [
+        "budget",
+        "existing_solution"
+      ],
+      "confianca": 0.4,
+      "raciocinio": "Embora eu tenha visto a mensagem, estou preocupada com o custo e já tenho algumas câmeras que não me satisfazem totalmente. Talvez não seja o momento certo para investir mais.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 973.77,
+      "sentimento": 0.3,
+      "objecoes": [],
+      "confianca": 0.6,
+      "raciocinio": "Recentemente, um concorrente novo entrou no mercado e isso me deixou preocupada com a segurança da minha loja. A proposta de um sistema de segurança inteligente parece interessante e pode ajudar a proteger meu estoque valioso.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 348.98,
+      "sentimento": 0.6,
+      "objecoes": [],
+      "confianca": 0.5,
+      "raciocinio": "Maria está preocupada com a segurança do estoque, especialmente após um mês lento. A falta de segurança existente aumenta sua motivação para agendar a visita e avaliar a proposta.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 883.61,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.6,
+      "raciocinio": "Já tenho um sistema de segurança que me atende razoavelmente bem, então não vejo a necessidade de trocar. No entanto, a proposta é interessante e vou pensar nela.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "clicou",
+      "wtp": 534.63,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Embora a segurança existente não seja perfeita, estou satisfeita o suficiente para não buscar mudanças agora. No entanto, a proposta é interessante e pode ser considerada no futuro.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 403.3,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution",
+        "timing"
+      ],
+      "confianca": 0.6,
+      "raciocinio": "A Camila visualizou a oferta, mas não se sentiu motivada a agendar a visita. Ela está satisfeita com seu sistema atual de segurança e pode achar que não é o momento certo para considerar uma mudança.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 728.86,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 1.0,
+      "raciocinio": "Antonio está satisfeito com a segurança atual, embora apenas moderadamente. Ele não sente a necessidade urgente de mudar, já que não houve eventos recentes de roubo.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 464.15,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.9,
+      "raciocinio": "Eu vi a oferta, mas já estou satisfeito com meu sistema de alarme atual. Não sinto a necessidade de mudar neste momento, mesmo confiando no fornecedor.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 566.27,
+      "sentimento": 0.8,
+      "objecoes": [],
+      "confianca": 1.0,
+      "raciocinio": "Recentemente houve um furto na loja, e a segurança atual é insatisfatória. A proposta de um sistema de segurança inteligente parece promissora e confiável, especialmente com um consultor local. É uma oportunidade de proteger melhor meu estoque valioso.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "clicou",
+      "wtp": 673.89,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "confianca": 0.5,
+      "raciocinio": "Francisco viu a mensagem e ficou interessado, mas duvida da necessidade de mudar seu sistema atual de câmeras. Ele também não confia totalmente em fornecedores locais para segurança.",
+      "modelo": "gpt-4o-mini"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 629.21,
+      "sentimento": 0.5,
+      "objecoes": [],
+      "confianca": 1.0,
+      "raciocinio": "Bruno está preocupado com a segurança do estoque valioso que fica exposto à noite. Ele confia em fornecedores locais e está disposto a investir em uma solução melhor do que as câmeras DIY que possui atualmente. A visita técnica gratuita é uma oportunidade que ele não quer perder.",
+      "modelo": "gpt-4o-mini"
+    }
+  ]
+}

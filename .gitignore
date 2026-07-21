@@ -1,0 +1,25 @@
+# Embedded repos
+foresight/
+launch-simulation/
+market-fish/
+viralix/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Results grandes (manter relatorios .md, ignorar .json pesados)
+results_v2/sim_v0_n1000_*.json
+results_v2/ensemble_v3_n30_s42.json
+results_v2/ensemble_v4_*.json
+
+# Graphify output (gerado, versionavel)
+graphify-out/
+
+# Logs
+*.log
+
+# Temp
+response.json
+__pycache__/

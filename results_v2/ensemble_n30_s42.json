@@ -1,0 +1,2222 @@
+{
+  "cenario": "SLZ-C-ARMY",
+  "n": 30,
+  "seed": 42,
+  "modelos": [
+    "gpt-4o-mini",
+    "command-r-plus-08-2024",
+    "llama-3.3-70b-versatile"
+  ],
+  "sintetizador": "gpt-4o-mini",
+  "taxa_conversao": 0.16666666666666666,
+  "agendaram": 5,
+  "sucessos": 30,
+  "falhas": 2,
+  "ic95": [
+    0.06657395356745498,
+    0.3274277516634612
+  ],
+  "divergence_score_medio": 0.43333333333333335,
+  "personas": [
+    {
+      "persona": {
+        "owner_name": "Joao Araujo",
+        "business_name": "Joao Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 712.49,
+        "risk_profile": "crisis_driven",
+        "recent_event": "none",
+        "has_existing_security": "none"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "agendou",
+          "wtp": 712.49,
+          "sentimento": 0.6,
+          "objecoes": [],
+          "confianca": 0.5,
+          "raciocinio": "Joao está preocupado com a segurança do estoque, especialmente porque não tem nenhuma proteção atualmente. O sistema parece uma boa solução, e ele está disposto a investir um pouco mais para garantir a segurança da loja. A confiança em um fornecedor local é satisfatória, o que o incentivou a agendar a visita.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 712.49,
+          "sentimento": 0.1,
+          "objecoes": [
+            "budget",
+            "skepticism"
+          ],
+          "confianca": 0.2,
+          "raciocinio": "João está curioso com a proposta, mas o preço parece alto e ele tem dúvidas sobre a eficácia do sistema, especialmente sem uma demonstração prévia.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 712.49,
+          "sentimento": 0.2,
+          "objecoes": [
+            "skepticism"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Achei a proposta interessante, mas preciso de mais informações sobre como funciona o sistema de segurança. Além disso, não sei se vale a pena investir nisso, já que não tive problemas de segurança recentemente.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 712.49,
+        "sentimento_medio": 0.3,
+        "objecoes_consolidadas": [
+          "budget",
+          "skepticism"
+        ],
+        "divergence_score": 1.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.4,
+        "raciocinio_sintese": "João está interessado na proposta de segurança, mas tem dúvidas sobre o custo e a eficácia do sistema. Ele visualizou a oferta, mas não se comprometeu a agendar uma visita, refletindo um certo ceticismo e preocupação com o orçamento. A falta de problemas de segurança recentes também contribui para sua hesitação."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Eduardo Mendes",
+        "business_name": "Eduardo Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 686.43,
+        "risk_profile": "conservative",
+        "recent_event": "none",
+        "has_existing_security": "alarm_monitored"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 686.43,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Eduardo visualizou a oferta, mas já está insatisfeito com sua solução de segurança atual, embora não tenha urgência para mudar. Ele acredita que a visita técnica pode ser interessante, mas não está totalmente convencido da necessidade. A confiança em provedores locais é razoável, mas ele precisa de mais garantias.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 686.43,
+          "sentimento": -0.2,
+          "objecoes": [
+            "budget",
+            "existing_solution"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Eduardo está um pouco cético em relação à oferta, pois já possui um sistema de alarme, embora não esteja totalmente satisfeito com ele. O preço também é um fator de preocupação, pois excede seu orçamento disponível.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 686.43,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.7,
+          "raciocinio": "Eu já tenho um sistema de alarme monitorado, então não sinto necessidade de mudar agora. Além disso, o preço do sistema oferecido parece um pouco alto para o meu orçamento de segurança.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 686.43,
+        "sentimento_medio": 0.0,
+        "objecoes_consolidadas": [
+          "budget",
+          "existing_solution"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.6333333333333333,
+        "raciocinio_sintese": "Eduardo visualizou a oferta de segurança, mas está insatisfeito com sua solução atual e cético quanto à necessidade de mudança. O preço da nova oferta também é uma preocupação, pois excede seu orçamento. Apesar disso, ele não tem urgência para decidir e sua confiança em provedores locais é razoável."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Renata Souza",
+        "business_name": "Renata Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 791.27,
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "none"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "agendou",
+          "wtp": 791.27,
+          "sentimento": 0.7,
+          "objecoes": [],
+          "confianca": 0.5,
+          "raciocinio": "Estou preocupada com a segurança da minha loja, especialmente com o estoque valioso que deixo fechado à noite. A proposta parece interessante e a visita técnica gratuita é uma boa oportunidade para entender melhor o sistema. Preciso garantir a proteção da minha loja.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 791.27,
+          "sentimento": -0.3,
+          "objecoes": [
+            "budget",
+            "skepticism"
+          ],
+          "confianca": 0.1,
+          "raciocinio": "Renata está preocupada com o orçamento, pois o preço parece alto em comparação com o que ela está disposta a pagar. Ela tem ceticismo em relação à eficácia do sistema, especialmente porque já teve uma experiência ruim com um sistema de segurança anterior.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "agendou",
+          "wtp": 791.27,
+          "sentimento": 0.8,
+          "objecoes": [],
+          "confianca": 0.5,
+          "raciocinio": "Eu estou preocupada com a segurança da minha loja, especialmente à noite, e o sistema de segurança inteligente parece uma boa solução. A visita técnica gratuita é um bom ponto de partida para entender melhor como o sistema pode ajudar a proteger meu estoque valioso.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "agendou",
+        "wtp_medio": 791.27,
+        "sentimento_medio": 0.4,
+        "objecoes_consolidadas": [
+          "budget",
+          "skepticism"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "llama-3.3-70b-versatile",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.37,
+        "raciocinio_sintese": "A decisão final é agendar a visita técnica, pois dois dos três modelos concordam com essa escolha. Renata está preocupada com a segurança da loja e vê a visita como uma oportunidade para entender melhor o sistema. No entanto, existem objeções relacionadas ao orçamento e ceticismo sobre a eficácia da solução proposta."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Bruno Nascimento",
+        "business_name": "Bruno Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 913.46,
+        "risk_profile": "conservative",
+        "recent_event": "renovation",
+        "has_existing_security": "diy_cameras"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 913.46,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution",
+            "skepticism"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Bruno visualizou a oferta, mas está satisfeito com suas câmeras DIY, embora não sejam perfeitas. Ele é cético sobre a eficácia de novos sistemas de segurança e precisa de mais confiança nos prestadores locais.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 913.46,
+          "sentimento": 0.1,
+          "objecoes": [
+            "existing_solution",
+            "skepticism",
+            "complexity"
+          ],
+          "confianca": 0.2,
+          "raciocinio": "Bruno está satisfeito com seu sistema de câmeras DIY e é cético em relação a novas tecnologias. Ele prefere soluções simples e já investiu em segurança, então está apenas curioso com a oferta, mas não agendará uma visita.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 913.46,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Eu já tenho um sistema de segurança caseiro, não sei se preciso de algo mais. Ainda assim, a ideia de proteger o estoque de vestuário contra arrombamentos noturnos é interessante.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 913.46,
+        "sentimento_medio": 0.13333333333333333,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "skepticism",
+          "complexity"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.3333333333333333,
+        "raciocinio_sintese": "Bruno visualizou a oferta de segurança, mas continua satisfeito com seu sistema de câmeras DIY. Ele expressou ceticismo em relação a novas soluções e prefere manter o que já possui, embora a proteção do estoque seja uma preocupação. As objeções comuns indicam que ele não está pronto para um compromisso imediato."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Beatriz Nascimento",
+        "business_name": "Beatriz Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 645.46,
+        "risk_profile": "pragmatic",
+        "recent_event": "competitor_new",
+        "has_existing_security": "diy_cameras"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "agendou",
+          "wtp": 645.46,
+          "sentimento": 0.6,
+          "objecoes": [],
+          "confianca": 0.5,
+          "raciocinio": "Beatriz está preocupada com a segurança da loja após a recente movimentação dos concorrentes. Apesar de sua solução atual ser insatisfatória, ela acredita que uma visita técnica pode oferecer uma solução melhor para proteger seu estoque valioso.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 645.46,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Beatriz está satisfeita com suas câmeras DIY, mas a mensagem despertou curiosidade sobre a proteção da vitrine.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 645.46,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution",
+            "skepticism"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Eu já tenho um sistema de segurança caseiro, não sei se preciso de outro. Além disso, não conheço a empresa e não sei se vale a pena investir.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 645.46,
+        "sentimento_medio": 0.3333333333333333,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "skepticism"
+        ],
+        "divergence_score": 1.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          }
+        ],
+        "confianca_agregada": 0.4666666666666667,
+        "raciocinio_sintese": "Beatriz está ciente da necessidade de segurança, mas ainda tem dúvidas sobre a eficácia de uma nova solução, já que está satisfeita com seu sistema atual. Apesar de visualizar a oferta, ela não se comprometeu a agendar uma visita, refletindo um certo ceticismo sobre a necessidade de mudança."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Daniel Oliveira",
+        "business_name": "Daniel Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 378.09,
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "full_system"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 378.09,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution",
+            "timing"
+          ],
+          "confianca": 1.0,
+          "raciocinio": "Eu já tenho um sistema de segurança que funciona bem, então não vejo a necessidade de mudar. Além disso, o final do mês é um momento complicado financeiramente.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 378.09,
+          "sentimento": 0.1,
+          "objecoes": [
+            "budget",
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Daniel está satisfeito com o sistema de segurança atual e o preço do novo sistema parece alto, então ele não está convencido de que vale a pena agendar uma visita.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 378.09,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Já tenho um sistema de segurança instalado e estou satisfeito com ele, não vejo necessidade de mudar. Além disso, o preço da visita é muito baixo, o que me deixa um pouco desconfiado.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 378.09,
+        "sentimento_medio": 0.13333333333333333,
+        "objecoes_consolidadas": [
+          "budget",
+          "timing",
+          "existing_solution"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          }
+        ],
+        "confianca_agregada": 0.8666666666666667,
+        "raciocinio_sintese": "Daniel está satisfeito com seu sistema de segurança atual e não vê necessidade de mudança, o que é um ponto comum entre os modelos. As objeções relacionadas ao orçamento e ao momento financeiro também foram levantadas, indicando que ele está cauteloso em relação a novas despesas. Apesar de algumas diferenças nas percepções de confiança, a decisão final é a de que ele apenas visualizou a oferta."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Marcelo Ferreira",
+        "business_name": "Marcelo Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 942.95,
+        "risk_profile": "conservative",
+        "recent_event": "slow_month",
+        "has_existing_security": "diy_cameras"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 942.95,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Meu sistema de segurança atual já atende razoavelmente, mas talvez eu ainda possa considerar melhorias. O preço da visita é baixo, então vale a pena conhecer a proposta. Contudo, estou satisfeito com a solução que tenho.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 942.95,
+          "sentimento": 0.1,
+          "objecoes": [
+            "existing_solution",
+            "skepticism"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Marcelo está satisfeito com suas câmeras DIY e não vê necessidade de gastar mais com segurança, mas a menção à proteção da vitrine e estoque chamou sua atenção.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 942.95,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Eu tenho cameras DIY instaladas e sinto que elas estão funcionando razoavelmente bem, então não vejo a necessidade de cambiar para um sistema mais caro.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 942.95,
+        "sentimento_medio": 0.16666666666666666,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "skepticism"
+        ],
+        "divergence_score": 1.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.7333333333333333,
+        "raciocinio_sintese": "Marcelo está satisfeito com seu sistema de segurança atual, que consiste em câmeras DIY. Embora tenha considerado a proposta, ele não vê necessidade imediata de mudança. As objeções principais são relacionadas à solução existente e um certo ceticismo sobre a necessidade de um novo sistema."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Juliana Silva",
+        "business_name": "Juliana Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 962.79,
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "diy_cameras"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 962.79,
+          "sentimento": -0.2,
+          "objecoes": [
+            "budget",
+            "existing_solution"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Juliana está preocupada com o custo do sistema de segurança e já está insatisfeita com a solução atual. Embora tenha clicado, não está pronta para agendar uma visita por causa do orçamento apertado neste mês.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 962.79,
+          "sentimento": 0.1,
+          "objecoes": [
+            "budget",
+            "skepticism",
+            "complexity"
+          ],
+          "confianca": 0.2,
+          "raciocinio": "Juliana está cética sobre a eficácia do sistema, pois já tem câmeras DIY e não quer gastar muito. O preço parece baixo demais para ser verdade, e ela desconfia de soluções complexas.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 962.79,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution",
+            "skepticism"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Eu estava pensando em melhorar a segurança da minha loja, mas não sei se vale a pena gastar mais dinheiro. Ainda mais que já tenho câmeras caseiras instaladas, mesmo que não sejam muito eficazes.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 962.79,
+        "sentimento_medio": 0.03333333333333333,
+        "objecoes_consolidadas": [
+          "budget",
+          "existing_solution",
+          "skepticism",
+          "complexity"
+        ],
+        "divergence_score": 1.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.3333333333333333,
+        "raciocinio_sintese": "Juliana visualizou a oferta de segurança, mas não se sentiu confiante o suficiente para avançar. Ela tem preocupações com o orçamento e a eficácia da solução, especialmente porque já possui câmeras caseiras. A falta de concordância entre os modelos reflete a incerteza dela em relação ao investimento."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Gabriela Rodrigues",
+        "business_name": "Gabriela Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 536.66,
+        "risk_profile": "crisis_driven",
+        "recent_event": "slow_month",
+        "has_existing_security": "diy_cameras"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "agendou",
+          "wtp": 536.66,
+          "sentimento": 0.6,
+          "objecoes": [],
+          "confianca": 0.5,
+          "raciocinio": "Recentemente, tive um mês lento e isso me preocupa. A segurança da loja é fundamental, especialmente com vitrine exposta e estoque valioso. A visita técnica gratuita é uma boa oportunidade para avaliar as opções.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 536.66,
+          "sentimento": -0.2,
+          "objecoes": [
+            "budget",
+            "skepticism"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Gabriela está cética em relação à eficácia do sistema, especialmente porque já possui câmeras de segurança, mesmo que não esteja totalmente satisfeita com elas. O preço também é uma preocupação, pois excede seu orçamento disponível.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "ignorou",
+          "wtp": 536.66,
+          "sentimento": -0.2,
+          "objecoes": [
+            "timing"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Não é o momento certo para pensar em segurança, estou mais preocupado com a baixa na receita do mês. Além disso, não tenho certeza se preciso de um sistema de segurança tão completo.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 536.66,
+        "sentimento_medio": 0.13333333333333333,
+        "objecoes_consolidadas": [
+          "budget",
+          "skepticism",
+          "timing",
+          "existing_solution"
+        ],
+        "divergence_score": 1.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.4666666666666667,
+        "raciocinio_sintese": "Gabriela está cética em relação à nova oferta de segurança, considerando que já possui um sistema de câmeras, mas não está satisfeita com ele. Além disso, o orçamento é uma preocupação, levando-a a visualizar a proposta, mas sem tomar uma decisão imediata. A baixa na receita do mês também influencia sua hesitação."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Renata Souza",
+        "business_name": "Renata Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 865.25,
+        "risk_profile": "crisis_driven",
+        "recent_event": "none",
+        "has_existing_security": "none"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "agendou",
+          "wtp": 865.25,
+          "sentimento": 0.6,
+          "objecoes": [],
+          "confianca": 0.5,
+          "raciocinio": "Estou preocupada com a segurança da loja, especialmente porque não tenho nada atualmente. A oferta parece promissora e o preço da visita é muito acessível. Acredito que vale a pena verificar essa solução.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 865.25,
+          "sentimento": 0.1,
+          "objecoes": [
+            "skepticism",
+            "need_lack"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Renata está cética sobre a necessidade de um sistema de segurança, pois não teve nenhum evento recente e acredita que a loja está segura. Ela não vê uma necessidade urgente e prefere esperar para avaliar outras opções.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 865.25,
+          "sentimento": 0.2,
+          "objecoes": [
+            "skepticism"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "A oferta parece interessante, mas não tenho certeza se é o que preciso para a minha loja. Preciso saber mais sobre a eficácia do sistema e como ele pode ser personalizado para atender às minhas necessidades.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 865.25,
+        "sentimento_medio": 0.3,
+        "objecoes_consolidadas": [
+          "skepticism",
+          "need_lack"
+        ],
+        "divergence_score": 1.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.43,
+        "raciocinio_sintese": "Renata expressou ceticismo em relação à necessidade de um sistema de segurança, o que é refletido nas respostas dos modelos. Embora um modelo tenha sugerido agendar uma visita, a maioria optou por visualizar a oferta, indicando uma hesitação em avançar. As objeções comuns destacam a falta de urgência e a necessidade de mais informações."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Ana Oliveira",
+        "business_name": "Ana Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 398.13,
+        "risk_profile": "conservative",
+        "recent_event": "none",
+        "has_existing_security": "none"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "agendou",
+          "wtp": 398.13,
+          "sentimento": 0.7,
+          "objecoes": [],
+          "confianca": 0.8,
+          "raciocinio": "Ana percebeu a necessidade de proteger seu estoque valioso, especialmente porque não tem segurança atualmente. A confiança nos provedores locais a motivou a agendar a visita, mesmo sem um evento recente de furto.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 398.13,
+          "sentimento": 0.4,
+          "objecoes": [
+            "budget",
+            "skepticism"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Ana está preocupada com a segurança, mas o orçamento é limitado e ela não está convencida de que o sistema valha o investimento. Prefere esperar e pesquisar mais.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 398.13,
+          "sentimento": 0.2,
+          "objecoes": [
+            "need_lack"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Achei a proposta interessante, mas não sinto necessidade de um sistema de segurança tão completo no momento. A loja está funcionando bem e não tivemos problemas recentes.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 398.13,
+        "sentimento_medio": 0.4633333333333333,
+        "objecoes_consolidadas": [
+          "budget",
+          "skepticism",
+          "need_lack"
+        ],
+        "divergence_score": 1.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.7333333333333333,
+        "raciocinio_sintese": "Ana está ciente da importância da segurança, mas ainda não se sente completamente convencida da necessidade imediata de um sistema de segurança. As preocupações com o orçamento e a falta de urgência em relação a problemas de segurança a levaram a optar por visualizar a proposta, em vez de agendar uma visita."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Gabriela Ferreira",
+        "business_name": "Gabriela Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 449.62,
+        "risk_profile": "conservative",
+        "recent_event": "renovation",
+        "has_existing_security": "none"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "agendou",
+          "wtp": 449.62,
+          "sentimento": 0.8,
+          "objecoes": [],
+          "confianca": 0.7,
+          "raciocinio": "Gabriela está preocupada com a segurança do estoque valioso. Como não possui nenhuma segurança atualmente e confia nos fornecedores locais, ela se sente motivada a agendar uma visita para conhecer mais sobre o sistema de segurança.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 449.62,
+          "sentimento": 0.1,
+          "objecoes": [],
+          "confianca": 0.7,
+          "raciocinio": "Gabriela está satisfeita com a renovação da loja e tem um orçamento limitado para segurança. Ela está ciente dos riscos, mas acredita que pode gerenciar sem um sistema sofisticado por enquanto.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "agendou",
+          "wtp": 449.62,
+          "sentimento": 0.8,
+          "objecoes": [],
+          "confianca": 0.7,
+          "raciocinio": "Acho que o sistema de segurança inteligente é uma boa opção para proteger o meu estoque valioso, especialmente após a recente reforma. A visita técnica gratuita é um bom incentivo para eu agendar e saber mais sobre a solução.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "agendou",
+        "wtp_medio": 449.62,
+        "sentimento_medio": 0.5333333333333333,
+        "objecoes_consolidadas": [],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.7,
+        "raciocinio_sintese": "Gabriela demonstra uma preocupação com a segurança do estoque, especialmente após a reforma da loja. Apesar de uma das análises indicar que ela visualizou a oferta, as outras duas concordam que agendar uma visita é a melhor opção para entender melhor o sistema de segurança. Assim, a decisão final é agendar a visita."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Antonio Silva",
+        "business_name": "Antonio Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 705.43,
+        "risk_profile": "crisis_driven",
+        "recent_event": "renovation",
+        "has_existing_security": "full_system"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 705.43,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Acredito que a segurança atual é suficiente, mas estou ciente da necessidade de estar sempre atento. O preço parece bom, mas não estou convencido de que a solução é necessária no momento.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 705.43,
+          "sentimento": 0.0,
+          "objecoes": [
+            "existing_solution",
+            "skepticism"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Antonio já possui um sistema de segurança que considera satisfatório, então não vê necessidade de uma visita. Ele está cético em relação à eficácia do novo sistema, especialmente porque não houve nenhum evento recente que o fizesse questionar sua segurança atual.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 705.43,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Eu tenho um sistema de segurança razoável, não vejo necessidade de mudar agora. Além disso, não conheço a empresa e preciso de mais informações antes de tomar uma decisão.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 705.43,
+        "sentimento_medio": 0.06666666666666667,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "skepticism"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.43333333333333335,
+        "raciocinio_sintese": "Antonio visualizou a oferta de segurança, mas não se sente convencido da necessidade de mudança, já que acredita que sua solução atual é suficiente. Ele expressou ceticismo em relação à eficácia do novo sistema e deseja mais informações antes de tomar uma decisão."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Felipe Costa",
+        "business_name": "Felipe Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 327.82,
+        "risk_profile": "pragmatic",
+        "recent_event": "none",
+        "has_existing_security": "diy_cameras"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 327.82,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Acredito que a solução é interessante, mas minha segurança atual já é suficiente. Não sinto necessidade urgente de mudar no momento.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 327.82,
+          "sentimento": 0.1,
+          "objecoes": [
+            "budget",
+            "existing_solution"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Felipe está cético em relação à oferta, pois já possui um sistema de câmeras DIY que considera suficiente, apesar de não ser ideal. O preço também é um fator de hesitação, pois excede seu orçamento disponível para segurança.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 327.82,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Eu não vejo necessidade de mudar o sistema de segurança atual, pois já tenho câmeras DIY instaladas, embora não sejam muito eficazes. A proposta parece interessante, mas não estou disposto a gastar mais dinheiro nisso no momento.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 327.82,
+        "sentimento_medio": 0.13333333333333333,
+        "objecoes_consolidadas": [
+          "budget",
+          "existing_solution"
+        ],
+        "divergence_score": 1.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          }
+        ],
+        "confianca_agregada": 0.5333333333333333,
+        "raciocinio_sintese": "Felipe está hesitante em aceitar a nova oferta de segurança, pois acredita que seu sistema atual de câmeras DIY é suficiente, apesar de suas limitações. O orçamento também é uma preocupação, levando-o a visualizar a proposta, mas não a agir. A maioria dos modelos concorda que ele não vê necessidade urgente de mudança."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Lucas Nascimento",
+        "business_name": "Lucas Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 997.27,
+        "risk_profile": "innovator",
+        "recent_event": "theft",
+        "has_existing_security": "alarm_monitored"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "agendou",
+          "wtp": 997.27,
+          "sentimento": 0.8,
+          "objecoes": [],
+          "confianca": 0.8,
+          "raciocinio": "Recentemente tive um furto e minha segurança atual não está satisfatória. A proposta parece interessante e a visita técnica gratuita é uma boa oportunidade para conhecer melhor o sistema. Estou disposto a investir em algo que proteja meu estoque valioso.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 997.27,
+          "sentimento": 0.2,
+          "objecoes": [],
+          "confianca": 0.6,
+          "raciocinio": "Lucas está considerando a oferta, mas como já possui um sistema de segurança, ele quer avaliar melhor antes de agendar uma visita. Ele está curioso sobre as funcionalidades de IA e a proteção para vitrines.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "agendou",
+          "wtp": 997.27,
+          "sentimento": 0.8,
+          "objecoes": [],
+          "confianca": 0.8,
+          "raciocinio": "Recentemente sofri um arrombamento e estou procurando uma solução mais eficaz para proteger meu estoque. A proposta do Sistema de Seguranca Inteligente EMIVE parece atender às minhas necessidades e o preço da visita é acessível. Vou agendar a visita para avaliar melhor a solução.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "agendou",
+        "wtp_medio": 997.27,
+        "sentimento_medio": 0.5333333333333333,
+        "objecoes_consolidadas": [],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.7333333333333333,
+        "raciocinio_sintese": "Apesar de uma das IAs indicar que Lucas apenas visualizou a oferta, as outras duas concordam que ele agendou a visita. Lucas está motivado a melhorar a segurança após experiências negativas recentes e vê valor na proposta, o que justifica sua decisão de agendar a visita."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Andre Souza",
+        "business_name": "Andre Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 957.25,
+        "risk_profile": "innovator",
+        "recent_event": "none",
+        "has_existing_security": "diy_cameras"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 957.25,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.9,
+          "raciocinio": "Andre está satisfeito com sua solução de segurança atual, apesar de ser uma câmera DIY. Ele visualizou a mensagem, mas não se sentiu motivado a agendar uma visita, pois acredita que não há necessidade de mudar agora.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 957.25,
+          "sentimento": 0.1,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.7,
+          "raciocinio": "Andre está satisfeito com seu sistema de câmeras DIY, mas acha interessante a ideia de proteção extra para o estoque e vitrine. No entanto, o preço pode ser um problema, já que ele não quer gastar muito.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 957.25,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.9,
+          "raciocinio": "Eu já tenho um sistema de segurança caseiro, então não acho necessário agendar uma visita para agora. Além disso, confio nos provedores locais e acho que o meu sistema atual é suficiente.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 957.25,
+        "sentimento_medio": 0.13333333333333333,
+        "objecoes_consolidadas": [
+          "existing_solution"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          }
+        ],
+        "confianca_agregada": 0.83,
+        "raciocinio_sintese": "Andre visualizou a oferta de segurança, mas não se sentiu motivado a agendar uma visita. Ele está satisfeito com sua solução atual de segurança e não vê necessidade de mudança. As objeções estão centradas na confiança em sua solução existente."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Gabriela Oliveira",
+        "business_name": "Gabriela Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 330.86,
+        "risk_profile": "pragmatic",
+        "recent_event": "renovation",
+        "has_existing_security": "diy_cameras"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 330.86,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 1.0,
+          "raciocinio": "Eu vi a proposta, mas já tenho câmeras que não me satisfazem completamente. Não sinto a necessidade de trocar o sistema no momento, apesar de confiar nos fornecedores locais.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 330.86,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Gabriela já tem um sistema de câmeras DIY que ela considera satisfatório, então não está muito interessada em investir em um novo sistema de segurança no momento. Ela confia na sua solução atual e não vê uma necessidade urgente de mudar.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "agendou",
+          "wtp": 330.86,
+          "sentimento": 0.8,
+          "objecoes": [],
+          "confianca": 1.0,
+          "raciocinio": "A segurança da minha loja é fundamental, especialmente após a recente reforma. O sistema de segurança inteligente da EMIVE parece ser uma solução eficaz para proteger meu estoque valioso. Vou agendar a visita para saber mais sobre como posso melhorar a segurança da minha loja.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 330.86,
+        "sentimento_medio": 0.4,
+        "objecoes_consolidadas": [
+          "existing_solution"
+        ],
+        "divergence_score": 1.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.8,
+        "raciocinio_sintese": "Gabriela visualizou a proposta de segurança, mas já possui um sistema de câmeras que considera satisfatório. Apesar de um modelo ter agendado uma visita, a maioria dos modelos não vê a necessidade de mudar o sistema atual, resultando em uma decisão mais conservadora de apenas visualizar a oferta."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Debora Santos",
+        "business_name": "Debora Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 403.67,
+        "risk_profile": "conservative",
+        "recent_event": "none",
+        "has_existing_security": "full_system"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 403.67,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Debora está satisfeita com seu sistema de segurança atual e não vê necessidade de mudança. Apesar de ter visualizado a oferta, ela não está disposta a agendar uma visita. A confiança em provedores locais é alta, mas a solução existente atende suas necessidades.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 403.67,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Debora já está satisfeita com seu sistema de segurança atual e não vê a necessidade de uma visita, mas aprecia a oferta e o foco na proteção do estoque.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 403.67,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Eu já tenho um sistema de segurança que atende às minhas necessidades, não vejo a necessidade de mudar. Além disso, o preço da visita é simbólico, mas não sei se vale a pena investir tempo e dinheiro em algo que pode não ser melhor do que o que eu já tenho.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 403.67,
+        "sentimento_medio": 0.2,
+        "objecoes_consolidadas": [
+          "existing_solution"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          }
+        ],
+        "confianca_agregada": 0.7333333333333333,
+        "raciocinio_sintese": "Debora visualizou a oferta de segurança, mas não se sente motivada a mudar seu sistema atual, que já atende suas necessidades. As objeções são unânimes em relação à satisfação com a solução existente, e a confiança em provedores locais é alta, embora haja uma leve diferença nas percepções de confiança entre os modelos."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Maria Lima",
+        "business_name": "Maria Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 983.34,
+        "risk_profile": "pragmatic",
+        "recent_event": "none",
+        "has_existing_security": "alarm_monitored"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 983.34,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 1.0,
+          "raciocinio": "Maria já possui um sistema de segurança monitorado, embora esteja apenas medianamente satisfeita. Ela pode achar que não precisa de uma solução nova no momento, já que confia nos provedores locais.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 983.34,
+          "sentimento": 0.1,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.7,
+          "raciocinio": "Maria já possui um sistema de alarme monitorado, mas não está totalmente satisfeita com ele. No entanto, ela está cautelosa em investir em um novo sistema sem uma avaliação mais detalhada, especialmente porque o orçamento é limitado.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 983.34,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Já tenho um sistema de alarme monitorado, não vejo necessidade de mudar. Além disso, o preço do novo sistema parece um pouco alto em relação ao que estou disposto a pagar.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 983.34,
+        "sentimento_medio": 0.13333333333333333,
+        "objecoes_consolidadas": [
+          "existing_solution"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          }
+        ],
+        "confianca_agregada": 0.7833333333333333,
+        "raciocinio_sintese": "Maria visualizou a oferta de segurança, mas todos os modelos indicam que ela já possui uma solução existente, o que gera resistência à mudança. Embora esteja insatisfeita com o sistema atual, a falta de necessidade urgente e a cautela em relação ao investimento são evidentes."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Aline Pereira",
+        "business_name": "Aline Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 874.38,
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "diy_cameras"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 874.38,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Aline visualizou a oferta, mas sua satisfação com a solução de segurança atual é relativamente baixa. Ela pode achar que já tem uma solução, mas pode considerar a proposta se a confiança em fornecedores locais aumentasse.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 874.38,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Aline já possui um sistema de câmeras DIY que ela considera aceitável, então não está muito motivada a investir em um novo sistema. O preço também é um fator, pois ela não quer gastar muito com segurança no momento.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 874.38,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Eu já tenho câmeras DIY instaladas e sinto que elas estão funcionando bem o suficiente, então não vejo a necessidade de mudar agora.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 874.38,
+        "sentimento_medio": 0.2,
+        "objecoes_consolidadas": [
+          "existing_solution"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          }
+        ],
+        "confianca_agregada": 0.53,
+        "raciocinio_sintese": "Aline visualizou a oferta de segurança, mas está satisfeita com sua solução atual de câmeras DIY. Apesar de não estar motivada a investir em um novo sistema, a proposta pode ser considerada se a confiança em fornecedores locais aumentar."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Beatriz Silva",
+        "business_name": "Beatriz Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 973.77,
+        "risk_profile": "pragmatic",
+        "recent_event": "competitor_new",
+        "has_existing_security": "alarm_monitored"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 973.77,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution",
+            "skepticism"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Beatriz recentemente viu um novo concorrente, mas está satisfeita com sua segurança atual. Ela tem algumas dúvidas sobre a confiabilidade do fornecedor local e prefere não mudar agora.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 973.77,
+          "sentimento": -0.2,
+          "objecoes": [
+            "existing_solution",
+            "skepticism"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Beatriz já possui um sistema de alarme monitorado e não está convencida de que precisa de mais, especialmente com um orçamento limitado. Ela está cética em relação à necessidade de uma solução mais cara, mas pode considerar se houver uma demonstração convincente dos benefícios.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 973.77,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Eu já tenho um sistema de alarme monitorado e estou satisfeita com ele, então não vejo necessidade de mudar. Além disso, o preço da visita é muito baixo, o que me deixa um pouco desconfiada.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 973.77,
+        "sentimento_medio": 0.0,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "skepticism"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.4,
+        "raciocinio_sintese": "Beatriz está ciente da oferta de segurança, mas permanece com sua solução atual de alarme monitorado, expressando ceticismo sobre a necessidade de mudança. Ela possui objeções relacionadas à sua solução existente e à confiabilidade do novo fornecedor, o que a leva a hesitar em tomar uma decisão mais firme."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Maria Oliveira",
+        "business_name": "Maria Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 348.98,
+        "risk_profile": "crisis_driven",
+        "recent_event": "slow_month",
+        "has_existing_security": "none"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "agendou",
+          "wtp": 348.98,
+          "sentimento": 0.7,
+          "objecoes": [],
+          "confianca": 0.6,
+          "raciocinio": "Estou preocupada com a segurança da minha loja, especialmente com arrombamentos. A proposta parece interessante e o preço é acessível. Preciso proteger meu estoque valioso.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 348.98,
+          "sentimento": -0.2,
+          "objecoes": [
+            "budget",
+            "skepticism"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Maria está preocupada com o orçamento, pois o preço parece alto em comparação com seu WTP. Ela desconfia da eficácia do sistema, especialmente porque não tem uma solução de segurança existente.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "agendou",
+          "wtp": 348.98,
+          "sentimento": 0.8,
+          "objecoes": [],
+          "confianca": 0.6,
+          "raciocinio": "Estou preocupada com a segurança da minha loja, especialmente à noite, e acho que o sistema de segurança inteligente pode ser uma boa solução. O preço da visita é muito baixo e o consultor local parece confiável. Vou agendar a visita para saber mais sobre como posso proteger meu estoque valioso.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "agendou",
+        "wtp_medio": 348.98,
+        "sentimento_medio": 0.43,
+        "objecoes_consolidadas": [
+          "budget",
+          "skepticism"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "llama-3.3-70b-versatile",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.53,
+        "raciocinio_sintese": "Maria está preocupada com a segurança da sua loja e, apesar de algumas objeções relacionadas ao orçamento e à eficácia do sistema, decidiu agendar uma visita para explorar a proposta. Dois modelos concordam com a decisão de agendar, indicando que ela vê valor na proteção do seu estoque valioso."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Renata Costa",
+        "business_name": "Renata Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 883.61,
+        "risk_profile": "crisis_driven",
+        "recent_event": "renovation",
+        "has_existing_security": "full_system"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 883.61,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Eu já tenho um sistema de segurança que me atende razoavelmente bem. A proposta é interessante, mas não vejo necessidade de mudança no momento.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 883.61,
+          "sentimento": 0.1,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Renata já tem um sistema de segurança que considera satisfatório, então não vê necessidade de mudar. O preço também não é um problema, pois está dentro do que ela está disposta a pagar.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "ignorou",
+          "wtp": 883.61,
+          "sentimento": 0.0,
+          "objecoes": [],
+          "confianca": 0.7,
+          "raciocinio": "Nao tenho tempo para verificar mensagens de seguranca agora, estou ocupada com a renovacao da loja.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 883.61,
+        "sentimento_medio": 0.1,
+        "objecoes_consolidadas": [
+          "existing_solution"
+        ],
+        "divergence_score": 1.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.6333333333333333,
+        "raciocinio_sintese": "Renata visualizou a proposta de segurança, mas sua decisão é influenciada pela confiança em seu sistema atual, que considera satisfatório. Apesar de estar disposta a pagar o valor proposto, a falta de necessidade de mudança e a falta de tempo para avaliar novas opções a levaram a não priorizar a oferta."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Gabriela Souza",
+        "business_name": "Gabriela Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 534.63,
+        "risk_profile": "pragmatic",
+        "recent_event": "competitor_new",
+        "has_existing_security": "full_system"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 534.63,
+          "sentimento": 0.1,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Gabriela visualizou a mensagem, mas não se sentiu compelida a agir. Ela está satisfeita com o sistema de segurança atual, o que a leva a não considerar a mudança neste momento. Apesar de confiar nos fornecedores locais, a solução existente atende suas necessidades.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 534.63,
+          "sentimento": 0.3,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Gabriela já possui um sistema de segurança que considera satisfatório, então não vê necessidade de agendar uma visita para uma possível troca. O sistema atual atende às suas necessidades básicas, e ela não quer investir tempo em uma mudança sem uma razão convincente.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "ignorou",
+          "wtp": 534.63,
+          "sentimento": 0.0,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Eu ja tenho um sistema de seguranca instalado na loja e estou satisfeito com ele, nao vejo necessidade de mudar.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 534.63,
+        "sentimento_medio": 0.13333333333333333,
+        "objecoes_consolidadas": [
+          "existing_solution"
+        ],
+        "divergence_score": 1.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.7333333333333333,
+        "raciocinio_sintese": "Gabriela visualizou a oferta de segurança, mas não se sentiu motivada a agir, pois está satisfeita com seu sistema atual. As objeções se concentram na adequação da solução existente, levando a uma decisão de não mudar neste momento."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Camila Lima",
+        "business_name": "Camila Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 403.3,
+        "risk_profile": "conservative",
+        "recent_event": "renovation",
+        "has_existing_security": "full_system"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 403.3,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Camila visualizou a mensagem, mas já está satisfeita com seu sistema de segurança atual. Ela acha que é desnecessário mudar, apesar de ver o valor na oferta.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 403.3,
+          "sentimento": 0.1,
+          "objecoes": [
+            "existing_solution",
+            "skepticism"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Camila está satisfeita com seu sistema de segurança atual e, como é uma pessoa conservadora, prefere não arriscar mudar para algo desconhecido. Apesar de ter visto a mensagem, ela está cética em relação a ofertas pelo WhatsApp e prefere não clicar.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 403.3,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.7,
+          "raciocinio": "Eu ja tenho um sistema de seguranca que me atende bem, nao vejo necessidade de mudar. Além disso, a confianca no provedor é importante e ainda não conheço bem a empresa.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 403.3,
+        "sentimento_medio": 0.13333333333333333,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "skepticism"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.6333333333333333,
+        "raciocinio_sintese": "Camila visualizou a oferta, mas está satisfeita com seu sistema de segurança atual, o que a leva a não considerar a mudança. Ela expressa ceticismo em relação a ofertas recebidas por WhatsApp e prefere não arriscar em soluções desconhecidas. A confiança no provedor é um fator importante para ela."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Antonio Mendes",
+        "business_name": "Antonio Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 728.86,
+        "risk_profile": "pragmatic",
+        "recent_event": "none",
+        "has_existing_security": "full_system"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 728.86,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 1.0,
+          "raciocinio": "Antonio está satisfeito com seu sistema de segurança atual, então não vê necessidade de mudar. Embora a proposta seja interessante, ele não se sente pressionado a agendar uma visita no momento.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 728.86,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Antonio já tem um sistema de segurança instalado e está relativamente satisfeito com ele, então não vê uma necessidade urgente de mudar. Ele confia na qualidade do sistema atual e acredita que é suficiente para proteger seu negócio.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 728.86,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Eu já tenho um sistema de segurança, mas não estou muito satisfeito com ele. Achei a oferta interessante, mas não sinto necessidade de mudar no momento.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 728.86,
+        "sentimento_medio": 0.2,
+        "objecoes_consolidadas": [
+          "existing_solution"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.8,
+        "raciocinio_sintese": "Antonio está satisfeito com seu sistema de segurança atual e não vê necessidade de mudar, apesar de achar a proposta interessante. Todos os modelos concordam que ele visualizou a oferta, mas não se sentiu pressionado a agir no momento."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Daniel Ribeiro",
+        "business_name": "Daniel Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 464.15,
+        "risk_profile": "conservative",
+        "recent_event": "renovation",
+        "has_existing_security": "alarm_monitored"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 464.15,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.9,
+          "raciocinio": "Vi a oferta, mas já estou satisfeito com o meu sistema atual, mesmo que não seja perfeito. A confiança nos provedores locais é alta, mas não vejo necessidade de mudança agora.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 464.15,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution",
+            "skepticism"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Daniel está satisfeito com o sistema de alarme atual, mas a ideia de uma avaliação gratuita o deixou curioso. Ele confia nos provedores locais, mas ainda tem dúvidas sobre a necessidade de um sistema tão complexo.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 464.15,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.9,
+          "raciocinio": "Eu já tenho um sistema de alarme monitorado e estou satisfeito com ele, não vejo necessidade de mudar. Além disso, o meu orçamento para segurança é limitado e não quero gastar mais do que o necessário.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 464.15,
+        "sentimento_medio": 0.2,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "skepticism"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "llama-3.3-70b-versatile",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.8,
+        "raciocinio_sintese": "Daniel visualizou a oferta de segurança, mas está satisfeito com seu sistema atual de alarme. Ele tem objeções relacionadas à solução existente e um certo ceticismo sobre a necessidade de uma mudança. Apesar disso, a avaliação gratuita o deixou curioso, mas não há urgência em alterar seu sistema atual."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Leticia Ribeiro",
+        "business_name": "Leticia Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 566.27,
+        "risk_profile": "crisis_driven",
+        "recent_event": "theft",
+        "has_existing_security": "diy_cameras"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "agendou",
+          "wtp": 566.27,
+          "sentimento": 0.8,
+          "objecoes": [],
+          "confianca": 1.0,
+          "raciocinio": "Recentemente tivemos um furto, e a segurança atual não é satisfatória. A proposta parece promissora e a confiança no fornecedor local é alta. Acredito que essa visita pode trazer uma solução efetiva para proteger meu estoque.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "agendou",
+          "wtp": 566.27,
+          "sentimento": 0.8,
+          "objecoes": [],
+          "confianca": 0.9,
+          "raciocinio": "Leticia agendou a visita devido ao recente roubo e à insatisfação com o sistema de câmeras atual. O preço acessível e a confiança na recomendação de um conhecido a convenceram a tomar uma atitude.",
+          "modelo": "command-r-plus-08-2024"
+        },
+        {
+          "decisao": "agendou",
+          "wtp": 566.27,
+          "sentimento": 0.8,
+          "objecoes": [],
+          "confianca": 0.9,
+          "raciocinio": "Estou preocupada com a segurança da loja após o recente roubo, então acho que o sistema de segurança inteligente é uma boa opção. O preço da visita é acessível e a empresa parece confiável. Vou agendar a visita para saber mais sobre como posso proteger meu estoque valioso.",
+          "modelo": "llama-3.3-70b-versatile"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "agendou",
+        "wtp_medio": 566.27,
+        "sentimento_medio": 0.8,
+        "objecoes_consolidadas": [],
+        "divergence_score": 0.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "llama-3.3-70b-versatile",
+            "concordam": true
+          }
+        ],
+        "confianca_agregada": 0.9666666666666667,
+        "raciocinio_sintese": "Leticia decidiu agendar a visita para discutir uma nova proposta de segurança após um recente furto. Todos os modelos concordam que a insatisfação com a segurança atual e a confiança no fornecedor local foram fatores decisivos. O preço acessível também foi um ponto positivo que influenciou sua decisão."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Francisco Lima",
+        "business_name": "Francisco Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 673.89,
+        "risk_profile": "pragmatic",
+        "recent_event": "none",
+        "has_existing_security": "diy_cameras"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 673.89,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution",
+            "skepticism"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Francisco já possui um sistema de câmeras, embora não esteja completamente satisfeito. Ele pode estar cético em relação a um novo fornecedor, especialmente considerando sua confiança média em provedores locais.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 673.89,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Francisco está satisfeito com o sistema de câmeras DIY, mas acha a proposta interessante. Ele está curioso sobre a tecnologia, mas não vê uma necessidade urgente de mudar, especialmente com o custo adicional.",
+          "modelo": "command-r-plus-08-2024"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 673.89,
+        "sentimento_medio": 0.2,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "skepticism"
+        ],
+        "divergence_score": 1.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "gpt-4o-mini",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.4,
+        "raciocinio_sintese": "Francisco está satisfeito com seu sistema atual de câmeras, mas encontrou a proposta de segurança interessante. Apesar de não ver uma necessidade urgente de mudança, ele está curioso sobre a nova tecnologia. Isso indica que ele está aberto a explorar opções, mas ainda hesitante em tomar uma decisão imediata."
+      }
+    },
+    {
+      "persona": {
+        "owner_name": "Bruno Almeida",
+        "business_name": "Bruno Loja Roupas",
+        "segment": "loja_roupas",
+        "wtp_brl": 629.21,
+        "risk_profile": "innovator",
+        "recent_event": "none",
+        "has_existing_security": "diy_cameras"
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "agendou",
+          "wtp": 629.21,
+          "sentimento": 0.3,
+          "objecoes": [],
+          "confianca": 1.0,
+          "raciocinio": "Bruno tem confiança total nos provedores locais, e sua insatisfação com a segurança atual o leva a buscar uma solução melhor. O preço da visita é acessível dentro do seu orçamento, e ele considera a proteção do estoque valioso uma prioridade.",
+          "modelo": "gpt-4o-mini"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 629.21,
+          "sentimento": 0.1,
+          "objecoes": [
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Bruno está satisfeito com as câmeras DIY, mas a proposta de um sistema mais robusto e personalizado despertou seu interesse. Ele prefere soluções que já conhece, mas a oferta é tentadora.",
+          "modelo": "command-r-plus-08-2024"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 629.21,
+        "sentimento_medio": 0.16,
+        "objecoes_consolidadas": [
+          "existing_solution"
+        ],
+        "divergence_score": 1.0,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-4o-mini",
+            "modelo_b": "command-r-plus-08-2024",
+            "concordam": false
+          },
+          {
+            "modelo_a": "command-r-plus-08-2024",
+            "modelo_b": "gpt-4o-mini",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.8,
+        "raciocinio_sintese": "Bruno demonstra interesse na proposta de segurança, mas ainda se sente satisfeito com sua solução atual de câmeras DIY. A objeção principal é a confiança em sua solução existente, o que o leva a visualizar a oferta em vez de agendar imediatamente. A média de sentimento reflete uma hesitação em adotar a nova solução."
+      }
+    }
+  ]
+}

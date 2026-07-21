@@ -1,0 +1,6 @@
+name=SLZ Seguranca Inteligente para Farmacias e Drogarias de Sao Luis - Protecao de Medicamentos Controlados e Caixa
+description=Sistema de seguranca inteligente franquia EMIVE para farmacias e drogarias em Sao Luis, MA. Monitoramento 24h com central inviolavel e redundancia em 4 canais (Wi-Fi, ethernet, GPRS, linha telefonica). Sensores de presenca na area de medicamentos controlados, cameras com visao noturna colorida no caixa e entrada, sirene de inhibicao, sensor de vidro quebrado e atendimento humano via WhatsApp/ligacao. Foco na dor: farmacia tem medicamentos caros e controlados, caixa com dinheiro e pix, atende ate tarde, e e alvo por saber que tem produtos de valor. Visita tecnica gratuita de 15-20 minutos para avaliar o ponto e montar proposta personalizada. Nao vendemos pelo WhatsApp sem visita. Valor simbolico R$ 1 pela visita. Conversao = agendamento da visita. Diferenciais: protecao de medicamentos controlados, sensor de vidro quebrado, monitoramento humano, consultor local Reginato.
+price_usd=0.20
+channel=word_of_mouth
+target_market=Donos de farmacias e drogarias em Sao Luis, MA, em bairros comerciais e residenciais como Centro, Cohab, Anil, Forquilha, Vinhais, Vila Luizao e Divinea, que trabalham com medicamentos controlados e caixa
+num_agents=30

@@ -1,0 +1,6 @@
+name=SLZ Seguranca Inteligente para Saloes de Beleza e Esteticas de Sao Luis - Protecao no Horario Noturno
+description=Sistema de seguranca inteligente franquia EMIVE para saloes de beleza, barbearias e clinicas de estetica em Sao Luis, MA. Monitoramento 24h com central inviolavel e redundancia em 4 canais (Wi-Fi, ethernet, GPRS, linha telefonica). Sensores de presenca na porta dos fundos e banheiros, cameras com visao noturna colorida na recepcao e cameras de botao de panico para profissionais, sirene de inhibicao e atendimento humano via WhatsApp/ligacao. Foco na dor: salao funciona ate as 20h-22h, mulheres donas trabalham sozinhas ou com poucas funcionarias no horario noturno, carregam maquinas e produtos caros, e clientes saem com celulares e joias. Visita tecnica gratuita de 15-20 minutos. Nao vendemos pelo WhatsApp sem visita. Valor simbolico R$ 1 pela visita. Conversao = agendamento da visita. Diferenciais: botao de panico silencioso, monitoramento humano, consultor local Reginato.
+price_usd=0.20
+channel=word_of_mouth
+target_market=Donas de saloes de beleza, barbearias e clinicas de estetica em Sao Luis, MA, em bairros como Calhau, Renascenca, Cohama, Jardim Renascenca e Centro, que ficam ate tarde e trabalham com equipamentos e produtos de valor
+num_agents=30

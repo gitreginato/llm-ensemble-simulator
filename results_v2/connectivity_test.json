@@ -1,0 +1,44 @@
+{
+  "gocat": {
+    "model": "gpt-oss:120b",
+    "success": true,
+    "decisao": "clicou",
+    "wtp": 400.0,
+    "latency_ms": 6072,
+    "tokens": 665,
+    "provider_used": "gocat"
+  },
+  "kilocode": {
+    "model": "kilo/cohere/north-mini-code:free",
+    "success": true,
+    "decisao": "agendou",
+    "wtp": 400.0,
+    "latency_ms": 21325,
+    "tokens": 10876,
+    "provider_used": "kilocode"
+  },
+  "devin": {
+    "model": "glm-5-2",
+    "success": true,
+    "decisao": "agendou",
+    "wtp": 400.0,
+    "latency_ms": 16396,
+    "tokens": null,
+    "provider_used": "devin"
+  },
+  "cline": {
+    "model": "gpt-oss:20b",
+    "success": false,
+    "error": "cline gpt-oss:20b (provider=openai): content vazio. error=None stderr=\u001b[31merror:\u001b[0m error: unknown option '--baseurl'\n",
+    "latency_ms": 2506
+  },
+  "ollama": {
+    "model": "nemotron-3-nano:30b",
+    "success": true,
+    "decisao": "agendou",
+    "wtp": 400.0,
+    "latency_ms": 7691,
+    "tokens": 1290,
+    "provider_used": "ollama"
+  }
+}

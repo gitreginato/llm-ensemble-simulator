@@ -1,0 +1,160 @@
+{
+  "modelo": "glm-4.7-flash",
+  "n": 30,
+  "seed": 42,
+  "cenario": "SLZ-C-ARMY",
+  "taxa_conversao": 0.0,
+  "agendaram": 0,
+  "decisoes": [
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "glm-4.7-flash",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'glm-4.7-flash'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    }
+  ]
+}

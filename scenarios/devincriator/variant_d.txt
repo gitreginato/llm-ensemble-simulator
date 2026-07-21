@@ -1,0 +1,6 @@
+name=Owl Regent Studio - Identidade Visual para Profissionais Liberais (Personal Trainer, Consultor, Nutricionista)
+description=Servico de branding para profissionais liberais: personal trainer, nutricionista, psicologo, consultor, arquiteto, fotografo e professor particular. Entregamos logotipo pessoal/profissional, paleta de cores confiavel, tipografia seria, cartao digital, assinatura de e-mail, apresentacao de proposta em PDF, posts para Instagram e LinkedIn, e capas de destaque. Diferencial: profissional liberal nao vende produto, vende confianca; a marca precisa transmitir credibilidade para o cliente pagar pelo conhecimento. Kit essencial: R$ 244 (logo + paleta + tipografia + assinatura de e-mail). Kit completo: R$ 497 (adiciona cartao digital, proposta PDF e posts). Processo: briefing por WhatsApp, entrega em 5 dias uteis. CTA: "Quero parecer profissional antes mesmo do primeiro atendimento". Ideal para profissionais que mandam proposta no Word sem identidade visual e sentem que o cliente nao leva a serio.
+price_usd=45
+channel=social_media
+target_market=Profissionais liberais no Brasil (personal trainer, nutricionista, psicologo, consultor, fotografo, arquiteto) que trabalham sozinhos e precisam de marca pessoal profissional para cobrar mais caro
+num_agents=30

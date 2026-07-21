@@ -1,0 +1,2080 @@
+{
+  "cenario": "SLZ-C-ARMY-V5-FAST",
+  "n": 8,
+  "seed": 42,
+  "modelos": [
+    "gpt-oss:120b",
+    "gemma4:31b",
+    "nemotron-3-super",
+    "gpt-oss:20b",
+    "nemotron-3-nano:30b",
+    "minimax-m3"
+  ],
+  "sintetizador": "gemma4:31b",
+  "taxa_conversao": 0.0,
+  "agendaram": 0,
+  "sucessos": 8,
+  "falhas": 3,
+  "ic95": [
+    5.949030289440215e-05,
+    0.2622172487171857
+  ],
+  "divergence_score_medio": 0.35337500000000005,
+  "custo_total_usd": 0.0,
+  "custo_por_modelo": {},
+  "personas": [
+    {
+      "persona": {
+        "id": 1,
+        "owner_name": "Carlos Souza",
+        "gender": "male",
+        "segment": "estudio_tatuagem",
+        "segment_perene": true,
+        "segment_porte": "pequeno",
+        "bairro": "Renascenca",
+        "bairro_risco": "baixo",
+        "bairro_perfil": "comercial_alto",
+        "bairro_p_theft": 0.05,
+        "risk_profile": "pragmatic",
+        "recent_event": "renovation",
+        "has_existing_security": "alarm_monitored",
+        "existing_security_satisfaction": 3,
+        "revenue_mensal": 80616.29,
+        "margin": 0.2867,
+        "budget_mensal_seguranca": 779.92,
+        "mensalidade_emive": 294.0,
+        "ticket_medio_36m": 10584.0,
+        "multa_proporcional_base": 10290.0,
+        "wtp_brl": 16916.3,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": true,
+        "concorrencia_local_instalada": true,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "solo",
+        "tech_savviness": 6,
+        "trust_local_providers": 8,
+        "bio": "Dono(a) de estudio tatuagem no Renascenca. Faturamento mensal R$ 80616. Porte pequeno, mensalidade R$ 294. segmento perene (estavel). tem alarme monitorado concorrente. esta reformando o negocio. precisa de cameras externas (EMIVE nao cobre). concorrencia local ja atua na regiao."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "agendou",
+          "wtp": 16916.3,
+          "sentimento": 0.5,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local"
+          ],
+          "confianca": 0.7,
+          "raciocinio": "O dono tem baixa satisfação com a segurança atual e alto orçamento disponível, o que favorece a tomada de ação. Contudo, a falta de cobertura externa e a presença de concorrentes locais geram objeções que ainda assim não impedem a marcação de visita.",
+          "modelo": "gpt-oss:20b"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 16916.3,
+          "sentimento": 0.2,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local",
+            "contract_fear"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Carlos está insatisfeito com o alarme atual e a indicação gera interesse inicial. Porém, como estúdio de tatuagem em área comercial, ele precisa de câmeras externas e hesita diante de um contrato de 36 meses.",
+          "modelo": "gemma4:31b"
+        },
+        {
+          "decisao": "ignorou",
+          "wtp": 16916.3,
+          "sentimento": -0.4,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local"
+          ],
+          "confianca": 0.7,
+          "raciocinio": "Carlos viu a mensagem, mas percebeu que o sistema EMIVE cobre apenas a área interna, enquanto sua loja precisa de proteção na vitrine e estacionamento. Além disso, há muitos instaladores locais confiáveis no bairro, o que reduz a motivação para buscar uma nova solução. Por isso, ele optou por ignorar a oferta.",
+          "modelo": "nemotron-3-super"
+        },
+        {
+          "decisao": "agendou",
+          "wtp": 16916.3,
+          "sentimento": 0.2,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local"
+          ],
+          "confianca": 0.7,
+          "raciocinio": "O proprietário tem baixa satisfação com o alarme atual e recentemente renovou o espaço, mas precisa de cobertura externa que o EMIVE não oferece, além de concorrência local forte. Apesar da confiança em instaladores locais, a limitação de área interna gera objeções.",
+          "modelo": "nemotron-3-nano:30b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 16916.3,
+          "sentimento": -0.2,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Carlos viu a mensagem, mas percebeu que o sistema EMIVE não cobre a vitrine e o estacionamento, que são críticos para seu estúdio. Além disso, há muitos instaladores locais, o que o deixa mais cauteloso em mudar de fornecedor.",
+          "modelo": "gpt-oss:120b"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 16916.3,
+          "sentimento": 0.15,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local",
+            "existing_solution"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Carlos está insatisfeito com o alarme atual (3/10) e tem orçamento disponível, o que o motivou a clicar, porém a limitação de cobertura apenas interna da EMIVE é incompatível com a vitrine exposta do estúdio de tatuagem. Com 20-30 instaladores locais atuantes no Renascença e alta confiança em prestadores locais (8/10), ele tende a comparar opções que ofereçam cobertura externa também. Clicou por curiosidade, mas a incompatibilidade técnica e a concorrência local o impedem de agendar a visita técnica.",
+          "modelo": "minimax-m3"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "gpt-oss:20b",
+          "role": "conservador",
+          "source": "cline",
+          "latency_ms": 30860,
+          "http_status": 200,
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": null,
+          "provider_used": "cline"
+        },
+        {
+          "modelo": "gemma4:31b",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 2004,
+          "http_status": 200,
+          "prompt_tokens": 1047,
+          "completion_tokens": 149,
+          "total_tokens": 1196,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "nemotron-3-super",
+          "role": "cetico",
+          "source": "gocat",
+          "latency_ms": 19759,
+          "http_status": 200,
+          "prompt_tokens": 1035,
+          "completion_tokens": 1881,
+          "total_tokens": 2916,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "nemotron-3-nano:30b",
+          "role": "estrategico",
+          "source": "ollama",
+          "latency_ms": 32818,
+          "http_status": 200,
+          "prompt_tokens": 1035,
+          "completion_tokens": 1443,
+          "total_tokens": 2478,
+          "provider_used": "ollama"
+        },
+        {
+          "modelo": "gpt-oss:120b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 14408,
+          "http_status": 200,
+          "prompt_tokens": 1005,
+          "completion_tokens": 886,
+          "total_tokens": 1891,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "minimax-m3",
+          "role": "realista",
+          "source": "ollama",
+          "latency_ms": 29817,
+          "http_status": 200,
+          "prompt_tokens": 1103,
+          "completion_tokens": 1997,
+          "total_tokens": 3100,
+          "provider_used": "ollama"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "clicou",
+        "wtp_medio": 16916.3,
+        "sentimento_medio": 0.05,
+        "objecoes_consolidadas": [
+          "area_externa",
+          "concorrencia_local",
+          "contract_fear",
+          "existing_solution"
+        ],
+        "divergence_score": 0.6,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "gemma4:31b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "minimax-m3",
+            "concordam": true
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-nano:30b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-nano:30b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.56,
+        "raciocinio_sintese": "Carlos apresenta insatisfação com o sistema atual e possui orçamento, o que gera interesse inicial (clique). No entanto, a falta de cobertura para a área externa e a forte presença de concorrentes locais criam barreiras significativas. O consenso indica que, embora haja curiosidade, a incompatibilidade técnica do produto com a necessidade de proteger a vitrine impede a conversão final em agendamento."
+      }
+    },
+    {
+      "persona": {
+        "id": 2,
+        "owner_name": "Camila Ribeiro",
+        "gender": "female",
+        "segment": "estudio_tatuagem",
+        "segment_perene": true,
+        "segment_porte": "pequeno",
+        "bairro": "Centro",
+        "bairro_risco": "alto",
+        "bairro_perfil": "comercial_historico",
+        "bairro_p_theft": 0.15,
+        "risk_profile": "conservative",
+        "recent_event": "renovation",
+        "has_existing_security": "diy_cameras",
+        "existing_security_satisfaction": 5,
+        "revenue_mensal": 56463.99,
+        "margin": 0.3174,
+        "budget_mensal_seguranca": 640.2,
+        "mensalidade_emive": 294.0,
+        "ticket_medio_36m": 10584.0,
+        "multa_proporcional_base": 10290.0,
+        "wtp_brl": 31558.78,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": true,
+        "concorrencia_local_instalada": true,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "family",
+        "tech_savviness": 2,
+        "trust_local_providers": 4,
+        "bio": "Dono(a) de estudio tatuagem no Centro. Faturamento mensal R$ 56464. Porte pequeno, mensalidade R$ 294. segmento perene (estavel). tem cameras baratas sem monitoramento. esta reformando o negocio. precisa de cameras externas (EMIVE nao cobre). concorrencia local ja atua na regiao."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 31558.78,
+          "sentimento": -0.3,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local"
+          ],
+          "confianca": 0.2,
+          "raciocinio": "O gestor percebe que o produto cobre apenas a área interna e que há muitos instaladores locais, o que diminui a confiança no valor agregado.",
+          "modelo": "gpt-oss:20b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 31558.78,
+          "sentimento": -0.3,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local",
+            "complexity"
+          ],
+          "confianca": 0.0,
+          "raciocinio": "Camila viu a mensagem, mas o fato de o sistema cobrir só a área interna não atende à necessidade de proteção da vitrine e do estacionamento. Além disso, há muitos instaladores locais, o que gera desconfiança de que a EMIVE não seja a melhor escolha.",
+          "modelo": "gpt-oss:120b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 31558.78,
+          "sentimento": -0.3,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local",
+            "skepticism",
+            "timing"
+          ],
+          "confianca": 0.2,
+          "raciocinio": "Camila viu a mensagem mas não clicou porque percebeu que o sistema EMIVE cobre apenas a área interna, enquanto seu estabelecimento precisa de proteção na vitrine e estacionamento. Além disso, com muitas opções de instaladores locais e baixa familiaridade com tecnologia, ela prefere manter sua solução atual de câmeras caseiras.",
+          "modelo": "nemotron-3-super"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 31558.78,
+          "sentimento": -0.25,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local",
+            "complexity",
+            "skepticism",
+            "contract_fear"
+          ],
+          "confianca": 0.25,
+          "raciocinio": "Camila tem perfil conservador, baixa afinidade tecnologica (2/10) e confianca moderada em prestadores locais (4/10), o que gera barreira alta para aderir a um sistema novo via indicacao. A EMIVE so cobre area interna, mas o estudio de tatuagem no Centro historico precisa proteger vitrine exposta, e ainda ha 20-30 instaladores locais competindo, entao a procura de alternativas e mais provavel do que o agendamento imediato. Sem gatilho de ocorencia recente (so reforma) e com decisao passando pela familia, ela provavelmente abriu a mensagem mas nao avancou para o clique.",
+          "modelo": "minimax-m3"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 31558.78,
+          "sentimento": -0.2,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local",
+            "complexity",
+            "contract_fear"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Camila tem baixa afinidade tecnológica e medo de contratos longos (36 meses). Além disso, por estar no Centro, ela prioriza a segurança da fachada/vitrine, algo que a EMIVE não cobre.",
+          "modelo": "gemma4:31b"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "gpt-oss:20b",
+          "role": "conservador",
+          "source": "cline",
+          "latency_ms": 44981,
+          "http_status": 200,
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": null,
+          "provider_used": "cline"
+        },
+        {
+          "modelo": "gpt-oss:120b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 11655,
+          "http_status": 200,
+          "prompt_tokens": 1005,
+          "completion_tokens": 876,
+          "total_tokens": 1881,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "nemotron-3-super",
+          "role": "cetico",
+          "source": "gocat",
+          "latency_ms": 12984,
+          "http_status": 200,
+          "prompt_tokens": 1036,
+          "completion_tokens": 1536,
+          "total_tokens": 2572,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "nemotron-3-nano:30b",
+          "role": "estrategico",
+          "source": "ollama",
+          "erro": "Ollama: content e reasoning_content vazios"
+        },
+        {
+          "modelo": "minimax-m3",
+          "role": "realista",
+          "source": "ollama",
+          "latency_ms": 19316,
+          "http_status": 200,
+          "prompt_tokens": 1103,
+          "completion_tokens": 1413,
+          "total_tokens": 2516,
+          "provider_used": "ollama"
+        },
+        {
+          "modelo": "gemma4:31b",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 1791,
+          "http_status": 200,
+          "prompt_tokens": 1044,
+          "completion_tokens": 149,
+          "total_tokens": 1193,
+          "provider_used": "gocat"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 31558.78,
+        "sentimento_medio": -0.27,
+        "objecoes_consolidadas": [
+          "area_externa",
+          "concorrencia_local",
+          "complexity",
+          "skepticism",
+          "timing",
+          "contract_fear"
+        ],
+        "divergence_score": 0.2,
+        "concordancia": [
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "gemma4:31b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "minimax-m3",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "gemma4:31b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "minimax-m3",
+            "concordam": true
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "gemma4:31b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "minimax-m3",
+            "modelo_b": "gemma4:31b",
+            "concordam": true
+          }
+        ],
+        "confianca_agregada": 0.17,
+        "raciocinio_sintese": "O consenso indica que Camila visualizou a oferta, mas não avançou para o clique devido à limitação do sistema em cobrir a área externa (vitrine e estacionamento), essencial para seu estúdio no Centro. A decisão é reforçada pela baixa afinidade tecnológica, medo de contratos longos e a forte concorrência de instaladores locais."
+      }
+    },
+    {
+      "persona": {
+        "id": 3,
+        "owner_name": "Daniela Souza",
+        "gender": "female",
+        "segment": "estacionamento",
+        "segment_perene": true,
+        "segment_porte": "medio",
+        "bairro": "Turu",
+        "bairro_risco": "medio",
+        "bairro_perfil": "comercial_medio",
+        "bairro_p_theft": 0.08,
+        "risk_profile": "crisis_driven",
+        "recent_event": "theft",
+        "has_existing_security": "alarm_monitored",
+        "existing_security_satisfaction": 9,
+        "revenue_mensal": 128784.11,
+        "margin": 0.3459,
+        "budget_mensal_seguranca": 2323.71,
+        "mensalidade_emive": 398.66,
+        "ticket_medio_36m": 14351.61,
+        "multa_proporcional_base": 13952.95,
+        "wtp_brl": 73492.4,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": true,
+        "concorrencia_local_instalada": false,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "partner",
+        "tech_savviness": 2,
+        "trust_local_providers": 4,
+        "bio": "Dono(a) de estacionamento no Turu. Faturamento mensal R$ 128784. Porte medio, mensalidade R$ 399. segmento perene (estavel). tem alarme monitorado concorrente. sofreu roubo recente. precisa de cameras externas (EMIVE nao cobre)."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 73492.4,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "O furto recente gera interesse, mas ela já está muito satisfeita com o alarme atual. Além disso, para um estacionamento, a limitação de cobertura apenas interna da EMIVE é um ponto crítico e impeditivo.",
+          "modelo": "gemma4:31b"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 73492.4,
+          "sentimento": -0.2,
+          "objecoes": [
+            "area_externa",
+            "existing_solution"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Daniela viu a mensagem e clicou para saber mais, mas como seu estacionamento precisa de cobertura externa e já possui um sistema de alarme monitorado com alta satisfação, ela não agendou a visita.",
+          "modelo": "nemotron-3-super"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 73492.4,
+          "sentimento": -0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa",
+            "complexity",
+            "skepticism"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Apesar do recente furto, Daniela já tem um alarme monitorado com alta satisfação, o que diminui a percepção de necessidade. O sistema EMIVE não cobre a área externa do estacionamento, gerando objeção de cobertura. Além disso, a baixa familiaridade com tecnologia e a desconfiança nos fornecedores locais tornam a oferta menos atrativa.",
+          "modelo": "gpt-oss:120b"
+        },
+        {
+          "decisao": "ignorou",
+          "wtp": 73492.4,
+          "sentimento": -0.6,
+          "objecoes": [
+            "area_externa",
+            "existing_solution",
+            "skepticism",
+            "complexity"
+          ],
+          "confianca": 0.2,
+          "raciocinio": "Daniela já possui um alarme monitorado muito satisfatório e não vê necessidade de outra solução que só cobre áreas internas, além de desconfiar de novos fornecedores e achar a tecnologia complicada.",
+          "modelo": "nemotron-3-nano:30b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 73492.4,
+          "sentimento": -0.35,
+          "objecoes": [
+            "area_externa",
+            "existing_solution",
+            "skepticism",
+            "complexity"
+          ],
+          "confianca": 0.15,
+          "raciocinio": "Daniela já tem um alarme monitorado com satisfação 9/10, e embora o furto recente crie alguma sensibilidade, a EMIVE só cobre área interna — incompatível com um estacionamento que precisa proteger o pátio externo. A baixa afinidade tecnológica (2/10), a baixa confiança em prestadores locais e o fato de o decisor ser o sócio reforçam que a mensagem será vista, mas não convertida. O custo da oferta está dentro do WTP declarado, então orçamento não é o impeditivo principal.",
+          "modelo": "minimax-m3"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "gpt-oss:20b",
+          "role": "conservador",
+          "source": "cline",
+          "erro": "cline gpt-oss:20b (provider=openai): content vazio. error=None stderr=AI SDK Warning (openai-compatible.chat / gpt-oss:20b): The 'openai-compatible' key in providerOptions is deprecated. Use 'openaiCo"
+        },
+        {
+          "modelo": "gemma4:31b",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 1721,
+          "http_status": 200,
+          "prompt_tokens": 1032,
+          "completion_tokens": 137,
+          "total_tokens": 1169,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "nemotron-3-super",
+          "role": "cetico",
+          "source": "gocat",
+          "latency_ms": 7867,
+          "http_status": 200,
+          "prompt_tokens": 1022,
+          "completion_tokens": 897,
+          "total_tokens": 1919,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gpt-oss:120b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 10875,
+          "http_status": 200,
+          "prompt_tokens": 990,
+          "completion_tokens": 922,
+          "total_tokens": 1912,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "nemotron-3-nano:30b",
+          "role": "estrategico",
+          "source": "ollama",
+          "latency_ms": 34001,
+          "http_status": 200,
+          "prompt_tokens": 1022,
+          "completion_tokens": 1756,
+          "total_tokens": 2778,
+          "provider_used": "ollama"
+        },
+        {
+          "modelo": "minimax-m3",
+          "role": "realista",
+          "source": "ollama",
+          "latency_ms": 19743,
+          "http_status": 200,
+          "prompt_tokens": 1090,
+          "completion_tokens": 1196,
+          "total_tokens": 2286,
+          "provider_used": "ollama"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "clicou",
+        "wtp_medio": 73492.4,
+        "sentimento_medio": -0.21,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "area_externa",
+          "complexity",
+          "skepticism"
+        ],
+        "divergence_score": 0.4,
+        "concordancia": [
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-nano:30b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.25,
+        "raciocinio_sintese": "A maioria dos modelos indica que Daniela clicou na oferta devido à sensibilidade causada por um furto recente. No entanto, a conversão em agendamento é impedida pela alta satisfação com o sistema atual e a incompatibilidade da solução EMIVE, que não cobre a área externa do estacionamento. Objeções tecnológicas e ceticismo com fornecedores locais também corroboram a baixa probabilidade de fechamento."
+      }
+    },
+    {
+      "persona": {
+        "id": 4,
+        "owner_name": "Thiago Barros",
+        "gender": "male",
+        "segment": "autopecas",
+        "segment_perene": true,
+        "segment_porte": "medio",
+        "bairro": "Joao Paulo",
+        "bairro_risco": "alto",
+        "bairro_perfil": "comercial_medio",
+        "bairro_p_theft": 0.15,
+        "risk_profile": "crisis_driven",
+        "recent_event": "none",
+        "has_existing_security": "alarm_monitored",
+        "existing_security_satisfaction": 8,
+        "revenue_mensal": 320626.41,
+        "margin": 0.188,
+        "budget_mensal_seguranca": 6113.77,
+        "mensalidade_emive": 391.71,
+        "ticket_medio_36m": 14101.4,
+        "multa_proporcional_base": 13709.69,
+        "wtp_brl": 145847.34,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": true,
+        "concorrencia_local_instalada": false,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "solo",
+        "tech_savviness": 6,
+        "trust_local_providers": 9,
+        "bio": "Dono(a) de autopecas no Joao Paulo. Faturamento mensal R$ 320626. Porte medio, mensalidade R$ 392. segmento perene (estavel). tem alarme monitorado concorrente. precisa de cameras externas (EMIVE nao cobre)."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 145847.34,
+          "sentimento": 0.1,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Thiago já possui um sistema de alarme monitorado e está satisfeito (8/10), não sentindo necessidade de troca imediata. Além disso, como dono de autopeças, ele precisaria de monitoramento externo para o pátio/vitrine, o que a EMIVE não oferece.",
+          "modelo": "gemma4:31b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 145847.34,
+          "sentimento": -0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.7,
+          "raciocinio": "Thiago visualizou a oferta, mas como já possui um sistema de alarme monitorado com boa satisfação e necessita de cobertura externa (vitrine, estacionamento), que o EMIVE não oferece, decidiu não agendar a visita técnica.",
+          "modelo": "nemotron-3-super"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 145847.34,
+          "sentimento": -0.1,
+          "objecoes": [
+            "area_externa",
+            "existing_solution"
+          ],
+          "confianca": 0.9,
+          "raciocinio": "Apesar da alta confiança em provedores locais, o cliente já possui uma solução de monitoramento que lhe traz satisfação e não percebe necessidade de cobertura externa adicional. Assim, ele visualizou a oferta, mas não avançou para o agendamento.",
+          "modelo": "gpt-oss:20b"
+        },
+        {
+          "decisao": "ignorou",
+          "wtp": 145847.34,
+          "sentimento": -0.4,
+          "objecoes": [
+            "area_externa",
+            "existing_solution"
+          ],
+          "confianca": 0.78,
+          "raciocinio": "Ele já possui um alarme monitorado com alta satisfação e não sente urgência em mudar, além de precisar de cobertura externa que o EMIVE não oferece.",
+          "modelo": "nemotron-3-nano:30b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 145847.34,
+          "sentimento": 0.15,
+          "objecoes": [
+            "existing_solution",
+            "area_externa",
+            "need_lack"
+          ],
+          "confianca": 0.25,
+          "raciocinio": "Thiago já tem um sistema de alarme monitorado com satisfação 8/10, então não vê urgência em trocar. Sua autopeças no João Paulo provavelmente tem pátio com estoque, estacionamento de veículos e vitrine externa, mas a EMIVE cobre apenas área interna — um desencontro claro com a necessidade real do negócio. Sem evento recente de roubo e com perfil crisis_driven sem crise ativa, ele apenas visualiza a indicação por respeito ao contato, mas não clica para agendar.",
+          "modelo": "minimax-m3"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 145847.34,
+          "sentimento": -0.3,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Thiago vê que já tem um alarme monitorado com boa nota e não sente necessidade de trocar agora. Além disso, o sistema EMIVE cobre só a área interna, enquanto ele precisa proteger a vitrine e o estacionamento, o que gera objeção de área externa.",
+          "modelo": "gpt-oss:120b"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "gemma4:31b",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 2530,
+          "http_status": 200,
+          "prompt_tokens": 1034,
+          "completion_tokens": 154,
+          "total_tokens": 1188,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "nemotron-3-super",
+          "role": "cetico",
+          "source": "gocat",
+          "latency_ms": 25258,
+          "http_status": 200,
+          "prompt_tokens": 1027,
+          "completion_tokens": 1732,
+          "total_tokens": 2759,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gpt-oss:20b",
+          "role": "conservador",
+          "source": "cline",
+          "latency_ms": 20667,
+          "http_status": 200,
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": null,
+          "provider_used": "cline"
+        },
+        {
+          "modelo": "nemotron-3-nano:30b",
+          "role": "estrategico",
+          "source": "ollama",
+          "latency_ms": 12497,
+          "http_status": 200,
+          "prompt_tokens": 1027,
+          "completion_tokens": 1611,
+          "total_tokens": 2638,
+          "provider_used": "ollama"
+        },
+        {
+          "modelo": "minimax-m3",
+          "role": "realista",
+          "source": "ollama",
+          "latency_ms": 14209,
+          "http_status": 200,
+          "prompt_tokens": 1092,
+          "completion_tokens": 1088,
+          "total_tokens": 2180,
+          "provider_used": "ollama"
+        },
+        {
+          "modelo": "gpt-oss:120b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 6716,
+          "http_status": 200,
+          "prompt_tokens": 995,
+          "completion_tokens": 524,
+          "total_tokens": 1519,
+          "provider_used": "gocat"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 145847.34,
+        "sentimento_medio": -0.108,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "area_externa",
+          "need_lack"
+        ],
+        "divergence_score": 0.33,
+        "concordancia": [
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "gpt-oss:20b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "minimax-m3",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "gpt-oss:20b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "minimax-m3",
+            "concordam": true
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "minimax-m3",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-nano:30b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-nano:30b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "minimax-m3",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.655,
+        "raciocinio_sintese": "O consenso indica que Thiago Barros apenas visualizou a oferta sem avançar para o agendamento. A decisão é motivada pela satisfação com o sistema de alarme atual e a lacuna na oferta da EMIVE, que não cobre áreas externas (pátio e vitrine), essenciais para o negócio de autopeças."
+      }
+    },
+    {
+      "persona": {
+        "id": 5,
+        "owner_name": "Aline Lima",
+        "gender": "female",
+        "segment": "barbearia",
+        "segment_perene": true,
+        "segment_porte": "pequeno",
+        "bairro": "Vila Embratel",
+        "bairro_risco": "muito_alto",
+        "bairro_perfil": "periferia",
+        "bairro_p_theft": 0.25,
+        "risk_profile": "conservative",
+        "recent_event": "renovation",
+        "has_existing_security": "none",
+        "existing_security_satisfaction": 0,
+        "revenue_mensal": 43799.99,
+        "margin": 0.2835,
+        "budget_mensal_seguranca": 518.86,
+        "mensalidade_emive": 294.0,
+        "ticket_medio_36m": 10584.0,
+        "multa_proporcional_base": 10290.0,
+        "wtp_brl": 25083.12,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": false,
+        "concorrencia_local_instalada": true,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "solo",
+        "tech_savviness": 3,
+        "trust_local_providers": 8,
+        "bio": "Dono(a) de barbearia no Vila Embratel. Faturamento mensal R$ 43800. Porte pequeno, mensalidade R$ 294. segmento perene (estavel). sem seguranca eletronica atualmente. esta reformando o negocio. concorrencia local ja atua na regiao."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 25083.12,
+          "sentimento": 0.2,
+          "objecoes": [
+            "contract_fear",
+            "concorrencia_local"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Aline está interessada pois não tem segurança e o bairro é perigoso, mas hesita devido ao contrato longo de 36 meses e à preferência por instaladores locais conhecidos na Vila Embratel.",
+          "modelo": "gemma4:31b"
+        },
+        {
+          "decisao": "agendou",
+          "wtp": 25083.12,
+          "sentimento": 0.73,
+          "objecoes": [],
+          "confianca": 0.85,
+          "raciocinio": "Aline percebe o valor da proteção e o custo está muito abaixo da sua WTP, levando-a a marcar a visita. O orçamento amplamente abaixo da média incrívelmente segura a decisão.",
+          "modelo": "gpt-oss:20b"
+        },
+        {
+          "decisao": "ignorou",
+          "wtp": 25083.12,
+          "sentimento": -0.3,
+          "objecoes": [
+            "concorrencia_local",
+            "skepticism",
+            "timing"
+          ],
+          "confianca": 0.1,
+          "raciocinio": "Aline viu a mensagem, mas decidiu ignorar devido à grande concorrência de instaladores locais e à sua baixa familiaridade com tecnologia, além de estar focada na recente reforma.",
+          "modelo": "nemotron-3-super"
+        },
+        {
+          "decisao": "agendou",
+          "wtp": 25083.12,
+          "sentimento": 0.55,
+          "objecoes": [
+            "concorrencia_local"
+          ],
+          "confianca": 0.7,
+          "raciocinio": "Aline vê a alta vulnerabilidade do seu salão e o investimento cabe no seu orçamento, por isso aceita a visita técnica. Apesar da preocupação com a concorrência de instaladores locais, confia nos fornecedores da região. O contrato de 36 meses ainda parece aceitável diante do risco de arrombamento.",
+          "modelo": "gpt-oss:120b"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 400.0,
+          "sentimento": 0.2,
+          "objecoes": [
+            "concorrencia_local",
+            "complexity",
+            "skepticism",
+            "contract_fear"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Aline tem bairro de risco muito alto e zero segurança instalada, o que gera necessidade real, mas o perfil conservador e a baixa afinidade tecnológica (3/10) freiam a decisão imediata. Com 20-30 instaladores locais atuantes na Vila Embratel e alta confiança em prestadores locais (8/10), ela tende a clicar para conhecer a oferta, porém vai cotar opções da região antes de fechar contrato de 36 meses. A reforma recente mostra que investiu no negócio, mas o medo de ficar presa a contrato longo pesa contra o agendamento.",
+          "modelo": "minimax-m3"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 25083.12,
+          "sentimento": 0.35,
+          "objecoes": [
+            "concorrencia_local"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Aline viu a mensagem e clicou por curiosidade, mas ainda hesita devido à forte concorrência local de instaladores.",
+          "modelo": "nemotron-3-nano:30b"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "gemma4:31b",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 1970,
+          "http_status": 200,
+          "prompt_tokens": 1030,
+          "completion_tokens": 136,
+          "total_tokens": 1166,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gpt-oss:20b",
+          "role": "conservador",
+          "source": "cline",
+          "latency_ms": 16473,
+          "http_status": 200,
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": null,
+          "provider_used": "cline"
+        },
+        {
+          "modelo": "nemotron-3-super",
+          "role": "cetico",
+          "source": "gocat",
+          "latency_ms": 18260,
+          "http_status": 200,
+          "prompt_tokens": 1021,
+          "completion_tokens": 1883,
+          "total_tokens": 2904,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gpt-oss:120b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 11966,
+          "http_status": 200,
+          "prompt_tokens": 993,
+          "completion_tokens": 897,
+          "total_tokens": 1890,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "minimax-m3",
+          "role": "realista",
+          "source": "ollama",
+          "latency_ms": 22766,
+          "http_status": 200,
+          "prompt_tokens": 1088,
+          "completion_tokens": 1797,
+          "total_tokens": 2885,
+          "provider_used": "ollama"
+        },
+        {
+          "modelo": "nemotron-3-nano:30b",
+          "role": "estrategico",
+          "source": "ollama",
+          "latency_ms": 26120,
+          "http_status": 200,
+          "prompt_tokens": 1021,
+          "completion_tokens": 1656,
+          "total_tokens": 2677,
+          "provider_used": "ollama"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "clicou",
+        "wtp_medio": 20872.18,
+        "sentimento_medio": 0.21,
+        "objecoes_consolidadas": [
+          "contract_fear",
+          "concorrencia_local",
+          "skepticism",
+          "timing",
+          "complexity"
+        ],
+        "divergence_score": 0.6,
+        "concordancia": [
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "gpt-oss:20b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "minimax-m3",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "minimax-m3",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": true
+          }
+        ],
+        "confianca_agregada": 0.52,
+        "raciocinio_sintese": "A maioria dos modelos converge para a ação de 'clicar', refletindo o interesse de Aline devido à alta vulnerabilidade do seu negócio. No entanto, existe uma hesitação significativa causada pela forte preferência por instaladores locais e pelo medo de contratos longos. O consenso indica que ela busca a informação, mas não está pronta para o agendamento imediato sem comparar com a concorrência da região."
+      }
+    },
+    {
+      "persona": {
+        "id": 6,
+        "owner_name": "Rafael Souza",
+        "gender": "male",
+        "segment": "estudio_tatuagem",
+        "segment_perene": true,
+        "segment_porte": "pequeno",
+        "bairro": "Turu",
+        "bairro_risco": "medio",
+        "bairro_perfil": "comercial_medio",
+        "bairro_p_theft": 0.08,
+        "risk_profile": "pragmatic",
+        "recent_event": "renovation",
+        "has_existing_security": "alarm_monitored",
+        "existing_security_satisfaction": 6,
+        "revenue_mensal": 91351.24,
+        "margin": 0.3464,
+        "budget_mensal_seguranca": 887.43,
+        "mensalidade_emive": 294.0,
+        "ticket_medio_36m": 10584.0,
+        "multa_proporcional_base": 10290.0,
+        "wtp_brl": 20434.53,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": true,
+        "concorrencia_local_instalada": true,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "solo",
+        "tech_savviness": 6,
+        "trust_local_providers": 7,
+        "bio": "Dono(a) de estudio tatuagem no Turu. Faturamento mensal R$ 91351. Porte pequeno, mensalidade R$ 294. segmento perene (estavel). tem alarme monitorado concorrente. esta reformando o negocio. precisa de cameras externas (EMIVE nao cobre). concorrencia local ja atua na regiao."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 20434.53,
+          "sentimento": -0.3,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local"
+          ],
+          "confianca": 0.7,
+          "raciocinio": "Rafael viu a mensagem mas não clicou porque o sistema EMIVE cobre apenas a área interna, enquanto seu estúdio precisa de proteção na vitrine e estacionamento, além de haver muitas opções de instaladores locais. Ele considera seu alarme atual suficiente e prefere aguardar a reforma antes de investir em nova segurança.",
+          "modelo": "nemotron-3-super"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 20434.53,
+          "sentimento": -0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa",
+            "concorrencia_local"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Rafael já possui monitoramento e está satisfeito moderadamente. Como o sistema da EMIVE foca apenas na área interna e ele está no Turu, onde há muita concorrência de instaladores locais, ele não vê vantagem em trocar agora.",
+          "modelo": "gemma4:31b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 20434.53,
+          "sentimento": -0.3,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local",
+            "existing_solution"
+          ],
+          "confianca": 0.2,
+          "raciocinio": "Rafael viu a mensagem, mas percebeu que o sistema EMIVE cobre apenas o interior, enquanto sua loja precisa proteger a vitrine e o estacionamento. Além disso, há muitos instaladores locais oferecendo soluções semelhantes, o que reduz seu interesse imediato. Por isso, ele apenas visualizou a proposta sem clicar.",
+          "modelo": "gpt-oss:120b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 20434.53,
+          "sentimento": 0.3,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Considerando a necessidade de cobertura externa e a presença de concorrência local, o cliente mantém interesse mas hesita em avançar.",
+          "modelo": "gpt-oss:20b"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 20434.53,
+          "sentimento": 0.2,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local",
+            "contract_fear"
+          ],
+          "confianca": 0.7,
+          "raciocinio": "Ele leu a mensagem e clicou, mas hesita porque o sistema só cobre área interna, enquanto ele precisa proteger a vitrine e o estacionamento, além de desconfiar da concorrência local e do contrato de 36 meses.",
+          "modelo": "nemotron-3-nano:30b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 20434.53,
+          "sentimento": -0.25,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local",
+            "existing_solution",
+            "need_lack"
+          ],
+          "confianca": 0.1,
+          "raciocinio": "Rafael é pragmático e tem boa receita, mas a EMIVE só cobre área interna e seu estúdio de tatuagem tem vitrine exposta que precisa de cobertura externa. Com 20-30 instaladores locais no Turu e um alarme monitorado já instalado (satisfação 6/10), ele viu a mensagem via indicação mas não clicou porque a proposta claramente não atende sua necessidade principal de proteger a vitrine e fachada. O evento recente foi apenas uma reforma, sem urgência de segurança que justificasse trocar de fornecedor.",
+          "modelo": "minimax-m3"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "nemotron-3-super",
+          "role": "cetico",
+          "source": "gocat",
+          "latency_ms": 15169,
+          "http_status": 200,
+          "prompt_tokens": 1034,
+          "completion_tokens": 1651,
+          "total_tokens": 2685,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gemma4:31b",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 2134,
+          "http_status": 200,
+          "prompt_tokens": 1046,
+          "completion_tokens": 149,
+          "total_tokens": 1195,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gpt-oss:120b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 10184,
+          "http_status": 200,
+          "prompt_tokens": 1004,
+          "completion_tokens": 849,
+          "total_tokens": 1853,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gpt-oss:20b",
+          "role": "conservador",
+          "source": "cline",
+          "latency_ms": 19325,
+          "http_status": 200,
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": null,
+          "provider_used": "cline"
+        },
+        {
+          "modelo": "nemotron-3-nano:30b",
+          "role": "estrategico",
+          "source": "ollama",
+          "latency_ms": 11081,
+          "http_status": 200,
+          "prompt_tokens": 1034,
+          "completion_tokens": 1676,
+          "total_tokens": 2710,
+          "provider_used": "ollama"
+        },
+        {
+          "modelo": "minimax-m3",
+          "role": "realista",
+          "source": "ollama",
+          "latency_ms": 26183,
+          "http_status": 200,
+          "prompt_tokens": 1102,
+          "completion_tokens": 1327,
+          "total_tokens": 2429,
+          "provider_used": "ollama"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 20434.53,
+        "sentimento_medio": -0.108,
+        "objecoes_consolidadas": [
+          "area_externa",
+          "concorrencia_local",
+          "existing_solution",
+          "contract_fear",
+          "need_lack"
+        ],
+        "divergence_score": 0.167,
+        "concordancia": [
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "gemma4:31b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "gpt-oss:20b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "minimax-m3",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "gpt-oss:20b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "minimax-m3",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "gpt-oss:20b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "minimax-m3",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "minimax-m3",
+            "concordam": true
+          },
+          {
+            "modelo_a": "nemotron-3-nano:30b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.517,
+        "raciocinio_sintese": "O consenso indica que Rafael apenas visualizou a oferta, pois a solução da EMIVE foca na área interna, enquanto ele necessita de proteção para a vitrine e estacionamento. A existência de um sistema atual e a forte concorrência de instaladores locais no bairro Turu reduzem a atratividade da proposta. A maioria dos modelos converge para a falta de adequação do produto às necessidades específicas do estúdio."
+      }
+    },
+    {
+      "persona": {
+        "id": 7,
+        "owner_name": "Ricardo Cardoso",
+        "gender": "male",
+        "segment": "oficina",
+        "segment_perene": true,
+        "segment_porte": "pequeno",
+        "bairro": "Calhau",
+        "bairro_risco": "medio",
+        "bairro_perfil": "comercial_alto",
+        "bairro_p_theft": 0.08,
+        "risk_profile": "pragmatic",
+        "recent_event": "theft",
+        "has_existing_security": "diy_cameras",
+        "existing_security_satisfaction": 7,
+        "revenue_mensal": 44398.38,
+        "margin": 0.168,
+        "budget_mensal_seguranca": 725.9,
+        "mensalidade_emive": 294.0,
+        "ticket_medio_36m": 10584.0,
+        "multa_proporcional_base": 10290.0,
+        "wtp_brl": 23121.14,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": true,
+        "concorrencia_local_instalada": false,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "solo",
+        "tech_savviness": 7,
+        "trust_local_providers": 8,
+        "bio": "Dono(a) de oficina no Calhau. Faturamento mensal R$ 44398. Porte pequeno, mensalidade R$ 294. segmento perene (estavel). tem cameras baratas sem monitoramento. sofreu roubo recente. precisa de cameras externas (EMIVE nao cobre)."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 23121.14,
+          "sentimento": -0.15,
+          "objecoes": [
+            "existing_solution",
+            "area_externa",
+            "need_lack"
+          ],
+          "confianca": 0.35,
+          "raciocinio": "Apesar do furto recente ter gerado interesse em reforçar a segurança e a indicação por boca a boca aumentar a confiança no fornecedor local, Ricardo clicou mas não agendou porque suas câmeras DIY já oferecem satisfação 7/10 e, principalmente, porque o sistema EMIVE cobre apenas área interna — limitação crítica para uma oficina que mantém veículos e equipamentos no pátio e área externa, sem falar na área de estacionamento de clientes.",
+          "modelo": "minimax-m3"
+        },
+        {
+          "decisao": "agendou",
+          "wtp": 23121.14,
+          "sentimento": 0.6,
+          "objecoes": [
+            "area_externa"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Embora satisfeito com as câmeras DIY, o furto recente gerou urgência e insegurança. A indicação via WhatsApp e a marca EMIVE superam a barreira da solução atual, apesar da limitação da área externa.",
+          "modelo": "gemma4:31b"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 23121.14,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Ricardo viu a mensagem e se interessou pela proteção, mas sabe que o sistema EMIVE não cobre a vitrine e o estacionamento, que são pontos vulneráveis. Além disso, ele já tem câmeras internas com boa avaliação, o que diminui a percepção de necessidade. Por isso ele clicou para obter mais detalhes, mas ainda não confirmou a visita.",
+          "modelo": "gpt-oss:120b"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 23121.14,
+          "sentimento": -0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Ricardo viu a oferta, mas como já possui câmeras caseiras com satisfação de 7/10 e o sistema EMIVE cobre apenas área interna, enquanto seu estabelecimento precisa de proteção externa, ele decidiu não agendar a visita técnica.",
+          "modelo": "nemotron-3-super"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 23121.14,
+          "sentimento": 0.2,
+          "objecoes": [
+            "area_externa",
+            "contract_fear",
+            "existing_solution"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Ricardo viu a mensagem e clicou, mas tem dúvidas sobre a necessidade de cobertura externa e o contrato de 36 meses, além de já possuir um sistema de câmeras que funciona bem.",
+          "modelo": "nemotron-3-nano:30b"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "minimax-m3",
+          "role": "realista",
+          "source": "ollama",
+          "latency_ms": 21294,
+          "http_status": 200,
+          "prompt_tokens": 1090,
+          "completion_tokens": 1639,
+          "total_tokens": 2729,
+          "provider_used": "ollama"
+        },
+        {
+          "modelo": "gemma4:31b",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 2424,
+          "http_status": 200,
+          "prompt_tokens": 1026,
+          "completion_tokens": 132,
+          "total_tokens": 1158,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gpt-oss:20b",
+          "role": "conservador",
+          "source": "cline",
+          "erro": "cline gpt-oss:20b (provider=openai): content vazio. error=None stderr=AI SDK Warning (openai-compatible.chat / gpt-oss:20b): The 'openai-compatible' key in providerOptions is deprecated. Use 'openaiCo"
+        },
+        {
+          "modelo": "gpt-oss:120b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 11531,
+          "http_status": 200,
+          "prompt_tokens": 989,
+          "completion_tokens": 816,
+          "total_tokens": 1805,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "nemotron-3-super",
+          "role": "cetico",
+          "source": "gocat",
+          "latency_ms": 42605,
+          "http_status": 200,
+          "prompt_tokens": 1020,
+          "completion_tokens": 1393,
+          "total_tokens": 2413,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "nemotron-3-nano:30b",
+          "role": "estrategico",
+          "source": "ollama",
+          "latency_ms": 9366,
+          "http_status": 200,
+          "prompt_tokens": 1020,
+          "completion_tokens": 1791,
+          "total_tokens": 2811,
+          "provider_used": "ollama"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "clicou",
+        "wtp_medio": 23121.14,
+        "sentimento_medio": 0.05,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "area_externa",
+          "need_lack",
+          "contract_fear"
+        ],
+        "divergence_score": 0.2,
+        "concordancia": [
+          {
+            "modelo_a": "minimax-m3",
+            "modelo_b": "gemma4:31b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "minimax-m3",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "minimax-m3",
+            "modelo_b": "nemotron-3-super",
+            "concordam": true
+          },
+          {
+            "modelo_a": "minimax-m3",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "nemotron-3-super",
+            "modelo_b": "nemotron-3-nano:30b",
+            "concordam": true
+          }
+        ],
+        "confianca_agregada": 0.57,
+        "raciocinio_sintese": "Houve um consenso majoritário de que Ricardo clicou na oferta devido ao interesse gerado por um furto recente e indicações locais. No entanto, ele não avançou para o agendamento pois a solução da EMIVE é limitada à área interna, enquanto sua oficina demanda proteção externa. Além disso, a satisfação com seu sistema de câmeras DIY atual reduz a urgência de contratação."
+      }
+    },
+    {
+      "persona": {
+        "id": 8,
+        "owner_name": "Mariana Barros",
+        "gender": "female",
+        "segment": "academia",
+        "segment_perene": true,
+        "segment_porte": "medio",
+        "bairro": "Renascenca",
+        "bairro_risco": "baixo",
+        "bairro_perfil": "comercial_alto",
+        "bairro_p_theft": 0.05,
+        "risk_profile": "conservative",
+        "recent_event": "theft",
+        "has_existing_security": "full_system",
+        "existing_security_satisfaction": 9,
+        "revenue_mensal": 69128.87,
+        "margin": 0.1954,
+        "budget_mensal_seguranca": 1344.27,
+        "mensalidade_emive": 393.79,
+        "ticket_medio_36m": 14176.54,
+        "multa_proporcional_base": 13782.74,
+        "wtp_brl": 36943.12,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": true,
+        "concorrencia_local_instalada": false,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "partner",
+        "tech_savviness": 6,
+        "trust_local_providers": 5,
+        "bio": "Dono(a) de academia no Renascenca. Faturamento mensal R$ 69129. Porte medio, mensalidade R$ 394. segmento perene (estavel). tem sistema completo de seguranca. sofreu roubo recente. precisa de cameras externas (EMIVE nao cobre)."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "visualizou",
+          "wtp": 36943.12,
+          "sentimento": -0.3,
+          "objecoes": [
+            "area_externa",
+            "existing_solution",
+            "skepticism",
+            "contract_fear"
+          ],
+          "confianca": 0.2,
+          "raciocinio": "Mariana viu a mensagem, mas como já possui um sistema de segurança muito satisfeito e não precisa de cobertura externa, além de desconfiar dos fornecedores locais, optou por não avançar.",
+          "modelo": "nemotron-3-nano:30b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 36943.12,
+          "sentimento": -0.3,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Ainda se sente satisfeito com a segurança atual e não vê necessidade de mudar, mas a falta de cobertura externa gera preocupação. O preço está dentro do orçamento, então decide apenas observar a oferta.",
+          "modelo": "gpt-oss:20b"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 36943.12,
+          "sentimento": -0.2,
+          "objecoes": [
+            "area_externa",
+            "existing_solution"
+          ],
+          "confianca": 0.0,
+          "raciocinio": "Mariana viu a mensagem e clicou para obter mais informações, mas ao perceber que o sistema EMIVE cobre apenas o interior, ficou receosa porque já possui um sistema completo e bem avaliado. O recente furto a deixou atenta, porém a falta de proteção externa e a satisfação com a solução atual foram barreiras para marcar a visita.",
+          "modelo": "gpt-oss:120b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 36943.12,
+          "sentimento": -0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Embora tenha sofrido um furto recente, ela já possui um sistema completo e está muito satisfeita. Além disso, a limitação de cobertura apenas interna não atende a necessidade de monitorar a área externa da academia.",
+          "modelo": "gemma4:31b"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 14000.0,
+          "sentimento": -0.15,
+          "objecoes": [
+            "existing_solution",
+            "area_externa",
+            "skepticism"
+          ],
+          "confianca": 0.18,
+          "raciocinio": "Mariana possui sistema de segurança completo com satisfação 9/10, o que representa forte barreira à troca. Embora o furto recente tenha despertado curiosidade suficiente para clicar na mensagem, a academia opera em bairro de baixo risco e a limitação de cobertura apenas interna não atende sua necessidade real de monitorar estacionamento e área de entrada. O perfil conservador e a decisão final cabendo ao sócio reforçam a resistência ao agendamento.",
+          "modelo": "minimax-m3"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 36943.12,
+          "sentimento": -0.4,
+          "objecoes": [
+            "area_externa",
+            "existing_solution"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Mariana viu a mensagem, mas como seu negócio já possui um sistema de segurança completo com alta satisfação e a proposta da EMIVE cobre apenas a área interna, enquanto ela precisa de proteção externa, decidiu não agendar a visita técnica.",
+          "modelo": "nemotron-3-super"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "nemotron-3-nano:30b",
+          "role": "estrategico",
+          "source": "ollama",
+          "latency_ms": 36346,
+          "http_status": 200,
+          "prompt_tokens": 1017,
+          "completion_tokens": 1563,
+          "total_tokens": 2580,
+          "provider_used": "ollama"
+        },
+        {
+          "modelo": "gpt-oss:20b",
+          "role": "conservador",
+          "source": "cline",
+          "latency_ms": 23129,
+          "http_status": 200,
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": null,
+          "provider_used": "cline"
+        },
+        {
+          "modelo": "gpt-oss:120b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 16138,
+          "http_status": 200,
+          "prompt_tokens": 989,
+          "completion_tokens": 1304,
+          "total_tokens": 2293,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gemma4:31b",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 1866,
+          "http_status": 200,
+          "prompt_tokens": 1027,
+          "completion_tokens": 135,
+          "total_tokens": 1162,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "minimax-m3",
+          "role": "realista",
+          "source": "ollama",
+          "latency_ms": 16918,
+          "http_status": 200,
+          "prompt_tokens": 1088,
+          "completion_tokens": 1200,
+          "total_tokens": 2288,
+          "provider_used": "ollama"
+        },
+        {
+          "modelo": "nemotron-3-super",
+          "role": "cetico",
+          "source": "gocat",
+          "latency_ms": 25517,
+          "http_status": 200,
+          "prompt_tokens": 1017,
+          "completion_tokens": 1672,
+          "total_tokens": 2689,
+          "provider_used": "gocat"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 33573.12,
+        "sentimento_medio": -0.258,
+        "objecoes_consolidadas": [
+          "area_externa",
+          "existing_solution",
+          "skepticism",
+          "contract_fear"
+        ],
+        "divergence_score": 0.33,
+        "concordancia": [
+          {
+            "modelo_a": "nemotron-3-nano:30b",
+            "modelo_b": "gpt-oss:20b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "nemotron-3-nano:30b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-nano:30b",
+            "modelo_b": "gemma4:31b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "nemotron-3-nano:30b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "nemotron-3-nano:30b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "gpt-oss:120b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "gemma4:31b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:20b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "gemma4:31b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "minimax-m3",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gpt-oss:120b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "minimax-m3",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "nemotron-3-super",
+            "concordam": true
+          },
+          {
+            "modelo_a": "minimax-m3",
+            "modelo_b": "nemotron-3-super",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.327,
+        "raciocinio_sintese": "Mariana Barros decidiu apenas visualizar a oferta, pois já possui um sistema de segurança com alta satisfação. A principal barreira é a limitação da proposta, que cobre apenas a área interna, enquanto ela necessita de monitoramento externo. Apesar de um furto recente ter gerado curiosidade em alguns cenários, a satisfação com a solução atual e a falta de cobertura externa impediram o agendamento."
+      }
+    }
+  ]
+}

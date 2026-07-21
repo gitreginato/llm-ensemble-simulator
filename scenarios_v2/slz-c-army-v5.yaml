@@ -1,0 +1,140 @@
+# Simulation Army V5 - Cenario SLZ-C com personas V5
+# Top 8 bairros x 8 nichos, 5 sources de LLM (gocat, kilocode, devin, cline, ollama)
+# Personas V5: bairros reais, mensalidade R$ 294, contrato 36 meses, limitacoes EMIVE
+# Piloto: N=2 por combo = 128 personas
+
+scenario:
+  code: SLZ-C-ARMY-V5
+  name: "SLZ Seguranca Inteligente - Ensemble V5 (5 sources, personas V5)"
+  project: slz_n8n
+  persona_version: v5
+  product_name: "Sistema de Seguranca Inteligente EMIVE"
+  description: >
+    Sistema de seguranca inteligente franquia EMIVE para comercios em Sao Luis, MA.
+    Monitoramento 24h com central inviolavel e redundancia em 4 canais
+    (Wi-Fi, ethernet, GPRS, linha telefonica). Sensores de vibracao nas portas,
+    cameras com visao noturna colorida, sirene de inibicao e atendimento humano
+    via WhatsApp/ligacao. Visita tecnica gratuita de 15-20 minutos.
+    Limitacao: cobertura apenas area interna (sem cameras externas).
+    Mensalidade R$ 294-450 por porte. Contrato 36 meses com multa proporcional.
+    Conversao = agendamento da visita tecnica gratuita.
+  price_brl: 1.00
+  price_model: visit
+  target_segment: all
+  channel: word_of_mouth
+  value_proposition: "Protecao do patrimonio contra arrombamento e furto"
+  pain_focus: "Estoque valioso, vitrine exposta, risco de arrombamento"
+  num_agents: 128
+
+# Ensemble V5: 11 modelos de 5 sources (espalha rate limits).
+# source=gocat -> HTTP via gocat (SambaNova, Groq, Ollama cloud)
+# source=kilocode -> subprocess CLI (modelos free)
+# source=devin -> subprocess CLI (glm-5-2, swe-1-7)
+# source=cline -> subprocess CLI via gocat (OpenAI-compatible)
+# source=ollama -> HTTP via gocat (Ollama cloud, rate limit independente do gocat HTTP)
+ensemble:
+  models:
+    # === FONTE 1: GOCAT HTTP (3 modelos) ===
+    # Ollama cloud via gocat (3 modelos free, 8 disponiveis)
+    - model: gpt-oss:120b
+      provider: ollama
+      source: gocat
+      role: pragmatico
+      role_description: "Foca em viabilidade financeira, orcamento, ROI"
+    - model: gemma4:31b
+      provider: ollama
+      source: gocat
+      role: analitico
+      role_description: "Foca em dados, metricas, comparativos objetivos"
+    - model: nemotron-3-super
+      provider: ollama
+      source: gocat
+      role: cetico
+      role_description: "Foca em objecoes, riscos ocultos, armadilhas"
+
+    # === FONTE 2: KILOCODE CLI (2 modelos free, subprocess) ===
+    - model: kilo/cohere/north-mini-code:free
+      provider: kilo
+      source: kilocode
+      role: auditor
+      role_description: "Foca em codigo/tecnologia, visao tecnica critica"
+    - model: kilo/nvidia/nemotron-3-super-120b-a12b:free
+      provider: kilo
+      source: kilocode
+      role: pesquisador
+      role_description: "Foca em evidencias, dados, literatura"
+
+    # === FONTE 3: DEVIN CLI (2 modelos free, subprocess) ===
+    - model: glm-5-2
+      provider: devin
+      source: devin
+      role: arquiteto
+      role_description: "Foca em design de solucao, visao sistemica, trade-offs"
+    - model: swe-1-7
+      provider: devin
+      source: devin
+      role: revisor
+      role_description: "Foca em qualidade, testes, edge cases, riscos ocultos"
+
+    # === FONTE 4: CLINE CLI via gocat (2 modelos, subprocess) ===
+    # Cline aponta para gocat (http://127.0.0.1:8080/v1), keys ficam no gocat.
+    - model: gpt-oss:20b
+      provider: ollama
+      source: cline
+      role: conservador
+      role_description: "Foca em risco tecnico, complexidade, confiabilidade"
+    - model: minimax-m2.5
+      provider: ollama
+      source: cline
+      role: conversacional
+      role_description: "Foca em aspectos praticos, prova social, relacionamento"
+
+    # === FONTE 5: OLLAMA via gocat HTTP direto (2 modelos, rate limit independente) ===
+    - model: nemotron-3-nano:30b
+      provider: ollama
+      source: ollama
+      role: estrategico
+      role_description: "Foca em longo prazo, escalabilidade, parceria"
+    - model: minimax-m3
+      provider: ollama
+      source: ollama
+      role: realista
+      role_description: "Foco em cenario mais provavel, nem otimista nem pessimista"
+
+# Sintetizador de consenso: gemma4:31b via gocat (Ollama cloud, estavel, nao reasoning).
+# gpt-oss:120b falhou 3/4 vezes (content vazio, reasoning model).
+synthesizer:
+  model: gemma4:31b
+  provider: ollama
+
+# Benchmark de calibracao (calibrado na FASE 0, nao generico 2-8%).
+# FASE 0: conversao real 13.4% (19/142), simulada ~16%.
+# FASE 1 deve dar 10-20% (LLM mais conservador que sigmoid).
+benchmark:
+  conversao_geral_min: 0.10
+  conversao_geral_max: 0.20
+  agendamento_min: 0.05
+  agendamento_max: 0.15
+  whatsapp_reply_min: 0.10
+  whatsapp_reply_max: 0.20
+  fontes:
+    - "FASE 0: 19/142 = 13.4% conversao real (dataset EMIVE)"
+    - "FASE 0 simulada: ~16% (sigmoid calibrado)"
+    - "FASE 1 esperado: 10-20% (LLM mais conservador)"
+
+# Gocat gateway (usado para source=gocat, source=ollama, source=cline e sintetizador).
+gocat:
+  base_url: "http://127.0.0.1:8080"
+  api_key_env: GOCAT_API_KEY
+  api_key_default: local-dev-key-change-me
+  timeout_seconds: 60
+  max_retries: 2
+
+# Parametros de execucao.
+# mes=7 (julho, season media em SLZ).
+# delay_between_models_seconds: baixo para gocat/ollama (HTTP), alto para subprocess.
+execution:
+  seeds: [42]
+  mes: 7
+  delay_between_personas_seconds: 1.0
+  delay_between_models_seconds: 0.5

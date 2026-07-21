@@ -1,0 +1,6 @@
+name=Owl Regent Studio - Identidade Visual para Bares e Lanchonetes de Bairro
+description=Servico de branding para bares, lanchonetes, hamburguerias e pastelarias de bairro. Entregamos logotipo com personalidade, paleta de cores apetitosas, tipografia que legivel ate de longe, aplicacao em banner de fachada, cardapio digital e impresso, posts para Instagram de pratos, copos e ambiente, e adesivos para mesa e delivery. Diferencial: entendemos que bar/lanchonete vende encontro e vontade de voltar; a marca precisa funcionar na fachada, no cardapio e no iFood. Kit essencial: R$ 244 (logo + paleta + tipografia + banner). Kit completo: R$ 497 (adiciona cardapio, posts e adesivos). Processo: briefing por WhatsApp, 1 rodada de ajustes, entrega em 5 dias uteis. Nao usamos templates genericos. CTA: "Quero minha lanchonete com cara de ponto de encontro". Ideal para donos de bar/lanchonete que atualizaram o cardapio no Word e imprimiram em casa.
+price_usd=45
+channel=social_media
+target_market=Donos de bares, lanchonetes, hamburguerias e pastelarias de bairro no Brasil que precisam de fachada, cardapio e redes sociais com mesma cara para competir com redes
+num_agents=30

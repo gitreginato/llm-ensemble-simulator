@@ -1,0 +1,91 @@
+# Simulation Army V5 Fast - Cenario SLZ-C com personas V5
+# Versao rapida: 6 modelos de 3 sources (sem kilocode/devin que sao lentos)
+# Top 8 bairros x 8 nichos, personas V5 com bairros reais e mensalidade EMIVE
+
+scenario:
+  code: SLZ-C-ARMY-V5-FAST
+  name: "SLZ Seguranca Inteligente - Ensemble V5 Fast (3 sources, personas V5)"
+  project: slz_n8n
+  persona_version: v5
+  product_name: "Sistema de Seguranca Inteligente EMIVE"
+  description: >
+    Sistema de seguranca inteligente franquia EMIVE para comercios em Sao Luis, MA.
+    Monitoramento 24h com central inviolavel e redundancia em 4 canais.
+    Sensores de vibracao, cameras com visao noturna, sirene de inibicao.
+    Limitacao: cobertura apenas area interna.
+    Mensalidade R$ 294-450 por porte. Contrato 36 meses com multa proporcional.
+    Conversao = agendamento da visita tecnica gratuita.
+  price_brl: 1.00
+  price_model: visit
+  target_segment: all
+  channel: word_of_mouth
+  value_proposition: "Protecao do patrimonio contra arrombamento e furto"
+  pain_focus: "Estoque valioso, vitrine exposta, risco de arrombamento"
+  num_agents: 128
+
+# Ensemble V5 Fast: 6 modelos de 3 sources HTTP (sem subprocess, mais rapido).
+ensemble:
+  models:
+    # === GOCAT HTTP (3 modelos Ollama cloud) ===
+    - model: gpt-oss:120b
+      provider: ollama
+      source: gocat
+      role: pragmatico
+      role_description: "Foca em viabilidade financeira, orcamento, ROI"
+    - model: gemma4:31b
+      provider: ollama
+      source: gocat
+      role: analitico
+      role_description: "Foca em dados, metricas, comparativos objetivos"
+    - model: nemotron-3-super
+      provider: ollama
+      source: gocat
+      role: cetico
+      role_description: "Foca em objecoes, riscos ocultos, armadilhas"
+
+    # === CLINE CLI via gocat (1 modelo, subprocess mas rapido) ===
+    - model: gpt-oss:20b
+      provider: ollama
+      source: cline
+      role: conservador
+      role_description: "Foca em risco tecnico, complexidade, confiabilidade"
+
+    # === OLLAMA via gocat HTTP direto (2 modelos) ===
+    - model: nemotron-3-nano:30b
+      provider: ollama
+      source: ollama
+      role: estrategico
+      role_description: "Foca em longo prazo, escalabilidade, parceria"
+    - model: minimax-m3
+      provider: ollama
+      source: ollama
+      role: realista
+      role_description: "Foco em cenario mais provavel, nem otimista nem pessimista"
+
+# Sintetizador: gemma4:31b (estavel, nao reasoning).
+synthesizer:
+  model: gemma4:31b
+  provider: ollama
+
+benchmark:
+  conversao_geral_min: 0.10
+  conversao_geral_max: 0.20
+  agendamento_min: 0.05
+  agendamento_max: 0.15
+  whatsapp_reply_min: 0.10
+  whatsapp_reply_max: 0.20
+  fontes:
+    - "FASE 0: 19/142 = 13.4% conversao real (dataset EMIVE)"
+
+gocat:
+  base_url: "http://127.0.0.1:8080"
+  api_key_env: GOCAT_API_KEY
+  api_key_default: local-dev-key-change-me
+  timeout_seconds: 60
+  max_retries: 2
+
+execution:
+  seeds: [42]
+  mes: 7
+  delay_between_personas_seconds: 0.5
+  delay_between_models_seconds: 0.3

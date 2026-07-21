@@ -1,0 +1,6 @@
+name=Owl Regent Studio - Identidade Visual para Food Trucks e Quiosques de Praia
+description=Servico de branding para food trucks, quiosques de praia, carrinhos de acai, hot dog, churros e eventos gastronomicos. Entregamos logotipo que le em qualquer tamanho, paleta de cores visivel de longe, tipografia que funciona em adesivo, aplicacao na lateral do truck, menu-board, copos e embalagens, posts para Instagram e adesivos. Diferencial: food truck precisa ser reconhecido a 50 metros, transmitir sabor e praticidade; a marca precisa funcionar em movimento. Kit essencial: R$ 244 (logo + paleta + tipografia + menu-board). Kit completo: R$ 497 (adiciona adesivos laterais, copos, posts e capas). Processo: briefing por WhatsApp, entrega em 5 dias uteis. CTA: "Quero meu food truck que chama atencao de longe". Ideal para donos de food truck que pintaram o veiculo na cor preferida e colaram nome com letras diferentes.
+price_usd=45
+channel=social_media
+target_market=Donos de food trucks, quiosques de praia e carrinhos gastronomicos no Brasil que precisam de identidade visual forte, visivel de longe e aplicada em embalagens e redes sociais
+num_agents=30

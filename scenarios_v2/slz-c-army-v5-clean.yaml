@@ -1,0 +1,96 @@
+# Simulation Army V5 Clean - Cenario SLZ-C com personas V5
+# Estrategia: 5 modelos DIFERENTES de 5 providers DIFERENTES
+# Diversidade de arquitetura + diversidade de infra = resiliencia maxima
+# Telemetria N=128: removidos modelos com >50% falha
+
+scenario:
+  code: SLZ-C-ARMY-V5-CLEAN
+  name: "SLZ Seguranca Inteligente - Ensemble V5 Clean (5 modelos diferentes, 5 providers)"
+  project: slz_n8n
+  persona_version: v5
+  product_name: "Sistema de Seguranca Inteligente EMIVE"
+  description: >
+    Sistema de seguranca inteligente franquia EMIVE para comercios em Sao Luis, MA.
+    Monitoramento 24h com central inviolavel e redundancia em 4 canais.
+    Sensores de vibracao, cameras com visao noturna, sirene de inibicao.
+    Limitacao: cobertura apenas area interna.
+    Mensalidade R$ 294-450 por porte. Contrato 36 meses com multa proporcional.
+    Conversao = agendamento da visita tecnica gratuita.
+  price_brl: 1.00
+  price_model: visit
+  target_segment: all
+  channel: word_of_mouth
+  value_proposition: "Protecao do patrimonio contra arrombamento e furto"
+  pain_focus: "Estoque valioso, vitrine exposta, risco de arrombamento"
+  num_agents: 128
+
+# 5 modelos DIFERENTES de 5 providers DIFERENTES (zero sobreposicao)
+# Cada modelo tem arquitetura distinta: DeepSeek, Qwen, Gemini, Llama, GLM
+ensemble:
+  models:
+    # DeepSeek-V3.2 via SambaNova (rapido, 70B)
+    - model: DeepSeek-V3.2
+      provider: sambanova
+      source: gocat
+      role: analitico
+      role_description: "Foca em dados, metricas, comparativos objetivos"
+
+    # Qwen3.6-27B via Groq (rapido, MoE)
+    - model: qwen/qwen3.6-27b
+      provider: groq
+      source: gocat
+      role: pragmatico
+      role_description: "Foca em viabilidade financeira, orcamento, ROI"
+
+    # Gemini-2.5-flash via Gemini (Google, rapido)
+    - model: gemini-2.5-flash
+      provider: gemini
+      source: gocat
+      role: conservador
+      role_description: "Foca em risco tecnico, complexidade, confiabilidade"
+
+    # Gemma-4-31B via Ollama (Google, 31B)
+    - model: gemma4:31b
+      provider: ollama
+      source: gocat
+      role: estrategico
+      role_description: "Foca em longo prazo, escalabilidade, parceria"
+
+    # DeepSeek-V4-flash via NVIDIA (rapido, 70B)
+    - model: deepseek-ai/deepseek-v4-flash
+      provider: nvidia
+      source: gocat
+      role: realista
+      role_description: "Foco em cenario mais provavel, nem otimista nem pessimista"
+
+# Sintetizador: gpt-oss:120b via Ollama (razoavel, com fallback de content vazio)
+# Se falhar, ensemble usa agregacao simples (decisao mais conservadora)
+synthesizer:
+  model: gpt-oss:120b
+  provider: ollama
+
+benchmark:
+  conversao_geral_min: 0.10
+  conversao_geral_max: 0.20
+  agendamento_min: 0.05
+  agendamento_max: 0.15
+  whatsapp_reply_min: 0.10
+  whatsapp_reply_max: 0.20
+  fontes:
+    - "FASE 0: 19/142 = 13.4% conversao real (dataset EMIVE)"
+
+gocat:
+  base_url: "http://127.0.0.1:8080"
+  api_key_env: GOCAT_API_KEY
+  api_key_default: local-dev-key-change-me
+  timeout_seconds: 60
+  max_retries: 3
+
+execution:
+  seeds: [42]
+  mes: 7
+  delay_between_personas_seconds: 0.5
+  delay_between_models_seconds: 0.3
+  devin_timeout_seconds: 120
+  cline_timeout_seconds: 180
+  kilocode_timeout_seconds: 120

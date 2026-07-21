@@ -1,0 +1,86 @@
+# Simulation Army v2 - Cenario SLZ-C
+# Lojas de roupas e calcados de Sao Luis, seguranca EMIVE.
+# Ensemble heterogeneo: 3 modelos com papeis cognitivos fixos + 1 sintetizador.
+
+scenario:
+  code: SLZ-C-ARMY-B
+  name: "SLZ Seguranca Inteligente - Pitch Financeiro (B)"
+  project: slz_n8n
+  product_name: "Sistema de Seguranca Inteligente EMIVE"
+  description: >
+    Sistema de seguranca inteligente franquia EMIVE para lojas de roupas, calcados,
+    acessorios e boutiques em Sao Luis, MA. Monitoramento 24h com central inviolavel
+    e redundancia em 4 canais (Wi-Fi, ethernet, GPRS, linha telefonica). Sensores de
+    vibracao nas vitrines e portas de aco, cameras com visao noturna colorida no caixa
+    e provador, sirene de inibicao e atendimento humano via WhatsApp/ligacao.
+    Foco na dor: lojista deixa estoque valioso fechado a noite, vitrine exposta.
+    Visita tecnica gratuita de 15-20 minutos para avaliar layout da loja e montar
+    proposta personalizada. Nao vendemos pelo WhatsApp sem visita.
+    Conversao = agendamento da visita.
+    Diferenciais: protecao de vitrine e estoque, cameras com IA, consultor local Reginato.
+  price_brl: 1.00
+  price_model: visit
+  target_segment: loja_roupas
+  channel: word_of_mouth
+  value_proposition: "Proteja seu estoque de R$ 50mil contra arrombamento: seguro patrimonial a custo mensal baixo"
+  pain_focus: "Prejuizo financeiro de arrombamento: perda de estoque, prejuizo, tempo sem vender"
+  num_agents: 30
+
+# Ensemble heterogeneo: 3 modelos de vendors distintos com papeis cognitivos fixos.
+# Nao aleatorizar: cada persona e processada pelos 3 modelos.
+# AI Council (Pith 2026): parear perspectiva <-> modelo sustenta o desacordo.
+ensemble:
+  models:
+    - model: gpt-4o-mini
+      provider: github
+      role: pragmatico
+      role_description: "Foca em viabilidade financeira, orcamento, ROI"
+    - model: command-r-plus-08-2024
+      provider: cohere
+      role: conservador
+      role_description: "Foca em risco tecnico, complexidade, confiabilidade"
+    - model: llama-3.3-70b-versatile
+      provider: groq
+      role: conversacional
+      role_description: "Foca em aspectos praticos, prova social, relacionamento"
+
+# Sintetizador de consenso: 1 modelo frontier que agrega as N respostas.
+# Council Mode (arXiv 2604.02923): sintese estruturada supera votacao majoritaria.
+synthesizer:
+  model: gpt-4o-mini
+  provider: github
+
+# Benchmark de calibracao (evidencia nivel B, web_search 2026-07-19).
+# Proxy publico: conversao geral B2B Brasil 2-8% (Sirius 2026, PowerGO 2026).
+# Cold outreach -> agendamento 1-8% (Touchstone, StealthAgents, eesier).
+# WhatsApp positive reply 10-20% (eesier).
+# LIMITACAO: proxy global, nao especifico de seguranca patrimonial em SLZ.
+# Recalibrar com dados reais EMIVE quando disponiveis.
+benchmark:
+  conversao_geral_min: 0.02
+  conversao_geral_max: 0.08
+  agendamento_min: 0.01
+  agendamento_max: 0.08
+  whatsapp_reply_min: 0.10
+  whatsapp_reply_max: 0.20
+  fontes:
+    - "Sirius CRM Anuario 2026: conversao lead->cliente Brasil media 8%, saudavel 2-5%"
+    - "PowerGO 2026: exemplo B2B 6.5% conversao geral"
+    - "Touchstone BPO 2026: contact-to-meeting 4-10% (SaaS/B2B tech)"
+    - "StealthAgents 2026: cold call->appointment 1-3% unoptimized, 4-8% optimized"
+    - "eesier 2026: WhatsApp positive reply 10-20%, meeting rate 1-3%"
+    - "ORRJO 2026: meeting booked per outreach 0.5-1.2% average, 1.5-2.5% good"
+
+# Gocat gateway (Opcao B: simulador faz N chamadas, gocat roteia 1 por vez)
+gocat:
+  base_url: "http://127.0.0.1:8080"
+  api_key_env: GOCAT_API_KEY
+  api_key_default: local-dev-key-change-me
+  timeout_seconds: 30
+  max_retries: 2
+
+# Parametros de execucao
+execution:
+  seeds: [42, 43, 44]
+  delay_between_personas_seconds: 2.0
+  delay_between_models_seconds: 0.5

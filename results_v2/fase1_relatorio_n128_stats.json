@@ -1,0 +1,316 @@
+{
+  "n_personas": 128,
+  "n_sinteses_ok": 108,
+  "taxa_conversao": 0.1574074074074074,
+  "agendaram": 17,
+  "divergence_score_medio": 0.07231481481481482,
+  "dist_sintetizador": {
+    "clicou": 18,
+    "visualizou": 71,
+    "agendou": 17,
+    "ignorou": 2
+  },
+  "dist_modelos": {
+    "clicou": 72,
+    "visualizou": 144,
+    "agendou": 45,
+    "ignorou": 10
+  },
+  "objecoes_consolidadas": {
+    "area_externa": 92,
+    "budget": 73,
+    "concorrencia_local": 63,
+    "existing_solution": 61,
+    "ticket_alto": 61,
+    "contract_fear": 28,
+    "skepticism": 22,
+    "complexity": 13,
+    "need_lack": 10,
+    "timing": 7
+  },
+  "source_stats": {
+    "gocat": {
+      "ok": 271,
+      "fail": 369,
+      "avg_latency_ms": 23603.78966789668,
+      "avg_tokens": 1484.1033210332102
+    }
+  },
+  "bairro_stats": {
+    "Renascenca": {
+      "total": 16,
+      "agendou": 0,
+      "clicou": 3,
+      "visualizou": 12,
+      "ignorou": 1
+    },
+    "Centro": {
+      "total": 12,
+      "agendou": 1,
+      "clicou": 1,
+      "visualizou": 10,
+      "ignorou": 0
+    },
+    "Turu": {
+      "total": 20,
+      "agendou": 2,
+      "clicou": 4,
+      "visualizou": 14,
+      "ignorou": 0
+    },
+    "Joao Paulo": {
+      "total": 8,
+      "agendou": 4,
+      "clicou": 0,
+      "visualizou": 4,
+      "ignorou": 0
+    },
+    "Vila Embratel": {
+      "total": 4,
+      "agendou": 2,
+      "clicou": 2,
+      "visualizou": 0,
+      "ignorou": 0
+    },
+    "Calhau": {
+      "total": 15,
+      "agendou": 3,
+      "clicou": 2,
+      "visualizou": 10,
+      "ignorou": 0
+    },
+    "Cidade Operaria": {
+      "total": 4,
+      "agendou": 0,
+      "clicou": 2,
+      "visualizou": 2,
+      "ignorou": 0
+    },
+    "Coroadinho": {
+      "total": 3,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 2,
+      "ignorou": 0
+    },
+    "Vinhais": {
+      "total": 4,
+      "agendou": 2,
+      "clicou": 1,
+      "visualizou": 1,
+      "ignorou": 0
+    },
+    "Olho DAgua": {
+      "total": 6,
+      "agendou": 2,
+      "clicou": 0,
+      "visualizou": 4,
+      "ignorou": 0
+    },
+    "Cohama": {
+      "total": 10,
+      "agendou": 1,
+      "clicou": 1,
+      "visualizou": 7,
+      "ignorou": 1
+    },
+    "Ponta do Farol": {
+      "total": 3,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 2,
+      "ignorou": 0
+    },
+    "Sao Cristovao": {
+      "total": 3,
+      "agendou": 0,
+      "clicou": 0,
+      "visualizou": 3,
+      "ignorou": 0
+    }
+  },
+  "nicho_stats": {
+    "estudio_tatuagem": {
+      "total": 5,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 4,
+      "ignorou": 0
+    },
+    "estacionamento": {
+      "total": 3,
+      "agendou": 1,
+      "clicou": 0,
+      "visualizou": 2,
+      "ignorou": 0
+    },
+    "autopecas": {
+      "total": 9,
+      "agendou": 1,
+      "clicou": 3,
+      "visualizou": 5,
+      "ignorou": 0
+    },
+    "barbearia": {
+      "total": 6,
+      "agendou": 0,
+      "clicou": 2,
+      "visualizou": 4,
+      "ignorou": 0
+    },
+    "oficina": {
+      "total": 5,
+      "agendou": 2,
+      "clicou": 2,
+      "visualizou": 1,
+      "ignorou": 0
+    },
+    "academia": {
+      "total": 3,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 2,
+      "ignorou": 0
+    },
+    "fisioterapia": {
+      "total": 5,
+      "agendou": 1,
+      "clicou": 1,
+      "visualizou": 3,
+      "ignorou": 0
+    },
+    "borracharia": {
+      "total": 6,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 5,
+      "ignorou": 0
+    },
+    "consultorio_odonto": {
+      "total": 3,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 2,
+      "ignorou": 0
+    },
+    "bar": {
+      "total": 3,
+      "agendou": 1,
+      "clicou": 0,
+      "visualizou": 2,
+      "ignorou": 0
+    },
+    "loja_roupas": {
+      "total": 4,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 3,
+      "ignorou": 0
+    },
+    "mercadinho": {
+      "total": 8,
+      "agendou": 3,
+      "clicou": 0,
+      "visualizou": 4,
+      "ignorou": 1
+    },
+    "pet_shop": {
+      "total": 3,
+      "agendou": 1,
+      "clicou": 0,
+      "visualizou": 2,
+      "ignorou": 0
+    },
+    "mecanica_diesel": {
+      "total": 5,
+      "agendou": 1,
+      "clicou": 0,
+      "visualizou": 3,
+      "ignorou": 1
+    },
+    "restaurante": {
+      "total": 4,
+      "agendou": 1,
+      "clicou": 1,
+      "visualizou": 2,
+      "ignorou": 0
+    },
+    "hamburgueria": {
+      "total": 3,
+      "agendou": 1,
+      "clicou": 0,
+      "visualizou": 2,
+      "ignorou": 0
+    },
+    "lava_jato": {
+      "total": 3,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 2,
+      "ignorou": 0
+    },
+    "optica": {
+      "total": 4,
+      "agendou": 0,
+      "clicou": 0,
+      "visualizou": 4,
+      "ignorou": 0
+    },
+    "farmacia": {
+      "total": 2,
+      "agendou": 0,
+      "clicou": 0,
+      "visualizou": 2,
+      "ignorou": 0
+    },
+    "loja_calcados": {
+      "total": 4,
+      "agendou": 0,
+      "clicou": 0,
+      "visualizou": 4,
+      "ignorou": 0
+    },
+    "laboratorio": {
+      "total": 2,
+      "agendou": 0,
+      "clicou": 1,
+      "visualizou": 1,
+      "ignorou": 0
+    },
+    "clinica_veterinaria": {
+      "total": 6,
+      "agendou": 1,
+      "clicou": 1,
+      "visualizou": 4,
+      "ignorou": 0
+    },
+    "salao": {
+      "total": 5,
+      "agendou": 1,
+      "clicou": 1,
+      "visualizou": 3,
+      "ignorou": 0
+    },
+    "mercearia": {
+      "total": 2,
+      "agendou": 1,
+      "clicou": 0,
+      "visualizou": 1,
+      "ignorou": 0
+    },
+    "clinica": {
+      "total": 4,
+      "agendou": 1,
+      "clicou": 0,
+      "visualizou": 3,
+      "ignorou": 0
+    },
+    "estetica": {
+      "total": 1,
+      "agendou": 0,
+      "clicou": 0,
+      "visualizou": 1,
+      "ignorou": 0
+    }
+  }
+}

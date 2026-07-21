@@ -1,0 +1,32 @@
+{
+  "entropia_ensemble": 0.6500224216483541,
+  "entropia_por_modelo": {
+    "gpt-4o-mini": 1.4183203709705836,
+    "command-r-plus-08-2024": 0.21084230031853213,
+    "llama-3.3-70b-versatile": 1.2010947341319422
+  },
+  "entropia_baselines": {
+    "gpt-4o-mini": 1.3681048373817144,
+    "command-r-plus-08-2024": 0.21084230031853213,
+    "llama-3.3-70b-versatile": 0.7219280948873623
+  },
+  "entropia_baseline_media": 0.7669584108625364,
+  "delta_entropia": -0.11693598921418225,
+  "nota_entropia": "Entropia do ensemble < baseline e esperado: o sintetizador converge por design. Diversidade mede-se nos inputs.",
+  "kl_ensemble_vs_baselines": {
+    "gpt-4o-mini": 0.32393016961637816,
+    "command-r-plus-08-2024": 0.14455631417586134,
+    "llama-3.3-70b-versatile": 0.003631402631450901
+  },
+  "pairwise_disagreement_rate": 0.6222222222222222,
+  "divergence_score_medio_ensemble": 0.43333333333333335,
+  "teste_permutacao_p_valor": 0.0,
+  "conversao_ensemble": 0.16666666666666666,
+  "conversao_baselines": {
+    "gpt-4o-mini": 0.43333333333333335,
+    "command-r-plus-08-2024": 0.03333333333333333,
+    "llama-3.3-70b-versatile": 0.2
+  },
+  "hipotese_refutada": false,
+  "verdict": "HIPOTESE CONFIRMADA: ensemble adiciona diversidade significativa nos inputs"
+}

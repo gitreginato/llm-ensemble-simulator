@@ -1,0 +1,1455 @@
+══════════════════════════════════════════════════════════════
+  LaunchSim  ·  Owl Regent Studio - Identidade Visual para Padarias e Confeitarias de Bairro
+══════════════════════════════════════════════════════════════
+  Price      : $45.00
+  Channel    : social_media
+  Agents     : 30 synthetic personas
+  Market     : Donos de padarias e confeitarias de bairro no Brasil que sentem vergonha do proprio logo, usam sacolas sem marca, perdem vendas por nao parecer artesanais e nao querem pagar R$ 3 mil em agencia
+
+  Submitting to http://localhost:8000/api/simulate ...
+  Simulation ID : 36f2362c-249a-422c-9e0b-e669d0654a00
+
+  Running simulation - this takes a few minutes.
+
+  ⠋  PENDING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  RUNNING     personas=  0  interactions=  0  posts=  0     ⠴  RUNNING     personas=  0  interactions=  0  posts=  0     ⠦  RUNNING     personas=  0  interactions=  0  posts=  0     ⠧  RUNNING     personas=  0  interactions=  0  posts=  0     ⠇  RUNNING     personas=  0  interactions=  0  posts=  0     ⠏  RUNNING     personas=  0  interactions=  0  posts=  0     ⠋  RUNNING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  COMPLETED   personas= 30  interactions= 30  posts= 14   
+
+══════════════════════════════════════════════════════════════
+  RESULTS
+══════════════════════════════════════════════════════════════
+  Viewed        :   22  (73.3%)
+  Clicked       :   17  (56.7%)
+  Purchased     :    8  (26.7%)
+  Conversion    : 36.4%
+  Avg sentiment : +0.73   (-1 hostile → +1 enthusiastic)
+
+══════════════════════════════════════════════════════════════
+  PERSONAS GENERATED (first 5)
+══════════════════════════════════════════════════════════════
+  agent_001  Luana Silva            early_adopter    WTP=$200     [BUYS    ]
+           Luana is a young and ambitious padaria owner looking to revamp her brand and attract more custo...
+
+  agent_002  Carlos Oliveira        pragmatist       WTP=$150     [BUYS    ]
+           Carlos is a practical and budget-conscious confectionery owner seeking to improve his brand's v...
+
+  agent_003  Beatriz Souza          influencer       WTP=$300     [BUYS    ]
+           Beatriz is a creative and social freelance designer looking for a reliable branding partner....
+
+  agent_004  Pedro Santos           conservative     WTP=$100     [BUYS    ]
+           Pedro is a traditional and cautious padaria owner hesitant to adopt new branding strategies....
+
+  agent_005  Leticia Fernandes      skeptic          WTP=$250     [BUYS    ]
+           Leticia is a skeptical and data-driven confectionery manager seeking to measure branding effect...
+
+
+══════════════════════════════════════════════════════════════
+  TOP OBJECTIONS
+══════════════════════════════════════════════════════════════
+  #1  [2x]  High price
+
+  #2  [2x]  Limited budget
+
+  #3  [1x]  Skepticism about measuring branding effectiveness
+
+  #4  [1x]  Limited design skills
+
+  #5  [1x]  No need for branding help
+
+
+══════════════════════════════════════════════════════════════
+  SOCIAL POSTS (first 3)
+══════════════════════════════════════════════════════════════
+  [TWITTER]  sentiment=+0.80 (positive)  upvotes=12
+--------------------------------------------------------------
+    Acabei de comprar o Owl Regent Studio para minha padaria! Precisava de uma identidade visual moderna e profissional. Estou ansiosa para ver os resultados! #padaria #branding
+
+  Top reply: "Parabéns, Luana! Estou ansioso para ver como ficou a sua padaria!"
+
+  [PRODUCT_HUNT]  sentiment=+0.50 (positive)  upvotes=8
+--------------------------------------------------------------
+    Just checked out Owl Regent Studio - Identidade Visual para Padarias e Confeitarias de Bairro. Really interested in how they approach branding for small bakeries. Would love to see more case studies and examples of their work!
+
+  Top reply: "Great find, Beatriz! I've been looking for inspiration for my next design project."
+
+  [REDDIT]  sentiment=+0.90 (positive)  upvotes=20
+--------------------------------------------------------------
+    Eu sou dono de uma padaria tradicional e estava tendo dificuldade em atrair novos clientes. Decidi comprar o Owl Regent Studio e estou muito satisfeito com a identidade visual que criaram para mim. É exatamente o que eu precisava para modernizar a minha marca!
+
+  Top reply: "Eu também estou pensando em fazer algo parecido! Alguém tem experiência com esse tipo de serviço?"
+
+
+══════════════════════════════════════════════════════════════
+  STRATEGIC INSIGHTS
+══════════════════════════════════════════════════════════════
+
+  1. The Owl Regent Studio is perceived as an affordable solution for neighborhood bakeries and confectioneries.
+
+  2. Many agents value the importance of a professional and modern visual identity for their businesses.
+
+  3. The product seems to appeal to entrepreneurs who understand the importance of brand consistency.
+
+  4. The price point of $45 is seen as a key selling point for the product.
+
+══════════════════════════════════════════════════════════════
+  DONE
+══════════════════════════════════════════════════════════════
+  Full results  →  GET http://localhost:8000/api/results/36f2362c-249a-422c-9e0b-e669d0654a00
+  API explorer  →  http://localhost:8000/docs
+  Dashboard     →  http://localhost:3000/simulation/36f2362c-249a-422c-9e0b-e669d0654a00
+
+  To interview a persona, run:
+
+    import urllib.request, json
+    resp = urllib.request.urlopen(
+        urllib.request.Request(
+            "http://localhost:8000/api/interview/36f2362c-249a-422c-9e0b-e669d0654a00/agent_001",
+            data=json.dumps({"question": "Why didn't you buy?"}).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+    )
+    print(json.loads(resp.read())["answer"])
+
+══════════════════════════════════════════════════════════════
+[INFO] Copiando input de /home/lucas/Projetos/simulacao-multi-agent/scenarios/devincriator/variant_a.txt -> /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/input.txt
+[INFO] Iniciando backend em /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/backend...
+[INFO] Rodando simulação: devincriator / variante a
+[INFO] Parando backend...
+══════════════════════════════════════════════════════════════
+  LaunchSim  ·  Owl Regent Studio - Identidade Visual para Saloes de Beleza e Esteticas
+══════════════════════════════════════════════════════════════
+  Price      : $45.00
+  Channel    : social_media
+  Agents     : 30 synthetic personas
+  Market     : Donas de saloes de beleza, barbearias e clinicas de estetica de bairro no Brasil que precisam de feed profissional, cartao de visita e identidade consistente para atrair clientes pelo Instagram e WhatsApp
+
+  Submitting to http://localhost:8000/api/simulate ...
+  Simulation ID : 9d04e6c7-1688-4938-b19b-c32b2085bd3e
+
+  Running simulation - this takes a few minutes.
+
+  ⠋  PENDING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  RUNNING     personas=  0  interactions=  0  posts=  0     ⠴  RUNNING     personas=  0  interactions=  0  posts=  0     ⠦  RUNNING     personas=  0  interactions=  0  posts=  0     ⠧  RUNNING     personas=  0  interactions=  0  posts=  0     ⠇  RUNNING     personas=  0  interactions=  0  posts=  0     ⠏  RUNNING     personas=  0  interactions=  0  posts=  0     ⠋  RUNNING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  COMPLETED   personas= 30  interactions= 30  posts= 15   
+
+══════════════════════════════════════════════════════════════
+  RESULTS
+══════════════════════════════════════════════════════════════
+  Viewed        :   25  (83.3%)
+  Clicked       :   16  (53.3%)
+  Purchased     :    4  (13.3%)
+  Conversion    : 16.0%
+  Avg sentiment : +0.52   (-1 hostile → +1 enthusiastic)
+
+══════════════════════════════════════════════════════════════
+  PERSONAS GENERATED (first 5)
+══════════════════════════════════════════════════════════════
+  agent_001  Luana Silva            early_adopter    WTP=$100     [BUYS    ]
+           Luana is a tech-savvy salon owner who wants to stand out on Instagram and attract new clients....
+
+  agent_002  João Oliveira          pragmatist       WTP=$50      [BUYS    ]
+           João is a practical barber shop owner who wants to improve his social media presence and increa...
+
+  agent_003  Beatriz Souza          influencer       WTP=$200     [BUYS    ]
+           Beatriz is a social media influencer who wants to grow her online presence and attract new clie...
+
+  agent_004  Marcelo Dias           conservative     WTP=$30      [BOUNCES ]
+           Marcelo is a traditional salon owner who wants to improve customer satisfaction and increase re...
+
+  agent_005  Gabriela Lima          power_user       WTP=$500     [BUYS    ]
+           Gabriela is a tech-savvy esthetic clinic owner who wants to stay ahead of competitors and impro...
+
+
+══════════════════════════════════════════════════════════════
+  TOP OBJECTIONS
+══════════════════════════════════════════════════════════════
+  #1  [2x]  Skepticism about new marketing services
+
+  #2  [1x]  Prioritizing other strategies
+
+  #3  [1x]  Not a priority to keep up with industry trends
+
+  #4  [2x]  Price sensitivity
+
+  #5  [2x]  Overwhelmed by new technologies or managing online presence
+
+
+══════════════════════════════════════════════════════════════
+  SOCIAL POSTS (first 3)
+══════════════════════════════════════════════════════════════
+  [REDDIT]  sentiment=+0.50 (positive)  upvotes=2
+--------------------------------------------------------------
+    I just came across Owl Regent Studio's visual identity package for salons and I'm intrigued. As a salon owner, I've been looking for a way to upgrade our online presence and branding. Their $45 price point seems reasonable for the services offered. Has anyone else used them? What
+
+  Top reply: "I used them and loved the results!"
+
+  [TWITTER]  sentiment=+1.00 (positive)  upvotes=10
+--------------------------------------------------------------
+    Just bought Owl Regent Studio's visual identity package! Excited to elevate my esthetic game and create engaging content for my followers #OwlRegentStudio #EstheticianLife
+
+  Top reply: "Yaaas, can't wait to see your new branding!"
+
+  [REDDIT]  sentiment=+1.00 (positive)  upvotes=5
+--------------------------------------------------------------
+    I've been in the esthetic clinic business for years and I can attest that Owl Regent Studio's visual identity package is top-notch. The premium branding has helped me stay ahead of the competition and attract more clients. Worth every penny of the $45!
+
+  Top reply: "I'm considering it, can you share more about your experience?"
+
+
+══════════════════════════════════════════════════════════════
+  STRATEGIC INSIGHTS
+══════════════════════════════════════════════════════════════
+
+  1. The target audience is concerned about the value and effectiveness of new marketing services.
+
+  2. There is a need for affordable and easy-to-use marketing solutions for salons and esthetics.
+
+  3. The target audience is skeptical about online services and prioritizes budget-friendly options.
+
+  4. There is an opportunity to educate the target audience about the benefits of a strong visual identity for their businesses.
+
+══════════════════════════════════════════════════════════════
+  DONE
+══════════════════════════════════════════════════════════════
+  Full results  →  GET http://localhost:8000/api/results/9d04e6c7-1688-4938-b19b-c32b2085bd3e
+  API explorer  →  http://localhost:8000/docs
+  Dashboard     →  http://localhost:3000/simulation/9d04e6c7-1688-4938-b19b-c32b2085bd3e
+
+  To interview a persona, run:
+
+    import urllib.request, json
+    resp = urllib.request.urlopen(
+        urllib.request.Request(
+            "http://localhost:8000/api/interview/9d04e6c7-1688-4938-b19b-c32b2085bd3e/agent_001",
+            data=json.dumps({"question": "Why didn't you buy?"}).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+    )
+    print(json.loads(resp.read())["answer"])
+
+══════════════════════════════════════════════════════════════
+[INFO] Copiando input de /home/lucas/Projetos/simulacao-multi-agent/scenarios/devincriator/variant_b.txt -> /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/input.txt
+[INFO] Iniciando backend em /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/backend...
+[INFO] Rodando simulação: devincriator / variante b
+[INFO] Parando backend...
+══════════════════════════════════════════════════════════════
+  LaunchSim  ·  Owl Regent Studio - Identidade Visual para Bares e Lanchonetes de Bairro
+══════════════════════════════════════════════════════════════
+  Price      : $45.00
+  Channel    : social_media
+  Agents     : 30 synthetic personas
+  Market     : Donos de bares, lanchonetes, hamburguerias e pastelarias de bairro no Brasil que precisam de fachada, cardapio e redes sociais com mesma cara para competir com redes
+
+  Submitting to http://localhost:8000/api/simulate ...
+  Simulation ID : c7b1fab8-e220-4825-a3e4-dd5afa7d16d8
+
+  Running simulation - this takes a few minutes.
+
+  ⠋  PENDING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  RUNNING     personas=  0  interactions=  0  posts=  0     ⠴  RUNNING     personas=  0  interactions=  0  posts=  0     ⠦  RUNNING     personas=  0  interactions=  0  posts=  0     ⠧  RUNNING     personas=  0  interactions=  0  posts=  0     ⠇  RUNNING     personas=  0  interactions=  0  posts=  0     ⠏  RUNNING     personas=  0  interactions=  0  posts=  0     ⠋  RUNNING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  COMPLETED   personas= 30  interactions= 30  posts= 11   
+
+══════════════════════════════════════════════════════════════
+  RESULTS
+══════════════════════════════════════════════════════════════
+  Viewed        :   20  (66.7%)
+  Clicked       :   14  (46.7%)
+  Purchased     :    4  (13.3%)
+  Conversion    : 20.0%
+  Avg sentiment : +0.62   (-1 hostile → +1 enthusiastic)
+
+══════════════════════════════════════════════════════════════
+  PERSONAS GENERATED (first 5)
+══════════════════════════════════════════════════════════════
+  agent_001  Luana Silva            early_adopter    WTP=$200     [BUYS    ]
+           Luana is a young entrepreneur who wants to make her bar stand out in a competitive market....
+
+  agent_002  Marcelo Oliveira       pragmatist       WTP=$150     [BUYS    ]
+           Marcelo is a practical business owner looking for cost-effective solutions to improve his lanch...
+
+  agent_003  Beatriz Souza          influencer       WTP=$300     [BUYS    ]
+           Beatriz is a social media influencer who wants to make her hamburgueria a trendy spot....
+
+  agent_004  Carlos Lima            conservative     WTP=$100     [BUYS    ]
+           Carlos is a traditional business owner who values stability and loyalty....
+
+  agent_005  Leticia Dias           power_user       WTP=$500     [BUYS    ]
+           Leticia is a tech-savvy business owner who wants to take her bar to the next level....
+
+
+══════════════════════════════════════════════════════════════
+  TOP OBJECTIONS
+══════════════════════════════════════════════════════════════
+  #1  [4x]  High cost
+
+  #2  [2x]  Lack of immediate need
+
+  #3  [2x]  Prioritizing other expenses
+
+  #4  [1x]  Resistance to change
+
+  #5  [2x]  Focus on other aspects
+
+
+══════════════════════════════════════════════════════════════
+  SOCIAL POSTS (first 3)
+══════════════════════════════════════════════════════════════
+  [TWITTER]  sentiment=+0.50 (positive)  upvotes=2
+--------------------------------------------------------------
+    Preciso de uma identidade visual pro meu lanchonete! Encontrei o Owl Regent Studio, alguém já usou? #design #lanchonete
+
+  [TWITTER]  sentiment=+0.80 (positive)  upvotes=5
+--------------------------------------------------------------
+    Estou procurando por uma identidade visual pro meu hamburgueria! O Owl Regent Studio parece ser uma ótima opção! #hamburgueria #branding
+
+  Top reply: "Que legal, Beatriz! Eu uso o Canva pra fazer meus designs"
+
+  [PRODUCT_HUNT]  sentiment=+0.20 (neutral)  upvotes=1
+--------------------------------------------------------------
+    Acabei de descobrir o Owl Regent Studio! Estão oferecendo uma solução de design de menu por apenas $45. É um bom negócio pra pequenos negócios como o meu pastelaria. Alguém tem feedback?
+
+  Top reply: "Sim, eu usei e foi fácil de implementar"
+
+
+══════════════════════════════════════════════════════════════
+  STRATEGIC INSIGHTS
+══════════════════════════════════════════════════════════════
+
+  1. The target market is interested in visual identity solutions for bars and eateries, but is price-sensitive.
+
+  2. There is a need for education on the value of branding services for small businesses.
+
+  3. The Owl Regent Studio solution needs to be positioned as a valuable investment for businesses looking to establish a strong brand.
+
+  4. The solution has potential for graphic design projects and partnerships with designers.
+
+══════════════════════════════════════════════════════════════
+  DONE
+══════════════════════════════════════════════════════════════
+  Full results  →  GET http://localhost:8000/api/results/c7b1fab8-e220-4825-a3e4-dd5afa7d16d8
+  API explorer  →  http://localhost:8000/docs
+  Dashboard     →  http://localhost:3000/simulation/c7b1fab8-e220-4825-a3e4-dd5afa7d16d8
+
+  To interview a persona, run:
+
+    import urllib.request, json
+    resp = urllib.request.urlopen(
+        urllib.request.Request(
+            "http://localhost:8000/api/interview/c7b1fab8-e220-4825-a3e4-dd5afa7d16d8/agent_001",
+            data=json.dumps({"question": "Why didn't you buy?"}).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+    )
+    print(json.loads(resp.read())["answer"])
+
+══════════════════════════════════════════════════════════════
+[INFO] Copiando input de /home/lucas/Projetos/simulacao-multi-agent/scenarios/devincriator/variant_c.txt -> /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/input.txt
+[INFO] Iniciando backend em /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/backend...
+[INFO] Rodando simulação: devincriator / variante c
+[INFO] Parando backend...
+══════════════════════════════════════════════════════════════
+  LaunchSim  ·  Owl Regent Studio - Identidade Visual para Profissionais Liberais (Personal Trainer, Consultor, Nutricionista)
+══════════════════════════════════════════════════════════════
+  Price      : $45.00
+  Channel    : social_media
+  Agents     : 30 synthetic personas
+  Market     : Profissionais liberais no Brasil (personal trainer, nutricionista, psicologo, consultor, fotografo, arquiteto) que trabalham sozinhos e precisam de marca pessoal profissional para cobrar mais caro
+
+  Submitting to http://localhost:8000/api/simulate ...
+  Simulation ID : fc727a5e-55ef-49f1-8953-f216948e5c90
+
+  Running simulation - this takes a few minutes.
+
+  ⠋  PENDING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  RUNNING     personas=  0  interactions=  0  posts=  0     ⠴  RUNNING     personas=  0  interactions=  0  posts=  0     ⠦  RUNNING     personas=  0  interactions=  0  posts=  0     ⠧  RUNNING     personas=  0  interactions=  0  posts=  0     ⠇  RUNNING     personas=  0  interactions=  0  posts=  0     ⠏  RUNNING     personas=  0  interactions=  0  posts=  0     ⠋  RUNNING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  COMPLETED   personas= 30  interactions= 30  posts= 12   
+
+══════════════════════════════════════════════════════════════
+  RESULTS
+══════════════════════════════════════════════════════════════
+  Viewed        :   22  (73.3%)
+  Clicked       :   18  (60.0%)
+  Purchased     :    3  (10.0%)
+  Conversion    : 13.6%
+  Avg sentiment : +0.63   (-1 hostile → +1 enthusiastic)
+
+══════════════════════════════════════════════════════════════
+  PERSONAS GENERATED (first 5)
+══════════════════════════════════════════════════════════════
+  agent_001  Luana Silva            early_adopter    WTP=$50      [BUYS    ]
+           Luana is a young and ambitious personal trainer looking to establish herself as a professional ...
+
+  agent_002  Marcelo Oliveira       pragmatist       WTP=$40      [BOUNCES ]
+           Marcelo is an experienced consultant looking to expand his business and establish himself as a ...
+
+  agent_003  Beatriz Souza          influencer       WTP=$60      [BUYS    ]
+           Beatriz is a charismatic nutricionista looking to build a strong online presence and establish ...
+
+  agent_004  Pedro Santos           conservative     WTP=$30      [BOUNCES ]
+           Pedro is an experienced fotógrafo looking to maintain a stable client base and keep up with ind...
+
+  agent_005  Gabriela Dias          early_adopter    WTP=$45      [BUYS    ]
+           Gabriela is a young and ambitious professor particular looking to establish herself as a profes...
+
+
+══════════════════════════════════════════════════════════════
+  TOP OBJECTIONS
+══════════════════════════════════════════════════════════════
+  #1  [2x]  Skepticism about justifying the investment in branding
+
+  #2  [2x]  Hesitant on the value for differentiation
+
+  #3  [2x]  Conservative and may not trust online branding services
+
+  #4  [1x]  Pragmatic and may not see the value
+
+  #5  [1x]  Price sensitivity and limited budget
+
+
+══════════════════════════════════════════════════════════════
+  SOCIAL POSTS (first 3)
+══════════════════════════════════════════════════════════════
+  [PRODUCT_HUNT]  sentiment=+0.50 (positive)  upvotes=2
+--------------------------------------------------------------
+    Cautiously checking out Owl Regent Studio's visual identity services for my photography business. Hope it helps me adapt to the digital age #photography
+
+  Top reply: "Good luck with that!"
+
+  [REDDIT]  sentiment=+0.20 (neutral)  upvotes=5
+--------------------------------------------------------------
+    Just stumbled upon Owl Regent Studio's offering for freelancers. As an architect, I'm always looking for ways to differentiate myself. Their visual identity services seem promising. Has anyone used them? What are your thoughts?
+
+  Top reply: "I've been meaning to check them out too"
+
+  [PRODUCT_HUNT]  sentiment=+1.00 (positive)  upvotes=15
+--------------------------------------------------------------
+    Just invested in Owl Regent Studio's visual identity package! I'm excited to elevate my psychology practice's online presence. Highly recommend for fellow professionals
+
+  Top reply: "Congrats! Can't wait to see the results"
+
+
+══════════════════════════════════════════════════════════════
+  STRATEGIC INSIGHTS
+══════════════════════════════════════════════════════════════
+
+  1. The target audience is interested in building trust and credibility with their clients through visual identity.
+
+  2. There is a perceived value in investing in branding for professionals who want to stand out online.
+
+  3. The price point of R$45 is seen as a good deal for freelancers and professionals.
+
+  4. The service is relevant for various professions, including Personal Trainers, Consultors, Nutricionistas, Fotógrafos, and Arquitetos.
+
+══════════════════════════════════════════════════════════════
+  DONE
+══════════════════════════════════════════════════════════════
+  Full results  →  GET http://localhost:8000/api/results/fc727a5e-55ef-49f1-8953-f216948e5c90
+  API explorer  →  http://localhost:8000/docs
+  Dashboard     →  http://localhost:3000/simulation/fc727a5e-55ef-49f1-8953-f216948e5c90
+
+  To interview a persona, run:
+
+    import urllib.request, json
+    resp = urllib.request.urlopen(
+        urllib.request.Request(
+            "http://localhost:8000/api/interview/fc727a5e-55ef-49f1-8953-f216948e5c90/agent_001",
+            data=json.dumps({"question": "Why didn't you buy?"}).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+    )
+    print(json.loads(resp.read())["answer"])
+
+══════════════════════════════════════════════════════════════
+[INFO] Copiando input de /home/lucas/Projetos/simulacao-multi-agent/scenarios/devincriator/variant_d.txt -> /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/input.txt
+[INFO] Iniciando backend em /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/backend...
+[INFO] Rodando simulação: devincriator / variante d
+[INFO] Parando backend...
+══════════════════════════════════════════════════════════════
+  LaunchSim  ·  Owl Regent Studio - Identidade Visual para Lojas de Roupas e Boutiques de Bairro
+══════════════════════════════════════════════════════════════
+  Price      : $45.00
+  Channel    : social_media
+  Agents     : 30 synthetic personas
+  Market     : Donos de lojas de roupas, boutiques, acessorios e calcados de bairro no Brasil que precisam de vitrine, sacola e Instagram com identidade propria para competir com fast fashion e shopee
+
+  Submitting to http://localhost:8000/api/simulate ...
+  Simulation ID : beffdd49-7211-4ca4-a2d5-fb8e08c72a3f
+
+  Running simulation - this takes a few minutes.
+
+  ⠋  PENDING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  RUNNING     personas=  0  interactions=  0  posts=  0     ⠴  RUNNING     personas=  0  interactions=  0  posts=  0     ⠦  RUNNING     personas=  0  interactions=  0  posts=  0     ⠧  RUNNING     personas=  0  interactions=  0  posts=  0     ⠇  RUNNING     personas=  0  interactions=  0  posts=  0     ⠏  RUNNING     personas=  0  interactions=  0  posts=  0     ⠋  RUNNING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  COMPLETED   personas= 30  interactions= 30  posts=  7   
+
+══════════════════════════════════════════════════════════════
+  RESULTS
+══════════════════════════════════════════════════════════════
+  Viewed        :   19  (63.3%)
+  Clicked       :    9  (30.0%)
+  Purchased     :    2  (6.7%)
+  Conversion    : 10.5%
+  Avg sentiment : +0.53   (-1 hostile → +1 enthusiastic)
+
+══════════════════════════════════════════════════════════════
+  PERSONAS GENERATED (first 5)
+══════════════════════════════════════════════════════════════
+  agent_001  Luana Silva            early_adopter    WTP=$200     [BUYS    ]
+           Luana is a fashion-forward entrepreneur who wants to make her boutique stand out in a crowded m...
+
+  agent_002  Marcelo Oliveira       pragmatist       WTP=$150     [BUYS    ]
+           Marcelo is a practical business owner who wants to see a tangible return on investment from his...
+
+  agent_003  Beatriz Souza          influencer       WTP=$300     [BUYS    ]
+           Beatriz is a creative and ambitious fashion designer who wants to leverage her online presence ...
+
+  agent_004  Carlos Eduardo         conservative     WTP=$100     [BUYS    ]
+           Carlos is a cautious business owner who prefers to stick with what he knows and is wary of new ...
+
+  agent_005  Giovana Dias           skeptic          WTP=$180     [BUYS    ]
+           Giovana is a cautious and analytical business owner who wants to carefully evaluate any new mar...
+
+
+══════════════════════════════════════════════════════════════
+  TOP OBJECTIONS
+══════════════════════════════════════════════════════════════
+  #1  [3x]  Limited marketing budget
+
+  #2  [2x]  Uncertainty about marketing effectiveness
+
+  #3  [2x]  Price sensitivity
+
+  #4  [2x]  Already have a solution
+
+  #5  [1x]  Skepticism about digital marketing
+
+
+══════════════════════════════════════════════════════════════
+  SOCIAL POSTS (first 3)
+══════════════════════════════════════════════════════════════
+  [PRODUCT_HUNT]  sentiment=+0.80 (positive)  upvotes=12
+--------------------------------------------------------------
+    Just found Owl Regent Studio! Needed a stylish brand identity for my fashion boutique and this seems perfect! $45 is a steal for the value. Highly recommend for fellow boutique owners! #OwlRegentStudio
+
+  Top reply: "Luana, which specific features did you find most useful?"
+
+  [REDDIT]  sentiment=+0.50 (positive)  upvotes=8
+--------------------------------------------------------------
+    I recently checked out Owl Regent Studio for my boutique's branding needs. With the competition in the market, I need to stay ahead and this seems like a great way to refresh my store's image. The price point of $45 seems reasonable for the potential impact it could have on my bu
+
+  Top reply: "I've been meaning to update my branding too, thanks for sharing!"
+
+  [TWITTER]  sentiment=+0.20 (neutral)  upvotes=3
+--------------------------------------------------------------
+    Owl Regent Studio for my store's branding? Might be a game-changer. Too busy with marketing and management to think about branding rn #boutiqueowner
+
+  Top reply: "Good luck with your branding journey!"
+
+
+══════════════════════════════════════════════════════════════
+  STRATEGIC INSIGHTS
+══════════════════════════════════════════════════════════════
+
+  1. The target audience is concerned about the cost of branding services, with many mentioning limited marketing budgets.
+
+  2. There is a need for education on the benefits of digital marketing and branding for small businesses.
+
+  3. The solution's pricing point of $45 is seen as a potential barrier, but also a selling point for some.
+
+  4. The target audience values cost-effective solutions, with many searching for affordable branding options.
+
+══════════════════════════════════════════════════════════════
+  DONE
+══════════════════════════════════════════════════════════════
+  Full results  →  GET http://localhost:8000/api/results/beffdd49-7211-4ca4-a2d5-fb8e08c72a3f
+  API explorer  →  http://localhost:8000/docs
+  Dashboard     →  http://localhost:3000/simulation/beffdd49-7211-4ca4-a2d5-fb8e08c72a3f
+
+  To interview a persona, run:
+
+    import urllib.request, json
+    resp = urllib.request.urlopen(
+        urllib.request.Request(
+            "http://localhost:8000/api/interview/beffdd49-7211-4ca4-a2d5-fb8e08c72a3f/agent_001",
+            data=json.dumps({"question": "Why didn't you buy?"}).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+    )
+    print(json.loads(resp.read())["answer"])
+
+══════════════════════════════════════════════════════════════
+[INFO] Copiando input de /home/lucas/Projetos/simulacao-multi-agent/scenarios/devincriator/variant_e.txt -> /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/input.txt
+[INFO] Iniciando backend em /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/backend...
+[INFO] Rodando simulação: devincriator / variante e
+[INFO] Parando backend...
+══════════════════════════════════════════════════════════════
+  LaunchSim  ·  Owl Regent Studio - Identidade Visual para Food Trucks e Quiosques de Praia
+══════════════════════════════════════════════════════════════
+  Price      : $45.00
+  Channel    : social_media
+  Agents     : 30 synthetic personas
+  Market     : Donos de food trucks, quiosques de praia e carrinhos gastronomicos no Brasil que precisam de identidade visual forte, visivel de longe e aplicada em embalagens e redes sociais
+
+  Submitting to http://localhost:8000/api/simulate ...
+  Simulation ID : 7ae0a68b-25c3-432b-97c4-4e295ee49114
+
+  Running simulation - this takes a few minutes.
+
+  ⠋  PENDING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  RUNNING     personas=  0  interactions=  0  posts=  0     ⠴  RUNNING     personas=  0  interactions=  0  posts=  0     ⠦  RUNNING     personas=  0  interactions=  0  posts=  0     ⠧  RUNNING     personas=  0  interactions=  0  posts=  0     ⠇  RUNNING     personas=  0  interactions=  0  posts=  0     ⠏  RUNNING     personas=  0  interactions=  0  posts=  0     ⠋  RUNNING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  COMPLETED   personas= 30  interactions= 30  posts= 10   
+
+══════════════════════════════════════════════════════════════
+  RESULTS
+══════════════════════════════════════════════════════════════
+  Viewed        :   19  (63.3%)
+  Clicked       :   11  (36.7%)
+  Purchased     :    5  (16.7%)
+  Conversion    : 26.3%
+  Avg sentiment : +0.48   (-1 hostile → +1 enthusiastic)
+
+══════════════════════════════════════════════════════════════
+  PERSONAS GENERATED (first 5)
+══════════════════════════════════════════════════════════════
+  agent_001  Luana Silva            early_adopter    WTP=$497     [BUYS    ]
+           Luana is a young and ambitious food truck owner in Rio de Janeiro, eager to establish her brand...
+
+  agent_002  Marcelo Oliveira       pragmatist       WTP=$244     [BUYS    ]
+           Marcelo is a seasoned marketing manager in Sao Paulo, looking for effective and efficient marke...
+
+  agent_003  Beatriz Souza          price_sensitive  WTP=$45      [BUYS    ]
+           Beatriz is a student in Brasilia who wants to start a small food business, but is on a tight bu...
+
+  agent_004  Carlos Eduardo         influencer       WTP=$497     [BUYS    ]
+           Carlos is an entrepreneur in Belo Horizonte who wants to create a unique brand identity for his...
+
+  agent_005  Leticia Dias           pragmatist       WTP=$244     [BUYS    ]
+           Leticia is a designer in Porto Alegre who wants to create a beautiful and cohesive brand identi...
+
+
+══════════════════════════════════════════════════════════════
+  TOP OBJECTIONS
+══════════════════════════════════════════════════════════════
+  #1  [4x]  High price
+
+  #2  [2x]  Unclear brand recognition benefits
+
+  #3  [1x]  Risk aversion and limited budget
+
+  #4  [2x]  Prioritizes brand scalability
+
+  #5  [1x]  Already has strong brand recognition
+
+
+══════════════════════════════════════════════════════════════
+  SOCIAL POSTS (first 3)
+══════════════════════════════════════════════════════════════
+  [TWITTER]  sentiment=+0.80 (positive)  upvotes=12
+--------------------------------------------------------------
+    Acabei de adquirir o Owl Regent Studio para meu food truck! Querendo dar aquela alavancada no meu posicionamento único no mercado #FoodTruck #IdentidadeVisual
+
+  Top reply: "Muito bom, Carlos! Sucesso com o novo visual"
+
+  [TWITTER]  sentiment=+0.50 (positive)  upvotes=8
+--------------------------------------------------------------
+    Reavaliando meus gastos, decidi investir no Owl Regent Studio para manter a consistência da marca. R$45,00 foi um bom valor #marketing
+
+  Top reply: "Faz sentido, Marcelo. E o resultado?"
+
+  [TWITTER]  sentiment=+0.90 (positive)  upvotes=20
+--------------------------------------------------------------
+    Adorei o estilo único do Owl Regent Studio! Perfeito para a minha marca como influencer #influencerstyle
+
+  Top reply: "Muito bom, Gabriela! Você compartilha mais sobre o processo?"
+
+
+══════════════════════════════════════════════════════════════
+  STRATEGIC INSIGHTS
+══════════════════════════════════════════════════════════════
+
+  1. The Owl Regent Studio's pricing strategy may be a barrier for some potential customers, with several agents citing high costs as a reason for ignoring or abandoning the product.
+
+  2. There is a perceived value for the product among customers who prioritize brand consistency and unique visual identity, as evidenced by positive posts from satisfied customers.
+
+  3. The product's scalability and ease of use are important considerations for some customers, with some agents prioritizing these features over branding services.
+
+  4. The Owl Regent Studio's marketing strategy may need to focus on educating potential customers about the benefits of investing in brand recognition and visual identity, particularly for those with limited budgets or unclear expectations.
+
+══════════════════════════════════════════════════════════════
+  DONE
+══════════════════════════════════════════════════════════════
+  Full results  →  GET http://localhost:8000/api/results/7ae0a68b-25c3-432b-97c4-4e295ee49114
+  API explorer  →  http://localhost:8000/docs
+  Dashboard     →  http://localhost:3000/simulation/7ae0a68b-25c3-432b-97c4-4e295ee49114
+
+  To interview a persona, run:
+
+    import urllib.request, json
+    resp = urllib.request.urlopen(
+        urllib.request.Request(
+            "http://localhost:8000/api/interview/7ae0a68b-25c3-432b-97c4-4e295ee49114/agent_001",
+            data=json.dumps({"question": "Why didn't you buy?"}).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+    )
+    print(json.loads(resp.read())["answer"])
+
+══════════════════════════════════════════════════════════════
+[INFO] Copiando input de /home/lucas/Projetos/simulacao-multi-agent/scenarios/devincriator/variant_f.txt -> /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/input.txt
+[INFO] Iniciando backend em /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/backend...
+[INFO] Rodando simulação: devincriator / variante f
+[INFO] Parando backend...
+══════════════════════════════════════════════════════════════
+  LaunchSim  ·  SLZ Seguranca Inteligente para Padarias e Mercearias de Sao Luis - Protecao do Estoque e Abertura Segura
+══════════════════════════════════════════════════════════════
+  Price      : $0.20
+  Channel    : word_of_mouth
+  Agents     : 30 synthetic personas
+  Market     : Donos de padarias, mercearias e pequenos mercados em Sao Luis, MA, especialmente nos bairros comerciais de Divinea, Vila Luizao, Sol e Mar, Cohab/Anil e Centro, que trabalham com dinheiro em caixa e estoque atrativo
+
+  Submitting to http://localhost:8000/api/simulate ...
+  Simulation ID : a51cc54d-2807-44a5-a65f-6bf7f0941be0
+
+  Running simulation - this takes a few minutes.
+
+  ⠋  PENDING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  RUNNING     personas=  0  interactions=  0  posts=  0     ⠴  RUNNING     personas=  0  interactions=  0  posts=  0     ⠦  RUNNING     personas=  0  interactions=  0  posts=  0     ⠧  RUNNING     personas=  0  interactions=  0  posts=  0     ⠇  RUNNING     personas=  0  interactions=  0  posts=  0     ⠏  RUNNING     personas=  0  interactions=  0  posts=  0     ⠋  RUNNING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  COMPLETED   personas= 30  interactions= 30  posts= 13   
+
+══════════════════════════════════════════════════════════════
+  RESULTS
+══════════════════════════════════════════════════════════════
+  Viewed        :   22  (73.3%)
+  Clicked       :   16  (53.3%)
+  Purchased     :    5  (16.7%)
+  Conversion    : 22.7%
+  Avg sentiment : +0.55   (-1 hostile → +1 enthusiastic)
+
+══════════════════════════════════════════════════════════════
+  PERSONAS GENERATED (first 5)
+══════════════════════════════════════════════════════════════
+  agent_001  João Silva             early_adopter    WTP=$200     [BUYS    ]
+           João é um empresário progressista que busca sempre inovar em sua padaria....
+
+  agent_002  Maria Fernandes        pragmatist       WTP=$150     [BUYS    ]
+           Maria é uma gestora prática que busca soluções eficazes para sua mercearia....
+
+  agent_003  Pedro Oliveira         conservative     WTP=$100     [BUYS    ]
+           Pedro é um empresário tradicional que valoriza a segurança, mas é cauteloso com gastos....
+
+  agent_004  Ana Costa              influencer       WTP=$250     [BUYS    ]
+           Ana é uma gestora moderna que busca inspirar confiança e liderança em sua padaria....
+
+  agent_005  Luiz Carlos            skeptic          WTP=$120     [BUYS    ]
+           Luiz é um empresário cético que questiona a eficácia e o custo de soluções de segurança....
+
+
+══════════════════════════════════════════════════════════════
+  TOP OBJECTIONS
+══════════════════════════════════════════════════════════════
+  #1  [2x]  Skepticism about system's effectiveness
+
+  #2  [2x]  High costs
+
+  #3  [1x]  Prioritizing brand reputation over features
+
+  #4  [1x]  New security concerns
+
+  #5  [1x]  Concerns about estoque security
+
+
+══════════════════════════════════════════════════════════════
+  SOCIAL POSTS (first 3)
+══════════════════════════════════════════════════════════════
+  [TWITTER]  sentiment=+0.80 (positive)  upvotes=12
+--------------------------------------------------------------
+    Segurança em 1º lugar! Cliquei no SLZ Seguranca Inteligente, quero proteger meu estoque! #Seguranca #Padaria
+
+  Top reply: "Show, João! Qual o custo-benefício?"
+
+  [REDDIT]  sentiment=+0.50 (positive)  upvotes=8
+--------------------------------------------------------------
+    Acabei de clicar no produto SLZ Seguranca Inteligente para minha pequena mercearia. Estou sempre em busca de formas de evitar furtos e melhorar a segurança. A ideia de proteger meu estoque e ter uma abertura segura realmente me chamou atenção. Alguém já usou? Quais são as experiê
+
+  Top reply: "Sim, Pedro, é uma boa opção!"
+
+  [TWITTER]  sentiment=+1.00 (positive)  upvotes=25
+--------------------------------------------------------------
+    Adquiri o SLZ Seguranca Inteligente! É um investimento para a segurança e a imagem da minha padaria! #Seguranca #Inovacao
+
+  Top reply: "Parabéns, Ana! Espero que seja eficaz!"
+
+
+══════════════════════════════════════════════════════════════
+  STRATEGIC INSIGHTS
+══════════════════════════════════════════════════════════════
+
+  1. The system seems to be effective in addressing security concerns for padarias and mercearias.
+
+  2. There is a need for clear communication about the system's features and benefits to alleviate skepticism.
+
+  3. The pricing strategy may need to be adjusted or justified to appeal to a wider range of customers.
+
+  4. Positive reviews and word-of-mouth (e.g., from agent_014 and agent_019) can help build trust and credibility for the product.
+
+══════════════════════════════════════════════════════════════
+  DONE
+══════════════════════════════════════════════════════════════
+  Full results  →  GET http://localhost:8000/api/results/a51cc54d-2807-44a5-a65f-6bf7f0941be0
+  API explorer  →  http://localhost:8000/docs
+  Dashboard     →  http://localhost:3000/simulation/a51cc54d-2807-44a5-a65f-6bf7f0941be0
+
+  To interview a persona, run:
+
+    import urllib.request, json
+    resp = urllib.request.urlopen(
+        urllib.request.Request(
+            "http://localhost:8000/api/interview/a51cc54d-2807-44a5-a65f-6bf7f0941be0/agent_001",
+            data=json.dumps({"question": "Why didn't you buy?"}).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+    )
+    print(json.loads(resp.read())["answer"])
+
+══════════════════════════════════════════════════════════════
+[INFO] Copiando input de /home/lucas/Projetos/simulacao-multi-agent/scenarios/slz_n8n/variant_a.txt -> /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/input.txt
+[INFO] Iniciando backend em /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/backend...
+[INFO] Rodando simulação: slz_n8n / variante a
+[INFO] Parando backend...
+══════════════════════════════════════════════════════════════
+  LaunchSim  ·  SLZ Seguranca Inteligente para Saloes de Beleza e Esteticas de Sao Luis - Protecao no Horario Noturno
+══════════════════════════════════════════════════════════════
+  Price      : $0.20
+  Channel    : word_of_mouth
+  Agents     : 30 synthetic personas
+  Market     : Donas de saloes de beleza, barbearias e clinicas de estetica em Sao Luis, MA, em bairros como Calhau, Renascenca, Cohama, Jardim Renascenca e Centro, que ficam ate tarde e trabalham com equipamentos e produtos de valor
+
+  Submitting to http://localhost:8000/api/simulate ...
+  Simulation ID : f5ba62c1-4e7f-4250-8c69-ec1c13b4cd7b
+
+  Running simulation - this takes a few minutes.
+
+  ⠋  PENDING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  RUNNING     personas=  0  interactions=  0  posts=  0     ⠴  RUNNING     personas=  0  interactions=  0  posts=  0     ⠦  RUNNING     personas=  0  interactions=  0  posts=  0     ⠧  RUNNING     personas=  0  interactions=  0  posts=  0     ⠇  RUNNING     personas=  0  interactions=  0  posts=  0     ⠏  RUNNING     personas=  0  interactions=  0  posts=  0     ⠋  RUNNING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  COMPLETED   personas= 30  interactions= 30  posts= 13   
+
+══════════════════════════════════════════════════════════════
+  RESULTS
+══════════════════════════════════════════════════════════════
+  Viewed        :   21  (70.0%)
+  Clicked       :   15  (50.0%)
+  Purchased     :    3  (10.0%)
+  Conversion    : 14.3%
+  Avg sentiment : +0.49   (-1 hostile → +1 enthusiastic)
+
+══════════════════════════════════════════════════════════════
+  PERSONAS GENERATED (first 5)
+══════════════════════════════════════════════════════════════
+  agent_001  Luana Silva            early_adopter    WTP=$200     [BUYS    ]
+           Luana e uma dona de salao de beleza que busca inovacao e seguranca para seu negocio....
+
+  agent_002  Joao Pedro             pragmatist       WTP=$150     [BUYS    ]
+           Joao Pedro e um dono de barbearia que busca praticidade e eficiencia....
+
+  agent_003  Beatriz Souza          conservative     WTP=$100     [BUYS    ]
+           Beatriz e uma estetician que busca seguranca e tranquilidade no trabalho....
+
+  agent_004  Marcelo Oliveira       skeptic          WTP=$250     [BUYS    ]
+           Marcelo e um dono de salao de beleza que e ceptico em relacao a novos sistemas....
+
+  agent_005  Leticia Furtado        influencer       WTP=$300     [BUYS    ]
+           Leticia e uma influencer que busca inovacao e visibilidade....
+
+
+══════════════════════════════════════════════════════════════
+  TOP OBJECTIONS
+══════════════════════════════════════════════════════════════
+  #1  [4x]  High cost
+
+  #2  [1x]  Privacy and security concerns
+
+  #3  [1x]  Security effectiveness
+
+  #4  [1x]  System customization
+
+  #5  [1x]  Existing security measures
+
+
+══════════════════════════════════════════════════════════════
+  SOCIAL POSTS (first 3)
+══════════════════════════════════════════════════════════════
+  [TWITTER]  sentiment=+0.50 (positive)  upvotes=2
+--------------------------------------------------------------
+    Acabei de investir no SLZ Seguranca Inteligente pro meu salao, espero que seja eficaz! R$0.20 é um bom negocio, mas só o tempo dirá #Seguranca #SalaoDeBeleza
+
+  Top reply: "Boa sorte, Marcelo!"
+
+  [TWITTER]  sentiment=+0.80 (positive)  upvotes=5
+--------------------------------------------------------------
+    Cliquei no SLZ Seguranca Inteligente, parece fácil de usar! Alguém já testou? #Estetica #Seguranca
+
+  Top reply: "Eu estou pensando em testar também!"
+
+  [PRODUCT_HUNT]  sentiment=+0.20 (neutral)  upvotes=1
+--------------------------------------------------------------
+    Just clicked on SLZ Seguranca Inteligente, interesting solution for beauty salons. Not sure about the cost though. Anyone have experience with similar products? Feedback appreciated!
+
+  Top reply: "Same here, Joao! Did you consider the ROI?"
+
+
+══════════════════════════════════════════════════════════════
+  STRATEGIC INSIGHTS
+══════════════════════════════════════════════════════════════
+
+  1. The high cost of SLZ Seguranca Inteligente is a significant deterrent for many potential customers.
+
+  2. There is a need for more education on the effectiveness of SLZ Seguranca Inteligente in addressing security concerns.
+
+  3. The system needs to offer more customization options to appeal to a wider range of customers.
+
+  4. The market is interested in innovative security solutions for beauty salons and esthetics, particularly for nighttime protection.
+
+══════════════════════════════════════════════════════════════
+  DONE
+══════════════════════════════════════════════════════════════
+  Full results  →  GET http://localhost:8000/api/results/f5ba62c1-4e7f-4250-8c69-ec1c13b4cd7b
+  API explorer  →  http://localhost:8000/docs
+  Dashboard     →  http://localhost:3000/simulation/f5ba62c1-4e7f-4250-8c69-ec1c13b4cd7b
+
+  To interview a persona, run:
+
+    import urllib.request, json
+    resp = urllib.request.urlopen(
+        urllib.request.Request(
+            "http://localhost:8000/api/interview/f5ba62c1-4e7f-4250-8c69-ec1c13b4cd7b/agent_001",
+            data=json.dumps({"question": "Why didn't you buy?"}).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+    )
+    print(json.loads(resp.read())["answer"])
+
+══════════════════════════════════════════════════════════════
+[INFO] Copiando input de /home/lucas/Projetos/simulacao-multi-agent/scenarios/slz_n8n/variant_b.txt -> /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/input.txt
+[INFO] Iniciando backend em /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/backend...
+[INFO] Rodando simulação: slz_n8n / variante b
+[INFO] Parando backend...
+══════════════════════════════════════════════════════════════
+  LaunchSim  ·  SLZ Seguranca Inteligente para Lojas de Roupas e Calcados de Sao Luis - Protecao de Vitrine e Estoque
+══════════════════════════════════════════════════════════════
+  Price      : $0.20
+  Channel    : word_of_mouth
+  Agents     : 30 synthetic personas
+  Market     : Donos de lojas de roupas, calcados, acessorios e boutiques em Sao Luis, MA, em areas comerciais como Centro, Joao Paulo, Cohab/Anil, Shopping da Ilha e galerias, que trabalham com estoque de valor na vitrine
+
+  Submitting to http://localhost:8000/api/simulate ...
+  Simulation ID : 2ccc9ec1-2483-4a15-b827-4e7949eef697
+
+  Running simulation - this takes a few minutes.
+
+  ⠋  PENDING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  RUNNING     personas=  0  interactions=  0  posts=  0     ⠴  RUNNING     personas=  0  interactions=  0  posts=  0     ⠦  RUNNING     personas=  0  interactions=  0  posts=  0     ⠧  RUNNING     personas=  0  interactions=  0  posts=  0     ⠇  RUNNING     personas=  0  interactions=  0  posts=  0     ⠏  RUNNING     personas=  0  interactions=  0  posts=  0     ⠋  RUNNING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  COMPLETED   personas= 30  interactions= 30  posts= 17   
+
+══════════════════════════════════════════════════════════════
+  RESULTS
+══════════════════════════════════════════════════════════════
+  Viewed        :   26  (86.7%)
+  Clicked       :   19  (63.3%)
+  Purchased     :   12  (40.0%)
+  Conversion    : 46.2%
+  Avg sentiment : +0.67   (-1 hostile → +1 enthusiastic)
+
+══════════════════════════════════════════════════════════════
+  PERSONAS GENERATED (first 5)
+══════════════════════════════════════════════════════════════
+  agent_001  Luana Silva            early_adopter    WTP=$200     [BUYS    ]
+           Luana é uma lojista de 32 anos que busca proteger seu estoque de valor com tecnologia de ponta....
+
+  agent_002  Joao Pedro             pragmatist       WTP=$150     [BUYS    ]
+           Joao Pedro é um empresario de 45 anos que busca soluções práticas para reduzir custos e aumenta...
+
+  agent_003  Beatriz Souza          skeptic          WTP=$100     [BUYS    ]
+           Beatriz é uma gerente de loja de 28 anos que é cética em relação a soluções de segurança, mas b...
+
+  agent_004  Marcelo Oliveira       conservative     WTP=$250     [BUYS    ]
+           Marcelo é um lojista de 50 anos que busca proteger seu estoque de valor com soluções tradiciona...
+
+  agent_005  Leticia Costa          influencer       WTP=$50      [BUYS    ]
+           Leticia é uma estudante de 22 anos que busca soluções de segurança fáceis de usar e acessíveis ...
+
+
+══════════════════════════════════════════════════════════════
+  TOP OBJECTIONS
+══════════════════════════════════════════════════════════════
+  #1  [2x]  Custo da solução é alto
+
+  #2  [2x]  Eficácia da segurança
+
+  #3  [1x]  Preocupações com a imagem da loja
+
+  #4  [1x]  Necessidade de casos de uso ou depoimentos
+
+  #5  [1x]  Priorização de custo de segurança mais baixo
+
+
+══════════════════════════════════════════════════════════════
+  SOCIAL POSTS (first 3)
+══════════════════════════════════════════════════════════════
+  [TWITTER]  sentiment=+0.20 (neutral)  upvotes=2
+--------------------------------------------------------------
+    Acabei de comprar o SLZ Seguranca Inteligente e estou curiosa para ver se funciona! R$0.20 é um bom preço, mas será que vale a pena? #lojadeseguranca
+
+  Top reply: "Sim, é uma boa opção!"
+
+  [APP_STORE]  sentiment=+0.80 (positive)  upvotes=15
+--------------------------------------------------------------
+    5/5 estrelas! O SLZ Seguranca Inteligente parece muito fácil de usar e a segurança é top! Quero saber mais sobre como funciona!
+
+  Top reply: "Eu também estou interessado!"
+
+  [PRODUCT_HUNT]  sentiment=+0.90 (positive)  upvotes=8
+--------------------------------------------------------------
+    Acabei de descobrir o SLZ Seguranca Inteligente e estou impressionado! É muito fácil de usar e a segurança é de alto nível. Comprei e estou ansioso para testar
+
+  Top reply: "Eu também estou pensando em comprar!"
+
+
+══════════════════════════════════════════════════════════════
+  STRATEGIC INSIGHTS
+══════════════════════════════════════════════════════════════
+
+  1. O preço de R$0.20 é um fator importante para os agentes, pois alguns mencionaram que é um bom preço.
+
+  2. A eficácia da segurança é uma preocupação importante para os agentes, que buscam soluções que realmente funcionem.
+
+  3. A facilidade de uso é um ponto positivo destacado por alguns agentes que adquiriram o produto.
+
+  4. A segurança física é fundamental para os agentes, que buscam proteger suas lojas de roupas e calçados de forma eficaz.
+
+══════════════════════════════════════════════════════════════
+  DONE
+══════════════════════════════════════════════════════════════
+  Full results  →  GET http://localhost:8000/api/results/2ccc9ec1-2483-4a15-b827-4e7949eef697
+  API explorer  →  http://localhost:8000/docs
+  Dashboard     →  http://localhost:3000/simulation/2ccc9ec1-2483-4a15-b827-4e7949eef697
+
+  To interview a persona, run:
+
+    import urllib.request, json
+    resp = urllib.request.urlopen(
+        urllib.request.Request(
+            "http://localhost:8000/api/interview/2ccc9ec1-2483-4a15-b827-4e7949eef697/agent_001",
+            data=json.dumps({"question": "Why didn't you buy?"}).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+    )
+    print(json.loads(resp.read())["answer"])
+
+══════════════════════════════════════════════════════════════
+[INFO] Copiando input de /home/lucas/Projetos/simulacao-multi-agent/scenarios/slz_n8n/variant_c.txt -> /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/input.txt
+[INFO] Iniciando backend em /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/backend...
+[INFO] Rodando simulação: slz_n8n / variante c
+[INFO] Parando backend...
+══════════════════════════════════════════════════════════════
+  LaunchSim  ·  SLZ Seguranca Inteligente para Bares e Restaurantes de Sao Luis - Protecao de Caixa e Horario Noturno
+══════════════════════════════════════════════════════════════
+  Price      : $0.20
+  Channel    : word_of_mouth
+  Agents     : 30 synthetic personas
+  Market     : Donos de bares, restaurantes, lanchonetes e hamburguerias em Sao Luis, MA, em bairros como Ponta da Areia, Calhau, Renascenca, Cohama, Centro e Jardim Renascenca, que trabalham com caixa e estoque de bebidas ate tarde
+
+  Submitting to http://localhost:8000/api/simulate ...
+  Simulation ID : ea157b85-629e-4ed1-a09d-6579095a6f49
+
+  Running simulation - this takes a few minutes.
+
+  ⠋  PENDING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  RUNNING     personas=  0  interactions=  0  posts=  0     ⠴  RUNNING     personas=  0  interactions=  0  posts=  0     ⠦  RUNNING     personas=  0  interactions=  0  posts=  0     ⠧  RUNNING     personas=  0  interactions=  0  posts=  0     ⠇  RUNNING     personas=  0  interactions=  0  posts=  0     ⠏  RUNNING     personas=  0  interactions=  0  posts=  0     ⠋  RUNNING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  COMPLETED   personas= 30  interactions= 30  posts= 12   
+
+══════════════════════════════════════════════════════════════
+  RESULTS
+══════════════════════════════════════════════════════════════
+  Viewed        :   27  (90.0%)
+  Clicked       :   19  (63.3%)
+  Purchased     :    4  (13.3%)
+  Conversion    : 14.8%
+  Avg sentiment : +0.70   (-1 hostile → +1 enthusiastic)
+
+══════════════════════════════════════════════════════════════
+  PERSONAS GENERATED (first 5)
+══════════════════════════════════════════════════════════════
+  agent_001  Luana Silva            early_adopter    WTP=$200     [BUYS    ]
+           Luana is a proactive restaurant owner in Sao Luis who values innovation and security....
+
+  agent_002  Joao Pedro             pragmatist       WTP=$150     [BUYS    ]
+           Joao Pedro is a practical bar manager looking for effective solutions to common problems....
+
+  agent_003  Beatriz Costa          influencer       WTP=$250     [BUYS    ]
+           Beatriz is a social and ambitious lanchonete owner who wants to make a name for herself online....
+
+  agent_004  Marcelo Oliveira       conservative     WTP=$100     [BUYS    ]
+           Marcelo is a traditional restaurateur who values stability and legacy....
+
+  agent_005  Eduardo Santos         power_user       WTP=$300     [BUYS    ]
+           Eduardo is a tech-savvy hamburgueria owner who loves trying new solutions....
+
+
+══════════════════════════════════════════════════════════════
+  TOP OBJECTIONS
+══════════════════════════════════════════════════════════════
+  #1  [1x]  system complexity
+
+  #2  [1x]  high security costs
+
+  #3  [1x]  not aligned with current needs
+
+  #4  [1x]  effectiveness
+
+  #5  [1x]  cost
+
+
+══════════════════════════════════════════════════════════════
+  SOCIAL POSTS (first 3)
+══════════════════════════════════════════════════════════════
+  [TWITTER]  sentiment=+0.50 (positive)  upvotes=2
+--------------------------------------------------------------
+    Segurança pra bares e restaurantes em SLZ por apenas $0.20? Vou dar uma olhada! #SegurancaInteligente
+
+  Top reply: "Parece uma boa opção!"
+
+  [REDDIT]  sentiment=+0.20 (neutral)  upvotes=5
+--------------------------------------------------------------
+    I recently clicked on SLZ Seguranca Inteligente for my lanchonete and I'm curious about how it can help me streamline operations. Has anyone used it? I need something to make my life easier.
+
+  Top reply: "Try it out and share your experience!"
+
+  [REDDIT]  sentiment=+1.00 (positive)  upvotes=10
+--------------------------------------------------------------
+    I'm so glad I invested in SLZ Seguranca Inteligente for my restaurant! The security concerns at night were really bothering me and this solution seems to have addressed them. Highly recommend!
+
+  Top reply: "How much did it cost you?"
+
+
+══════════════════════════════════════════════════════════════
+  STRATEGIC INSIGHTS
+══════════════════════════════════════════════════════════════
+
+  1. The product seems to be effective in providing security for bars and restaurants in Sao Luis, with many agents expressing confidence in its ability to prevent theft and improve security.
+
+  2. The system's ease of use is a major selling point, with agents praising its simplicity and ease of implementation.
+
+  3. There is a perceived value in the product, with agents mentioning it's a complete solution for protecting caixa and improving nighttime security.
+
+  4. The product has potential for increasing reputation and customer trust, with agents hoping it will improve their business's security reputation.
+
+══════════════════════════════════════════════════════════════
+  DONE
+══════════════════════════════════════════════════════════════
+  Full results  →  GET http://localhost:8000/api/results/ea157b85-629e-4ed1-a09d-6579095a6f49
+  API explorer  →  http://localhost:8000/docs
+  Dashboard     →  http://localhost:3000/simulation/ea157b85-629e-4ed1-a09d-6579095a6f49
+
+  To interview a persona, run:
+
+    import urllib.request, json
+    resp = urllib.request.urlopen(
+        urllib.request.Request(
+            "http://localhost:8000/api/interview/ea157b85-629e-4ed1-a09d-6579095a6f49/agent_001",
+            data=json.dumps({"question": "Why didn't you buy?"}).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+    )
+    print(json.loads(resp.read())["answer"])
+
+══════════════════════════════════════════════════════════════
+[INFO] Copiando input de /home/lucas/Projetos/simulacao-multi-agent/scenarios/slz_n8n/variant_d.txt -> /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/input.txt
+[INFO] Iniciando backend em /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/backend...
+[INFO] Rodando simulação: slz_n8n / variante d
+[INFO] Parando backend...
+══════════════════════════════════════════════════════════════
+  LaunchSim  ·  SLZ Seguranca Inteligente para Farmacias e Drogarias de Sao Luis - Protecao de Medicamentos Controlados e Caixa
+══════════════════════════════════════════════════════════════
+  Price      : $0.20
+  Channel    : word_of_mouth
+  Agents     : 30 synthetic personas
+  Market     : Donos de farmacias e drogarias em Sao Luis, MA, em bairros comerciais e residenciais como Centro, Cohab, Anil, Forquilha, Vinhais, Vila Luizao e Divinea, que trabalham com medicamentos controlados e caixa
+
+  Submitting to http://localhost:8000/api/simulate ...
+  Simulation ID : 5f42d523-8a1f-470c-ad35-394f56955440
+
+  Running simulation - this takes a few minutes.
+
+  ⠋  PENDING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  RUNNING     personas=  0  interactions=  0  posts=  0     ⠴  RUNNING     personas=  0  interactions=  0  posts=  0     ⠦  RUNNING     personas=  0  interactions=  0  posts=  0     ⠧  RUNNING     personas=  0  interactions=  0  posts=  0     ⠇  RUNNING     personas=  0  interactions=  0  posts=  0     ⠏  RUNNING     personas=  0  interactions=  0  posts=  0     ⠋  RUNNING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  COMPLETED   personas= 30  interactions= 30  posts= 13   
+
+══════════════════════════════════════════════════════════════
+  RESULTS
+══════════════════════════════════════════════════════════════
+  Viewed        :   22  (73.3%)
+  Clicked       :   16  (53.3%)
+  Purchased     :    5  (16.7%)
+  Conversion    : 22.7%
+  Avg sentiment : +0.65   (-1 hostile → +1 enthusiastic)
+
+══════════════════════════════════════════════════════════════
+  PERSONAS GENERATED (first 5)
+══════════════════════════════════════════════════════════════
+  agent_001  Joana Silva            early_adopter    WTP=$200     [BUYS    ]
+           Joana is a proactive pharmacy owner in Sao Luis who prioritizes security and efficiency....
+
+  agent_002  Luiz Carlos            pragmatist       WTP=$150     [BUYS    ]
+           Luiz is a practical and experienced pharmacy manager seeking reliable solutions....
+
+  agent_003  Beatriz Oliveira       conservative     WTP=$100     [BUYS    ]
+           Beatriz is a cautious and detail-oriented pharmacist focused on patient well-being....
+
+  agent_004  Marcelo Santos         influencer       WTP=$250     [BUYS    ]
+           Marcelo is a knowledgeable security consultant in Sao Luis who values innovation....
+
+  agent_005  Leticia Sousa          price_sensitive  WTP=$50      [BUYS    ]
+           Leticia is a budget-conscious pharmacy assistant seeking affordable solutions....
+
+
+══════════════════════════════════════════════════════════════
+  TOP OBJECTIONS
+══════════════════════════════════════════════════════════════
+  #1  [1x]  Concerns about ease of use
+
+  #2  [1x]  Security concerns for late-night operations
+
+  #3  [1x]  Doubts about the security solution's effectiveness
+
+  #4  [1x]  Prioritizes protecting high-value assets differently
+
+  #5  [1x]  Already current with emerging technologies
+
+
+══════════════════════════════════════════════════════════════
+  SOCIAL POSTS (first 3)
+══════════════════════════════════════════════════════════════
+  [PRODUCT_HUNT]  sentiment=+0.80 (positive)  upvotes=12
+--------------------------------------------------------------
+    Just discovered SLZ Seguranca Inteligente! As a pharmacy owner, I'm always looking for ways to protect controlled meds. This seems like a game-changer! $0.20 is a steal for the peace of mind it offers.
+
+  Top reply: "Interesting find! Have you implemented it yet?"
+
+  [PRODUCT_HUNT]  sentiment=+0.90 (positive)  upvotes=8
+--------------------------------------------------------------
+    I'm all about patient safety! The SLZ Seguranca Inteligente system looks promising. Can't wait to learn more about its features and how it can help us prevent medication misuse.
+
+  Top reply: "That's great to hear! Do you think it'll be user-friendly for staff?"
+
+  [PRODUCT_HUNT]  sentiment=+1.00 (positive)  upvotes=20
+--------------------------------------------------------------
+    Just invested in SLZ Seguranca Inteligente! As a security consultant, I'm always on the lookout for innovative solutions. This one's got potential! The price point is attractive too.
+
+  Top reply: "Great find! Can you share more about its features?"
+
+
+══════════════════════════════════════════════════════════════
+  STRATEGIC INSIGHTS
+══════════════════════════════════════════════════════════════
+
+  1. The solution's affordability is a major selling point, with several agents mentioning the low cost as a key factor in their consideration.
+
+  2. There is a clear need for effective security solutions for pharmacies in Sao Luis, with many agents expressing concerns about theft and security.
+
+  3. The solution's ability to protect controlled medications is a key benefit, with several agents mentioning this as a key feature.
+
+  4. The solution's innovative approach to security is attracting attention from pharmacy owners and security consultants alike.
+
+══════════════════════════════════════════════════════════════
+  DONE
+══════════════════════════════════════════════════════════════
+  Full results  →  GET http://localhost:8000/api/results/5f42d523-8a1f-470c-ad35-394f56955440
+  API explorer  →  http://localhost:8000/docs
+  Dashboard     →  http://localhost:3000/simulation/5f42d523-8a1f-470c-ad35-394f56955440
+
+  To interview a persona, run:
+
+    import urllib.request, json
+    resp = urllib.request.urlopen(
+        urllib.request.Request(
+            "http://localhost:8000/api/interview/5f42d523-8a1f-470c-ad35-394f56955440/agent_001",
+            data=json.dumps({"question": "Why didn't you buy?"}).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+    )
+    print(json.loads(resp.read())["answer"])
+
+══════════════════════════════════════════════════════════════
+[INFO] Copiando input de /home/lucas/Projetos/simulacao-multi-agent/scenarios/slz_n8n/variant_e.txt -> /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/input.txt
+[INFO] Iniciando backend em /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/backend...
+[INFO] Rodando simulação: slz_n8n / variante e
+[INFO] Parando backend...
+══════════════════════════════════════════════════════════════
+  LaunchSim  ·  SLZ Seguranca Inteligente para Residencias de Sao Luis - Tranquilidade para a Familia 24h
+══════════════════════════════════════════════════════════════
+  Price      : $0.20
+  Channel    : word_of_mouth
+  Agents     : 30 synthetic personas
+  Market     : Familias em Sao Luis, MA, especialmente nos bairros residenciais de Ponta d'Areia, Calhau, Cohama, Renascenca, Turu, Cohatrac, Maiobao, Vinhais e Jardim Renascenca, que tem medo de assaltos a residencia ou ja passaram por sustos
+
+  Submitting to http://localhost:8000/api/simulate ...
+  Simulation ID : 26a33a97-d8d4-4158-b039-94c866bc768e
+
+  Running simulation - this takes a few minutes.
+
+  ⠋  PENDING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  RUNNING     personas=  0  interactions=  0  posts=  0     ⠴  RUNNING     personas=  0  interactions=  0  posts=  0     ⠦  RUNNING     personas=  0  interactions=  0  posts=  0     ⠧  RUNNING     personas=  0  interactions=  0  posts=  0     ⠇  RUNNING     personas=  0  interactions=  0  posts=  0     ⠏  RUNNING     personas=  0  interactions=  0  posts=  0     ⠋  RUNNING     personas=  0  interactions=  0  posts=  0     ⠙  RUNNING     personas=  0  interactions=  0  posts=  0     ⠹  RUNNING     personas=  0  interactions=  0  posts=  0     ⠸  RUNNING     personas=  0  interactions=  0  posts=  0     ⠼  COMPLETED   personas= 30  interactions= 30  posts= 14   
+
+══════════════════════════════════════════════════════════════
+  RESULTS
+══════════════════════════════════════════════════════════════
+  Viewed        :   23  (76.7%)
+  Clicked       :   15  (50.0%)
+  Purchased     :    7  (23.3%)
+  Conversion    : 30.4%
+  Avg sentiment : +0.62   (-1 hostile → +1 enthusiastic)
+
+══════════════════════════════════════════════════════════════
+  PERSONAS GENERATED (first 5)
+══════════════════════════════════════════════════════════════
+  agent_001  Luana Oliveira         early_adopter    WTP=$200     [BUYS    ]
+           Luana is a busy professional who values her family's safety and is willing to invest in a relia...
+
+  agent_002  Joao Pedro             pragmatist       WTP=$250     [BUYS    ]
+           Joao Pedro is a practical business owner who wants to ensure his family's and business's safety...
+
+  agent_003  Beatriz Silva          price_sensitive  WTP=$50      [BUYS    ]
+           Beatriz is a student on a tight budget who wants to stay safe without breaking the bank....
+
+  agent_004  Marcelo Santos         conservative     WTP=$150     [BUYS    ]
+           Marcelo is a retiree who prioritizes simplicity and reliability in his security system....
+
+  agent_005  Leticia Costa          influencer       WTP=$300     [BUYS    ]
+           Leticia is a tech-savvy freelancer who values flexibility and scalability in her security syste...
+
+
+══════════════════════════════════════════════════════════════
+  TOP OBJECTIONS
+══════════════════════════════════════════════════════════════
+  #1  [2x]  High price
+
+  #2  [3x]  Complexity of setup and use
+
+  #3  [2x]  Effectiveness and value
+
+  #4  [1x]  Aesthetics
+
+  #5  [1x]  Conservative attitude towards new technology
+
+
+══════════════════════════════════════════════════════════════
+  SOCIAL POSTS (first 3)
+══════════════════════════════════════════════════════════════
+  [TWITTER]  sentiment=+1.00 (positive)  upvotes=12
+--------------------------------------------------------------
+    Just purchased SLZ Seguranca Inteligente for my family's safety! Feels great to have extra peace of mind 24/7. Worth every penny! #securitymatters
+
+  Top reply: "Great choice! I've been thinking of getting it too."
+
+  [PRODUCT_HUNT]  sentiment=-0.50 (negative)  upvotes=5
+--------------------------------------------------------------
+    Abandoned the SLZ Seguranca Inteligente purchase. Not convinced it's worth the investment. Has anyone had success with similar products? Looking for feedback.
+
+  Top reply: "Fair point, Adriana. I've been eyeing it too. What concerns you?"
+
+  [REDDIT]  sentiment=+0.00 (neutral)  upvotes=8
+--------------------------------------------------------------
+    I recently clicked on an ad for SLZ Seguranca Inteligente. As a retiree, security is top of mind for me and my family. I'm curious about their system, but I'd love to hear from people who've actually used it. Any thoughts?
+
+  Top reply: "I've been looking into it too. Hope to get some insights."
+
+
+══════════════════════════════════════════════════════════════
+  STRATEGIC INSIGHTS
+══════════════════════════════════════════════════════════════
+
+  1. The product's price is a significant barrier for some potential customers, particularly those with limited budgets.
+
+  2. The complexity of setup and use is a concern for some users, suggesting a need for a more user-friendly interface.
+
+  3. The product's effectiveness and value are questioned by some potential customers, indicating a need for clearer communication of its benefits.
+
+  4. The product's focus on family security and 24/7 monitoring is a major selling point, particularly for families and individuals with high security concerns.
+
+══════════════════════════════════════════════════════════════
+  DONE
+══════════════════════════════════════════════════════════════
+  Full results  →  GET http://localhost:8000/api/results/26a33a97-d8d4-4158-b039-94c866bc768e
+  API explorer  →  http://localhost:8000/docs
+  Dashboard     →  http://localhost:3000/simulation/26a33a97-d8d4-4158-b039-94c866bc768e
+
+  To interview a persona, run:
+
+    import urllib.request, json
+    resp = urllib.request.urlopen(
+        urllib.request.Request(
+            "http://localhost:8000/api/interview/26a33a97-d8d4-4158-b039-94c866bc768e/agent_001",
+            data=json.dumps({"question": "Why didn't you buy?"}).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+    )
+    print(json.loads(resp.read())["answer"])
+
+══════════════════════════════════════════════════════════════
+[INFO] Copiando input de /home/lucas/Projetos/simulacao-multi-agent/scenarios/slz_n8n/variant_f.txt -> /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/input.txt
+[INFO] Iniciando backend em /home/lucas/Projetos/simulacao-multi-agent/launch-simulation/backend...
+[INFO] Rodando simulação: slz_n8n / variante f
+[INFO] Parando backend...
+
+============================================================
+Executando: devincriator / variante a
+============================================================
+
+
+============================================================
+Executando: devincriator / variante b
+============================================================
+
+
+============================================================
+Executando: devincriator / variante c
+============================================================
+
+
+============================================================
+Executando: devincriator / variante d
+============================================================
+
+
+============================================================
+Executando: devincriator / variante e
+============================================================
+
+
+============================================================
+Executando: devincriator / variante f
+============================================================
+
+
+============================================================
+Executando: slz_n8n / variante a
+============================================================
+
+
+============================================================
+Executando: slz_n8n / variante b
+============================================================
+
+
+============================================================
+Executando: slz_n8n / variante c
+============================================================
+
+
+============================================================
+Executando: slz_n8n / variante d
+============================================================
+
+
+============================================================
+Executando: slz_n8n / variante e
+============================================================
+
+
+============================================================
+Executando: slz_n8n / variante f
+============================================================
+
+
+============================================================
+RESUMO
+============================================================
+Todas as simulações completadas com sucesso.

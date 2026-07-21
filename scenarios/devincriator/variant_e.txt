@@ -1,0 +1,6 @@
+name=Owl Regent Studio - Identidade Visual para Lojas de Roupas e Boutiques de Bairro
+description=Servico de branding para lojas de roupas, boutiques, lojas de acessorios e calcados de bairro. Entregamos logotipo estiloso, paleta de cores de moda, tipografia moderna, aplicacao em sacola, tag de precos, adesivo de vitrine, posts para Instagram de vitrine e looks, templates de stories e capas de destaque. Diferencial: entendemos que loja de roupa vende desejo e identificacao; a sacola e a vitrine sao propagandas andantes do bairro. Kit essencial: R$ 244 (logo + paleta + tipografia + sacola/tag). Kit completo: R$ 497 (adiciona vitrine, posts, stories e capas). Processo: briefing por WhatsApp, entrega em 5 dias uteis. CTA: "Quero minha loja com cara de marca de bairro que da vontade de entrar". Ideal para lojistas que compram sacolas genericas e usam etiqueta de precos caneta marcador.
+price_usd=45
+channel=social_media
+target_market=Donos de lojas de roupas, boutiques, acessorios e calcados de bairro no Brasil que precisam de vitrine, sacola e Instagram com identidade propria para competir com fast fashion e shopee
+num_agents=30

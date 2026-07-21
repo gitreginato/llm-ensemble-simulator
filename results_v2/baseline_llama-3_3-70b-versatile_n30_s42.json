@@ -1,0 +1,331 @@
+{
+  "modelo": "llama-3.3-70b-versatile",
+  "n": 30,
+  "seed": 42,
+  "cenario": "SLZ-C-ARMY",
+  "taxa_conversao": 0.2,
+  "agendaram": 6,
+  "decisoes": [
+    {
+      "decisao": "visualizou",
+      "wtp": 712.49,
+      "sentimento": 0.2,
+      "objecoes": [
+        "skepticism"
+      ],
+      "confianca": 0.5,
+      "raciocinio": "Eu vi a mensagem, mas não tenho certeza se preciso de um sistema de segurança tão avançado. A loja está bem localizada e não tivemos problemas de segurança recentemente. Vou pensar sobre isso, mas por enquanto não estou disposto a agendar uma visita.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 686.43,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.7,
+      "raciocinio": "Eu já tenho um sistema de alarme monitorado e sinto que é suficiente para a minha loja. Acredito que o novo sistema seja bom, mas não vejo necessidade de mudar no momento.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 791.27,
+      "sentimento": 0.8,
+      "objecoes": [],
+      "confianca": 0.5,
+      "raciocinio": "Estou preocupada com a segurança do meu estoque, especialmente à noite. A proteção da vitrine e do estoque é fundamental para o meu negócio. Vou agendar a visita para saber mais sobre o sistema de segurança.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 913.46,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "confianca": 0.5,
+      "raciocinio": "Eu tenho cameras DIY instaladas e não estou muito insatisfeito com elas, então não vejo necessidade de mudar agora. Além disso, não conheço a empresa EMIVE e preciso de mais informações antes de agendar uma visita.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 645.46,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.5,
+      "raciocinio": "Eu vi a mensagem, mas não acho necessário agendar uma visita pois já tenho câmeras DIY instaladas, mesmo que não sejam muito eficazes. Ainda assim, não quero gastar mais dinheiro com segurança agora.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 378.09,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Eu já tenho um sistema de segurança que me atende, não vejo necessidade de mudar. Além disso, o preço parece bom, mas não quero gastar mais do que o necessário.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 942.95,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution",
+        "complexity"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Eu já tenho alguma segurança instalada, mas não sei se é suficiente. A oferta parece interessante, mas preciso entender melhor como funciona antes de agendar uma visita.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 962.79,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "confianca": 0.5,
+      "raciocinio": "Eu vi a mensagem, mas não estou muito convencida de que preciso de um sistema de segurança novo, já que tenho câmeras DIY instaladas. Além disso, não sei se confio totalmente nessa empresa.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 536.66,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.5,
+      "raciocinio": "Eu já tenho uma solução de segurança caseira, não sei se preciso de mais uma. Ainda assim, a proteção do estoque é importante, mas não estou convencida de que essa solução é a certa para mim.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 865.25,
+      "sentimento": 0.2,
+      "objecoes": [
+        "skepticism"
+      ],
+      "confianca": 0.5,
+      "raciocinio": "Achei a proposta interessante, mas não sei se vale a pena, preciso saber mais sobre a empresa e os serviços.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 398.13,
+      "sentimento": 0.2,
+      "objecoes": [
+        "need_lack"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Eu vi a mensagem, mas não sinto que preciso de um sistema de segurança agora. Minha loja não teve problemas recentes e não quero gastar dinheiro com isso no momento.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 449.62,
+      "sentimento": 0.8,
+      "objecoes": [],
+      "confianca": 0.7,
+      "raciocinio": "A loja acaba de passar por uma reforma e estou preocupada com a segurança do estoque valioso. O sistema de segurança inteligente parece ser uma boa opção para proteger a loja. Vou agendar a visita técnica para saber mais sobre como posso proteger meu negócio.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 705.43,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.5,
+      "raciocinio": "Eu já tenho um sistema de segurança, não vejo necessidade de mudar. Além disso, o preço parece bom, mas não sei se é o que eu preciso.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 327.82,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Eu já tenho um sistema de segurança caseiro, então não estou muito preocupado com a segurança da loja. Além disso, o preço do sistema oferecido parece bom, mas eu preciso avaliar melhor se vale a pena investir.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 997.27,
+      "sentimento": 0.8,
+      "objecoes": [],
+      "confianca": 0.8,
+      "raciocinio": "Eu estou procurando uma solução para proteger meu estoque de roupas após o recente arrombamento. A segurança é prioridade e estou disposto a investir nisso. A visita técnica gratuita parece uma boa oportunidade para avaliar a melhor solução para a minha loja.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 957.25,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.9,
+      "raciocinio": "Eu tenho um sistema de segurança básico instalado e não sinto a necessidade de mudar, além disso, o preço do sistema oferecido parece um pouco alto para o meu orçamento.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 330.86,
+      "sentimento": 0.8,
+      "objecoes": [],
+      "confianca": 0.9,
+      "raciocinio": "A loja acabou de passar por uma reforma e estou procurando melhorar a segurança. O sistema de segurança inteligente parece ser uma boa opção para proteger meu estoque valioso. Vou agendar a visita para saber mais sobre a proposta personalizada.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 403.67,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Eu tenho um sistema de segurança que já atende às minhas necessidades, não vejo a necessidade de mudar. Além disso, o preço parece razoável, mas não quero gastar mais do que o necessário.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 983.34,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Achei o sistema de segurança interessante, mas já tenho um alarme monitorado e não sinto necessidade de mudar. Além disso, o preço da visita é muito baixo, o que me deixa um pouco desconfiada.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 874.38,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.6,
+      "raciocinio": "Eu já tenho cameras de segurança DIY instaladas, então não vejo necessidade de contratar um serviço de segurança inteligente no momento. Além disso, o meu orçamento para segurança é limitado e não sei se vale a pena investir mais nisso.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 973.77,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.5,
+      "raciocinio": "Eu já tenho um sistema de segurança, então não preciso de mais um. Além disso, o preço pode ser um problema se for muito alto.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 348.98,
+      "sentimento": 0.8,
+      "objecoes": [],
+      "confianca": 0.6,
+      "raciocinio": "Estou preocupada com a segurança da minha loja, especialmente à noite, e acho que o sistema de segurança inteligente pode ser uma boa solução. O preço da visita é muito acessível e estou disposta a investir para proteger meu estoque valioso.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 883.61,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.7,
+      "raciocinio": "Eu já tenho um sistema de segurança, então não vejo necessidade de mudar. Além disso, o preço parece um pouco alto para uma visita.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 534.63,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "A loja já tem um sistema de segurança, então não vejo necessidade de mudar. Além disso, o preço não é um problema, mas a confiança no provedor é importante e até agora estou satisfeito com o que tenho.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 403.3,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.7,
+      "raciocinio": "Eu já tenho um sistema de segurança que atende às minhas necessidades, não vejo necessidade de mudar. Além disso, a confiança no provedor local é importante para mim e preciso saber mais sobre a empresa antes de tomar uma decisão.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 728.86,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Eu ja tenho um sistema de seguranca, embora nao esteja muito satisfeito com ele. Achei a proposta interessante, mas nao vejo necessidade de mudar no momento.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 464.15,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.9,
+      "raciocinio": "Eu já tenho um sistema de segurança, então não sinto necessidade de mudar. Além disso, confio nos serviços locais e acho que posso resolver qualquer problema de segurança sozinho.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "agendou",
+      "wtp": 566.27,
+      "sentimento": 0.8,
+      "objecoes": [],
+      "confianca": 0.9,
+      "raciocinio": "A loja acabou de sofrer um arrombamento e o sistema de segurança atual não é confiável, então é importante agendar uma visita para melhorar a segurança do estoque. O preço da visita é muito baixo e a proteção do estoque valioso é fundamental. Vou agendar a visita para saber mais sobre o sistema de segurança inteligente.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 673.89,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.5,
+      "raciocinio": "Eu já tenho um sistema de segurança caseiro, mesmo que não seja perfeito, e não estou muito convencido de que o novo sistema seria uma melhoria significativa. Além disso, o preço não é o problema, mas sim a confiança na empresa e no sistema.",
+      "modelo": "llama-3.3-70b-versatile"
+    },
+    {
+      "decisao": "visualizou",
+      "wtp": 629.21,
+      "sentimento": 0.2,
+      "objecoes": [
+        "existing_solution"
+      ],
+      "confianca": 0.8,
+      "raciocinio": "Achei a proposta interessante, mas já tenho um sistema de segurança caseiro e não sei se vale a pena investir em outro. Além disso, não tive problemas recentes de segurança, então não é uma prioridade no momento.",
+      "modelo": "llama-3.3-70b-versatile"
+    }
+  ]
+}

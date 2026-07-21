@@ -1,0 +1,174 @@
+{
+  "modelo": "zai-org/GLM-5.2",
+  "n": 30,
+  "seed": 42,
+  "cenario": "SLZ-C-ARMY",
+  "taxa_conversao": 0.0,
+  "agendaram": 0,
+  "decisoes": [
+    {
+      "decisao": "visualizou",
+      "wtp": 712.49,
+      "sentimento": 0.15,
+      "objecoes": [
+        "timing",
+        "skepticism"
+      ],
+      "confianca": 0.1,
+      "raciocinio": "Joao nao tem nenhuma seguranca na loja e reconhece a necessidade, mas seu perfil crisis_driven exige um gatilho recente para agir, e nao houve incidente. Precisa conversar com o socio antes de qualquer decisao e confianca em fornecedores locais e media, o que gera cepticismo sobre a visita.",
+      "modelo": "zai-org/GLM-5.2"
+    },
+    {
+      "decisao": "clicou",
+      "wtp": 686.43,
+      "sentimento": 0.25,
+      "objecoes": [
+        "complexity",
+        "need_lack"
+      ],
+      "confianca": 0.3,
+      "raciocinio": "Eduardo tem alarme monitorado com satisfação baixa e a indicação veio por boca a boca, o que ajuda pela confiança em fornecedores locais. Porém, como é conservador, tem baixa familiaridade com tecnologia e não teve evento recente de roubo, ele clicou por curiosidade mas não sentiu urgência suficiente para agendar a visita.",
+      "modelo": "zai-org/GLM-5.2"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "zai-org/GLM-5.2",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'zai-org/GLM-5.2'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    }
+  ]
+}

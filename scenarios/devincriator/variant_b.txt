@@ -1,0 +1,6 @@
+name=Owl Regent Studio - Identidade Visual para Saloes de Beleza e Esteticas
+description=Servico de branding para saloes de beleza, barbearias e clinicas de estetica de bairro. Entregamos logotipo elegante, paleta de cores feminina ou masculina conforme publico, tipografia sofisticada, aplicacao em cartao de visita, tag de presente, posts para Instagram (antes/depois, agenda, promocoes), capas de destaque e template de stories. Diferencial: entendemos que salao venda beleza e confianca; cliente precisa ver resultado, limpeza e organizacao no feed. Kit essencial: R$ 244 (logo + paleta + tipografia + cartao). Kit completo: R$ 497 (adiciona posts, capas e templates de stories). Processo: briefing por WhatsApp, entrega em 5 dias uteis. CTA: "Quero meu salao com feed profissional". Ideal para donas de salao que postam foto de servico com moldura colorida diferente toda vez e perdem credibilidade.
+price_usd=45
+channel=social_media
+target_market=Donas de saloes de beleza, barbearias e clinicas de estetica de bairro no Brasil que precisam de feed profissional, cartao de visita e identidade consistente para atrair clientes pelo Instagram e WhatsApp
+num_agents=30

@@ -1,0 +1,30 @@
+{
+  "A_tecnico": {
+    "conversao": 0.06666666666666667,
+    "ic95": [
+      0.0,
+      0.16666666666666666
+    ]
+  },
+  "B_financeiro": {
+    "conversao": 0.06666666666666667,
+    "ic95": [
+      0.0,
+      0.16666666666666666
+    ]
+  },
+  "diferenca_B_minus_A": 0.0,
+  "ic95_diferenca": [
+    -0.1333,
+    0.1333
+  ],
+  "significativo": false,
+  "vencedor": "empate (sem diferenca significativa)",
+  "power": {
+    "poder": 0.0,
+    "diff": 0.0,
+    "n": 30,
+    "nota": "sem diferenca para detectar"
+  },
+  "nota": "Cohere (command-r-plus) e muito conservador: 93.3% visualizou em ambas variantes. Pitch nao afetou resultado. N=30 insuficiente para detectar diferenca pequena. Recomenda-se repetir com gpt-4o-mini (mais sensivel) quando rate limit resetar."
+}

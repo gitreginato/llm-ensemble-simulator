@@ -1,0 +1,1246 @@
+{
+  "cenario": "SLZ-C-ARMY-V5-CLEAN",
+  "n": 8,
+  "seed": 42,
+  "personas_completas": 7,
+  "modelos": [
+    "DeepSeek-V3.2",
+    "qwen/qwen3.6-27b",
+    "gemini-2.5-flash",
+    "gemma4:31b",
+    "deepseek-ai/deepseek-v4-flash"
+  ],
+  "sintetizador": "gpt-oss:120b",
+  "taxa_conversao": 0.0,
+  "agendaram": 0,
+  "sucessos": 7,
+  "falhas": 10,
+  "ic95": [
+    6.768646424383023e-05,
+    0.29243617366230984
+  ],
+  "divergence_score_medio": 0.41666190476190473,
+  "custo_total_usd": 0.009819,
+  "custo_por_modelo": {
+    "qwen/qwen3.6-27b": 0.0075248,
+    "deepseek-ai/deepseek-v4-flash": 0.0022940499999999997
+  },
+  "personas": [
+    {
+      "persona": {
+        "id": 1,
+        "owner_name": "Carlos Souza",
+        "gender": "male",
+        "segment": "estudio_tatuagem",
+        "segment_perene": true,
+        "segment_porte": "pequeno",
+        "bairro": "Renascenca",
+        "bairro_risco": "baixo",
+        "bairro_perfil": "comercial_alto",
+        "bairro_p_theft": 0.05,
+        "risk_profile": "pragmatic",
+        "recent_event": "renovation",
+        "has_existing_security": "alarm_monitored",
+        "existing_security_satisfaction": 3,
+        "revenue_mensal": 80616.29,
+        "margin": 0.2867,
+        "budget_mensal_seguranca": 779.92,
+        "mensalidade_emive": 294.0,
+        "ticket_medio_36m": 10584.0,
+        "multa_proporcional_base": 10290.0,
+        "wtp_brl": 16916.3,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": true,
+        "concorrencia_local_instalada": true,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "solo",
+        "tech_savviness": 6,
+        "trust_local_providers": 8,
+        "bio": "Dono(a) de estudio tatuagem no Renascenca. Faturamento mensal R$ 80616. Porte pequeno, mensalidade R$ 294. segmento perene (estavel). tem alarme monitorado concorrente. esta reformando o negocio. precisa de cameras externas (EMIVE nao cobre). concorrencia local ja atua na regiao."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 16916.3,
+          "sentimento": 0.2,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local",
+            "contract_fear"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Carlos está insatisfeito com o alarme atual e a indicação gera interesse inicial. Porém, a limitação de cobertura apenas interna é um problema para quem tem estúdio em área comercial, e o contrato de 36 meses gera receio.",
+          "modelo": "gemma4:31b"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 16916.3,
+          "sentimento": -0.15,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local"
+          ],
+          "confianca": 0.1,
+          "raciocinio": "O sistema parece interessante e a mensalidade cabe no orçamento, mas a falta de cobertura externa para a vitrine é um ponto crítico para um estúdio de tatuagem. Além disso, já tenho várias opções de instaladores confiáveis no bairro que oferecem proteção completa, então prefiro aguardar uma solução que cubra todo o perímetro.",
+          "modelo": "qwen/qwen3.6-27b"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 16916.3,
+          "sentimento": 0.2,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local"
+          ],
+          "confianca": 0.5,
+          "raciocinio": "Tenho interesse em melhorar a segurança, mas a EMIVE cobre apenas área interna, e meu estúdio precisa de proteção na vitrine. Além disso, já conheço vários instaladores locais.",
+          "modelo": "deepseek-ai/deepseek-v4-flash"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 16916.3,
+          "sentimento": 0.2,
+          "objecoes": [
+            "budget",
+            "area_externa",
+            "concorrencia_local",
+            "existing_solution"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "A mensalidade é inferior ao meu orçamento, mas o contrato de 36 meses é longo. Minha maior preocupação é que o sistema não cobre a área externa, que é essencial para minha vitrine. Já existem muitos instaladores locais no Renascença, então prefiro buscar uma solução mais completa e sem contrato tão extenso.",
+          "modelo": "DeepSeek-V3.2"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "gemma4:31b",
+          "role": "estrategico",
+          "source": "gocat",
+          "latency_ms": 4176,
+          "http_status": 200,
+          "prompt_tokens": 1047,
+          "completion_tokens": 151,
+          "total_tokens": 1198,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "qwen/qwen3.6-27b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 7460,
+          "http_status": 200,
+          "prompt_tokens": 1026,
+          "completion_tokens": 2000,
+          "total_tokens": 3026,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gemini-2.5-flash",
+          "role": "conservador",
+          "source": "gocat",
+          "erro": "JSON nao encontrado em: {\n  \"decisao\": \"clicou\",\n  \"wtp\": 16916.30,\n  \"sentimento\": -0.2,\n  \"objecoes\": [\"area_externa\", \"existing_solution\", \"concorrencia_local\"],\n  \"confianca\": 0.6"
+        },
+        {
+          "modelo": "deepseek-ai/deepseek-v4-flash",
+          "role": "realista",
+          "source": "gocat",
+          "latency_ms": 41468,
+          "http_status": 200,
+          "prompt_tokens": 1008,
+          "completion_tokens": 726,
+          "total_tokens": 1734,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "DeepSeek-V3.2",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 2441,
+          "http_status": 200,
+          "prompt_tokens": 1008,
+          "completion_tokens": 164,
+          "total_tokens": 1172,
+          "provider_used": "gocat"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 16916.3,
+        "sentimento_medio": 0.1125,
+        "objecoes_consolidadas": [
+          "area_externa",
+          "concorrencia_local",
+          "contract_fear",
+          "budget",
+          "existing_solution"
+        ],
+        "divergence_score": 0.3333333333333333,
+        "concordancia": [
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "qwen/qwen3.6-27b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "deepseek-ai/deepseek-v4-flash",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "DeepSeek-V3.2",
+            "concordam": false
+          },
+          {
+            "modelo_a": "qwen/qwen3.6-27b",
+            "modelo_b": "deepseek-ai/deepseek-v4-flash",
+            "concordam": true
+          },
+          {
+            "modelo_a": "qwen/qwen3.6-27b",
+            "modelo_b": "DeepSeek-V3.2",
+            "concordam": false
+          },
+          {
+            "modelo_a": "deepseek-ai/deepseek-v4-flash",
+            "modelo_b": "DeepSeek-V3.2",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.325,
+        "raciocinio_sintese": "Sintese automatica (sintetizador falhou)"
+      }
+    },
+    {
+      "persona": {
+        "id": 2,
+        "owner_name": "Camila Ribeiro",
+        "gender": "female",
+        "segment": "estudio_tatuagem",
+        "segment_perene": true,
+        "segment_porte": "pequeno",
+        "bairro": "Centro",
+        "bairro_risco": "alto",
+        "bairro_perfil": "comercial_historico",
+        "bairro_p_theft": 0.15,
+        "risk_profile": "conservative",
+        "recent_event": "renovation",
+        "has_existing_security": "diy_cameras",
+        "existing_security_satisfaction": 5,
+        "revenue_mensal": 56463.99,
+        "margin": 0.3174,
+        "budget_mensal_seguranca": 640.2,
+        "mensalidade_emive": 294.0,
+        "ticket_medio_36m": 10584.0,
+        "multa_proporcional_base": 10290.0,
+        "wtp_brl": 31558.78,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": true,
+        "concorrencia_local_instalada": true,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "family",
+        "tech_savviness": 2,
+        "trust_local_providers": 4,
+        "bio": "Dono(a) de estudio tatuagem no Centro. Faturamento mensal R$ 56464. Porte pequeno, mensalidade R$ 294. segmento perene (estavel). tem cameras baratas sem monitoramento. esta reformando o negocio. precisa de cameras externas (EMIVE nao cobre). concorrencia local ja atua na regiao."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 31558.78,
+          "sentimento": 0.15,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local",
+            "complexity"
+          ],
+          "confianca": 0.25,
+          "raciocinio": "Abri a mensagem por indicação, mas o sistema só cobre a área interna e meu estúdio precisa de proteção na fachada e vitrine. Com baixo domínio tecnológico e decisões familiares, preferi apenas salvar o contato para discutir depois, sem agendar nada agora.",
+          "modelo": "qwen/qwen3.6-27b"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "gemma4:31b",
+          "role": "estrategico",
+          "source": "gocat",
+          "erro": "All connection attempts failed"
+        },
+        {
+          "modelo": "gemini-2.5-flash",
+          "role": "conservador",
+          "source": "gocat",
+          "erro": "All connection attempts failed"
+        },
+        {
+          "modelo": "DeepSeek-V3.2",
+          "role": "analitico",
+          "source": "gocat",
+          "erro": "All connection attempts failed"
+        },
+        {
+          "modelo": "deepseek-ai/deepseek-v4-flash",
+          "role": "realista",
+          "source": "gocat",
+          "erro": "All connection attempts failed"
+        },
+        {
+          "modelo": "qwen/qwen3.6-27b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 9735,
+          "http_status": 200,
+          "prompt_tokens": 1026,
+          "completion_tokens": 2000,
+          "total_tokens": 3026,
+          "provider_used": "gocat"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "clicou",
+        "wtp_medio": 31558.78,
+        "sentimento_medio": 0.15,
+        "objecoes_consolidadas": [
+          "area_externa",
+          "concorrencia_local",
+          "complexity"
+        ],
+        "divergence_score": 0.0,
+        "concordancia": [],
+        "confianca_agregada": 0.25,
+        "raciocinio_sintese": "O modelo indica que Camila abriu a mensagem por indicação, mas o seguro oferecido não cobre a fachada e a vitrine do estúdio, que são áreas críticas para ela. Por ter baixo domínio tecnológico e decisões familiares, ela optou por salvar o contato para discutir depois, sem agendar nada agora, resultando em um clique, mas sem compromisso imediato."
+      }
+    },
+    {
+      "persona": {
+        "id": 3,
+        "owner_name": "Daniela Souza",
+        "gender": "female",
+        "segment": "estacionamento",
+        "segment_perene": true,
+        "segment_porte": "medio",
+        "bairro": "Turu",
+        "bairro_risco": "medio",
+        "bairro_perfil": "comercial_medio",
+        "bairro_p_theft": 0.08,
+        "risk_profile": "crisis_driven",
+        "recent_event": "theft",
+        "has_existing_security": "alarm_monitored",
+        "existing_security_satisfaction": 9,
+        "revenue_mensal": 128784.11,
+        "margin": 0.3459,
+        "budget_mensal_seguranca": 2323.71,
+        "mensalidade_emive": 398.66,
+        "ticket_medio_36m": 14351.61,
+        "multa_proporcional_base": 13952.95,
+        "wtp_brl": 73492.4,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": true,
+        "concorrencia_local_instalada": false,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "partner",
+        "tech_savviness": 2,
+        "trust_local_providers": 4,
+        "bio": "Dono(a) de estacionamento no Turu. Faturamento mensal R$ 128784. Porte medio, mensalidade R$ 399. segmento perene (estavel). tem alarme monitorado concorrente. sofreu roubo recente. precisa de cameras externas (EMIVE nao cobre)."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 73492.4,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Apesar do roubo recente, ela está muito satisfeita com o alarme atual. Além disso, como é um estacionamento, a limitação de cobertura apenas interna da EMIVE torna a oferta inútil para a área do pátio.",
+          "modelo": "gemma4:31b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 73492.4,
+          "sentimento": -0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa",
+            "skepticism"
+          ],
+          "confianca": 0.15,
+          "raciocinio": "Daniela visualizou a mensagem mas não clicou, pois já possui um alarme monitorado com alta satisfação (9/10) e o estacionamento exige cobertura externa, que o sistema não oferece. A baixa confiança em provedores locais e o receio de trocar um sistema que já funciona a deixaram indiferentes à proposta.",
+          "modelo": "qwen/qwen3.6-27b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 73492.4,
+          "sentimento": -0.3,
+          "objecoes": [
+            "existing_solution",
+            "area_externa",
+            "contract_fear"
+          ],
+          "confianca": 0.1,
+          "raciocinio": "O sistema atual de alarme monitorado está funcionando bem, então não vejo necessidade urgente de trocar. Além disso, o estacionamento precisa de cobertura externa para o pátio, que a EMIVE não oferece, e o contrato de 36 meses é muito longo para o meu perfil.",
+          "modelo": "DeepSeek-V3.2"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 73492.4,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.0,
+          "raciocinio": "Ja tenho alarme monitorado com boa satisfacao. O EMIVE cobre apenas area interna, mas meu estacionamento precisa de protecao externa. A visita nao se aplica.",
+          "modelo": "deepseek-ai/deepseek-v4-flash"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "gemma4:31b",
+          "role": "estrategico",
+          "source": "gocat",
+          "latency_ms": 2522,
+          "http_status": 200,
+          "prompt_tokens": 1032,
+          "completion_tokens": 141,
+          "total_tokens": 1173,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "qwen/qwen3.6-27b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 33129,
+          "http_status": 200,
+          "prompt_tokens": 1009,
+          "completion_tokens": 2000,
+          "total_tokens": 3009,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gemini-2.5-flash",
+          "role": "conservador",
+          "source": "gocat",
+          "erro": "JSON nao encontrado em: ```json\n{\n  \"decisao\": \"clicou\",\n  \"wtp\": 73492.40,\n  \"sentimento\": 0.1,\n  \"objecoes\": [\"existing_solution\", \"area_externa\"],\n  \"confianca\": 0.6,\n  \"racioc"
+        },
+        {
+          "modelo": "DeepSeek-V3.2",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 2816,
+          "http_status": 200,
+          "prompt_tokens": 995,
+          "completion_tokens": 142,
+          "total_tokens": 1137,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "deepseek-ai/deepseek-v4-flash",
+          "role": "realista",
+          "source": "gocat",
+          "latency_ms": 21650,
+          "http_status": 200,
+          "prompt_tokens": 995,
+          "completion_tokens": 1041,
+          "total_tokens": 2036,
+          "provider_used": "gocat"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 73492.4,
+        "sentimento_medio": -0.025,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "area_externa",
+          "skepticism",
+          "contract_fear"
+        ],
+        "divergence_score": 0.5,
+        "concordancia": [
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "qwen/qwen3.6-27b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "DeepSeek-V3.2",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "deepseek-ai/deepseek-v4-flash",
+            "concordam": true
+          },
+          {
+            "modelo_a": "qwen/qwen3.6-27b",
+            "modelo_b": "DeepSeek-V3.2",
+            "concordam": true
+          },
+          {
+            "modelo_a": "qwen/qwen3.6-27b",
+            "modelo_b": "deepseek-ai/deepseek-v4-flash",
+            "concordam": false
+          },
+          {
+            "modelo_a": "DeepSeek-V3.2",
+            "modelo_b": "deepseek-ai/deepseek-v4-flash",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.1375,
+        "raciocinio_sintese": "Dois modelos clicaram e dois visualizaram a proposta, indicando divisão de opinião. Como não há maioria clara, optamos pela decisão mais conservadora, “visualizou”. Todos os modelos apresentam o mesmo WTP, mas o sentimento médio é ligeiramente negativo, refletindo dúvidas sobre a oferta. As objeções consolidadas são solução existente, necessidade de cobertura externa, ceticismo e medo de contrato longo."
+      }
+    },
+    {
+      "persona": {
+        "id": 4,
+        "owner_name": "Thiago Barros",
+        "gender": "male",
+        "segment": "autopecas",
+        "segment_perene": true,
+        "segment_porte": "medio",
+        "bairro": "Joao Paulo",
+        "bairro_risco": "alto",
+        "bairro_perfil": "comercial_medio",
+        "bairro_p_theft": 0.15,
+        "risk_profile": "crisis_driven",
+        "recent_event": "none",
+        "has_existing_security": "alarm_monitored",
+        "existing_security_satisfaction": 8,
+        "revenue_mensal": 320626.41,
+        "margin": 0.188,
+        "budget_mensal_seguranca": 6113.77,
+        "mensalidade_emive": 391.71,
+        "ticket_medio_36m": 14101.4,
+        "multa_proporcional_base": 13709.69,
+        "wtp_brl": 145847.34,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": true,
+        "concorrencia_local_instalada": false,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "solo",
+        "tech_savviness": 6,
+        "trust_local_providers": 9,
+        "bio": "Dono(a) de autopecas no Joao Paulo. Faturamento mensal R$ 320626. Porte medio, mensalidade R$ 392. segmento perene (estavel). tem alarme monitorado concorrente. precisa de cameras externas (EMIVE nao cobre)."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 145847.34,
+          "sentimento": -0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Já tenho um alarme monitorado que me atende bem (8/10) e o sistema da EMIVE só cobre a área interna, enquanto minha autopeças precisa de proteção externa para vitrine e estacionamento. Por isso, não faz sentido agendar a visita agora.",
+          "modelo": "qwen/qwen3.6-27b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 145847.34,
+          "sentimento": 0.1,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Thiago já possui um sistema de alarme monitorado com alta satisfação e não sofreu eventos recentes. Além disso, para uma autopeças, a falta de cobertura externa da EMIVE é um ponto crítico.",
+          "modelo": "gemma4:31b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 145847.34,
+          "sentimento": -0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Já possui alarme monitorado com alta satisfação. Não vê necessidade de trocar, especialmente porque o sistema EMIVE só cobre área interna e a loja precisa de proteção externa na vitrine. Sem evento recente de roubo, não há urgência.",
+          "modelo": "deepseek-ai/deepseek-v4-flash"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 145847.34,
+          "sentimento": 0.1,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Meu alarme monitorado já funciona bem e estou satisfeito. Além disso, a EMIVE não cobre a área externa, que é essencial para minha loja de autopeças com vitrine e estacionamento.",
+          "modelo": "DeepSeek-V3.2"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "qwen/qwen3.6-27b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 4890,
+          "http_status": 200,
+          "prompt_tokens": 1013,
+          "completion_tokens": 2000,
+          "total_tokens": 3013,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gemini-2.5-flash",
+          "role": "conservador",
+          "source": "gocat",
+          "erro": "JSON nao encontrado em: ```json\n{\n  \"decisao\": \"clicou\",\n  \"wtp\": 145847.34,\n  \"sentimento\": 0.2,\n  \"objecoes\": [\n    \"existing_solution\",\n    \"area_externa\",\n    \"need_lack\"\n  ],\n  \""
+        },
+        {
+          "modelo": "gemma4:31b",
+          "role": "estrategico",
+          "source": "gocat",
+          "latency_ms": 2808,
+          "http_status": 200,
+          "prompt_tokens": 1034,
+          "completion_tokens": 134,
+          "total_tokens": 1168,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "deepseek-ai/deepseek-v4-flash",
+          "role": "realista",
+          "source": "gocat",
+          "latency_ms": 22577,
+          "http_status": 200,
+          "prompt_tokens": 998,
+          "completion_tokens": 935,
+          "total_tokens": 1933,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "DeepSeek-V3.2",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 2400,
+          "http_status": 200,
+          "prompt_tokens": 998,
+          "completion_tokens": 119,
+          "total_tokens": 1117,
+          "provider_used": "gocat"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 145847.34,
+        "sentimento_medio": -0.05,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "area_externa"
+        ],
+        "divergence_score": 0.5,
+        "concordancia": [
+          {
+            "modelo_a": "qwen/qwen3.6-27b",
+            "modelo_b": "gemma4:31b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "qwen/qwen3.6-27b",
+            "modelo_b": "deepseek-ai/deepseek-v4-flash",
+            "concordam": false
+          },
+          {
+            "modelo_a": "qwen/qwen3.6-27b",
+            "modelo_b": "DeepSeek-V3.2",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "deepseek-ai/deepseek-v4-flash",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "DeepSeek-V3.2",
+            "concordam": true
+          },
+          {
+            "modelo_a": "deepseek-ai/deepseek-v4-flash",
+            "modelo_b": "DeepSeek-V3.2",
+            "concordam": true
+          }
+        ],
+        "confianca_agregada": 0.475,
+        "raciocinio_sintese": "A maioria dos modelos (3 de 4) indicou que Thiago apenas visualizou a oferta, sem avançar para clicar ou agendar. Todos apontam que ele já possui um alarme monitorado e que a solução da EMIVE não cobre a área externa, que é crucial para sua loja de autopeças. Por isso, o consenso é que ele não tem interesse imediato, permanecendo na fase de visualização."
+      }
+    },
+    {
+      "persona": {
+        "id": 5,
+        "owner_name": "Aline Lima",
+        "gender": "female",
+        "segment": "barbearia",
+        "segment_perene": true,
+        "segment_porte": "pequeno",
+        "bairro": "Vila Embratel",
+        "bairro_risco": "muito_alto",
+        "bairro_perfil": "periferia",
+        "bairro_p_theft": 0.25,
+        "risk_profile": "conservative",
+        "recent_event": "renovation",
+        "has_existing_security": "none",
+        "existing_security_satisfaction": 0,
+        "revenue_mensal": 43799.99,
+        "margin": 0.2835,
+        "budget_mensal_seguranca": 518.86,
+        "mensalidade_emive": 294.0,
+        "ticket_medio_36m": 10584.0,
+        "multa_proporcional_base": 10290.0,
+        "wtp_brl": 25083.12,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": false,
+        "concorrencia_local_instalada": true,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "solo",
+        "tech_savviness": 3,
+        "trust_local_providers": 8,
+        "bio": "Dono(a) de barbearia no Vila Embratel. Faturamento mensal R$ 43800. Porte pequeno, mensalidade R$ 294. segmento perene (estavel). sem seguranca eletronica atualmente. esta reformando o negocio. concorrencia local ja atua na regiao."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 25083.12,
+          "sentimento": 0.3,
+          "objecoes": [
+            "contract_fear",
+            "complexity",
+            "concorrencia_local"
+          ],
+          "confianca": 0.2,
+          "raciocinio": "Apesar de não ter segurança atual e o bairro ser de alto risco, a reforma recente e o contrato de 36 meses geram receio. Prefiro buscar opções locais conhecidas.",
+          "modelo": "deepseek-ai/deepseek-v4-flash"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 25083.12,
+          "sentimento": -0.2,
+          "objecoes": [
+            "concorrencia_local",
+            "contract_fear"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Aline está em um bairro com alta oferta de instaladores locais e prefere confiar em quem já conhece. O contrato de 36 meses gera insegurança para quem tem baixa familiaridade com tecnologia e prefere soluções mais flexíveis.",
+          "modelo": "gemma4:31b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 25083.12,
+          "sentimento": 0.3,
+          "objecoes": [
+            "budget",
+            "contract_fear",
+            "concorrencia_local"
+          ],
+          "confianca": 0.0,
+          "raciocinio": "Aline acabou de fazer uma reforma, então está com caixa apertado. A mensalidade está dentro do orçamento de segurança atual, mas o contrato de 36 meses assusta para um negócio perene mas pequeno. Ela tem alta confiança em provedores locais e sabe que há muitas opções no bairro, então prefere pesquisar pessoalmente antes de se comprometer.",
+          "modelo": "DeepSeek-V3.2"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 25083.12,
+          "sentimento": 0.4,
+          "objecoes": [
+            "contract_fear",
+            "concorrencia_local",
+            "complexity"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Aline clicou por indicação de confiança e pela falta total de segurança no local, mas não agendou por temer o compromisso de 36 meses logo após investir na reforma. Ela pretende comparar com os vários instaladores do bairro que oferecem contratos mais curtos e manutenção mais ágil.",
+          "modelo": "qwen/qwen3.6-27b"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "deepseek-ai/deepseek-v4-flash",
+          "role": "realista",
+          "source": "gocat",
+          "latency_ms": 22983,
+          "http_status": 200,
+          "prompt_tokens": 994,
+          "completion_tokens": 689,
+          "total_tokens": 1683,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gemma4:31b",
+          "role": "estrategico",
+          "source": "gocat",
+          "latency_ms": 2234,
+          "http_status": 200,
+          "prompt_tokens": 1030,
+          "completion_tokens": 139,
+          "total_tokens": 1169,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gemini-2.5-flash",
+          "role": "conservador",
+          "source": "gocat",
+          "erro": "JSON nao encontrado em: {\n  \"decisao\": \"agendou\",\n  \"wtp\": 25083.12,\n  \"sentimento\": 0.85,\n  \"objecoes\": [\"concorrencia_local\"],\n  \"confianca\": 0.75,\n  \"raciocinio\": \"Meu bairro"
+        },
+        {
+          "modelo": "DeepSeek-V3.2",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 2525,
+          "http_status": 200,
+          "prompt_tokens": 994,
+          "completion_tokens": 170,
+          "total_tokens": 1164,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "qwen/qwen3.6-27b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 21264,
+          "http_status": 200,
+          "prompt_tokens": 1014,
+          "completion_tokens": 2000,
+          "total_tokens": 3014,
+          "provider_used": "gocat"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "visualizou",
+        "wtp_medio": 25083.12,
+        "sentimento_medio": 0.2,
+        "objecoes_consolidadas": [
+          "contract_fear",
+          "complexity",
+          "concorrencia_local",
+          "budget"
+        ],
+        "divergence_score": 0.5,
+        "concordancia": [
+          {
+            "modelo_a": "deepseek-ai/deepseek-v4-flash",
+            "modelo_b": "gemma4:31b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "deepseek-ai/deepseek-v4-flash",
+            "modelo_b": "DeepSeek-V3.2",
+            "concordam": false
+          },
+          {
+            "modelo_a": "deepseek-ai/deepseek-v4-flash",
+            "modelo_b": "qwen/qwen3.6-27b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "DeepSeek-V3.2",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "qwen/qwen3.6-27b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "DeepSeek-V3.2",
+            "modelo_b": "qwen/qwen3.6-27b",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.225,
+        "raciocinio_sintese": "Dois modelos indicaram que Aline apenas visualizou a oferta, enquanto os outros dois sugeriram que ela clicou. Como não há maioria clara, adotamos a decisão mais conservadora, \"visualizou\". O valor médio que ela estaria disposta a pagar é R$ 25.083,12, com sentimento médio ligeiramente positivo (0,20). As objeções principais são medo de contrato, concorrência local, complexidade e restrição de orçamento."
+      }
+    },
+    {
+      "persona": {
+        "id": 6,
+        "owner_name": "Rafael Souza",
+        "gender": "male",
+        "segment": "estudio_tatuagem",
+        "segment_perene": true,
+        "segment_porte": "pequeno",
+        "bairro": "Turu",
+        "bairro_risco": "medio",
+        "bairro_perfil": "comercial_medio",
+        "bairro_p_theft": 0.08,
+        "risk_profile": "pragmatic",
+        "recent_event": "renovation",
+        "has_existing_security": "alarm_monitored",
+        "existing_security_satisfaction": 6,
+        "revenue_mensal": 91351.24,
+        "margin": 0.3464,
+        "budget_mensal_seguranca": 887.43,
+        "mensalidade_emive": 294.0,
+        "ticket_medio_36m": 10584.0,
+        "multa_proporcional_base": 10290.0,
+        "wtp_brl": 20434.53,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": true,
+        "concorrencia_local_instalada": true,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "solo",
+        "tech_savviness": 6,
+        "trust_local_providers": 7,
+        "bio": "Dono(a) de estudio tatuagem no Turu. Faturamento mensal R$ 91351. Porte pequeno, mensalidade R$ 294. segmento perene (estavel). tem alarme monitorado concorrente. esta reformando o negocio. precisa de cameras externas (EMIVE nao cobre). concorrencia local ja atua na regiao."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 20434.53,
+          "sentimento": 0.15,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local",
+            "existing_solution"
+          ],
+          "confianca": 0.65,
+          "raciocinio": "A reforma recente já atendeu às necessidades estruturais e o alarme atual cumpre seu papel, mas a proposta ignora a cobertura externa que realmente preciso. Com dezenas de instaladores conhecidos no bairro, prefiro não me prender a um contrato de 36 meses por um sistema que não resolve minha vulnerabilidade principal.",
+          "modelo": "qwen/qwen3.6-27b"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 20434.53,
+          "sentimento": -0.2,
+          "objecoes": [
+            "area_externa",
+            "existing_solution",
+            "ticket_alto"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "A mensalidade é acessível para meu orçamento e a reputação da franquia é boa, mas meu estúdio já tem alarme monitorado que atende razoavelmente. A maior limitação é a falta de cobertura externa, essencial para minha vitrine e entrada, e o valor total do contrato de 36 meses parece alto para um sistema incompleto.",
+          "modelo": "DeepSeek-V3.2"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 20434.53,
+          "sentimento": -0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa",
+            "concorrencia_local"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Rafael já possui alarme monitorado e a satisfação é razoável. Ele notou que a oferta da EMIVE não cobre a área externa, o que é essencial para o seu estúdio no Turu, e prefere avaliar opções locais.",
+          "modelo": "gemma4:31b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 20434.53,
+          "sentimento": 0.2,
+          "objecoes": [
+            "area_externa",
+            "concorrencia_local",
+            "existing_solution"
+          ],
+          "confianca": 0.3,
+          "raciocinio": "Tenho um alarme monitorado que já atende bem, e a EMIVE só cobre área interna, mas meu estúdio precisa de proteção externa. Além disso, já tem muitos instaladores no bairro. Não vejo necessidade de mudar agora.",
+          "modelo": "deepseek-ai/deepseek-v4-flash"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "gemini-2.5-flash",
+          "role": "conservador",
+          "source": "gocat",
+          "erro": "JSON nao encontrado em: {\n  \"decisao\": \"clicou\",\n  \"wtp\": 20434.53,\n  \"sentimento\": 0.1,\n  \"objecoes\": [\"area_externa\", \"existing_solution\", \"concorrencia_local\"],\n  \"confianca\": 0.75,\n"
+        },
+        {
+          "modelo": "qwen/qwen3.6-27b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 15310,
+          "http_status": 200,
+          "prompt_tokens": 1025,
+          "completion_tokens": 2000,
+          "total_tokens": 3025,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "DeepSeek-V3.2",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 2951,
+          "http_status": 200,
+          "prompt_tokens": 1006,
+          "completion_tokens": 160,
+          "total_tokens": 1166,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gemma4:31b",
+          "role": "estrategico",
+          "source": "gocat",
+          "latency_ms": 6060,
+          "http_status": 200,
+          "prompt_tokens": 1046,
+          "completion_tokens": 151,
+          "total_tokens": 1197,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "deepseek-ai/deepseek-v4-flash",
+          "role": "realista",
+          "source": "gocat",
+          "latency_ms": 27958,
+          "http_status": 200,
+          "prompt_tokens": 1006,
+          "completion_tokens": 974,
+          "total_tokens": 1980,
+          "provider_used": "gocat"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "clicou",
+        "wtp_medio": 20434.53,
+        "sentimento_medio": -0.025,
+        "objecoes_consolidadas": [
+          "area_externa",
+          "concorrencia_local",
+          "existing_solution",
+          "ticket_alto"
+        ],
+        "divergence_score": 0.25,
+        "concordancia": [
+          {
+            "modelo_a": "qwen/qwen3.6-27b",
+            "modelo_b": "DeepSeek-V3.2",
+            "concordam": true
+          },
+          {
+            "modelo_a": "qwen/qwen3.6-27b",
+            "modelo_b": "gemma4:31b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "qwen/qwen3.6-27b",
+            "modelo_b": "deepseek-ai/deepseek-v4-flash",
+            "concordam": false
+          },
+          {
+            "modelo_a": "DeepSeek-V3.2",
+            "modelo_b": "gemma4:31b",
+            "concordam": true
+          },
+          {
+            "modelo_a": "DeepSeek-V3.2",
+            "modelo_b": "deepseek-ai/deepseek-v4-flash",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "deepseek-ai/deepseek-v4-flash",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.4125,
+        "raciocinio_sintese": "A maioria dos modelos (três de quatro) indicou que Rafael clicaria na oferta, embora todos apontem a mesma preocupação principal: a falta de cobertura da área externa. Os modelos também ressaltam que ele já possui um alarme monitorado e que há concorrência local de instaladores, o que reduz o interesse em um contrato de 36 meses. Assim, o consenso é que ele demonstra interesse suficiente para clicar, mas ainda tem objeções significativas."
+      }
+    },
+    {
+      "persona": {
+        "id": 7,
+        "owner_name": "Ricardo Cardoso",
+        "gender": "male",
+        "segment": "oficina",
+        "segment_perene": true,
+        "segment_porte": "pequeno",
+        "bairro": "Calhau",
+        "bairro_risco": "medio",
+        "bairro_perfil": "comercial_alto",
+        "bairro_p_theft": 0.08,
+        "risk_profile": "pragmatic",
+        "recent_event": "theft",
+        "has_existing_security": "diy_cameras",
+        "existing_security_satisfaction": 7,
+        "revenue_mensal": 44398.38,
+        "margin": 0.168,
+        "budget_mensal_seguranca": 725.9,
+        "mensalidade_emive": 294.0,
+        "ticket_medio_36m": 10584.0,
+        "multa_proporcional_base": 10290.0,
+        "wtp_brl": 23121.14,
+        "pode_pagar_mensalidade": true,
+        "precisa_area_externa": true,
+        "concorrencia_local_instalada": false,
+        "contrato_meses": 36,
+        "mes": 7,
+        "season": "media",
+        "season_revenue_multiplier": 1.0,
+        "decision_maker": "solo",
+        "tech_savviness": 7,
+        "trust_local_providers": 8,
+        "bio": "Dono(a) de oficina no Calhau. Faturamento mensal R$ 44398. Porte pequeno, mensalidade R$ 294. segmento perene (estavel). tem cameras baratas sem monitoramento. sofreu roubo recente. precisa de cameras externas (EMIVE nao cobre)."
+      },
+      "decisoes_modelos": [
+        {
+          "decisao": "clicou",
+          "wtp": 23121.14,
+          "sentimento": -0.15,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.4,
+          "raciocinio": "Apesar do recente furto, Ricardo já está satisfeito com suas câmeras DIY e o sistema EMIVE só cobre a área interna, ignorando a necessidade crítica de monitorar a fachada e o pátio. Ele clicou por curiosidade e confiança na indicação, mas descartou o agendamento por não resolver o ponto fraco da segurança atual.",
+          "modelo": "qwen/qwen3.6-27b"
+        },
+        {
+          "decisao": "agendou",
+          "wtp": 23121.14,
+          "sentimento": 0.6,
+          "objecoes": [
+            "area_externa"
+          ],
+          "confianca": 0.8,
+          "raciocinio": "Apesar de já ter câmeras, o furto recente tornou Ricardo pragmático e disposto a investir em monitoramento profissional. Ele agendou a visita para entender se a redundância da EMIVE compensa a falta de cobertura externa.",
+          "modelo": "gemma4:31b"
+        },
+        {
+          "decisao": "visualizou",
+          "wtp": 23121.14,
+          "sentimento": -0.3,
+          "objecoes": [
+            "existing_solution",
+            "area_externa",
+            "contract_fear"
+          ],
+          "confianca": 0.2,
+          "raciocinio": "Apesar do roubo recente, as minhas câmeras DIY funcionam bem e me dão controle. O contrato de 36 meses assusta e o sistema não cobre a área externa, que é crucial para mim.",
+          "modelo": "DeepSeek-V3.2"
+        },
+        {
+          "decisao": "clicou",
+          "wtp": 23121.14,
+          "sentimento": 0.2,
+          "objecoes": [
+            "existing_solution",
+            "area_externa"
+          ],
+          "confianca": 0.6,
+          "raciocinio": "Ele ficou interessado pela indicação, mas já tem câmeras caseiras que funcionam bem. Além disso, o sistema só cobre área interna, e sua oficina precisa de proteção externa. Agendou não.",
+          "modelo": "deepseek-ai/deepseek-v4-flash"
+        }
+      ],
+      "metadados_modelos": [
+        {
+          "modelo": "qwen/qwen3.6-27b",
+          "role": "pragmatico",
+          "source": "gocat",
+          "latency_ms": 5526,
+          "http_status": 200,
+          "prompt_tokens": 1007,
+          "completion_tokens": 2000,
+          "total_tokens": 3007,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gemma4:31b",
+          "role": "estrategico",
+          "source": "gocat",
+          "latency_ms": 4172,
+          "http_status": 200,
+          "prompt_tokens": 1026,
+          "completion_tokens": 132,
+          "total_tokens": 1158,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "DeepSeek-V3.2",
+          "role": "analitico",
+          "source": "gocat",
+          "latency_ms": 2241,
+          "http_status": 200,
+          "prompt_tokens": 994,
+          "completion_tokens": 130,
+          "total_tokens": 1124,
+          "provider_used": "gocat"
+        },
+        {
+          "modelo": "gemini-2.5-flash",
+          "role": "conservador",
+          "source": "gocat",
+          "erro": "JSON nao encontrado em: ```json\n{\n  \"decisao\": \"clicou\",\n  \"wtp\": 23121.14,\n  \"sentimento\": 0.2,\n  \"objecoes\": [\n    \"area_externa\"\n  ],\n  \"confianca\": 0.7,\n  \""
+        },
+        {
+          "modelo": "deepseek-ai/deepseek-v4-flash",
+          "role": "realista",
+          "source": "gocat",
+          "latency_ms": 20497,
+          "http_status": 200,
+          "prompt_tokens": 994,
+          "completion_tokens": 684,
+          "total_tokens": 1678,
+          "provider_used": "gocat"
+        }
+      ],
+      "decisao_agregada": {
+        "decisao_final": "clicou",
+        "wtp_medio": 23121.14,
+        "sentimento_medio": 0.0875,
+        "objecoes_consolidadas": [
+          "existing_solution",
+          "area_externa",
+          "contract_fear"
+        ],
+        "divergence_score": 0.8333,
+        "concordancia": [
+          {
+            "modelo_a": "qwen/qwen3.6-27b",
+            "modelo_b": "gemma4:31b",
+            "concordam": false
+          },
+          {
+            "modelo_a": "qwen/qwen3.6-27b",
+            "modelo_b": "DeepSeek-V3.2",
+            "concordam": false
+          },
+          {
+            "modelo_a": "qwen/qwen3.6-27b",
+            "modelo_b": "deepseek-ai/deepseek-v4-flash",
+            "concordam": true
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "DeepSeek-V3.2",
+            "concordam": false
+          },
+          {
+            "modelo_a": "gemma4:31b",
+            "modelo_b": "deepseek-ai/deepseek-v4-flash",
+            "concordam": false
+          },
+          {
+            "modelo_a": "DeepSeek-V3.2",
+            "modelo_b": "deepseek-ai/deepseek-v4-flash",
+            "concordam": false
+          }
+        ],
+        "confianca_agregada": 0.5,
+        "raciocinio_sintese": "A maioria (2 dos 4) dos modelos indicou que Ricardo apenas clicou na oferta, refletindo um interesse inicial sem compromisso. Embora haja objeções recorrentes sobre a solução existente e a falta de cobertura externa, o consenso aponta que ele ainda não avançou para agendar ou visualizar detalhadamente. O sentimento médio é ligeiramente positivo, mas a confiança agregada é moderada, indicando hesitação. Assim, a decisão final consolidada é \"clicou\"."
+      }
+    }
+  ]
+}

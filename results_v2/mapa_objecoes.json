@@ -1,0 +1,76 @@
+{
+  "n_personas": 30,
+  "mapa_objecoes": [
+    {
+      "categoria": "existing_solution",
+      "frequencia": 0.7333,
+      "n_citacoes": 22,
+      "phi_coefficient": 0.7416,
+      "score": 0.5439,
+      "interpretacao": "associada a nao-converter"
+    },
+    {
+      "categoria": "skepticism",
+      "frequencia": 0.5,
+      "n_citacoes": 15,
+      "phi_coefficient": 0.0894,
+      "score": 0.0447,
+      "interpretacao": "sem correlacao clara"
+    },
+    {
+      "categoria": "budget",
+      "frequencia": 0.3,
+      "n_citacoes": 9,
+      "phi_coefficient": -0.0976,
+      "score": 0.0293,
+      "interpretacao": "sem correlacao clara"
+    },
+    {
+      "categoria": "complexity",
+      "frequencia": 0.0667,
+      "n_citacoes": 2,
+      "phi_coefficient": 0.1195,
+      "score": 0.008,
+      "interpretacao": "associada a nao-converter"
+    },
+    {
+      "categoria": "need_lack",
+      "frequencia": 0.0667,
+      "n_citacoes": 2,
+      "phi_coefficient": 0.1195,
+      "score": 0.008,
+      "interpretacao": "associada a nao-converter"
+    },
+    {
+      "categoria": "timing",
+      "frequencia": 0.0667,
+      "n_citacoes": 2,
+      "phi_coefficient": 0.1195,
+      "score": 0.008,
+      "interpretacao": "associada a nao-converter"
+    }
+  ],
+  "frequencia_por_modelo": {
+    "gpt-4o-mini": {
+      "existing_solution": 19,
+      "skepticism": 3,
+      "timing": 1,
+      "budget": 1
+    },
+    "command-r-plus-08-2024": {
+      "budget": 9,
+      "skepticism": 13,
+      "existing_solution": 20,
+      "complexity": 2,
+      "need_lack": 1
+    },
+    "llama-3.3-70b-versatile": {
+      "skepticism": 4,
+      "existing_solution": 17,
+      "timing": 1,
+      "need_lack": 1
+    }
+  },
+  "top_objecao": "existing_solution",
+  "top_objecao_score": 0.5439
+}

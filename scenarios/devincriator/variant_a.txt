@@ -1,0 +1,6 @@
+name=Owl Regent Studio - Identidade Visual para Padarias e Confeitarias de Bairro
+description=Servico de branding especializado para padarias e confeitarias de bairro no Brasil. Entregamos logotipo com estilo artesanal, paleta de cores quentes, tipografia legivel, aplicacao em sacolas de pao, etiquetas de precos, cardapio de parede, posts para Instagram e capas de destaque. Diferencial: entendemos que padaria e ponto de encontro diario e venda por impulso; a marca precisa transmitir cheiro de pao quente, frescor e confianca. Kit essencial: R$ 244 (logo + paleta + tipografia + aplicacao em sacola). Kit completo: R$ 497 (adiciona cardapio, posts e capas). Processo: briefing por WhatsApp, 1 rodada de ajustes, entrega em 5 dias uteis. Nao usamos templates genericos de Canva nem logos de IA sem estrategia. CTA: "Quero minha padaria com cara de marca". Ideal para donos de padarias artesanais que veem concorrente com logo no saco de pao e sentem vergonha do proprio visual.
+price_usd=45
+channel=social_media
+target_market=Donos de padarias e confeitarias de bairro no Brasil que sentem vergonha do proprio logo, usam sacolas sem marca, perdem vendas por nao parecer artesanais e nao querem pagar R$ 3 mil em agencia
+num_agents=30

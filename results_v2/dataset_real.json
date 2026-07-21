@@ -1,0 +1,2793 @@
+{
+  "personas": [
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Joao Araujo",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "none",
+      "wtp_brl": 712.49,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "skepticism"
+      ],
+      "sentimento": 0.3,
+      "confianca": 0.4,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Eduardo Mendes",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "none",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 686.43,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "existing_solution"
+      ],
+      "sentimento": 0.0,
+      "confianca": 0.6333333333333333,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Renata Souza",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "none",
+      "wtp_brl": 791.27,
+      "decisao": "agendou",
+      "objecoes": [
+        "budget",
+        "skepticism"
+      ],
+      "sentimento": 0.4,
+      "confianca": 0.37,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Bruno Nascimento",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "renovation",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 913.46,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism",
+        "complexity"
+      ],
+      "sentimento": 0.13333333333333333,
+      "confianca": 0.3333333333333333,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Beatriz Nascimento",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "competitor_new",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 645.46,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.3333333333333333,
+      "confianca": 0.4666666666666667,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Daniel Oliveira",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "full_system",
+      "wtp_brl": 378.09,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "timing",
+        "existing_solution"
+      ],
+      "sentimento": 0.13333333333333333,
+      "confianca": 0.8666666666666667,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Marcelo Ferreira",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 942.95,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.16666666666666666,
+      "confianca": 0.7333333333333333,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Juliana Silva",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 962.79,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "existing_solution",
+        "skepticism",
+        "complexity"
+      ],
+      "sentimento": 0.03333333333333333,
+      "confianca": 0.3333333333333333,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Gabriela Rodrigues",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 536.66,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "skepticism",
+        "timing",
+        "existing_solution"
+      ],
+      "sentimento": 0.13333333333333333,
+      "confianca": 0.4666666666666667,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Renata Souza",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "none",
+      "wtp_brl": 865.25,
+      "decisao": "visualizou",
+      "objecoes": [
+        "skepticism",
+        "need_lack"
+      ],
+      "sentimento": 0.3,
+      "confianca": 0.43,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Ana Oliveira",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "none",
+      "has_existing_security": "none",
+      "wtp_brl": 398.13,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "skepticism",
+        "need_lack"
+      ],
+      "sentimento": 0.4633333333333333,
+      "confianca": 0.7333333333333333,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Gabriela Ferreira",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "renovation",
+      "has_existing_security": "none",
+      "wtp_brl": 449.62,
+      "decisao": "agendou",
+      "objecoes": [],
+      "sentimento": 0.5333333333333333,
+      "confianca": 0.7,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Antonio Silva",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "renovation",
+      "has_existing_security": "full_system",
+      "wtp_brl": 705.43,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.06666666666666667,
+      "confianca": 0.43333333333333335,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Felipe Costa",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 327.82,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "existing_solution"
+      ],
+      "sentimento": 0.13333333333333333,
+      "confianca": 0.5333333333333333,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Lucas Nascimento",
+      "segment": "loja_roupas",
+      "risk_profile": "innovator",
+      "recent_event": "theft",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 997.27,
+      "decisao": "agendou",
+      "objecoes": [],
+      "sentimento": 0.5333333333333333,
+      "confianca": 0.7333333333333333,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Andre Souza",
+      "segment": "loja_roupas",
+      "risk_profile": "innovator",
+      "recent_event": "none",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 957.25,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.13333333333333333,
+      "confianca": 0.83,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Gabriela Oliveira",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "renovation",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 330.86,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.4,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Debora Santos",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 403.67,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.7333333333333333,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Maria Lima",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 983.34,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.13333333333333333,
+      "confianca": 0.7833333333333333,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Aline Pereira",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 874.38,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.53,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Beatriz Silva",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "competitor_new",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 973.77,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.0,
+      "confianca": 0.4,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Maria Oliveira",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "slow_month",
+      "has_existing_security": "none",
+      "wtp_brl": 348.98,
+      "decisao": "agendou",
+      "objecoes": [
+        "budget",
+        "skepticism"
+      ],
+      "sentimento": 0.43,
+      "confianca": 0.53,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Renata Costa",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "renovation",
+      "has_existing_security": "full_system",
+      "wtp_brl": 883.61,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.1,
+      "confianca": 0.6333333333333333,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Gabriela Souza",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "competitor_new",
+      "has_existing_security": "full_system",
+      "wtp_brl": 534.63,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.13333333333333333,
+      "confianca": 0.7333333333333333,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Camila Lima",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "renovation",
+      "has_existing_security": "full_system",
+      "wtp_brl": 403.3,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.13333333333333333,
+      "confianca": 0.6333333333333333,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Antonio Mendes",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 728.86,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Daniel Ribeiro",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "renovation",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 464.15,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Leticia Ribeiro",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "theft",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 566.27,
+      "decisao": "agendou",
+      "objecoes": [],
+      "sentimento": 0.8,
+      "confianca": 0.9666666666666667,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Francisco Lima",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 673.89,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.4,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "gpt-4o-mini",
+      "nome": "Bruno Almeida",
+      "segment": "loja_roupas",
+      "risk_profile": "innovator",
+      "recent_event": "none",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 629.21,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.16,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Joao Araujo",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "none",
+      "wtp_brl": 712.49,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "skepticism",
+        "need_lack",
+        "existing_solution"
+      ],
+      "sentimento": 0.14,
+      "confianca": 0.27,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Eduardo Mendes",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "none",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 686.43,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.53,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Renata Souza",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "none",
+      "wtp_brl": 791.27,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "timing",
+        "skepticism",
+        "need_lack"
+      ],
+      "sentimento": 0.2875,
+      "confianca": 0.2875,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Bruno Nascimento",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "renovation",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 913.46,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism",
+        "budget",
+        "complexity",
+        "need_lack"
+      ],
+      "sentimento": 0.1875,
+      "confianca": 0.225,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Beatriz Nascimento",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "competitor_new",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 645.46,
+      "decisao": "visualizou",
+      "objecoes": [
+        "skepticism",
+        "need_lack",
+        "existing_solution",
+        "budget"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.225,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Daniel Oliveira",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "full_system",
+      "wtp_brl": 378.09,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "existing_solution",
+        "timing"
+      ],
+      "sentimento": 0.1875,
+      "confianca": 0.64375,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Marcelo Ferreira",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 942.95,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "budget",
+        "need_lack"
+      ],
+      "sentimento": 0.24,
+      "confianca": 0.61,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Juliana Silva",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 962.79,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "skepticism",
+        "existing_solution",
+        "complexity",
+        "need_lack"
+      ],
+      "sentimento": 0.1875,
+      "confianca": 0.2475,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Gabriela Rodrigues",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 536.66,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "skepticism",
+        "existing_solution",
+        "timing",
+        "need_lack"
+      ],
+      "sentimento": 0.1714,
+      "confianca": 0.1857,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Renata Souza",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "none",
+      "wtp_brl": 865.25,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "skepticism",
+        "need_lack"
+      ],
+      "sentimento": 0.1875,
+      "confianca": 0.2125,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Ana Oliveira",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "none",
+      "has_existing_security": "none",
+      "wtp_brl": 398.13,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "skepticism",
+        "need_lack",
+        "existing_solution",
+        "timing"
+      ],
+      "sentimento": 0.34,
+      "confianca": 0.73,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Gabriela Ferreira",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "renovation",
+      "has_existing_security": "none",
+      "wtp_brl": 449.62,
+      "decisao": "agendou",
+      "objecoes": [
+        "need_lack"
+      ],
+      "sentimento": 0.59,
+      "confianca": 0.64,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Antonio Silva",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "renovation",
+      "has_existing_security": "full_system",
+      "wtp_brl": 705.43,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.01,
+      "confianca": 0.18,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Felipe Costa",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 327.82,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "skepticism",
+        "existing_solution",
+        "need_lack"
+      ],
+      "sentimento": 0.2875,
+      "confianca": 0.64375,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Lucas Nascimento",
+      "segment": "loja_roupas",
+      "risk_profile": "innovator",
+      "recent_event": "theft",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 997.27,
+      "decisao": "agendou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.73,
+      "confianca": 0.82,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Andre Souza",
+      "segment": "loja_roupas",
+      "risk_profile": "innovator",
+      "recent_event": "none",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 957.25,
+      "decisao": "clicou",
+      "objecoes": [
+        "existing_solution",
+        "timing",
+        "skepticism",
+        "need_lack"
+      ],
+      "sentimento": 0.3875,
+      "confianca": 0.7375,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Gabriela Oliveira",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "renovation",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 330.86,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "timing",
+        "skepticism",
+        "need_lack"
+      ],
+      "sentimento": 0.3875,
+      "confianca": 0.78125,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Debora Santos",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 403.67,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism",
+        "need_lack"
+      ],
+      "sentimento": 0.19,
+      "confianca": 0.65,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Maria Lima",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 983.34,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "need_lack"
+      ],
+      "sentimento": 0.31,
+      "confianca": 0.82,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Aline Pereira",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 874.38,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "budget",
+        "timing",
+        "skepticism"
+      ],
+      "sentimento": 0.19,
+      "confianca": 0.31,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Beatriz Silva",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "competitor_new",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 973.77,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.11,
+      "confianca": 0.13,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Maria Oliveira",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "slow_month",
+      "has_existing_security": "none",
+      "wtp_brl": 348.98,
+      "decisao": "visualizou",
+      "objecoes": [
+        "need_lack",
+        "skepticism",
+        "budget"
+      ],
+      "sentimento": 0.31,
+      "confianca": 0.41,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Renata Costa",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "renovation",
+      "has_existing_security": "full_system",
+      "wtp_brl": 883.61,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "complexity"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.48,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Gabriela Souza",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "competitor_new",
+      "has_existing_security": "full_system",
+      "wtp_brl": 534.63,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism",
+        "budget",
+        "need_lack"
+      ],
+      "sentimento": 0.29,
+      "confianca": 0.63,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Camila Lima",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "renovation",
+      "has_existing_security": "full_system",
+      "wtp_brl": 403.3,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism",
+        "budget",
+        "need_lack",
+        "timing"
+      ],
+      "sentimento": 0.1857,
+      "confianca": 0.5571,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Antonio Mendes",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 728.86,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "need_lack"
+      ],
+      "sentimento": 0.24,
+      "confianca": 0.83,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Daniel Ribeiro",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "renovation",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 464.15,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "existing_solution",
+        "timing",
+        "complexity"
+      ],
+      "sentimento": 0.25,
+      "confianca": 0.63,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Leticia Ribeiro",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "theft",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 566.27,
+      "decisao": "agendou",
+      "objecoes": [
+        "complexity"
+      ],
+      "sentimento": 0.76,
+      "confianca": 0.9,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Francisco Lima",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 673.89,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism",
+        "need_lack"
+      ],
+      "sentimento": 0.1857,
+      "confianca": 0.2286,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v3_n30_s42.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Bruno Almeida",
+      "segment": "loja_roupas",
+      "risk_profile": "innovator",
+      "recent_event": "none",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 629.21,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "skepticism",
+        "existing_solution",
+        "need_lack"
+      ],
+      "sentimento": 0.41,
+      "confianca": 0.78,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v4_test2.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Joao Araujo",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "none",
+      "wtp_brl": 712.49,
+      "decisao": "clicou",
+      "objecoes": [
+        "budget",
+        "skepticism",
+        "need_lack"
+      ],
+      "sentimento": 0.28,
+      "confianca": 0.43,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "ensemble_v4_test2.json",
+      "source_type": "ensemble",
+      "model": "command-a-03-2025",
+      "nome": "Eduardo Mendes",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "none",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 686.43,
+      "decisao": "agendou",
+      "objecoes": [
+        "budget",
+        "existing_solution"
+      ],
+      "sentimento": 0.41,
+      "confianca": 0.58,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Jose Nascimento",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "theft",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 700.13,
+      "decisao": "agendou",
+      "objecoes": [],
+      "sentimento": 0.8,
+      "confianca": 0.7,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Bruno Barros",
+      "segment": "loja_roupas",
+      "risk_profile": "conservative",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 459.7,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Ana Ferreira",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "renovation",
+      "has_existing_security": "none",
+      "wtp_brl": 781.84,
+      "decisao": "agendou",
+      "objecoes": [],
+      "sentimento": 0.8,
+      "confianca": 0.7,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Mateus Silva",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 371.0,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.3,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Lucas Silva",
+      "segment": "loja_roupas",
+      "risk_profile": "innovator",
+      "recent_event": "none",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 583.02,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Maria Nascimento",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 697.51,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "timing"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.4,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Fernanda Rodrigues",
+      "segment": "loja_roupas",
+      "risk_profile": "pragmatic",
+      "recent_event": "theft",
+      "has_existing_security": "full_system",
+      "wtp_brl": 998.14,
+      "decisao": "agendou",
+      "objecoes": [],
+      "sentimento": 0.7,
+      "confianca": 0.5,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Carlos Barros",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "none",
+      "wtp_brl": 849.29,
+      "decisao": "agendou",
+      "objecoes": [],
+      "sentimento": 0.8,
+      "confianca": 0.9,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Daniel Nascimento",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "renovation",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 717.83,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.4,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Mateus Pereira",
+      "segment": "loja_roupas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "renovation",
+      "has_existing_security": "none",
+      "wtp_brl": 352.84,
+      "decisao": "agendou",
+      "objecoes": [],
+      "sentimento": 0.7,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Andre Barros",
+      "segment": "loja_calcados",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "none",
+      "wtp_brl": 466.91,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "skepticism"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.3,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Carlos Ferreira",
+      "segment": "loja_calcados",
+      "risk_profile": "pragmatic",
+      "recent_event": "renovation",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 795.04,
+      "decisao": "visualizou",
+      "objecoes": [
+        "timing",
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.1,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Patricia Costa",
+      "segment": "loja_calcados",
+      "risk_profile": "innovator",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 430.73,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Patricia Oliveira",
+      "segment": "loja_calcados",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 455.16,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Camila Almeida",
+      "segment": "loja_calcados",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 512.9,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.4,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Camila Rodrigues",
+      "segment": "loja_calcados",
+      "risk_profile": "conservative",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 291.36,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.0,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Debora Almeida",
+      "segment": "loja_calcados",
+      "risk_profile": "conservative",
+      "recent_event": "renovation",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 683.31,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Rafael Ribeiro",
+      "segment": "loja_calcados",
+      "risk_profile": "conservative",
+      "recent_event": "slow_month",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 423.14,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Debora Santos",
+      "segment": "loja_calcados",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 308.79,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Bruno Santos",
+      "segment": "loja_calcados",
+      "risk_profile": "pragmatic",
+      "recent_event": "theft",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 268.88,
+      "decisao": "agendou",
+      "objecoes": [],
+      "sentimento": 0.7,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Eduardo Mendes",
+      "segment": "farmacia",
+      "risk_profile": "innovator",
+      "recent_event": "renovation",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 801.98,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Mateus Souza",
+      "segment": "farmacia",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "full_system",
+      "wtp_brl": 750.32,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Carlos Mendes",
+      "segment": "farmacia",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "full_system",
+      "wtp_brl": 808.45,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.1,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Rafael Lima",
+      "segment": "farmacia",
+      "risk_profile": "pragmatic",
+      "recent_event": "competitor_new",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 832.87,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.3,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Luana Ferreira",
+      "segment": "farmacia",
+      "risk_profile": "pragmatic",
+      "recent_event": "renovation",
+      "has_existing_security": "full_system",
+      "wtp_brl": 338.34,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.1,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Antonio Rodrigues",
+      "segment": "farmacia",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 741.18,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.4,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Jose Nascimento",
+      "segment": "farmacia",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 868.45,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Rafael Ribeiro",
+      "segment": "farmacia",
+      "risk_profile": "conservative",
+      "recent_event": "none",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 985.65,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.7,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Leticia Santos",
+      "segment": "farmacia",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 905.25,
+      "decisao": "visualizou",
+      "objecoes": [
+        "timing",
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.5,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Ana Costa",
+      "segment": "farmacia",
+      "risk_profile": "innovator",
+      "recent_event": "slow_month",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 743.98,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.5,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Carlos Araujo",
+      "segment": "autopecas",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 490.53,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "timing"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Felipe Ribeiro",
+      "segment": "autopecas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 333.32,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.1,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Bruno Nascimento",
+      "segment": "autopecas",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 444.8,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.4,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Marcelo Nascimento",
+      "segment": "autopecas",
+      "risk_profile": "crisis_driven",
+      "recent_event": "slow_month",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 534.35,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.7,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Beatriz Lima",
+      "segment": "autopecas",
+      "risk_profile": "conservative",
+      "recent_event": "theft",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 484.06,
+      "decisao": "agendou",
+      "objecoes": [],
+      "sentimento": 0.7,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Fernanda Mendes",
+      "segment": "autopecas",
+      "risk_profile": "pragmatic",
+      "recent_event": "renovation",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 663.76,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.5,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Fernanda Silva",
+      "segment": "autopecas",
+      "risk_profile": "conservative",
+      "recent_event": "none",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 267.48,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.1,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Andre Ribeiro",
+      "segment": "autopecas",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 615.96,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Francisco Mendes",
+      "segment": "autopecas",
+      "risk_profile": "conservative",
+      "recent_event": "renovation",
+      "has_existing_security": "full_system",
+      "wtp_brl": 685.54,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.0,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Leticia Silva",
+      "segment": "autopecas",
+      "risk_profile": "pragmatic",
+      "recent_event": "competitor_new",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 409.61,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.4,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Tatiana Silva",
+      "segment": "mercearia",
+      "risk_profile": "pragmatic",
+      "recent_event": "renovation",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 272.18,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.3,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Andre Souza",
+      "segment": "mercearia",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 153.03,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Francisco Pereira",
+      "segment": "mercearia",
+      "risk_profile": "conservative",
+      "recent_event": "none",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 408.86,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.5,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Debora Costa",
+      "segment": "mercearia",
+      "risk_profile": "conservative",
+      "recent_event": "theft",
+      "has_existing_security": "none",
+      "wtp_brl": 365.6,
+      "decisao": "agendou",
+      "objecoes": [],
+      "sentimento": 0.8,
+      "confianca": 0.7,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Joao Araujo",
+      "segment": "mercearia",
+      "risk_profile": "conservative",
+      "recent_event": "competitor_new",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 257.97,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "complexity"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.5,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Camila Ribeiro",
+      "segment": "mercearia",
+      "risk_profile": "conservative",
+      "recent_event": "renovation",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 430.49,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "budget"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.5,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Juliana Ferreira",
+      "segment": "mercearia",
+      "risk_profile": "crisis_driven",
+      "recent_event": "competitor_new",
+      "has_existing_security": "none",
+      "wtp_brl": 268.97,
+      "decisao": "visualizou",
+      "objecoes": [
+        "need_lack"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.3,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Camila Silva",
+      "segment": "mercearia",
+      "risk_profile": "pragmatic",
+      "recent_event": "competitor_new",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 451.72,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.1,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Mateus Araujo",
+      "segment": "mercearia",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 307.21,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Camila Oliveira",
+      "segment": "mercearia",
+      "risk_profile": "conservative",
+      "recent_event": "none",
+      "has_existing_security": "none",
+      "wtp_brl": 296.45,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Felipe Costa",
+      "segment": "bar",
+      "risk_profile": "innovator",
+      "recent_event": "renovation",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 658.14,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "need_lack"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.3,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Ana Almeida",
+      "segment": "bar",
+      "risk_profile": "pragmatic",
+      "recent_event": "theft",
+      "has_existing_security": "full_system",
+      "wtp_brl": 513.63,
+      "decisao": "agendou",
+      "objecoes": [],
+      "sentimento": 0.7,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Camila Silva",
+      "segment": "bar",
+      "risk_profile": "pragmatic",
+      "recent_event": "theft",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 460.43,
+      "decisao": "agendou",
+      "objecoes": [],
+      "sentimento": 0.8,
+      "confianca": 0.9,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Francisco Ribeiro",
+      "segment": "bar",
+      "risk_profile": "conservative",
+      "recent_event": "slow_month",
+      "has_existing_security": "full_system",
+      "wtp_brl": 581.42,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.5,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Felipe Araujo",
+      "segment": "bar",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 691.62,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Joao Pereira",
+      "segment": "bar",
+      "risk_profile": "conservative",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 510.96,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.3,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Andre Nascimento",
+      "segment": "bar",
+      "risk_profile": "innovator",
+      "recent_event": "slow_month",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 284.91,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.1,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Andre Oliveira",
+      "segment": "bar",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "none",
+      "wtp_brl": 257.52,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "need_lack"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.5,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Luana Pereira",
+      "segment": "bar",
+      "risk_profile": "pragmatic",
+      "recent_event": "renovation",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 206.82,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.5,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Antonio Nascimento",
+      "segment": "bar",
+      "risk_profile": "crisis_driven",
+      "recent_event": "renovation",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 342.58,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.3,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Beatriz Santos",
+      "segment": "hamburgueria",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 484.85,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "timing"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.3,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Simone Santos",
+      "segment": "hamburgueria",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "full_system",
+      "wtp_brl": 621.76,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Maria Costa",
+      "segment": "hamburgueria",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 687.59,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Simone Ferreira",
+      "segment": "hamburgueria",
+      "risk_profile": "pragmatic",
+      "recent_event": "theft",
+      "has_existing_security": "full_system",
+      "wtp_brl": 474.05,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Renata Almeida",
+      "segment": "hamburgueria",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 651.14,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.1,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Luana Santos",
+      "segment": "hamburgueria",
+      "risk_profile": "crisis_driven",
+      "recent_event": "slow_month",
+      "has_existing_security": "none",
+      "wtp_brl": 688.2,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "skepticism"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.3,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Simone Rodrigues",
+      "segment": "hamburgueria",
+      "risk_profile": "crisis_driven",
+      "recent_event": "renovation",
+      "has_existing_security": "none",
+      "wtp_brl": 661.84,
+      "decisao": "visualizou",
+      "objecoes": [
+        "need_lack"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Rafael Silva",
+      "segment": "hamburgueria",
+      "risk_profile": "conservative",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 582.51,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Jose Ferreira",
+      "segment": "hamburgueria",
+      "risk_profile": "crisis_driven",
+      "recent_event": "none",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 789.0,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "need_lack"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.5,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Simone Santos",
+      "segment": "hamburgueria",
+      "risk_profile": "conservative",
+      "recent_event": "slow_month",
+      "has_existing_security": "none",
+      "wtp_brl": 738.12,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Marcelo Lima",
+      "segment": "oficina",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 410.3,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Francisco Barros",
+      "segment": "oficina",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 549.07,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Aline Santos",
+      "segment": "oficina",
+      "risk_profile": "innovator",
+      "recent_event": "renovation",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 213.18,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Renata Nascimento",
+      "segment": "oficina",
+      "risk_profile": "conservative",
+      "recent_event": "slow_month",
+      "has_existing_security": "diy_cameras",
+      "wtp_brl": 314.64,
+      "decisao": "visualizou",
+      "objecoes": [
+        "budget",
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.1,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Joao Pereira",
+      "segment": "oficina",
+      "risk_profile": "innovator",
+      "recent_event": "competitor_new",
+      "has_existing_security": "full_system",
+      "wtp_brl": 322.16,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.8,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Joao Souza",
+      "segment": "oficina",
+      "risk_profile": "crisis_driven",
+      "recent_event": "renovation",
+      "has_existing_security": "full_system",
+      "wtp_brl": 416.92,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "timing"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Maria Ferreira",
+      "segment": "oficina",
+      "risk_profile": "pragmatic",
+      "recent_event": "renovation",
+      "has_existing_security": "alarm_monitored",
+      "wtp_brl": 586.62,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution",
+        "skepticism"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.3,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Pedro Ferreira",
+      "segment": "oficina",
+      "risk_profile": "pragmatic",
+      "recent_event": "none",
+      "has_existing_security": "full_system",
+      "wtp_brl": 542.52,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.3,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Lucas Lima",
+      "segment": "oficina",
+      "risk_profile": "conservative",
+      "recent_event": "slow_month",
+      "has_existing_security": "full_system",
+      "wtp_brl": 413.96,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.6,
+      "bairro": "unknown"
+    },
+    {
+      "source_file": "nicho_analysis.json",
+      "source_type": "nicho_baseline",
+      "model": "command-a-03-2025",
+      "nome": "Debora Rodrigues",
+      "segment": "oficina",
+      "risk_profile": "pragmatic",
+      "recent_event": "slow_month",
+      "has_existing_security": "full_system",
+      "wtp_brl": 447.24,
+      "decisao": "visualizou",
+      "objecoes": [
+        "existing_solution"
+      ],
+      "sentimento": 0.2,
+      "confianca": 0.1,
+      "bairro": "unknown"
+    }
+  ],
+  "stats": {
+    "total": 142,
+    "por_source": {
+      "nicho_baseline": 80,
+      "ensemble": 62
+    },
+    "crosstab_recent_event": {
+      "none": {
+        "visualizou": 45,
+        "clicou": 2,
+        "agendou": 2
+      },
+      "slow_month": {
+        "agendou": 2,
+        "visualizou": 35
+      },
+      "renovation": {
+        "visualizou": 28,
+        "agendou": 4
+      },
+      "competitor_new": {
+        "visualizou": 12
+      },
+      "theft": {
+        "agendou": 11,
+        "visualizou": 1
+      }
+    },
+    "crosstab_has_existing_security": {
+      "none": {
+        "visualizou": 15,
+        "agendou": 8,
+        "clicou": 1
+      },
+      "alarm_monitored": {
+        "visualizou": 29,
+        "agendou": 4
+      },
+      "diy_cameras": {
+        "visualizou": 42,
+        "agendou": 5,
+        "clicou": 1
+      },
+      "full_system": {
+        "visualizou": 35,
+        "agendou": 2
+      }
+    },
+    "crosstab_risk_profile": {
+      "crisis_driven": {
+        "visualizou": 26,
+        "agendou": 7,
+        "clicou": 1
+      },
+      "conservative": {
+        "visualizou": 31,
+        "agendou": 5
+      },
+      "pragmatic": {
+        "agendou": 5,
+        "visualizou": 53
+      },
+      "innovator": {
+        "agendou": 2,
+        "visualizou": 11,
+        "clicou": 1
+      }
+    },
+    "crosstab_segment": {
+      "loja_roupas": {
+        "visualizou": 56,
+        "agendou": 14,
+        "clicou": 2
+      },
+      "loja_calcados": {
+        "visualizou": 9,
+        "agendou": 1
+      },
+      "farmacia": {
+        "visualizou": 10
+      },
+      "autopecas": {
+        "visualizou": 9,
+        "agendou": 1
+      },
+      "mercearia": {
+        "visualizou": 9,
+        "agendou": 1
+      },
+      "bar": {
+        "visualizou": 8,
+        "agendou": 2
+      },
+      "hamburgueria": {
+        "visualizou": 10
+      },
+      "oficina": {
+        "visualizou": 10
+      }
+    },
+    "wtp_por_decisao": {
+      "visualizou": {
+        "n": 121,
+        "mediana": 581.42,
+        "media": 581.896694214876,
+        "min": 153.03,
+        "max": 985.65
+      },
+      "agendou": {
+        "n": 19,
+        "mediana": 566.27,
+        "media": 611.9915789473685,
+        "min": 268.88,
+        "max": 998.14
+      },
+      "clicou": {
+        "n": 2,
+        "mediana": 834.87,
+        "media": 834.87,
+        "min": 712.49,
+        "max": 957.25
+      }
+    },
+    "budget_vs_mensalidade_294": {
+      "pode_pagar": 131,
+      "nao_pode_pagar": 11,
+      "pct_pode": 0.9225352112676056
+    },
+    "objecoes": {
+      "budget": 42,
+      "skepticism": 44,
+      "existing_solution": 111,
+      "complexity": 8,
+      "timing": 17,
+      "need_lack": 29
+    }
+  }
+}

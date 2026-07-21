@@ -1,0 +1,4402 @@
+[
+  {
+    "bairro": "Centro",
+    "nicho": "mercearia",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 1.0,
+    "ic_95": [
+      0.1586,
+      0.9865
+    ],
+    "wtp_mediana": 34172.73,
+    "revenue_mediana": 155038.94,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 162
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "oficina",
+    "risco_bairro": "alto",
+    "n_simulado": 5,
+    "conversao": 0.6,
+    "ic_95": [
+      0.2195,
+      0.8807
+    ],
+    "wtp_mediana": 16831.54,
+    "revenue_mediana": 60813.75,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 97
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "clinica",
+    "risco_bairro": "baixo",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 153425.41,
+    "revenue_mediana": 206484.72,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 96
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "fisioterapia",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.4,
+    "ic_95": [
+      0.1214,
+      0.7804
+    ],
+    "wtp_mediana": 13820.96,
+    "revenue_mediana": 41651.81,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 96
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "salao",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.5,
+    "ic_95": [
+      0.1453,
+      0.855
+    ],
+    "wtp_mediana": 33807.69,
+    "revenue_mediana": 56392.43,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 94
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "mecanica_diesel",
+    "risco_bairro": "medio",
+    "n_simulado": 6,
+    "conversao": 0.5,
+    "ic_95": [
+      0.183,
+      0.8185
+    ],
+    "wtp_mediana": 213944.01,
+    "revenue_mediana": 240667.85,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 94
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "optica",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.6,
+    "ic_95": [
+      0.2195,
+      0.8807
+    ],
+    "wtp_mediana": 58277.75,
+    "revenue_mediana": 118002.18,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 84
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "optica",
+    "risco_bairro": "alto",
+    "n_simulado": 4,
+    "conversao": 0.5,
+    "ic_95": [
+      0.1453,
+      0.855
+    ],
+    "wtp_mediana": 24418.01,
+    "revenue_mediana": 74187.88,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 81
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "loja_calcados",
+    "risco_bairro": "alto",
+    "n_simulado": 4,
+    "conversao": 0.5,
+    "ic_95": [
+      0.1453,
+      0.855
+    ],
+    "wtp_mediana": 32242.45,
+    "revenue_mediana": 66256.85,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 81
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "restaurante",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 86550.26,
+    "revenue_mediana": 161908.69,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 80
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "optica",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.4,
+    "ic_95": [
+      0.1214,
+      0.7804
+    ],
+    "wtp_mediana": 45864.94,
+    "revenue_mediana": 87202.37,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 75
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "clinica",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 1.0,
+    "ic_95": [
+      0.1586,
+      0.9865
+    ],
+    "wtp_mediana": 38950.46,
+    "revenue_mediana": 112684.62,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 75
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "oficina",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 29024.92,
+    "revenue_mediana": 49017.47,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 70
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "hamburgueria",
+    "risco_bairro": "medio",
+    "n_simulado": 7,
+    "conversao": 0.2857,
+    "ic_95": [
+      0.0849,
+      0.6575
+    ],
+    "wtp_mediana": 34879.45,
+    "revenue_mediana": 118749.8,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 68
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "estudio_tatuagem",
+    "risco_bairro": "baixo",
+    "n_simulado": 9,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.1233,
+      0.6573
+    ],
+    "wtp_mediana": 32432.74,
+    "revenue_mediana": 80616.29,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 64
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "oficina",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 36088.59,
+    "revenue_mediana": 44398.38,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 63
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "pet_shop",
+    "risco_bairro": "medio",
+    "n_simulado": 9,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.1233,
+      0.6573
+    ],
+    "wtp_mediana": 46422.91,
+    "revenue_mediana": 71203.22,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 63
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "consultorio_odonto",
+    "risco_bairro": "medio",
+    "n_simulado": 6,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0992,
+      0.7157
+    ],
+    "wtp_mediana": 35111.16,
+    "revenue_mediana": 78668.7,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 63
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "hamburgueria",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 1.0,
+    "ic_95": [
+      0.1586,
+      0.9865
+    ],
+    "wtp_mediana": 11164.76,
+    "revenue_mediana": 60688.6,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 60
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "consultorio_odonto",
+    "risco_bairro": "alto",
+    "n_simulado": 8,
+    "conversao": 0.375,
+    "ic_95": [
+      0.1379,
+      0.7067
+    ],
+    "wtp_mediana": 55385.36,
+    "revenue_mediana": 104866.21,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 60
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "pet_shop",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 40014.2,
+    "revenue_mediana": 83784.39,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 60
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "barbearia",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 11337.36,
+    "revenue_mediana": 42679.52,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 60
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "farmacia",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 277489.97,
+    "revenue_mediana": 467035.83,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 60
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "consultorio_odonto",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.4,
+    "ic_95": [
+      0.1214,
+      0.7804
+    ],
+    "wtp_mediana": 40000.01,
+    "revenue_mediana": 89571.06,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 56
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "clinica",
+    "risco_bairro": "medio",
+    "n_simulado": 10,
+    "conversao": 0.3,
+    "ic_95": [
+      0.1121,
+      0.6165
+    ],
+    "wtp_mediana": 91879.77,
+    "revenue_mediana": 172578.71,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 56
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "barbearia",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.4,
+    "ic_95": [
+      0.1214,
+      0.7804
+    ],
+    "wtp_mediana": 6724.81,
+    "revenue_mediana": 23080.46,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 56
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "estacionamento",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 1.0,
+    "ic_95": [
+      0.1586,
+      0.9865
+    ],
+    "wtp_mediana": 73253.86,
+    "revenue_mediana": 136719.73,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 55
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "loja_roupas",
+    "risco_bairro": "baixo",
+    "n_simulado": 7,
+    "conversao": 0.2857,
+    "ic_95": [
+      0.0849,
+      0.6575
+    ],
+    "wtp_mediana": 68293.09,
+    "revenue_mediana": 71928.98,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 55
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "consultorio_odonto",
+    "risco_bairro": "baixo",
+    "n_simulado": 7,
+    "conversao": 0.2857,
+    "ic_95": [
+      0.0849,
+      0.6575
+    ],
+    "wtp_mediana": 55913.3,
+    "revenue_mediana": 112632.66,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 55
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "estacionamento",
+    "risco_bairro": "baixo",
+    "n_simulado": 7,
+    "conversao": 0.2857,
+    "ic_95": [
+      0.0849,
+      0.6575
+    ],
+    "wtp_mediana": 33255.57,
+    "revenue_mediana": 72083.05,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 55
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "autopecas",
+    "risco_bairro": "alto",
+    "n_simulado": 6,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0992,
+      0.7157
+    ],
+    "wtp_mediana": 181763.58,
+    "revenue_mediana": 271174.98,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 54
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "fisioterapia",
+    "risco_bairro": "alto",
+    "n_simulado": 6,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0992,
+      0.7157
+    ],
+    "wtp_mediana": 45996.87,
+    "revenue_mediana": 88073.41,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 54
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "laboratorio",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 107938.57,
+    "revenue_mediana": 278751.87,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 54
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "mecanica_diesel",
+    "risco_bairro": "medio",
+    "n_simulado": 9,
+    "conversao": 0.2222,
+    "ic_95": [
+      0.0669,
+      0.5632
+    ],
+    "wtp_mediana": 159845.75,
+    "revenue_mediana": 226497.93,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 53
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "estacionamento",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.6667,
+    "ic_95": [
+      0.1989,
+      0.9336
+    ],
+    "wtp_mediana": 59882.62,
+    "revenue_mediana": 97302.93,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 50
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "academia",
+    "risco_bairro": "baixo",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 36943.12,
+    "revenue_mediana": 69128.87,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 48
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "barbearia",
+    "risco_bairro": "baixo",
+    "n_simulado": 8,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0746,
+      0.6067
+    ],
+    "wtp_mediana": 17122.48,
+    "revenue_mediana": 34264.97,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 48
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "mercadinho",
+    "risco_bairro": "baixo",
+    "n_simulado": 8,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0746,
+      0.6067
+    ],
+    "wtp_mediana": 43054.26,
+    "revenue_mediana": 104672.75,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 48
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "autopecas",
+    "risco_bairro": "medio",
+    "n_simulado": 8,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0746,
+      0.6067
+    ],
+    "wtp_mediana": 221615.01,
+    "revenue_mediana": 272626.06,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 47
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "salao",
+    "risco_bairro": "alto",
+    "n_simulado": 7,
+    "conversao": 0.2857,
+    "ic_95": [
+      0.0849,
+      0.6575
+    ],
+    "wtp_mediana": 28649.31,
+    "revenue_mediana": 40430.04,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 46
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "clinica",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 166329.24,
+    "revenue_mediana": 202855.85,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 46
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "laboratorio",
+    "risco_bairro": "medio",
+    "n_simulado": 6,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0992,
+      0.7157
+    ],
+    "wtp_mediana": 165315.9,
+    "revenue_mediana": 361347.72,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 46
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "fisioterapia",
+    "risco_bairro": "baixo",
+    "n_simulado": 9,
+    "conversao": 0.2222,
+    "ic_95": [
+      0.0669,
+      0.5632
+    ],
+    "wtp_mediana": 35745.83,
+    "revenue_mediana": 88397.64,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 42
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "laboratorio",
+    "risco_bairro": "medio",
+    "n_simulado": 9,
+    "conversao": 0.2222,
+    "ic_95": [
+      0.0669,
+      0.5632
+    ],
+    "wtp_mediana": 93068.32,
+    "revenue_mediana": 165741.03,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 42
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "estacionamento",
+    "risco_bairro": "medio",
+    "n_simulado": 6,
+    "conversao": 0.1667,
+    "ic_95": [
+      0.0375,
+      0.5847
+    ],
+    "wtp_mediana": 65423.9,
+    "revenue_mediana": 128784.11,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 40
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "estudio_tatuagem",
+    "risco_bairro": "medio",
+    "n_simulado": 6,
+    "conversao": 0.1667,
+    "ic_95": [
+      0.0375,
+      0.5847
+    ],
+    "wtp_mediana": 42428.26,
+    "revenue_mediana": 92850.7,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 40
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "mecanica_diesel",
+    "risco_bairro": "alto",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 199699.88,
+    "revenue_mediana": 259979.44,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 40
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "lava_jato",
+    "risco_bairro": "medio",
+    "n_simulado": 6,
+    "conversao": 0.1667,
+    "ic_95": [
+      0.0375,
+      0.5847
+    ],
+    "wtp_mediana": 30527.72,
+    "revenue_mediana": 58196.25,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 40
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "barbearia",
+    "risco_bairro": "alto",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 15878.03,
+    "revenue_mediana": 27231.54,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 40
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "clinica",
+    "risco_bairro": "medio",
+    "n_simulado": 6,
+    "conversao": 0.1667,
+    "ic_95": [
+      0.0375,
+      0.5847
+    ],
+    "wtp_mediana": 101874.61,
+    "revenue_mediana": 152007.71,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 40
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "academia",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 1.0,
+    "ic_95": [
+      0.1586,
+      0.9865
+    ],
+    "wtp_mediana": 35569.2,
+    "revenue_mediana": 58667.7,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 40
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "laboratorio",
+    "risco_bairro": "medio",
+    "n_simulado": 6,
+    "conversao": 0.1667,
+    "ic_95": [
+      0.0375,
+      0.5847
+    ],
+    "wtp_mediana": 98867.64,
+    "revenue_mediana": 242910.45,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 40
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "estetica",
+    "risco_bairro": "alto",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 85175.04,
+    "revenue_mediana": 129811.22,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 40
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "borracharia",
+    "risco_bairro": "alto",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 29045.74,
+    "revenue_mediana": 84988.23,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 40
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "estacionamento",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 1.0,
+    "ic_95": [
+      0.1586,
+      0.9865
+    ],
+    "wtp_mediana": 127201.7,
+    "revenue_mediana": 104338.03,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 40
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "borracharia",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 28590.74,
+    "revenue_mediana": 44249.08,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 37
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "estacionamento",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.2,
+    "ic_95": [
+      0.045,
+      0.6448
+    ],
+    "wtp_mediana": 48139.65,
+    "revenue_mediana": 86633.72,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 37
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "laboratorio",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 209600.65,
+    "revenue_mediana": 265048.05,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 37
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "fisioterapia",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 52811.59,
+    "revenue_mediana": 97127.67,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 37
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "consultorio_odonto",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 68067.95,
+    "revenue_mediana": 137960.54,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 37
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "autopecas",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 170965.96,
+    "revenue_mediana": 291187.54,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 35
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "mecanica_diesel",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 85073.21,
+    "revenue_mediana": 117363.44,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 35
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "mercadinho",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 34794.88,
+    "revenue_mediana": 125553.52,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 35
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "barbearia",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 1.0,
+    "ic_95": [
+      0.1586,
+      0.9865
+    ],
+    "wtp_mediana": 5409.61,
+    "revenue_mediana": 20584.17,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 35
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "salao",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 41888.91,
+    "revenue_mediana": 65673.97,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 35
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "optica",
+    "risco_bairro": "medio",
+    "n_simulado": 7,
+    "conversao": 0.1429,
+    "ic_95": [
+      0.0328,
+      0.536
+    ],
+    "wtp_mediana": 32934.87,
+    "revenue_mediana": 112675.99,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 34
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "salao",
+    "risco_bairro": "medio",
+    "n_simulado": 7,
+    "conversao": 0.1429,
+    "ic_95": [
+      0.0328,
+      0.536
+    ],
+    "wtp_mediana": 40286.78,
+    "revenue_mediana": 76794.47,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 34
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "lava_jato",
+    "risco_bairro": "alto",
+    "n_simulado": 5,
+    "conversao": 0.2,
+    "ic_95": [
+      0.045,
+      0.6448
+    ],
+    "wtp_mediana": 44937.79,
+    "revenue_mediana": 74767.81,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 32
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "oficina",
+    "risco_bairro": "baixo",
+    "n_simulado": 6,
+    "conversao": 0.1667,
+    "ic_95": [
+      0.0375,
+      0.5847
+    ],
+    "wtp_mediana": 32715.73,
+    "revenue_mediana": 68312.29,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 32
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "bar",
+    "risco_bairro": "baixo",
+    "n_simulado": 6,
+    "conversao": 0.1667,
+    "ic_95": [
+      0.0375,
+      0.5847
+    ],
+    "wtp_mediana": 49544.09,
+    "revenue_mediana": 107196.68,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 32
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "lava_jato",
+    "risco_bairro": "medio",
+    "n_simulado": 12,
+    "conversao": 0.1667,
+    "ic_95": [
+      0.0509,
+      0.4584
+    ],
+    "wtp_mediana": 22508.62,
+    "revenue_mediana": 63337.16,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 31
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "autopecas",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 1.0,
+    "ic_95": [
+      0.1586,
+      0.9865
+    ],
+    "wtp_mediana": 137290.99,
+    "revenue_mediana": 247195.36,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 30
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "borracharia",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 17795.61,
+    "revenue_mediana": 51184.01,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 30
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "clinica",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 80300.4,
+    "revenue_mediana": 114998.0,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 30
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "clinica_veterinaria",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 1.0,
+    "ic_95": [
+      0.2932,
+      0.991
+    ],
+    "wtp_mediana": 81906.09,
+    "revenue_mediana": 134288.19,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 30
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "pet_shop",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.2,
+    "ic_95": [
+      0.045,
+      0.6448
+    ],
+    "wtp_mediana": 25885.03,
+    "revenue_mediana": 74566.75,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 28
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "autopecas",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 205062.96,
+    "revenue_mediana": 320626.41,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 27
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "loja_roupas",
+    "risco_bairro": "alto",
+    "n_simulado": 6,
+    "conversao": 0.1667,
+    "ic_95": [
+      0.0375,
+      0.5847
+    ],
+    "wtp_mediana": 34744.57,
+    "revenue_mediana": 60140.98,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 27
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "farmacia",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 367106.09,
+    "revenue_mediana": 437815.82,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 27
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "academia",
+    "risco_bairro": "medio",
+    "n_simulado": 7,
+    "conversao": 0.1429,
+    "ic_95": [
+      0.0328,
+      0.536
+    ],
+    "wtp_mediana": 43305.13,
+    "revenue_mediana": 83653.95,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 27
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "autopecas",
+    "risco_bairro": "baixo",
+    "n_simulado": 7,
+    "conversao": 0.1429,
+    "ic_95": [
+      0.0328,
+      0.536
+    ],
+    "wtp_mediana": 207138.41,
+    "revenue_mediana": 292234.65,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 27
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "clinica_veterinaria",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 73037.96,
+    "revenue_mediana": 174872.64,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 27
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "clinica",
+    "risco_bairro": "alto",
+    "n_simulado": 6,
+    "conversao": 0.1667,
+    "ic_95": [
+      0.0375,
+      0.5847
+    ],
+    "wtp_mediana": 64067.65,
+    "revenue_mediana": 194551.04,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 27
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "clinica_veterinaria",
+    "risco_bairro": "medio",
+    "n_simulado": 7,
+    "conversao": 0.1429,
+    "ic_95": [
+      0.0328,
+      0.536
+    ],
+    "wtp_mediana": 40563.72,
+    "revenue_mediana": 86548.05,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 27
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "mercearia",
+    "risco_bairro": "medio",
+    "n_simulado": 7,
+    "conversao": 0.1429,
+    "ic_95": [
+      0.0328,
+      0.536
+    ],
+    "wtp_mediana": 50228.11,
+    "revenue_mediana": 117197.52,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 27
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "hamburgueria",
+    "risco_bairro": "alto",
+    "n_simulado": 6,
+    "conversao": 0.1667,
+    "ic_95": [
+      0.0375,
+      0.5847
+    ],
+    "wtp_mediana": 27933.73,
+    "revenue_mediana": 115715.02,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 27
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "clinica_veterinaria",
+    "risco_bairro": "medio",
+    "n_simulado": 9,
+    "conversao": 0.1111,
+    "ic_95": [
+      0.0256,
+      0.4515
+    ],
+    "wtp_mediana": 79320.89,
+    "revenue_mediana": 106908.65,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 26
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "mercadinho",
+    "risco_bairro": "medio",
+    "n_simulado": 9,
+    "conversao": 0.1111,
+    "ic_95": [
+      0.0256,
+      0.4515
+    ],
+    "wtp_mediana": 28399.08,
+    "revenue_mediana": 84797.27,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 26
+  },
+  {
+    "bairro": "Vila Embratel",
+    "nicho": "bar",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 1.0,
+    "ic_95": [
+      0.1586,
+      0.9865
+    ],
+    "wtp_mediana": 54353.34,
+    "revenue_mediana": 96692.2,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 25,
+    "potencial_agendamentos": 25
+  },
+  {
+    "bairro": "Vila Embratel",
+    "nicho": "borracharia",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 1.0,
+    "ic_95": [
+      0.1586,
+      0.9865
+    ],
+    "wtp_mediana": 45749.31,
+    "revenue_mediana": 63546.43,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 25,
+    "potencial_agendamentos": 25
+  },
+  {
+    "bairro": "Vila Embratel",
+    "nicho": "estudio_tatuagem",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 1.0,
+    "ic_95": [
+      0.1586,
+      0.9865
+    ],
+    "wtp_mediana": 36172.36,
+    "revenue_mediana": 65774.25,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 25,
+    "potencial_agendamentos": 25
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "restaurante",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 38258.82,
+    "revenue_mediana": 152494.93,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 25
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "mecanica_diesel",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 130252.03,
+    "revenue_mediana": 265764.11,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 25
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "mercearia",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 82485.55,
+    "revenue_mediana": 215961.14,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 25
+  },
+  {
+    "bairro": "Vila Embratel",
+    "nicho": "consultorio_odonto",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 1.0,
+    "ic_95": [
+      0.1586,
+      0.9865
+    ],
+    "wtp_mediana": 56996.41,
+    "revenue_mediana": 131453.07,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 25,
+    "potencial_agendamentos": 25
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "consultorio_odonto",
+    "risco_bairro": "medio",
+    "n_simulado": 10,
+    "conversao": 0.1,
+    "ic_95": [
+      0.0232,
+      0.4186
+    ],
+    "wtp_mediana": 62200.58,
+    "revenue_mediana": 111485.2,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 24
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "estetica",
+    "risco_bairro": "medio",
+    "n_simulado": 10,
+    "conversao": 0.1,
+    "ic_95": [
+      0.0232,
+      0.4186
+    ],
+    "wtp_mediana": 34766.79,
+    "revenue_mediana": 115370.27,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 24
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "clinica_veterinaria",
+    "risco_bairro": "alto",
+    "n_simulado": 7,
+    "conversao": 0.1429,
+    "ic_95": [
+      0.0328,
+      0.536
+    ],
+    "wtp_mediana": 62967.46,
+    "revenue_mediana": 124103.6,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 23
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "farmacia",
+    "risco_bairro": "alto",
+    "n_simulado": 7,
+    "conversao": 0.1429,
+    "ic_95": [
+      0.0328,
+      0.536
+    ],
+    "wtp_mediana": 88736.12,
+    "revenue_mediana": 339594.28,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 23
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "pet_shop",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 34980.5,
+    "revenue_mediana": 91287.31,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 22
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "farmacia",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 172046.31,
+    "revenue_mediana": 482569.31,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 22
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "borracharia",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 20506.41,
+    "revenue_mediana": 64410.39,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 22
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "estudio_tatuagem",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 20440.12,
+    "revenue_mediana": 47156.36,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 22
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "mercadinho",
+    "risco_bairro": "medio",
+    "n_simulado": 9,
+    "conversao": 0.1111,
+    "ic_95": [
+      0.0256,
+      0.4515
+    ],
+    "wtp_mediana": 32236.1,
+    "revenue_mediana": 107037.69,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 21
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "estudio_tatuagem",
+    "risco_bairro": "alto",
+    "n_simulado": 8,
+    "conversao": 0.125,
+    "ic_95": [
+      0.0291,
+      0.4921
+    ],
+    "wtp_mediana": 31558.78,
+    "revenue_mediana": 75842.54,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 20
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "fisioterapia",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 46953.89,
+    "revenue_mediana": 94261.87,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 20
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "oficina",
+    "risco_bairro": "medio",
+    "n_simulado": 12,
+    "conversao": 0.0833,
+    "ic_95": [
+      0.0194,
+      0.365
+    ],
+    "wtp_mediana": 40757.35,
+    "revenue_mediana": 78660.11,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 20
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "lava_jato",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 15060.31,
+    "revenue_mediana": 45154.35,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 20
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "loja_calcados",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 55183.16,
+    "revenue_mediana": 66795.7,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 20
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "farmacia",
+    "risco_bairro": "medio",
+    "n_simulado": 7,
+    "conversao": 0.1429,
+    "ic_95": [
+      0.0328,
+      0.536
+    ],
+    "wtp_mediana": 86776.88,
+    "revenue_mediana": 281334.27,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 20
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "mercadinho",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 33251.74,
+    "revenue_mediana": 107863.63,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 18
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "academia",
+    "risco_bairro": "alto",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 38779.11,
+    "revenue_mediana": 73443.57,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 18
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "consultorio_odonto",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 50849.27,
+    "revenue_mediana": 138902.53,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 18
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "mecanica_diesel",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.25,
+    "ic_95": [
+      0.0549,
+      0.7195
+    ],
+    "wtp_mediana": 196047.96,
+    "revenue_mediana": 231561.22,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 15
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "restaurante",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 70995.03,
+    "revenue_mediana": 155389.28,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 15
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "loja_calcados",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 50295.24,
+    "revenue_mediana": 64384.01,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 15
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "mecanica_diesel",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 97757.58,
+    "revenue_mediana": 145275.33,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 15
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "mercearia",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 73266.13,
+    "revenue_mediana": 192324.8,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 15
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "consultorio_odonto",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 79012.66,
+    "revenue_mediana": 105734.59,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 15
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "laboratorio",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 78745.82,
+    "revenue_mediana": 243120.12,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 13
+  },
+  {
+    "bairro": "Vila Embratel",
+    "nicho": "autopecas",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 130696.15,
+    "revenue_mediana": 233855.66,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 25,
+    "potencial_agendamentos": 12
+  },
+  {
+    "bairro": "Vila Embratel",
+    "nicho": "estacionamento",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 106238.81,
+    "revenue_mediana": 93104.82,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 25,
+    "potencial_agendamentos": 12
+  },
+  {
+    "bairro": "Vila Embratel",
+    "nicho": "clinica",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.5,
+    "ic_95": [
+      0.0947,
+      0.9075
+    ],
+    "wtp_mediana": 49823.12,
+    "revenue_mediana": 102659.27,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 25,
+    "potencial_agendamentos": 12
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "oficina",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 3,
+    "conversao": 0.3333,
+    "ic_95": [
+      0.0699,
+      0.8055
+    ],
+    "wtp_mediana": 29068.57,
+    "revenue_mediana": 73943.31,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 10
+  },
+  {
+    "bairro": "Vila Embratel",
+    "nicho": "barbearia",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 25083.12,
+    "revenue_mediana": 43799.99,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 25,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "fisioterapia",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 61088.42,
+    "revenue_mediana": 113019.07,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "borracharia",
+    "risco_bairro": "baixo",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 35909.84,
+    "revenue_mediana": 57946.58,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "mercadinho",
+    "risco_bairro": "alto",
+    "n_simulado": 6,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0038,
+      0.4091
+    ],
+    "wtp_mediana": 24169.7,
+    "revenue_mediana": 88979.25,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "estacionamento",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 80839.08,
+    "revenue_mediana": 127573.45,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "bar",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 64694.48,
+    "revenue_mediana": 123886.38,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "pet_shop",
+    "risco_bairro": "baixo",
+    "n_simulado": 6,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0038,
+      0.4091
+    ],
+    "wtp_mediana": 42222.27,
+    "revenue_mediana": 75986.82,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "restaurante",
+    "risco_bairro": "alto",
+    "n_simulado": 8,
+    "conversao": 0.0,
+    "ic_95": [
+      0.003,
+      0.3361
+    ],
+    "wtp_mediana": 49597.07,
+    "revenue_mediana": 123164.54,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "borracharia",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 43091.82,
+    "revenue_mediana": 74083.58,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "hamburgueria",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 48124.7,
+    "revenue_mediana": 111467.66,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "lava_jato",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 54155.26,
+    "revenue_mediana": 71611.16,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "farmacia",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 110456.13,
+    "revenue_mediana": 415066.91,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "loja_calcados",
+    "risco_bairro": "medio",
+    "n_simulado": 9,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0026,
+      0.3084
+    ],
+    "wtp_mediana": 42516.05,
+    "revenue_mediana": 64990.09,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "laboratorio",
+    "risco_bairro": "baixo",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 123256.19,
+    "revenue_mediana": 278011.05,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "clinica_veterinaria",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0045,
+      0.4594
+    ],
+    "wtp_mediana": 31077.78,
+    "revenue_mediana": 155263.15,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "fisioterapia",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 59918.88,
+    "revenue_mediana": 113956.7,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "restaurante",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 72427.53,
+    "revenue_mediana": 94169.8,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vila Embratel",
+    "nicho": "salao",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 30356.32,
+    "revenue_mediana": 81007.48,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 25,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "clinica_veterinaria",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 44490.38,
+    "revenue_mediana": 138634.05,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "mercearia",
+    "risco_bairro": "medio",
+    "n_simulado": 8,
+    "conversao": 0.0,
+    "ic_95": [
+      0.003,
+      0.3361
+    ],
+    "wtp_mediana": 77986.16,
+    "revenue_mediana": 152693.01,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "barbearia",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 17674.09,
+    "revenue_mediana": 41749.52,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "clinica_veterinaria",
+    "risco_bairro": "baixo",
+    "n_simulado": 9,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0026,
+      0.3084
+    ],
+    "wtp_mediana": 53871.28,
+    "revenue_mediana": 124395.01,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "loja_roupas",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 71591.43,
+    "revenue_mediana": 76633.8,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "clinica",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 83630.65,
+    "revenue_mediana": 198205.14,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "loja_roupas",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 25851.52,
+    "revenue_mediana": 66681.68,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "mecanica_diesel",
+    "risco_bairro": "baixo",
+    "n_simulado": 6,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0038,
+      0.4091
+    ],
+    "wtp_mediana": 155289.72,
+    "revenue_mediana": 271859.56,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "salao",
+    "risco_bairro": "alto",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 38090.18,
+    "revenue_mediana": 77867.57,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "borracharia",
+    "risco_bairro": "medio",
+    "n_simulado": 9,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0026,
+      0.3084
+    ],
+    "wtp_mediana": 37610.9,
+    "revenue_mediana": 69115.8,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "loja_roupas",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 125770.79,
+    "revenue_mediana": 114259.37,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "academia",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 56279.27,
+    "revenue_mediana": 110620.22,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "barbearia",
+    "risco_bairro": "medio",
+    "n_simulado": 7,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0034,
+      0.3698
+    ],
+    "wtp_mediana": 12006.42,
+    "revenue_mediana": 24124.5,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "clinica",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 77750.63,
+    "revenue_mediana": 108734.84,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "optica",
+    "risco_bairro": "baixo",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 47934.82,
+    "revenue_mediana": 114666.13,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "estudio_tatuagem",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 34107.75,
+    "revenue_mediana": 78835.71,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "bar",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 61941.73,
+    "revenue_mediana": 97988.74,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "restaurante",
+    "risco_bairro": "baixo",
+    "n_simulado": 5,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0045,
+      0.4594
+    ],
+    "wtp_mediana": 33648.72,
+    "revenue_mediana": 64886.72,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "bar",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 25169.17,
+    "revenue_mediana": 141124.76,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "mercearia",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 45485.62,
+    "revenue_mediana": 193633.48,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "loja_calcados",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 43159.37,
+    "revenue_mediana": 86981.63,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "academia",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 28241.02,
+    "revenue_mediana": 90819.85,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "bar",
+    "risco_bairro": "alto",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 75832.26,
+    "revenue_mediana": 110246.06,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "pet_shop",
+    "risco_bairro": "alto",
+    "n_simulado": 5,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0045,
+      0.4594
+    ],
+    "wtp_mediana": 34356.41,
+    "revenue_mediana": 48072.97,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "mercadinho",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 52551.23,
+    "revenue_mediana": 112321.19,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "loja_roupas",
+    "risco_bairro": "alto",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 58984.35,
+    "revenue_mediana": 105738.42,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "lava_jato",
+    "risco_bairro": "baixo",
+    "n_simulado": 5,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0045,
+      0.4594
+    ],
+    "wtp_mediana": 22209.03,
+    "revenue_mediana": 56737.81,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "mercearia",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0045,
+      0.4594
+    ],
+    "wtp_mediana": 60054.58,
+    "revenue_mediana": 183173.24,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "fisioterapia",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0045,
+      0.4594
+    ],
+    "wtp_mediana": 32450.88,
+    "revenue_mediana": 59338.64,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "loja_calcados",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 55442.04,
+    "revenue_mediana": 94307.78,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "laboratorio",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 118083.52,
+    "revenue_mediana": 247517.76,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "loja_calcados",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 21177.87,
+    "revenue_mediana": 53142.25,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "mercearia",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 45191.1,
+    "revenue_mediana": 154430.54,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "hamburgueria",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 37453.71,
+    "revenue_mediana": 130869.98,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vila Embratel",
+    "nicho": "clinica_veterinaria",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 57750.02,
+    "revenue_mediana": 110964.41,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 25,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "restaurante",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 94112.46,
+    "revenue_mediana": 161947.5,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "estetica",
+    "risco_bairro": "medio",
+    "n_simulado": 6,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0038,
+      0.4091
+    ],
+    "wtp_mediana": 43347.48,
+    "revenue_mediana": 116596.15,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "restaurante",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 40844.84,
+    "revenue_mediana": 87185.38,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "estetica",
+    "risco_bairro": "alto",
+    "n_simulado": 5,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0045,
+      0.4594
+    ],
+    "wtp_mediana": 33133.62,
+    "revenue_mediana": 79994.77,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "estacionamento",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 36640.03,
+    "revenue_mediana": 96679.67,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "clinica_veterinaria",
+    "risco_bairro": "alto",
+    "n_simulado": 5,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0045,
+      0.4594
+    ],
+    "wtp_mediana": 45943.55,
+    "revenue_mediana": 138079.54,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "barbearia",
+    "risco_bairro": "alto",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 9732.13,
+    "revenue_mediana": 45998.27,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "clinica_veterinaria",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 69483.96,
+    "revenue_mediana": 101629.83,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "oficina",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 22109.39,
+    "revenue_mediana": 64222.84,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "estudio_tatuagem",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 32572.53,
+    "revenue_mediana": 67421.27,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "restaurante",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 46884.61,
+    "revenue_mediana": 66801.31,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "autopecas",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 126342.95,
+    "revenue_mediana": 266304.64,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "borracharia",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0045,
+      0.4594
+    ],
+    "wtp_mediana": 32234.85,
+    "revenue_mediana": 83719.15,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "estudio_tatuagem",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 36299.0,
+    "revenue_mediana": 58705.25,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "loja_calcados",
+    "risco_bairro": "medio",
+    "n_simulado": 6,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0038,
+      0.4091
+    ],
+    "wtp_mediana": 50825.14,
+    "revenue_mediana": 74175.4,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "consultorio_odonto",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 71746.51,
+    "revenue_mediana": 108010.87,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "salao",
+    "risco_bairro": "baixo",
+    "n_simulado": 6,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0038,
+      0.4091
+    ],
+    "wtp_mediana": 51214.91,
+    "revenue_mediana": 75527.34,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "estudio_tatuagem",
+    "risco_bairro": "alto",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 31047.36,
+    "revenue_mediana": 89871.31,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "bar",
+    "risco_bairro": "medio",
+    "n_simulado": 6,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0038,
+      0.4091
+    ],
+    "wtp_mediana": 54172.39,
+    "revenue_mediana": 99571.41,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "mercearia",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 84903.45,
+    "revenue_mediana": 238502.88,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "barbearia",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 17872.91,
+    "revenue_mediana": 52271.34,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "loja_roupas",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 24167.84,
+    "revenue_mediana": 44591.17,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "mercearia",
+    "risco_bairro": "baixo",
+    "n_simulado": 6,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0038,
+      0.4091
+    ],
+    "wtp_mediana": 77792.85,
+    "revenue_mediana": 190249.21,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "estudio_tatuagem",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 30962.39,
+    "revenue_mediana": 56551.3,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "fisioterapia",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 77641.62,
+    "revenue_mediana": 117666.31,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "mecanica_diesel",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 109206.68,
+    "revenue_mediana": 120062.08,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "optica",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 50141.03,
+    "revenue_mediana": 93988.59,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "lava_jato",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 51578.22,
+    "revenue_mediana": 67967.74,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "farmacia",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0045,
+      0.4594
+    ],
+    "wtp_mediana": 104262.41,
+    "revenue_mediana": 246635.02,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "borracharia",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 23065.27,
+    "revenue_mediana": 59821.44,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "loja_roupas",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 59958.14,
+    "revenue_mediana": 103725.24,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "academia",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 46725.24,
+    "revenue_mediana": 88968.81,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "lava_jato",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 49777.02,
+    "revenue_mediana": 53309.13,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "bar",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 104077.31,
+    "revenue_mediana": 132326.43,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "laboratorio",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 173508.92,
+    "revenue_mediana": 263050.35,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "fisioterapia",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 27430.7,
+    "revenue_mediana": 71622.31,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "academia",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0045,
+      0.4594
+    ],
+    "wtp_mediana": 35938.43,
+    "revenue_mediana": 60289.52,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "clinica",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 119471.2,
+    "revenue_mediana": 227438.93,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "optica",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 90512.69,
+    "revenue_mediana": 112227.1,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "salao",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 15989.76,
+    "revenue_mediana": 41140.97,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "academia",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 31241.79,
+    "revenue_mediana": 60851.32,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "fisioterapia",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 23278.37,
+    "revenue_mediana": 59815.26,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "estacionamento",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 51624.75,
+    "revenue_mediana": 87978.05,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "salao",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 15092.85,
+    "revenue_mediana": 61891.49,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "pet_shop",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 52098.59,
+    "revenue_mediana": 80764.04,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "oficina",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 46345.98,
+    "revenue_mediana": 89497.25,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "lava_jato",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 36391.81,
+    "revenue_mediana": 79548.35,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "hamburgueria",
+    "risco_bairro": "baixo",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 76668.54,
+    "revenue_mediana": 115686.89,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "loja_calcados",
+    "risco_bairro": "baixo",
+    "n_simulado": 6,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0038,
+      0.4091
+    ],
+    "wtp_mediana": 52847.27,
+    "revenue_mediana": 88585.78,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "bar",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 107971.83,
+    "revenue_mediana": 120288.09,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "farmacia",
+    "risco_bairro": "baixo",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 232634.35,
+    "revenue_mediana": 463776.92,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "optica",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 70467.49,
+    "revenue_mediana": 142471.12,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "estacionamento",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 81385.03,
+    "revenue_mediana": 120215.48,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "estetica",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 19650.7,
+    "revenue_mediana": 71218.93,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "pet_shop",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 27352.56,
+    "revenue_mediana": 77383.6,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "academia",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 64057.63,
+    "revenue_mediana": 106810.84,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "loja_roupas",
+    "risco_bairro": "medio",
+    "n_simulado": 5,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0045,
+      0.4594
+    ],
+    "wtp_mediana": 42132.25,
+    "revenue_mediana": 45596.2,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "autopecas",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 54104.09,
+    "revenue_mediana": 263508.06,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "academia",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 63271.31,
+    "revenue_mediana": 115086.76,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "loja_calcados",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 37884.15,
+    "revenue_mediana": 70488.75,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "oficina",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 51050.72,
+    "revenue_mediana": 59041.16,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Calhau",
+    "nicho": "bar",
+    "risco_bairro": "medio",
+    "n_simulado": 4,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0054,
+      0.5201
+    ],
+    "wtp_mediana": 62903.41,
+    "revenue_mediana": 100496.23,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 189,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "mecanica_diesel",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 98857.75,
+    "revenue_mediana": 227132.84,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "loja_roupas",
+    "risco_bairro": "medio",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 33589.74,
+    "revenue_mediana": 87769.83,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "estetica",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 28571.56,
+    "revenue_mediana": 148705.93,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "salao",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 46495.76,
+    "revenue_mediana": 84635.37,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Turu",
+    "nicho": "autopecas",
+    "risco_bairro": "medio",
+    "n_simulado": 6,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0038,
+      0.4091
+    ],
+    "wtp_mediana": 146861.46,
+    "revenue_mediana": 233058.3,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 240,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "optica",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 48196.17,
+    "revenue_mediana": 104633.68,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "estudio_tatuagem",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 10018.18,
+    "revenue_mediana": 34105.97,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "borracharia",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 18937.02,
+    "revenue_mediana": 65942.48,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "barbearia",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 7948.09,
+    "revenue_mediana": 15725.32,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "mercadinho",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 20376.01,
+    "revenue_mediana": 42808.88,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Centro",
+    "nicho": "estacionamento",
+    "risco_bairro": "alto",
+    "n_simulado": 3,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0069,
+      0.6035
+    ],
+    "wtp_mediana": 82886.15,
+    "revenue_mediana": 98360.59,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 162,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "mercearia",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 47899.86,
+    "revenue_mediana": 198945.19,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "laboratorio",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 157111.23,
+    "revenue_mediana": 388973.33,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "barbearia",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 10793.07,
+    "revenue_mediana": 27074.28,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "farmacia",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 74236.55,
+    "revenue_mediana": 157391.19,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "estetica",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 22973.2,
+    "revenue_mediana": 61751.25,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "estetica",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 83467.54,
+    "revenue_mediana": 159068.52,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "farmacia",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 298742.08,
+    "revenue_mediana": 373671.86,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "optica",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 79806.16,
+    "revenue_mediana": 149196.87,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "mercearia",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 47543.45,
+    "revenue_mediana": 161026.5,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "consultorio_odonto",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 46876.83,
+    "revenue_mediana": 93703.81,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "laboratorio",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 69308.35,
+    "revenue_mediana": 145941.38,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "estetica",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 46967.63,
+    "revenue_mediana": 156116.13,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Renascenca",
+    "nicho": "estetica",
+    "risco_bairro": "baixo",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 36186.41,
+    "revenue_mediana": 108838.31,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 193,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "farmacia",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 254049.12,
+    "revenue_mediana": 386075.39,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "lava_jato",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 44920.56,
+    "revenue_mediana": 72401.71,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cidade Operaria",
+    "nicho": "autopecas",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 131021.32,
+    "revenue_mediana": 285325.3,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 40,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Cohama",
+    "nicho": "hamburgueria",
+    "risco_bairro": "medio",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 41803.47,
+    "revenue_mediana": 136146.36,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 140,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Coroadinho",
+    "nicho": "mercadinho",
+    "risco_bairro": "muito_alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 54300.5,
+    "revenue_mediana": 127150.56,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 30,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "loja_roupas",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 79359.57,
+    "revenue_mediana": 114198.44,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "farmacia",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 103242.81,
+    "revenue_mediana": 346590.34,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Olho DAgua",
+    "nicho": "clinica",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 63418.48,
+    "revenue_mediana": 234348.85,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 45,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Joao Paulo",
+    "nicho": "mecanica_diesel",
+    "risco_bairro": "alto",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 245949.14,
+    "revenue_mediana": 230138.84,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 55,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Vinhais",
+    "nicho": "estetica",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 26171.01,
+    "revenue_mediana": 108863.74,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 60,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Sao Cristovao",
+    "nicho": "bar",
+    "risco_bairro": "alto",
+    "n_simulado": 2,
+    "conversao": 0.0,
+    "ic_95": [
+      0.009,
+      0.7089
+    ],
+    "wtp_mediana": 104210.24,
+    "revenue_mediana": 106802.36,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 75,
+    "potencial_agendamentos": 0
+  },
+  {
+    "bairro": "Ponta do Farol",
+    "nicho": "mercadinho",
+    "risco_bairro": "medio",
+    "n_simulado": 1,
+    "conversao": 0.0,
+    "ic_95": [
+      0.0137,
+      0.8406
+    ],
+    "wtp_mediana": 95129.0,
+    "revenue_mediana": 133119.07,
+    "pode_pagar_mensalidade": true,
+    "est_empresas_nicho": 35,
+    "potencial_agendamentos": 0
+  }
+]

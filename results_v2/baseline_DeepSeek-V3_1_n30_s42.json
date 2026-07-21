@@ -1,0 +1,160 @@
+{
+  "modelo": "DeepSeek-V3.1",
+  "n": 30,
+  "seed": 42,
+  "cenario": "SLZ-C-ARMY",
+  "taxa_conversao": 0.0,
+  "agendaram": 0,
+  "decisoes": [
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    },
+    {
+      "modelo": "DeepSeek-V3.1",
+      "erro": "HTTP 503: {\"error\":{\"message\":\"all providers failed for model 'DeepSeek-V3.1'\",\"type\":\"all_providers_failed\",\"code\":\"all_providers_failed\"}}\n",
+      "decisao": "ignorou"
+    }
+  ]
+}

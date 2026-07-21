@@ -1,0 +1,1470 @@
+{
+  "model": "command-a-03-2025",
+  "n": 10,
+  "seed": 42,
+  "por_nicho": {
+    "loja_roupas": {
+      "total": 10,
+      "agendou": 5,
+      "clicou": 0,
+      "visualizou": 5,
+      "ignorou": 0,
+      "erros": 0,
+      "conversao": 0.5,
+      "wtp_medio": 651.13
+    },
+    "loja_calcados": {
+      "total": 10,
+      "agendou": 1,
+      "clicou": 0,
+      "visualizou": 9,
+      "ignorou": 0,
+      "erros": 0,
+      "conversao": 0.1,
+      "wtp_medio": 463.622
+    },
+    "farmacia": {
+      "total": 10,
+      "agendou": 0,
+      "clicou": 0,
+      "visualizou": 10,
+      "ignorou": 0,
+      "erros": 0,
+      "conversao": 0.0,
+      "wtp_medio": 777.6469999999999
+    },
+    "autopecas": {
+      "total": 10,
+      "agendou": 1,
+      "clicou": 0,
+      "visualizou": 9,
+      "ignorou": 0,
+      "erros": 0,
+      "conversao": 0.1,
+      "wtp_medio": 492.9409999999999
+    },
+    "mercearia": {
+      "total": 10,
+      "agendou": 1,
+      "clicou": 0,
+      "visualizou": 9,
+      "ignorou": 0,
+      "erros": 0,
+      "conversao": 0.1,
+      "wtp_medio": 321.24800000000005
+    },
+    "bar": {
+      "total": 10,
+      "agendou": 2,
+      "clicou": 0,
+      "visualizou": 8,
+      "ignorou": 0,
+      "erros": 0,
+      "conversao": 0.2,
+      "wtp_medio": 450.803
+    },
+    "hamburgueria": {
+      "total": 10,
+      "agendou": 0,
+      "clicou": 0,
+      "visualizou": 10,
+      "ignorou": 0,
+      "erros": 0,
+      "conversao": 0.0,
+      "wtp_medio": 637.9060000000001
+    },
+    "oficina": {
+      "total": 10,
+      "agendou": 0,
+      "clicou": 0,
+      "visualizou": 10,
+      "ignorou": 0,
+      "erros": 0,
+      "conversao": 0.0,
+      "wtp_medio": 421.66099999999994
+    }
+  },
+  "detalhes": {
+    "loja_roupas": [
+      {
+        "nome": "Jose Nascimento",
+        "segment": "loja_roupas",
+        "risk_profile": "crisis_driven",
+        "recent_event": "theft",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 700.13,
+        "decisao": "agendou",
+        "wtp": 700.13,
+        "sentimento": 0.8,
+        "confianca": 0.7,
+        "objecoes": [],
+        "raciocinio": "Após o recente arrombamento, estou preocupado com a segurança do meu estoque valioso. O sistema EMIVE parece uma solução completa para proteger minha loja, especialmente com sensores nas vitrines e monitoramento 24h. Vou agendar a visita técnica para avaliar melhor a proposta.",
+        "latency_ms": 4221
+      },
+      {
+        "nome": "Bruno Barros",
+        "segment": "loja_roupas",
+        "risk_profile": "conservative",
+        "recent_event": "none",
+        "has_existing_security": "full_system",
+        "wtp_brl": 459.7,
+        "decisao": "visualizou",
+        "wtp": 459.7,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Bruno já possui um sistema de segurança completo com alta satisfação, então não vê necessidade imediata de mudar. Além disso, o orçamento atual está dentro do esperado, e ele confia em soluções locais.",
+        "latency_ms": 2991
+      },
+      {
+        "nome": "Ana Ferreira",
+        "segment": "loja_roupas",
+        "risk_profile": "crisis_driven",
+        "recent_event": "renovation",
+        "has_existing_security": "none",
+        "wtp_brl": 781.84,
+        "decisao": "agendou",
+        "wtp": 781.84,
+        "sentimento": 0.8,
+        "confianca": 0.7,
+        "objecoes": [],
+        "raciocinio": "Ana está preocupada com a segurança de seu estoque valioso após a reforma da loja, e a ausência de qualquer sistema de segurança atual a deixa vulnerável. A oferta de uma visita técnica gratuita e o foco na proteção da vitrine e estoque a convenceram a agendar, apesar do custo inicial baixo.",
+        "latency_ms": 6966
+      },
+      {
+        "nome": "Mateus Silva",
+        "segment": "loja_roupas",
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 371.0,
+        "decisao": "visualizou",
+        "wtp": 371.0,
+        "sentimento": 0.2,
+        "confianca": 0.3,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "O sistema parece interessante, mas já tenho um alarme monitorado que atende bem às minhas necessidades. Além disso, o orçamento atual não permite investir em mais segurança no momento.",
+        "latency_ms": 2474
+      },
+      {
+        "nome": "Lucas Silva",
+        "segment": "loja_roupas",
+        "risk_profile": "innovator",
+        "recent_event": "none",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 583.02,
+        "decisao": "visualizou",
+        "wtp": 583.02,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Lucas visualizou a mensagem, mas não agendou a visita porque já possui um sistema de alarme monitorado, embora não esteja completamente satisfeito com ele. Ele confia em soluções locais, mas por enquanto não vê necessidade de mudar, já que não houve incidentes recentes.",
+        "latency_ms": 3207
+      },
+      {
+        "nome": "Maria Nascimento",
+        "segment": "loja_roupas",
+        "risk_profile": "pragmatic",
+        "recent_event": "none",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 697.51,
+        "decisao": "visualizou",
+        "wtp": 697.51,
+        "sentimento": 0.2,
+        "confianca": 0.4,
+        "objecoes": [
+          "existing_solution",
+          "timing"
+        ],
+        "raciocinio": "Maria visualizou a mensagem, mas decidiu não agendar a visita pois já possui um sistema de alarme monitorado, embora não esteja totalmente satisfeita. Além disso, estando próximo ao final do mês, prefere avaliar melhor o orçamento antes de considerar novas despesas.",
+        "latency_ms": 3124
+      },
+      {
+        "nome": "Fernanda Rodrigues",
+        "segment": "loja_roupas",
+        "risk_profile": "pragmatic",
+        "recent_event": "theft",
+        "has_existing_security": "full_system",
+        "wtp_brl": 998.14,
+        "decisao": "agendou",
+        "wtp": 998.14,
+        "sentimento": 0.7,
+        "confianca": 0.5,
+        "objecoes": [],
+        "raciocinio": "Com o recente roubo e a insatisfação com o sistema atual, decidi agendar a visita técnica para avaliar a solução EMIVE, que parece oferecer uma proteção mais completa para o estoque da loja, especialmente durante a noite.",
+        "latency_ms": 4151
+      },
+      {
+        "nome": "Carlos Barros",
+        "segment": "loja_roupas",
+        "risk_profile": "crisis_driven",
+        "recent_event": "none",
+        "has_existing_security": "none",
+        "wtp_brl": 849.29,
+        "decisao": "agendou",
+        "wtp": 849.29,
+        "sentimento": 0.8,
+        "confianca": 0.9,
+        "objecoes": [],
+        "raciocinio": "Como não tenho nenhum sistema de segurança e meu estoque é valioso, decidi agendar a visita técnica para avaliar a proposta. A proteção da vitrine e do estoque contra arrombamentos noturnos é uma preocupação constante, e a oferta parece atender a essa necessidade.",
+        "latency_ms": 2851
+      },
+      {
+        "nome": "Daniel Nascimento",
+        "segment": "loja_roupas",
+        "risk_profile": "crisis_driven",
+        "recent_event": "renovation",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 717.83,
+        "decisao": "visualizou",
+        "wtp": 717.83,
+        "sentimento": 0.2,
+        "confianca": 0.4,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Daniel visualizou a mensagem, mas decidiu não agendar a visita pois já possui um sistema de alarme monitorado que, embora não seja perfeito, atende às suas necessidades atuais. Além disso, ele está focado na recuperação da reforma recente e não vê urgência em investir em segurança adicional no momento.",
+        "latency_ms": 3682
+      },
+      {
+        "nome": "Mateus Pereira",
+        "segment": "loja_roupas",
+        "risk_profile": "crisis_driven",
+        "recent_event": "renovation",
+        "has_existing_security": "none",
+        "wtp_brl": 352.84,
+        "decisao": "agendou",
+        "wtp": 352.84,
+        "sentimento": 0.7,
+        "confianca": 0.8,
+        "objecoes": [],
+        "raciocinio": "Como não tenho nenhum sistema de segurança e meu estoque é valioso, a oferta parece uma solução necessária para proteger meu investimento, especialmente com a vitrine exposta e o histórico de arrombamentos na região.",
+        "latency_ms": 2666
+      }
+    ],
+    "loja_calcados": [
+      {
+        "nome": "Andre Barros",
+        "segment": "loja_calcados",
+        "risk_profile": "crisis_driven",
+        "recent_event": "none",
+        "has_existing_security": "none",
+        "wtp_brl": 466.91,
+        "decisao": "visualizou",
+        "wtp": 466.91,
+        "sentimento": 0.2,
+        "confianca": 0.3,
+        "objecoes": [
+          "budget",
+          "skepticism"
+        ],
+        "raciocinio": "Andre visualizou a mensagem, mas está hesitante devido ao custo do sistema, que ultrapassa seu orçamento atual para segurança. Além disso, ele tem dúvidas sobre a eficácia do sistema, já que não tem experiência com soluções de segurança avançadas.",
+        "latency_ms": 3157
+      },
+      {
+        "nome": "Carlos Ferreira",
+        "segment": "loja_calcados",
+        "risk_profile": "pragmatic",
+        "recent_event": "renovation",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 795.04,
+        "decisao": "visualizou",
+        "wtp": 795.04,
+        "sentimento": 0.2,
+        "confianca": 0.1,
+        "objecoes": [
+          "timing",
+          "existing_solution"
+        ],
+        "raciocinio": "Carlos visualizou a mensagem, mas decidiu não agendar a visita devido ao recente investimento na reforma da loja e à belief de que seu sistema atual, apesar de insatisfatório, ainda pode ser melhorado sem custos adicionais. Além disso, o final do mês não é um bom momento para novas despesas.",
+        "latency_ms": 4253
+      },
+      {
+        "nome": "Patricia Costa",
+        "segment": "loja_calcados",
+        "risk_profile": "innovator",
+        "recent_event": "slow_month",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 430.73,
+        "decisao": "visualizou",
+        "wtp": 430.73,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "budget",
+          "existing_solution"
+        ],
+        "raciocinio": "A oferta parece interessante, mas o preço está acima do que posso pagar no momento. Além disso, já tenho câmeras instaladas, embora não esteja totalmente satisfeita com elas. Vou pensar melhor antes de agendar uma visita.",
+        "latency_ms": 3049
+      },
+      {
+        "nome": "Patricia Oliveira",
+        "segment": "loja_calcados",
+        "risk_profile": "crisis_driven",
+        "recent_event": "none",
+        "has_existing_security": "full_system",
+        "wtp_brl": 455.16,
+        "decisao": "visualizou",
+        "wtp": 455.16,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Patricia visualizou a mensagem, mas não agendou a visita porque já possui um sistema de segurança completo com satisfação alta (8/10). Ela considera que o sistema atual atende às suas necessidades, embora ache a proposta interessante.",
+        "latency_ms": 3023
+      },
+      {
+        "nome": "Camila Almeida",
+        "segment": "loja_calcados",
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 512.9,
+        "decisao": "visualizou",
+        "wtp": 512.9,
+        "sentimento": 0.2,
+        "confianca": 0.4,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "A oferta parece interessante, mas já tenho câmeras instaladas e, embora não esteja totalmente satisfeita, não vejo necessidade imediata de mudar. Vou esperar para ver se há mais feedbacks positivos sobre o sistema antes de considerar uma visita.",
+        "latency_ms": 2975
+      },
+      {
+        "nome": "Camila Rodrigues",
+        "segment": "loja_calcados",
+        "risk_profile": "conservative",
+        "recent_event": "none",
+        "has_existing_security": "full_system",
+        "wtp_brl": 291.36,
+        "decisao": "visualizou",
+        "wtp": 291.36,
+        "sentimento": 0.2,
+        "confianca": 0.0,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Camila já possui um sistema de segurança completo com satisfação de 7/10, o que a faz questionar a necessidade de uma nova solução. Além disso, sua confiança em provedores locais é baixa, o que a torna cautelosa em relação a novas ofertas.",
+        "latency_ms": 2751
+      },
+      {
+        "nome": "Debora Almeida",
+        "segment": "loja_calcados",
+        "risk_profile": "conservative",
+        "recent_event": "renovation",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 683.31,
+        "decisao": "visualizou",
+        "wtp": 683.31,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "budget",
+          "existing_solution"
+        ],
+        "raciocinio": "Debora visualizou a mensagem, mas não agendou a visita devido ao orçamento limitado e à recente instalação de câmeras DIY, embora esteja insatisfeita com a solução atual. Ela confia em fornecedores locais, mas o preço do sistema EMIVE está acima do que está disposta a pagar no momento.",
+        "latency_ms": 2833
+      },
+      {
+        "nome": "Rafael Ribeiro",
+        "segment": "loja_calcados",
+        "risk_profile": "conservative",
+        "recent_event": "slow_month",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 423.14,
+        "decisao": "visualizou",
+        "wtp": 423.14,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Rafael visualizou a mensagem, mas não agendou a visita porque já possui um sistema de alarme monitorado, embora não esteja completamente satisfeito. Ele considera que o sistema atual atende parcialmente suas necessidades e não vê urgência em mudar, especialmente sem um evento recente de roubo.",
+        "latency_ms": 2866
+      },
+      {
+        "nome": "Debora Santos",
+        "segment": "loja_calcados",
+        "risk_profile": "crisis_driven",
+        "recent_event": "none",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 308.79,
+        "decisao": "visualizou",
+        "wtp": 308.79,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Debora visualizou a mensagem, mas não agendou a visita porque já possui um sistema de alarme monitorado, embora não esteja totalmente satisfeita com ele. Ela considera que o investimento atual já atende às suas necessidades básicas de segurança, mas pode reavaliar no futuro se houver um incidente.",
+        "latency_ms": 2891
+      },
+      {
+        "nome": "Bruno Santos",
+        "segment": "loja_calcados",
+        "risk_profile": "pragmatic",
+        "recent_event": "theft",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 268.88,
+        "decisao": "agendou",
+        "wtp": 268.88,
+        "sentimento": 0.7,
+        "confianca": 0.8,
+        "objecoes": [],
+        "raciocinio": "Após o recente roubo, estou preocupado com a segurança do meu estoque valioso. A oferta parece atender às minhas necessidades, especialmente com a proteção da vitrine e o monitoramento 24h. A visita técnica gratuita é um bom primeiro passo para entender melhor a solução.",
+        "latency_ms": 3185
+      }
+    ],
+    "farmacia": [
+      {
+        "nome": "Eduardo Mendes",
+        "segment": "farmacia",
+        "risk_profile": "innovator",
+        "recent_event": "renovation",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 801.98,
+        "decisao": "visualizou",
+        "wtp": 801.98,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Eduardo visualizou a mensagem, mas não agendou a visita porque já possui um sistema de alarme monitorado com satisfação razoável (6/10) e não vê necessidade imediata de mudar, especialmente após uma recente reforma na farmácia.",
+        "latency_ms": 2877
+      },
+      {
+        "nome": "Mateus Souza",
+        "segment": "farmacia",
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "full_system",
+        "wtp_brl": 750.32,
+        "decisao": "visualizou",
+        "wtp": 750.32,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Mateus já possui um sistema de segurança completo com satisfação alta (8/10), o que reduz a necessidade de buscar uma nova solução. Além disso, o foco do produto em lojas de vestuário não se alinha completamente com o perfil de uma farmácia, embora ele reconheça o valor da proteção de estoque. Por enquanto, prefere manter o sistema atual.",
+        "latency_ms": 7827
+      },
+      {
+        "nome": "Carlos Mendes",
+        "segment": "farmacia",
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "full_system",
+        "wtp_brl": 808.45,
+        "decisao": "visualizou",
+        "wtp": 808.45,
+        "sentimento": 0.2,
+        "confianca": 0.1,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Carlos já possui um sistema de segurança completo com alta satisfação, então não vê necessidade imediata de mudar. Além disso, o orçamento atual para segurança já está alocado, e ele não está disposto a aumentar os custos sem uma necessidade clara.",
+        "latency_ms": 4199
+      },
+      {
+        "nome": "Rafael Lima",
+        "segment": "farmacia",
+        "risk_profile": "pragmatic",
+        "recent_event": "competitor_new",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 832.87,
+        "decisao": "visualizou",
+        "wtp": 832.87,
+        "sentimento": 0.2,
+        "confianca": 0.3,
+        "objecoes": [
+          "existing_solution",
+          "skepticism"
+        ],
+        "raciocinio": "Rafael visualizou a mensagem, mas não agendou a visita pois já possui um sistema de câmeras DIY, embora não esteja totalmente satisfeito. Ele está cético sobre a necessidade de um sistema mais avançado e prefere esperar para avaliar melhor a situação.",
+        "latency_ms": 2459
+      },
+      {
+        "nome": "Luana Ferreira",
+        "segment": "farmacia",
+        "risk_profile": "pragmatic",
+        "recent_event": "renovation",
+        "has_existing_security": "full_system",
+        "wtp_brl": 338.34,
+        "decisao": "visualizou",
+        "wtp": 338.34,
+        "sentimento": 0.2,
+        "confianca": 0.1,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Luana já possui um sistema de segurança completo, embora não esteja totalmente satisfeita, e não vê necessidade imediata de mudar. Além disso, o foco do sistema oferecido não se alinha completamente com as necessidades de uma farmácia, o que reduz o interesse em agendar uma visita.",
+        "latency_ms": 4538
+      },
+      {
+        "nome": "Antonio Rodrigues",
+        "segment": "farmacia",
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 741.18,
+        "decisao": "visualizou",
+        "wtp": 741.18,
+        "sentimento": 0.2,
+        "confianca": 0.4,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Antonio visualizou a mensagem, mas não agendou a visita pois já possui um sistema de câmeras DIY, embora esteja insatisfeito com ele. Ele considera que o investimento atual já é suficiente, apesar da insatisfação, e não vê urgência em mudar no momento.",
+        "latency_ms": 2583
+      },
+      {
+        "nome": "Jose Nascimento",
+        "segment": "farmacia",
+        "risk_profile": "pragmatic",
+        "recent_event": "none",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 868.45,
+        "decisao": "visualizou",
+        "wtp": 868.45,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Jose já possui um sistema de alarme monitorado com satisfação alta (8/10), o que reduz a necessidade de uma nova solução. Além disso, o foco do sistema EMIVE em lojas de vestuário não se alinha completamente com o perfil de uma farmácia. Ele prefere manter o sistema atual, mas reconhece o valor da proposta.",
+        "latency_ms": 5336
+      },
+      {
+        "nome": "Rafael Ribeiro",
+        "segment": "farmacia",
+        "risk_profile": "conservative",
+        "recent_event": "none",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 985.65,
+        "decisao": "visualizou",
+        "wtp": 985.65,
+        "sentimento": 0.2,
+        "confianca": 0.7,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Rafael visualizou a mensagem, mas não agendou a visita técnica porque já possui um sistema de alarme monitorado com satisfação razoável (6/10). Ele considera que o investimento atual atende às necessidades da farmácia, embora esteja aberto a melhorias se houver uma proposta mais convincente no futuro.",
+        "latency_ms": 3666
+      },
+      {
+        "nome": "Leticia Santos",
+        "segment": "farmacia",
+        "risk_profile": "crisis_driven",
+        "recent_event": "none",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 905.25,
+        "decisao": "visualizou",
+        "wtp": 905.25,
+        "sentimento": 0.2,
+        "confianca": 0.5,
+        "objecoes": [
+          "timing",
+          "existing_solution"
+        ],
+        "raciocinio": "Embora a oferta pareça interessante, não houve nenhum incidente recente e já temos câmeras instaladas, mesmo que não sejam ideais. Além disso, estamos no final do mês e em baixa temporada, então não é o momento ideal para investir em algo novo.",
+        "latency_ms": 2276
+      },
+      {
+        "nome": "Ana Costa",
+        "segment": "farmacia",
+        "risk_profile": "innovator",
+        "recent_event": "slow_month",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 743.98,
+        "decisao": "visualizou",
+        "wtp": 743.98,
+        "sentimento": 0.2,
+        "confianca": 0.5,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Ana visualizou a mensagem, mas decidiu não agendar a visita pois já possui um sistema de alarme monitorado com satisfação de 7/10. Ela acredita que o investimento atual é suficiente e não vê necessidade de mudar no momento.",
+        "latency_ms": 3491
+      }
+    ],
+    "autopecas": [
+      {
+        "nome": "Carlos Araujo",
+        "segment": "autopecas",
+        "risk_profile": "pragmatic",
+        "recent_event": "none",
+        "has_existing_security": "full_system",
+        "wtp_brl": 490.53,
+        "decisao": "visualizou",
+        "wtp": 490.53,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "existing_solution",
+          "timing"
+        ],
+        "raciocinio": "Carlos já possui um sistema de segurança completo com satisfação de 7/10, o que reduz a necessidade de uma nova solução. Além disso, estando no final do mês e em uma temporada normal, ele não está propenso a investir em algo novo no momento.",
+        "latency_ms": 3537
+      },
+      {
+        "nome": "Felipe Ribeiro",
+        "segment": "autopecas",
+        "risk_profile": "crisis_driven",
+        "recent_event": "none",
+        "has_existing_security": "full_system",
+        "wtp_brl": 333.32,
+        "decisao": "visualizou",
+        "wtp": 333.32,
+        "sentimento": 0.2,
+        "confianca": 0.1,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Felipe visualizou a mensagem, mas não clicou para agendar. Ele já possui um sistema de segurança completo, embora não esteja totalmente satisfeito, e não vê necessidade imediata de mudar. Além disso, o orçamento atual não permite investimentos adicionais em segurança no momento.",
+        "latency_ms": 2715
+      },
+      {
+        "nome": "Bruno Nascimento",
+        "segment": "autopecas",
+        "risk_profile": "pragmatic",
+        "recent_event": "none",
+        "has_existing_security": "full_system",
+        "wtp_brl": 444.8,
+        "decisao": "visualizou",
+        "wtp": 444.8,
+        "sentimento": 0.2,
+        "confianca": 0.4,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Bruno já possui um sistema de segurança completo com satisfação alta (8/10), então não vê necessidade imediata de mudar. Além disso, o orçamento atual já está alocado para a segurança existente.",
+        "latency_ms": 4399
+      },
+      {
+        "nome": "Marcelo Nascimento",
+        "segment": "autopecas",
+        "risk_profile": "crisis_driven",
+        "recent_event": "slow_month",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 534.35,
+        "decisao": "visualizou",
+        "wtp": 534.35,
+        "sentimento": 0.2,
+        "confianca": 0.7,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Marcelo visualizou a mensagem, mas não agendou a visita pois já possui um sistema de alarme monitorado, embora não esteja totalmente satisfeito. Ele considera que o investimento atual já atende às suas necessidades de segurança, apesar de estar aberto a melhorias no futuro.",
+        "latency_ms": 2593
+      },
+      {
+        "nome": "Beatriz Lima",
+        "segment": "autopecas",
+        "risk_profile": "conservative",
+        "recent_event": "theft",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 484.06,
+        "decisao": "agendou",
+        "wtp": 484.06,
+        "sentimento": 0.7,
+        "confianca": 0.6,
+        "objecoes": [],
+        "raciocinio": "Como sofri um roubo recentemente, estou preocupada com a segurança do meu estoque de autopeças. Apesar de já ter um alarme monitorado, a oferta de um sistema inteligente com monitoramento 24h e sensores de vibração parece uma solução mais completa. Vou agendar a visita técnica para avaliar melhor a proposta.",
+        "latency_ms": 5326
+      },
+      {
+        "nome": "Fernanda Mendes",
+        "segment": "autopecas",
+        "risk_profile": "pragmatic",
+        "recent_event": "renovation",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 663.76,
+        "decisao": "visualizou",
+        "wtp": 663.76,
+        "sentimento": 0.2,
+        "confianca": 0.5,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Fernanda visualizou a mensagem, mas não agendou a visita pois já possui um sistema de câmeras DIY que, apesar de não ser perfeito, atende parcialmente suas necessidades. Além disso, ela está focada na recente reforma da loja e não vê urgência em investir em segurança no momento.",
+        "latency_ms": 3182
+      },
+      {
+        "nome": "Fernanda Silva",
+        "segment": "autopecas",
+        "risk_profile": "conservative",
+        "recent_event": "none",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 267.48,
+        "decisao": "visualizou",
+        "wtp": 267.48,
+        "sentimento": 0.2,
+        "confianca": 0.1,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Fernanda já possui um sistema de alarme monitorado com satisfação de 7/10, o que a faz sentir que sua segurança atual é suficiente. Além disso, sua confiança em provedores locais é baixa (4/10), o que a torna cautelosa com novas ofertas. Como não houve eventos recentes de roubo, ela não vê urgência em mudar.",
+        "latency_ms": 3924
+      },
+      {
+        "nome": "Andre Ribeiro",
+        "segment": "autopecas",
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 615.96,
+        "decisao": "visualizou",
+        "wtp": 615.96,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Andre visualizou a mensagem, mas não agendou a visita porque já possui um sistema de câmeras DIY que, embora não seja perfeito, atende parcialmente suas necessidades. Além disso, o orçamento atual para segurança já está comprometido, e ele não vê urgência em mudar no momento.",
+        "latency_ms": 3691
+      },
+      {
+        "nome": "Francisco Mendes",
+        "segment": "autopecas",
+        "risk_profile": "conservative",
+        "recent_event": "renovation",
+        "has_existing_security": "full_system",
+        "wtp_brl": 685.54,
+        "decisao": "visualizou",
+        "wtp": 685.54,
+        "sentimento": 0.2,
+        "confianca": 0.0,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Já tenho um sistema de segurança completo e estou satisfeito, então não vejo necessidade de mudar no momento. Além disso, minha confiança em provedores locais ainda é baixa, o que me faz hesitar em considerar novas ofertas.",
+        "latency_ms": 2691
+      },
+      {
+        "nome": "Leticia Silva",
+        "segment": "autopecas",
+        "risk_profile": "pragmatic",
+        "recent_event": "competitor_new",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 409.61,
+        "decisao": "visualizou",
+        "wtp": 409.61,
+        "sentimento": 0.2,
+        "confianca": 0.4,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Leticia visualizou a mensagem, mas não clicou, pois já possui um sistema de alarme monitorado com satisfação razoável. Ela não vê necessidade imediata de mudar, especialmente sem um evento recente que justifique a troca.",
+        "latency_ms": 2351
+      }
+    ],
+    "mercearia": [
+      {
+        "nome": "Tatiana Silva",
+        "segment": "mercearia",
+        "risk_profile": "pragmatic",
+        "recent_event": "renovation",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 272.18,
+        "decisao": "visualizou",
+        "wtp": 272.18,
+        "sentimento": 0.2,
+        "confianca": 0.3,
+        "objecoes": [
+          "budget",
+          "existing_solution"
+        ],
+        "raciocinio": "O sistema parece interessante, mas o orçamento atual não permite investir além do que já está sendo gasto com segurança. Além disso, o alarme monitorado atual, apesar de não ser perfeito, ainda atende parcialmente às necessidades da loja.",
+        "latency_ms": 2145
+      },
+      {
+        "nome": "Andre Souza",
+        "segment": "mercearia",
+        "risk_profile": "pragmatic",
+        "recent_event": "none",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 153.03,
+        "decisao": "visualizou",
+        "wtp": 153.03,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Andre visualizou a mensagem, mas não agendou a visita porque já possui um sistema de alarme monitorado, embora não esteja completamente satisfeito. Ele confia em soluções locais, mas não vê necessidade imediata de mudar, especialmente sem um evento recente que justifique a troca.",
+        "latency_ms": 5225
+      },
+      {
+        "nome": "Francisco Pereira",
+        "segment": "mercearia",
+        "risk_profile": "conservative",
+        "recent_event": "none",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 408.86,
+        "decisao": "visualizou",
+        "wtp": 408.86,
+        "sentimento": 0.2,
+        "confianca": 0.5,
+        "objecoes": [
+          "budget",
+          "existing_solution"
+        ],
+        "raciocinio": "Francisco visualizou a mensagem, mas não agendou a visita devido ao custo do sistema ser superior ao seu orçamento para segurança e por já ter câmeras instaladas, embora não esteja totalmente satisfeito com elas.",
+        "latency_ms": 2854
+      },
+      {
+        "nome": "Debora Costa",
+        "segment": "mercearia",
+        "risk_profile": "conservative",
+        "recent_event": "theft",
+        "has_existing_security": "none",
+        "wtp_brl": 365.6,
+        "decisao": "agendou",
+        "wtp": 365.6,
+        "sentimento": 0.8,
+        "confianca": 0.7,
+        "objecoes": [],
+        "raciocinio": "Após o recente roubo, estou preocupada com a segurança do meu estoque, especialmente à noite. A oferta parece atender às minhas necessidades e o preço da visita técnica é acessível. Vou agendar para avaliar melhor a solução.",
+        "latency_ms": 2288
+      },
+      {
+        "nome": "Joao Araujo",
+        "segment": "mercearia",
+        "risk_profile": "conservative",
+        "recent_event": "competitor_new",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 257.97,
+        "decisao": "visualizou",
+        "wtp": 257.97,
+        "sentimento": 0.2,
+        "confianca": 0.5,
+        "objecoes": [
+          "existing_solution",
+          "complexity"
+        ],
+        "raciocinio": "Embora a oferta pareça interessante, já tenho câmeras instaladas, mesmo que não esteja totalmente satisfeito. Além disso, o sistema parece complexo para alguém como eu, que não é muito familiarizado com tecnologia. Vou pensar mais antes de tomar qualquer decisão.",
+        "latency_ms": 2716
+      },
+      {
+        "nome": "Camila Ribeiro",
+        "segment": "mercearia",
+        "risk_profile": "conservative",
+        "recent_event": "renovation",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 430.49,
+        "decisao": "visualizou",
+        "wtp": 430.49,
+        "sentimento": 0.2,
+        "confianca": 0.5,
+        "objecoes": [
+          "existing_solution",
+          "budget"
+        ],
+        "raciocinio": "Camila já possui um sistema de alarme monitorado e está relativamente satisfeita, então não vê necessidade imediata de mudar. Além disso, o custo do novo sistema ultrapassa seu orçamento para segurança, o que a desmotiva a agendar uma visita.",
+        "latency_ms": 2757
+      },
+      {
+        "nome": "Juliana Ferreira",
+        "segment": "mercearia",
+        "risk_profile": "crisis_driven",
+        "recent_event": "competitor_new",
+        "has_existing_security": "none",
+        "wtp_brl": 268.97,
+        "decisao": "visualizou",
+        "wtp": 268.97,
+        "sentimento": 0.2,
+        "confianca": 0.3,
+        "objecoes": [
+          "need_lack"
+        ],
+        "raciocinio": "Juliana visualizou a mensagem, mas não clicou para agendar. Embora ela não tenha um sistema de segurança e esteja insatisfeita com a situação atual, a abertura de um novo concorrente não a fez sentir urgência em investir em segurança. Ela ainda está avaliando se realmente precisa de um sistema agora.",
+        "latency_ms": 5082
+      },
+      {
+        "nome": "Camila Silva",
+        "segment": "mercearia",
+        "risk_profile": "pragmatic",
+        "recent_event": "competitor_new",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 451.72,
+        "decisao": "visualizou",
+        "wtp": 451.72,
+        "sentimento": 0.2,
+        "confianca": 0.1,
+        "objecoes": [
+          "existing_solution",
+          "skepticism"
+        ],
+        "raciocinio": "Camila visualizou a mensagem, mas não clicou, pois já possui um sistema de câmeras DIY que, embora não seja perfeito, atende parcialmente suas necessidades. Ela está cética quanto à necessidade de um sistema mais avançado, especialmente considerando o custo e a confiança limitada em provedores locais.",
+        "latency_ms": 2809
+      },
+      {
+        "nome": "Mateus Araujo",
+        "segment": "mercearia",
+        "risk_profile": "pragmatic",
+        "recent_event": "none",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 307.21,
+        "decisao": "visualizou",
+        "wtp": 307.21,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "budget",
+          "existing_solution"
+        ],
+        "raciocinio": "O sistema parece interessante, mas o orçamento atual não permite investir além do que já gasto com segurança. Além disso, já tenho câmeras instaladas, embora não esteja completamente satisfeito com elas.",
+        "latency_ms": 2283
+      },
+      {
+        "nome": "Camila Oliveira",
+        "segment": "mercearia",
+        "risk_profile": "conservative",
+        "recent_event": "none",
+        "has_existing_security": "none",
+        "wtp_brl": 296.45,
+        "decisao": "visualizou",
+        "wtp": 296.45,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "budget"
+        ],
+        "raciocinio": "Embora a oferta pareça interessante, o custo mensal ultrapassa meu orçamento atual para segurança. Vou considerar, mas preciso avaliar se o investimento vale a pena para minha mercearia.",
+        "latency_ms": 7217
+      }
+    ],
+    "bar": [
+      {
+        "nome": "Felipe Costa",
+        "segment": "bar",
+        "risk_profile": "innovator",
+        "recent_event": "renovation",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 658.14,
+        "decisao": "visualizou",
+        "wtp": 658.14,
+        "sentimento": 0.2,
+        "confianca": 0.3,
+        "objecoes": [
+          "existing_solution",
+          "need_lack"
+        ],
+        "raciocinio": "Felipe visualizou a mensagem, mas não clicou, pois recentemente renovou o bar e já tem câmeras DIY instaladas, embora não esteja satisfeito com elas. Ele não vê uma necessidade imediata para um sistema mais avançado, especialmente porque o foco do sistema é para lojas de vestuário, não bares.",
+        "latency_ms": 2968
+      },
+      {
+        "nome": "Ana Almeida",
+        "segment": "bar",
+        "risk_profile": "pragmatic",
+        "recent_event": "theft",
+        "has_existing_security": "full_system",
+        "wtp_brl": 513.63,
+        "decisao": "agendou",
+        "wtp": 513.63,
+        "sentimento": 0.7,
+        "confianca": 0.8,
+        "objecoes": [],
+        "raciocinio": "Como sofri um roubo recentemente, estou preocupada com a segurança do meu bar, especialmente à noite. A oferta parece sólida e o fato de ter um consultor local me dá confiança. Vou agendar a visita técnica para avaliar melhor o sistema.",
+        "latency_ms": 3932
+      },
+      {
+        "nome": "Camila Silva",
+        "segment": "bar",
+        "risk_profile": "pragmatic",
+        "recent_event": "theft",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 460.43,
+        "decisao": "agendou",
+        "wtp": 460.43,
+        "sentimento": 0.8,
+        "confianca": 0.9,
+        "objecoes": [],
+        "raciocinio": "Como sofri um roubo recentemente e minha segurança atual é fraca, decidi agendar a visita técnica para avaliar o sistema EMIVE. A proteção da vitrine e do estoque, além do monitoramento 24h, me pareceram soluções adequadas para o meu problema.",
+        "latency_ms": 7361
+      },
+      {
+        "nome": "Francisco Ribeiro",
+        "segment": "bar",
+        "risk_profile": "conservative",
+        "recent_event": "slow_month",
+        "has_existing_security": "full_system",
+        "wtp_brl": 581.42,
+        "decisao": "visualizou",
+        "wtp": 581.42,
+        "sentimento": 0.2,
+        "confianca": 0.5,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Francisco já possui um sistema de segurança completo com satisfação alta (8/10), o que reduz a necessidade de considerar uma nova solução. Além disso, o foco do produto em lojas de vestuário não se alinha diretamente com as necessidades de um bar, embora ele tenha considerado a oferta por curiosidade.",
+        "latency_ms": 2730
+      },
+      {
+        "nome": "Felipe Araujo",
+        "segment": "bar",
+        "risk_profile": "crisis_driven",
+        "recent_event": "none",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 691.62,
+        "decisao": "visualizou",
+        "wtp": 691.62,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Felipe visualizou a mensagem, mas não agendou a visita pois já possui um sistema de alarme monitorado com satisfação de 7/10. Ele acredita que seu sistema atual é suficiente e não vê necessidade imediata de investir em uma nova solução de segurança.",
+        "latency_ms": 2774
+      },
+      {
+        "nome": "Joao Pereira",
+        "segment": "bar",
+        "risk_profile": "conservative",
+        "recent_event": "slow_month",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 510.96,
+        "decisao": "visualizou",
+        "wtp": 510.96,
+        "sentimento": 0.2,
+        "confianca": 0.3,
+        "objecoes": [
+          "existing_solution",
+          "skepticism"
+        ],
+        "raciocinio": "Embora a oferta pareça interessante, já tenho um sistema de câmeras instalado e não vejo necessidade imediata de mudar. Além disso, ainda tenho dúvidas sobre a eficácia do sistema proposto e se vale a pena o investimento adicional.",
+        "latency_ms": 7775
+      },
+      {
+        "nome": "Andre Nascimento",
+        "segment": "bar",
+        "risk_profile": "innovator",
+        "recent_event": "slow_month",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 284.91,
+        "decisao": "visualizou",
+        "wtp": 284.91,
+        "sentimento": 0.2,
+        "confianca": 0.1,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Andre visualizou a mensagem, mas não agendou a visita pois já possui um sistema de alarme monitorado com satisfação de 8/10, considerando que sua solução atual atende às necessidades de segurança do bar.",
+        "latency_ms": 2033
+      },
+      {
+        "nome": "Andre Oliveira",
+        "segment": "bar",
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "none",
+        "wtp_brl": 257.52,
+        "decisao": "visualizou",
+        "wtp": 257.52,
+        "sentimento": 0.2,
+        "confianca": 0.5,
+        "objecoes": [
+          "budget",
+          "need_lack"
+        ],
+        "raciocinio": "Embora o sistema pareça interessante, o custo inicial é alto para o meu orçamento atual, especialmente após um mês lento. Além disso, como meu bar não tem estoque valioso exposto, não vejo uma necessidade urgente para esse tipo de segurança no momento.",
+        "latency_ms": 2340
+      },
+      {
+        "nome": "Luana Pereira",
+        "segment": "bar",
+        "risk_profile": "pragmatic",
+        "recent_event": "renovation",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 206.82,
+        "decisao": "visualizou",
+        "wtp": 206.82,
+        "sentimento": 0.2,
+        "confianca": 0.5,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Luana visualizou a mensagem, mas não clicou, pois recentemente renovou o bar e já possui câmeras DIY, embora não esteja totalmente satisfeita. Ela não vê urgência em mudar o sistema de segurança no momento.",
+        "latency_ms": 2699
+      },
+      {
+        "nome": "Antonio Nascimento",
+        "segment": "bar",
+        "risk_profile": "crisis_driven",
+        "recent_event": "renovation",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 342.58,
+        "decisao": "visualizou",
+        "wtp": 342.58,
+        "sentimento": 0.2,
+        "confianca": 0.3,
+        "objecoes": [
+          "budget",
+          "existing_solution"
+        ],
+        "raciocinio": "Antonio visualizou a mensagem, mas não agendou a visita devido ao orçamento limitado e à satisfação moderada com o sistema de câmeras DIY existente. Além disso, o bar não tem estoque valioso exposto, reduzindo a percepção de necessidade imediata.",
+        "latency_ms": 2749
+      }
+    ],
+    "hamburgueria": [
+      {
+        "nome": "Beatriz Santos",
+        "segment": "hamburgueria",
+        "risk_profile": "crisis_driven",
+        "recent_event": "none",
+        "has_existing_security": "full_system",
+        "wtp_brl": 484.85,
+        "decisao": "visualizou",
+        "wtp": 484.85,
+        "sentimento": 0.2,
+        "confianca": 0.3,
+        "objecoes": [
+          "existing_solution",
+          "timing"
+        ],
+        "raciocinio": "Beatriz já possui um sistema de segurança instalado, embora não esteja completamente satisfeita, o que reduz seu interesse em uma nova solução. Além disso, estando próximo ao final do mês e sem um evento recente que justifique uma mudança imediata, ela prefere adiar qualquer decisão.",
+        "latency_ms": 2571
+      },
+      {
+        "nome": "Simone Santos",
+        "segment": "hamburgueria",
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "full_system",
+        "wtp_brl": 621.76,
+        "decisao": "visualizou",
+        "wtp": 621.76,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Simone já possui um sistema de segurança completo e está satisfeita com ele, então não vê necessidade de agendar uma visita para um novo sistema. Além disso, seu orçamento atual para segurança já está comprometido.",
+        "latency_ms": 2048
+      },
+      {
+        "nome": "Maria Costa",
+        "segment": "hamburgueria",
+        "risk_profile": "pragmatic",
+        "recent_event": "none",
+        "has_existing_security": "full_system",
+        "wtp_brl": 687.59,
+        "decisao": "visualizou",
+        "wtp": 687.59,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Maria visualizou a mensagem, mas não agendou a visita técnica porque já possui um sistema de segurança completo, embora não esteja totalmente satisfeita. Ela considera que o investimento atual já atende às suas necessidades, apesar de estar aberta a melhorias no futuro.",
+        "latency_ms": 3349
+      },
+      {
+        "nome": "Simone Ferreira",
+        "segment": "hamburgueria",
+        "risk_profile": "pragmatic",
+        "recent_event": "theft",
+        "has_existing_security": "full_system",
+        "wtp_brl": 474.05,
+        "decisao": "visualizou",
+        "wtp": 474.05,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Embora a oferta pareça interessante, já tenho um sistema de segurança completo e estou satisfeita com ele. Não vejo necessidade de agendar uma visita no momento, mas agradeço a recomendação.",
+        "latency_ms": 3100
+      },
+      {
+        "nome": "Renata Almeida",
+        "segment": "hamburgueria",
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 651.14,
+        "decisao": "visualizou",
+        "wtp": 651.14,
+        "sentimento": 0.2,
+        "confianca": 0.1,
+        "objecoes": [
+          "existing_solution",
+          "skepticism"
+        ],
+        "raciocinio": "Renata visualizou a mensagem, mas não clicou, pois já possui um sistema de alarme monitorado com satisfação razoável. Além disso, ela está cética quanto à necessidade de um sistema mais avançado, especialmente considerando o custo e a confiança limitada em provedores locais.",
+        "latency_ms": 3407
+      },
+      {
+        "nome": "Luana Santos",
+        "segment": "hamburgueria",
+        "risk_profile": "crisis_driven",
+        "recent_event": "slow_month",
+        "has_existing_security": "none",
+        "wtp_brl": 688.2,
+        "decisao": "visualizou",
+        "wtp": 688.2,
+        "sentimento": 0.2,
+        "confianca": 0.3,
+        "objecoes": [
+          "budget",
+          "skepticism"
+        ],
+        "raciocinio": "Embora a segurança seja uma preocupação, o preço do sistema está acima do que posso pagar no momento. Além disso, não tenho certeza se o investimento vale a pena, já que não tive problemas graves de segurança recentemente.",
+        "latency_ms": 2741
+      },
+      {
+        "nome": "Simone Rodrigues",
+        "segment": "hamburgueria",
+        "risk_profile": "crisis_driven",
+        "recent_event": "renovation",
+        "has_existing_security": "none",
+        "wtp_brl": 661.84,
+        "decisao": "visualizou",
+        "wtp": 661.84,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "need_lack"
+        ],
+        "raciocinio": "Simone visualizou a mensagem, mas não agendou a visita pois, apesar de não ter segurança atual e confiar em fornecedores locais, recentemente renovou o espaço e não sente urgência em investir em segurança no momento.",
+        "latency_ms": 3649
+      },
+      {
+        "nome": "Rafael Silva",
+        "segment": "hamburgueria",
+        "risk_profile": "conservative",
+        "recent_event": "slow_month",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 582.51,
+        "decisao": "visualizou",
+        "wtp": 582.51,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Rafael visualizou a mensagem, mas decidiu não agendar a visita pois já possui um sistema de câmeras DIY que, embora não seja perfeito, atende parcialmente suas necessidades. Além disso, ele está em um mês mais lento e prefere não investir em segurança no momento.",
+        "latency_ms": 2641
+      },
+      {
+        "nome": "Jose Ferreira",
+        "segment": "hamburgueria",
+        "risk_profile": "crisis_driven",
+        "recent_event": "none",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 789.0,
+        "decisao": "visualizou",
+        "wtp": 789.0,
+        "sentimento": 0.2,
+        "confianca": 0.5,
+        "objecoes": [
+          "existing_solution",
+          "need_lack"
+        ],
+        "raciocinio": "Jose visualizou a mensagem, mas não clicou, pois já possui um sistema de câmeras DIY e não sente necessidade imediata de um sistema mais avançado. Além disso, seu estoque não é de alto valor, o que reduz a percepção de risco.",
+        "latency_ms": 3007
+      },
+      {
+        "nome": "Simone Santos",
+        "segment": "hamburgueria",
+        "risk_profile": "conservative",
+        "recent_event": "slow_month",
+        "has_existing_security": "none",
+        "wtp_brl": 738.12,
+        "decisao": "visualizou",
+        "wtp": 738.12,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "budget"
+        ],
+        "raciocinio": "Embora a oferta pareça interessante, o custo da visita técnica, mesmo que simbólico, está acima do que estou disposta a pagar no momento. Além disso, como não tive problemas recentes de segurança, não vejo urgência em investir em um sistema tão completo.",
+        "latency_ms": 8215
+      }
+    ],
+    "oficina": [
+      {
+        "nome": "Marcelo Lima",
+        "segment": "oficina",
+        "risk_profile": "pragmatic",
+        "recent_event": "none",
+        "has_existing_security": "full_system",
+        "wtp_brl": 410.3,
+        "decisao": "visualizou",
+        "wtp": 410.3,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Marcelo já possui um sistema de segurança completo com satisfação de 7/10, então não vê necessidade imediata de mudar. Além disso, o orçamento atual é limitado e ele confia em soluções locais, mas não está disposto a agendar uma visita no momento.",
+        "latency_ms": 6322
+      },
+      {
+        "nome": "Francisco Barros",
+        "segment": "oficina",
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 549.07,
+        "decisao": "visualizou",
+        "wtp": 549.07,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Francisco visualizou a mensagem, mas não agendou a visita porque já possui um sistema de câmeras DIY, embora não esteja completamente satisfeito. Ele considera que o investimento atual é suficiente por enquanto, mas pode reavaliar no futuro se houver problemas de segurança.",
+        "latency_ms": 2966
+      },
+      {
+        "nome": "Aline Santos",
+        "segment": "oficina",
+        "risk_profile": "innovator",
+        "recent_event": "renovation",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 213.18,
+        "decisao": "visualizou",
+        "wtp": 213.18,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Aline visualizou a mensagem, mas não agendou a visita pois já possui um sistema de alarme monitorado com satisfação razoável. Além disso, o foco atual é na reforma recente, e não há urgência em mudar o sistema de segurança.",
+        "latency_ms": 2407
+      },
+      {
+        "nome": "Renata Nascimento",
+        "segment": "oficina",
+        "risk_profile": "conservative",
+        "recent_event": "slow_month",
+        "has_existing_security": "diy_cameras",
+        "wtp_brl": 314.64,
+        "decisao": "visualizou",
+        "wtp": 314.64,
+        "sentimento": 0.2,
+        "confianca": 0.1,
+        "objecoes": [
+          "budget",
+          "existing_solution"
+        ],
+        "raciocinio": "Embora a oferta pareça interessante, o preço do sistema está acima do que posso pagar no momento, e já tenho câmeras instaladas, mesmo que não esteja totalmente satisfeita. Vou esperar para ver se há outras opções mais acessíveis.",
+        "latency_ms": 3983
+      },
+      {
+        "nome": "Joao Pereira",
+        "segment": "oficina",
+        "risk_profile": "innovator",
+        "recent_event": "competitor_new",
+        "has_existing_security": "full_system",
+        "wtp_brl": 322.16,
+        "decisao": "visualizou",
+        "wtp": 322.16,
+        "sentimento": 0.2,
+        "confianca": 0.8,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "João visualizou a mensagem, mas não agendou a visita pois já possui um sistema de segurança instalado, embora não esteja completamente satisfeito. Ele confia em soluções locais, mas acredita que seu sistema atual, apesar de não ser perfeito, ainda atende às necessidades básicas da oficina.",
+        "latency_ms": 4141
+      },
+      {
+        "nome": "Joao Souza",
+        "segment": "oficina",
+        "risk_profile": "crisis_driven",
+        "recent_event": "renovation",
+        "has_existing_security": "full_system",
+        "wtp_brl": 416.92,
+        "decisao": "visualizou",
+        "wtp": 416.92,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "existing_solution",
+          "timing"
+        ],
+        "raciocinio": "Já tenho um sistema de segurança que atende bem às minhas necessidades, e como acabei de fazer uma reforma, não vejo urgência em mudar agora. Além disso, estamos no final do mês, e não é o momento ideal para pensar em novos gastos.",
+        "latency_ms": 2699
+      },
+      {
+        "nome": "Maria Ferreira",
+        "segment": "oficina",
+        "risk_profile": "pragmatic",
+        "recent_event": "renovation",
+        "has_existing_security": "alarm_monitored",
+        "wtp_brl": 586.62,
+        "decisao": "visualizou",
+        "wtp": 586.62,
+        "sentimento": 0.2,
+        "confianca": 0.3,
+        "objecoes": [
+          "existing_solution",
+          "skepticism"
+        ],
+        "raciocinio": "Maria visualizou a mensagem, mas não clicou, pois já possui um sistema de alarme monitorado e está satisfeita em parte com ele. Além disso, ela está cética quanto à necessidade de um sistema mais avançado, especialmente após uma recente reforma na oficina. A confiança no provedor local também não é alta, o que contribui para a decisão de não agendar uma visita.",
+        "latency_ms": 3941
+      },
+      {
+        "nome": "Pedro Ferreira",
+        "segment": "oficina",
+        "risk_profile": "pragmatic",
+        "recent_event": "none",
+        "has_existing_security": "full_system",
+        "wtp_brl": 542.52,
+        "decisao": "visualizou",
+        "wtp": 542.52,
+        "sentimento": 0.2,
+        "confianca": 0.3,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Pedro já possui um sistema de segurança completo com satisfação alta (8/10), então não vê necessidade imediata de mudar. Além disso, o orçamento atual está próximo do valor que ele estaria disposto a pagar, mas não há urgência para uma visita técnica.",
+        "latency_ms": 4500
+      },
+      {
+        "nome": "Lucas Lima",
+        "segment": "oficina",
+        "risk_profile": "conservative",
+        "recent_event": "slow_month",
+        "has_existing_security": "full_system",
+        "wtp_brl": 413.96,
+        "decisao": "visualizou",
+        "wtp": 413.96,
+        "sentimento": 0.2,
+        "confianca": 0.6,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Lucas já possui um sistema de segurança completo, embora não esteja totalmente satisfeito, e considera que o investimento atual atende às necessidades básicas. Além disso, o orçamento disponível é limitado, o que o torna cauteloso em relação a novas propostas.",
+        "latency_ms": 3810
+      },
+      {
+        "nome": "Debora Rodrigues",
+        "segment": "oficina",
+        "risk_profile": "pragmatic",
+        "recent_event": "slow_month",
+        "has_existing_security": "full_system",
+        "wtp_brl": 447.24,
+        "decisao": "visualizou",
+        "wtp": 447.24,
+        "sentimento": 0.2,
+        "confianca": 0.1,
+        "objecoes": [
+          "existing_solution"
+        ],
+        "raciocinio": "Debora já possui um sistema de segurança completo com alta satisfação, então não vê necessidade imediata de mudar. Além disso, seu orçamento atual para segurança já está comprometido, e ela não está disposta a aumentar os custos sem uma necessidade clara.",
+        "latency_ms": 9851
+      }
+    ]
+  }
+}

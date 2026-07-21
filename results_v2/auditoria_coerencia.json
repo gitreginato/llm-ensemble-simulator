@@ -1,0 +1,44 @@
+{
+  "auditor_model": "command-r-plus-08-2024",
+  "n_auditado": 3,
+  "n_rejeitadas": 0,
+  "pct_rejeitadas": 0.0,
+  "coerencia_media": 0.5,
+  "criterio": "pct_rejeitadas < 10%",
+  "passed": true,
+  "auditorias": [
+    {
+      "owner_name": "Beatriz Silva",
+      "decisao_final": "visualizou",
+      "coerencia": 0.5,
+      "rejeitada": false,
+      "justificativa": "A decisão é plausível, mas há algumas inconsistências. O WTP médio está alinhado com o perfil, mas as objeções e o sentimento médio sugerem que a decisão de visualizar pode não ser a mais adequada.",
+      "problemas": [
+        "O sentimento médio é neutro, o que pode indicar indecisão, mas a decisão de 'visualizou' implica uma ação mais assertiva.",
+        "As objeções 'existing_solution' e 'skepticism' sugerem que a cliente pode não estar totalmente convencida, o que poderia levar a uma decisão mais cautelosa."
+      ]
+    },
+    {
+      "owner_name": "Bruno Nascimento",
+      "decisao_final": "visualizou",
+      "coerencia": 0.5,
+      "rejeitada": false,
+      "justificativa": "A decisão é plausível, mas há algumas inconsistências. O WTP médio está alinhado, mas as objeções e o sentimento sugerem que o cliente pode não estar pronto para uma compra imediata.",
+      "problemas": [
+        "O sentimento médio é positivo, o que pode indicar interesse, mas as objeções levantadas (soluções existentes, ceticismo e complexidade) sugerem que o cliente pode não estar convencido.",
+        "O raciocínio indica que o cliente visualizou a oferta, mas a decisão de 'visualizou' pode não refletir completamente a hesitação do cliente."
+      ]
+    },
+    {
+      "owner_name": "Joao Araujo",
+      "decisao_final": "visualizou",
+      "coerencia": 0.5,
+      "rejeitada": false,
+      "justificativa": "A decisão é plausível, mas há algumas inconsistências. O WTP médio está alinhado com o perfil, mas o sentimento e as objeções sugerem um interesse moderado, o que não justifica plenamente a visualização da oferta.",
+      "problemas": [
+        "O sentimento médio é relativamente baixo (0.3), indicando um interesse moderado, o que não é totalmente coerente com a ação de visualizar a oferta.",
+        "A objeção 'budget' sugere que o custo pode ser uma barreira, o que poderia levar a uma decisão mais cautelosa, como não visualizar a oferta."
+      ]
+    }
+  ]
+}
